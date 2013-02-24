@@ -1,0 +1,2228 @@
+# Simplified Chinese Translation of NtEd.
+# Copyright (C) YEAR Joerg Anders
+# This file is distributed under the same license as the PACKAGE package.
+# Tian Shixiong <tiansworld@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nted 1.9.16\n"
+"Report-Msgid-Bugs-To: ja@informatik.tu-chemnitz.de\n"
+"POT-Creation-Date: 2011-01-27 14:18+0100\n"
+"PO-Revision-Date: 2010-07-01 22:37+0800\n"
+"Last-Translator: Tian Shixiong <tiansworld@gmail.com>\n"
+"Language-Team: Simplified Chinese <fedora-trans-zh_cn@redhat.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: mainwindow.cpp:310
+msgid "_File"
+msgstr "文件 (_F)"
+
+#: mainwindow.cpp:311
+msgid "Open_Recent"
+msgstr "打开最近文件 (_R)"
+
+#: mainwindow.cpp:312
+msgid "_Export"
+msgstr "导出 (_E)"
+
+#: mainwindow.cpp:313
+msgid "_View"
+msgstr "查看 (_V)"
+
+#: mainwindow.cpp:314
+msgid "_Edit"
+msgstr "编辑 (_E)"
+
+#: mainwindow.cpp:315
+msgid "_Tools"
+msgstr "工具 (_T)"
+
+#: mainwindow.cpp:316
+msgid "_System layout ..."
+msgstr "系统布局 (_S) ..."
+
+#: mainwindow.cpp:317
+msgid "_Insert"
+msgstr "插入 (_I)"
+
+#: mainwindow.cpp:318
+msgid "_Upbeat ..."
+msgstr "弱拍 (_U) ..."
+
+#: mainwindow.cpp:319
+msgid "_Preferences ..."
+msgstr "设置 (_P) ..."
+
+#: mainwindow.cpp:320
+msgid "_Dynamics ..."
+msgstr "力度 (_D) ..."
+
+#: mainwindow.cpp:321
+msgid "_Lyrics"
+msgstr "歌词 (_L)"
+
+#: mainwindow.cpp:322
+msgid "_Help"
+msgstr "帮助 (_H)"
+
+#: mainwindow.cpp:323
+msgid "Configure MIDI out..."
+msgstr "设置 MIDI 输出 ..."
+
+#: mainwindow.cpp:323
+msgid "configure MIDI output"
+msgstr "设置 MIDI 输出"
+
+#: mainwindow.cpp:324
+msgid "Configure MIDI in..."
+msgstr "设置 MIDI 输入"
+
+#: mainwindow.cpp:324
+msgid "configure MIDI input"
+msgstr "设置 MIDI 输出"
+
+#: mainwindow.cpp:325
+msgid "Configure Paper..."
+msgstr "纸张设置 ..."
+
+#: mainwindow.cpp:325
+msgid "configure paper"
+msgstr "配置"
+
+#: mainwindow.cpp:326
+msgid "Configure Print..."
+msgstr "打印设置..."
+
+#: mainwindow.cpp:326
+msgid "configure print command"
+msgstr "打印命令设置"
+
+#: mainwindow.cpp:327
+msgid "New"
+msgstr "新建"
+
+#: mainwindow.cpp:327
+msgid "New File"
+msgstr "新建文件"
+
+#: mainwindow.cpp:328
+msgid "Open  ..."
+msgstr "打开 ..."
+
+#: mainwindow.cpp:328
+msgid "Open a file"
+msgstr "打开文件"
+
+#: mainwindow.cpp:329
+msgid "Save  ..."
+msgstr "保存 ..."
+
+#: mainwindow.cpp:329 mainwindow.cpp:330
+msgid "Save a file"
+msgstr "保存文件"
+
+#: mainwindow.cpp:330
+msgid "Save As  ..."
+msgstr "另存为 ..."
+
+#: mainwindow.cpp:331
+msgid "Print"
+msgstr "打印"
+
+#: mainwindow.cpp:331
+msgid "print file"
+msgstr "打印文件"
+
+#: mainwindow.cpp:332
+msgid "Import MusicXML ..."
+msgstr "导入 MusicXML ..."
+
+#: mainwindow.cpp:332
+msgid "import a musicxml file"
+msgstr "导入 musicxml 文件 "
+
+#: mainwindow.cpp:333
+msgid "Import MIDI..."
+msgstr "导入 MIDI..."
+
+#: mainwindow.cpp:333
+msgid "import a midi file"
+msgstr "导入 MIDI 文件"
+
+#: mainwindow.cpp:334
+msgid "Import MIDI(2)..."
+msgstr "导入 MIDI(2)..."
+
+#: mainwindow.cpp:334
+msgid "import a midi file(2)"
+msgstr "导入 midi 文件(2)"
+
+#: mainwindow.cpp:335
+msgid "Copy"
+msgstr "复制"
+
+#: mainwindow.cpp:335
+msgid "copy - Ctrl + C"
+msgstr "复制 - Ctrl + C"
+
+#: mainwindow.cpp:336
+msgid "Paste"
+msgstr "粘贴"
+
+#: mainwindow.cpp:336
+msgid "paste - Ctrl + V"
+msgstr "粘贴 - Ctrl + V"
+
+#: mainwindow.cpp:337
+msgid "Delete block"
+msgstr "删除小节"
+
+#: mainwindow.cpp:337
+msgid "delete block - Ctrl + X"
+msgstr "删除小节 - Ctrl + X"
+
+#: mainwindow.cpp:338
+msgid "append a system at end"
+msgstr "在末尾加入新行"
+
+#: mainwindow.cpp:338
+msgid "append system - Ctrl + B"
+msgstr "添加新行 - Ctrl + B"
+
+#: mainwindow.cpp:339
+msgid "Insert block"
+msgstr "插入小节"
+
+#: mainwindow.cpp:339
+msgid "insert block"
+msgstr "插入小节"
+
+#: mainwindow.cpp:340
+msgid "Insert clef ..."
+msgstr "插入谱号 ..."
+
+#: mainwindow.cpp:340
+msgid "insert a clef"
+msgstr "插入谱号"
+
+#: mainwindow.cpp:341
+msgid "Empty block"
+msgstr "清空小节"
+
+#: mainwindow.cpp:341
+msgid "empty block - Ctrl + E"
+msgstr "清空小节 - Ctrl + E"
+
+#: mainwindow.cpp:342
+msgid "reposit all"
+msgstr "复原全部"
+
+#: mainwindow.cpp:342
+msgid "reposit the whole score - Ctrl + T"
+msgstr "复原整个乐谱 - Ctrl + T"
+
+#: mainwindow.cpp:343
+msgid "Export MIDI  ..."
+msgstr "导出 MIDI ..."
+
+#: mainwindow.cpp:343
+msgid "export a midi file"
+msgstr "导出为 MIDI 文件"
+
+#: mainwindow.cpp:344
+msgid "Export LilyPond  ..."
+msgstr "导出为LilyPond ..."
+
+#: mainwindow.cpp:344 dialogs/lilypondexportdialog.cpp:44
+msgid "LilyPond export"
+msgstr "LIlyPond 导出"
+
+#: mainwindow.cpp:346
+msgid "Export PDF ..."
+msgstr "导出 PDF ..."
+
+#: mainwindow.cpp:346
+msgid "export PDF"
+msgstr "导出 PDF"
+
+#: mainwindow.cpp:348
+msgid "Export P_NG ..."
+msgstr "导出 P_NG ..."
+
+#: mainwindow.cpp:348
+msgid "Write a png image"
+msgstr "写入为 png 图像"
+
+#: mainwindow.cpp:350
+msgid "Export S_VG ..."
+msgstr "导出 S_VG ..."
+
+#: mainwindow.cpp:350
+msgid "Write an svg image"
+msgstr "写入为 svg 图像"
+
+#: mainwindow.cpp:352
+msgid "Export P_S ..."
+msgstr "导出 P_S ..."
+
+#: mainwindow.cpp:352
+msgid "Write PostScript"
+msgstr "写入 PostScript"
+
+#: mainwindow.cpp:353
+msgid "New Window"
+msgstr "新窗口"
+
+#: mainwindow.cpp:353
+msgid "Open a new window"
+msgstr "打开新窗口"
+
+#: mainwindow.cpp:354
+msgid "Excerpt ..."
+msgstr "提取 ..."
+
+#: mainwindow.cpp:354
+msgid "Make an excerpt of the score"
+msgstr "提取乐谱"
+
+#: mainwindow.cpp:355
+msgid "Close Window"
+msgstr "关闭窗口"
+
+#: mainwindow.cpp:355
+msgid "Close current window"
+msgstr "关闭当前窗口"
+
+#: mainwindow.cpp:358
+msgid "Remove last page"
+msgstr "删除最后一页"
+
+#: mainwindow.cpp:358
+msgid "remove the last page"
+msgstr "删除最后一页"
+
+#: mainwindow.cpp:359
+msgid "Remove empty pages"
+msgstr "删除空页"
+
+#: mainwindow.cpp:359
+msgid "remove empty pages at end"
+msgstr "删除末尾空页"
+
+#: mainwindow.cpp:360
+msgid "Change spacement ..."
+msgstr "调整音符水平间距 ..."
+
+#: mainwindow.cpp:360
+msgid "change the horizontal spacement"
+msgstr "调整水平间距"
+
+#: mainwindow.cpp:361
+msgid "Change Scale ..."
+msgstr "更改比例 ..."
+
+#: mainwindow.cpp:361
+msgid "change scale"
+msgstr "更改比例"
+
+#: mainwindow.cpp:362
+msgid "Configure Record ..."
+msgstr "录音设置 ..."
+
+#: mainwindow.cpp:362
+msgid "configure record"
+msgstr "录音设置"
+
+#: mainwindow.cpp:363
+msgid "Configure Drums ..."
+msgstr "鼓设置 ..."
+
+#: mainwindow.cpp:363
+msgid "configure drums"
+msgstr "鼓设置"
+
+#: mainwindow.cpp:364
+msgid "Tools ..."
+msgstr "工具 ..."
+
+#: mainwindow.cpp:364
+msgid "Tools "
+msgstr "工具"
+
+#: mainwindow.cpp:365
+msgid "give first measure"
+msgstr "指出第一小节"
+
+#: mainwindow.cpp:365
+msgid "set upbeat by giving the start of first full measure"
+msgstr "设置第一小节从弱拍开始"
+
+#: mainwindow.cpp:366
+msgid "give start"
+msgstr "设置起始位置"
+
+#: mainwindow.cpp:366
+msgid "set upbeat by giving the start of the score"
+msgstr "通过乐谱起始位置设置弱拍"
+
+#: mainwindow.cpp:367
+msgid "Score info ..."
+msgstr "乐谱信息 ..."
+
+#: mainwindow.cpp:367
+msgid "edit score info"
+msgstr "编辑乐谱信息"
+
+#: mainwindow.cpp:368
+msgid "Insert keysig ... "
+msgstr "插入调号 ..."
+
+#: mainwindow.cpp:368
+msgid "insert a key signature"
+msgstr "插入调号"
+
+#: mainwindow.cpp:369
+msgid "Insert lines ... "
+msgstr "插入行 ..."
+
+#: mainwindow.cpp:369
+msgid "insert a horizontal line"
+msgstr "水平插入行"
+
+#: mainwindow.cpp:370
+msgid "Insert sign ... "
+msgstr "插入记号 ..."
+
+#: mainwindow.cpp:370
+msgid "insert a free placeable sign"
+msgstr "插入自由放置记号"
+
+#: mainwindow.cpp:371
+msgid "Slur"
+msgstr "连音线"
+
+#: mainwindow.cpp:371
+msgid "insert a slur - Ctrl+H"
+msgstr "插入连音线 - Ctrl+H"
+
+#: mainwindow.cpp:372
+msgid "chord ..."
+msgstr "和弦 ..."
+
+#: mainwindow.cpp:372
+msgid "insert a chord"
+msgstr "插入和弦"
+
+#: mainwindow.cpp:373
+msgid "chordname ..."
+msgstr "和弦名称 ..."
+
+#: mainwindow.cpp:373
+msgid "insert a chordname"
+msgstr "插入和弦名"
+
+#: mainwindow.cpp:374
+msgid "spacer"
+msgstr "线间"
+
+#: mainwindow.cpp:374
+#, fuzzy
+msgid "insert a staff spacer"
+msgstr "插入乐谱间隔符"
+
+#: mainwindow.cpp:375
+msgid "Append staff"
+msgstr "附加乐谱"
+
+#: mainwindow.cpp:375
+msgid "append a new staff"
+msgstr "附加新谱"
+
+#: mainwindow.cpp:376
+msgid "Import recorded"
+msgstr "导入录音"
+
+#: mainwindow.cpp:376
+msgid "import recorded staff"
+msgstr "导入录制的乐谱"
+
+#: mainwindow.cpp:377
+msgid "Lyrics editor ..."
+msgstr "歌词编辑器 ..."
+
+#: mainwindow.cpp:377
+msgid "edit lyrics in text editor"
+msgstr "在编辑器中编辑歌词"
+
+#: mainwindow.cpp:378
+msgid "ppp"
+msgstr "ppp"
+
+#: mainwindow.cpp:378
+msgid "insert ppp"
+msgstr "插入ppp"
+
+#: mainwindow.cpp:379
+msgid "pp"
+msgstr "pp"
+
+#: mainwindow.cpp:379
+msgid "insert pp"
+msgstr "插入pp"
+
+#: mainwindow.cpp:380
+msgid "p"
+msgstr "p"
+
+#: mainwindow.cpp:380
+msgid "insert p"
+msgstr "插入p"
+
+#: mainwindow.cpp:381
+msgid "mp"
+msgstr "mp"
+
+#: mainwindow.cpp:381
+msgid "insert mp"
+msgstr "插入mp"
+
+#: mainwindow.cpp:382
+msgid "sp"
+msgstr "sp"
+
+#: mainwindow.cpp:382
+msgid "insert sp"
+msgstr "插入sp"
+
+#: mainwindow.cpp:383
+msgid "mf"
+msgstr "mf"
+
+#: mainwindow.cpp:383
+msgid "insert mf"
+msgstr "插入mf"
+
+#: mainwindow.cpp:384
+msgid "sf"
+msgstr "sf"
+
+#: mainwindow.cpp:384
+msgid "insert sf"
+msgstr "插入af"
+
+#: mainwindow.cpp:385
+msgid "f"
+msgstr "f"
+
+#: mainwindow.cpp:385
+msgid "insert f"
+msgstr "插入f"
+
+#: mainwindow.cpp:386
+msgid "ff"
+msgstr "ff"
+
+#: mainwindow.cpp:386
+msgid "insert ff"
+msgstr "插入ff"
+
+#: mainwindow.cpp:387
+msgid "fff"
+msgstr "fff"
+
+#: mainwindow.cpp:387
+msgid "insert fff"
+msgstr "插入fff"
+
+#: mainwindow.cpp:388
+msgid "tempo ..."
+msgstr "速度 ..."
+
+#: mainwindow.cpp:388
+msgid "insert tempo"
+msgstr "插入速度"
+
+#: mainwindow.cpp:389
+msgid "Text ..."
+msgstr "文本 ..."
+
+#: mainwindow.cpp:389
+msgid "insert text"
+msgstr "插入文本"
+
+#: mainwindow.cpp:390
+msgid "accelerando"
+msgstr "渐快"
+
+#: mainwindow.cpp:390
+msgid "insert accelerando"
+msgstr "插入渐快记号"
+
+#: mainwindow.cpp:391
+msgid "ritardando"
+msgstr "渐慢"
+
+#: mainwindow.cpp:391
+msgid "insert ritardando"
+msgstr "插入渐慢记号"
+
+#: mainwindow.cpp:392
+msgid "lyrics1"
+msgstr "歌词 1"
+
+#: mainwindow.cpp:392
+msgid "insert lyrics at line 1"
+msgstr "在第一行插入歌词"
+
+#: mainwindow.cpp:393
+msgid "lyrics2"
+msgstr "歌词 2"
+
+#: mainwindow.cpp:393
+msgid "insert lyrics at line 2"
+msgstr "在第二行插入歌词"
+
+#: mainwindow.cpp:394
+msgid "lyrics3"
+msgstr "歌词 3"
+
+#: mainwindow.cpp:394
+msgid "insert lyrics at line 3"
+msgstr "在第三行插入歌词"
+
+#: mainwindow.cpp:395
+msgid "lyrics4"
+msgstr "歌词 4"
+
+#: mainwindow.cpp:395
+msgid "insert lyrics at line 4"
+msgstr "在第四行插入歌词"
+
+#: mainwindow.cpp:396
+msgid "lyrics5"
+msgstr "歌词 5"
+
+#: mainwindow.cpp:396
+msgid "insert lyrics at line 5"
+msgstr "在第五行插入歌词"
+
+#: mainwindow.cpp:397
+msgid "Insert tuplet ..."
+msgstr "插入连音 ..."
+
+#: mainwindow.cpp:397
+msgid "insert a tuplet (Ctrl + num)"
+msgstr "插入连音 (Ctrl + num)"
+
+#: mainwindow.cpp:398
+msgid "brace"
+msgstr "花括线"
+
+#: mainwindow.cpp:398
+msgid "group staves by means of a brace"
+msgstr "用花括线组合乐谱"
+
+#: mainwindow.cpp:399
+msgid "bracket"
+msgstr "直括线"
+
+#: mainwindow.cpp:399
+msgid "group staves by means of a bracket"
+msgstr "用直括线组合乐谱"
+
+#: mainwindow.cpp:400
+msgid "connect barlines"
+msgstr ""
+
+#: mainwindow.cpp:400
+msgid "set connected bar lines"
+msgstr ""
+
+#: mainwindow.cpp:401
+msgid "remove group"
+msgstr "移除组"
+
+#: mainwindow.cpp:401
+msgid "remove a group of connected staves"
+msgstr "删除连接的乐谱组"
+
+#: mainwindow.cpp:402
+msgid "Remove tuplet"
+msgstr "删除连音"
+
+#: mainwindow.cpp:402
+msgid "remove a tuplet"
+msgstr "删除连音"
+
+#: mainwindow.cpp:403
+msgid "Muting ..."
+msgstr "静音 ..."
+
+#: mainwindow.cpp:403
+msgid "mute some staves"
+msgstr "静音部分乐谱"
+
+#: mainwindow.cpp:404
+msgid "Transpose ..."
+msgstr "转调 ..."
+
+#: mainwindow.cpp:404
+msgid "transpose"
+msgstr "转调"
+
+#: mainwindow.cpp:405
+msgid "hide rests"
+msgstr "隐藏休止符"
+
+#: mainwindow.cpp:405
+msgid "hide (selected) rests"
+msgstr "隐藏(所选)休止符"
+
+#: mainwindow.cpp:406
+msgid "unhide rests"
+msgstr "显示休止符"
+
+#: mainwindow.cpp:406
+msgid "unhide (selected) rests"
+msgstr "显示(所选)休止符"
+
+#: mainwindow.cpp:407
+msgid "hide rests (all v.)"
+msgstr "隐藏休止符 (all v.)"
+
+#: mainwindow.cpp:407
+msgid "hide selected rests (all v.)"
+msgstr "隐藏所选休止符 (all v.)."
+
+#: mainwindow.cpp:408
+msgid "unhide rests (all v.)"
+msgstr "显示休止符 (all v.)."
+
+#: mainwindow.cpp:408
+msgid "unhide selected rests (all v.)"
+msgstr "显示所选休止符 (all v.)."
+
+#: mainwindow.cpp:409
+msgid "set all to sharp ..."
+msgstr "将所有转为升号 ..."
+
+#: mainwindow.cpp:409
+msgid "set all flats to sharp"
+msgstr "将所有降号转为升号"
+
+#: mainwindow.cpp:410
+msgid "set all to flat ..."
+msgstr "将所有转为降号 ..."
+
+#: mainwindow.cpp:410
+msgid "set all sharps to flat"
+msgstr "将所有升号转为降号"
+
+#: mainwindow.cpp:411
+msgid "About NtEd"
+msgstr "关于 NtEd"
+
+#: mainwindow.cpp:413
+msgid "Documentation ..."
+msgstr "文档 ..."
+
+#: mainwindow.cpp:415
+msgid "License"
+msgstr "许可"
+
+#: mainwindow.cpp:416
+msgid "E_xit"
+msgstr "E_退出"
+
+#: mainwindow.cpp:416
+msgid "Exit the program"
+msgstr "退出程序"
+
+#: mainwindow.cpp:420
+msgid "play"
+msgstr "播放"
+
+#: mainwindow.cpp:421
+msgid "voices in different colors"
+msgstr "不同颜色标记的声部"
+
+#: mainwindow.cpp:422
+msgid "show measure numbers"
+msgstr "显示小节号"
+
+#: mainwindow.cpp:423
+msgid "show hidden elements"
+msgstr "显示隐藏元素"
+
+#: mainwindow.cpp:424
+msgid "midi input"
+msgstr "midi 输入"
+
+#: mainwindow.cpp:425
+msgid "record midi"
+msgstr "录制 midi"
+
+#: mainwindow.cpp:425
+msgid "record midi - i"
+msgstr "录制 midi -i"
+
+#: mainwindow.cpp:429
+msgid "in"
+msgstr "放大"
+
+#: mainwindow.cpp:429
+msgid "Zoom in Ctrl + +"
+msgstr "放大 Ctrl + +"
+
+#: mainwindow.cpp:430
+msgid "out"
+msgstr "缩小"
+
+#: mainwindow.cpp:430
+msgid "Zoom out Ctrl + -"
+msgstr "缩小 Ctrl + -"
+
+#: mainwindow.cpp:431
+msgid "undo"
+msgstr "取消"
+
+#: mainwindow.cpp:431
+msgid "Undo Ctrl + z"
+msgstr "取消 Ctrl + z"
+
+#: mainwindow.cpp:432
+msgid "redo"
+msgstr "重做"
+
+#: mainwindow.cpp:432
+msgid "Redo Ctrl + y"
+msgstr "重做 Ctrl + y"
+
+#: mainwindow.cpp:433
+msgid "customize beam"
+msgstr "自定义符尾"
+
+#: mainwindow.cpp:433
+msgid "customize beam - Ctrl + j"
+msgstr "自定义符尾 - Ctrl + j"
+
+#: mainwindow.cpp:434
+msgid "flip stem"
+msgstr "翻转符干"
+
+#: mainwindow.cpp:434
+msgid "flip stem - Ctrl + f"
+msgstr "翻转符干 - Ctrl + f"
+
+#: mainwindow.cpp:438
+msgid "insert"
+msgstr "插入"
+
+#: mainwindow.cpp:438
+msgid "Toggle Insert/Erase Mode - n"
+msgstr "插入/删除模式切换 -n"
+
+#: mainwindow.cpp:442
+msgid "page"
+msgstr "页面"
+
+#: mainwindow.cpp:442
+msgid "Page Mode - p"
+msgstr "页面模式 -p"
+
+#: mainwindow.cpp:443 dialogs/staffcontextdialog.cpp:177
+#: dialogs/keysigdialog.cpp:42 dialogs/midirecordconfigdialog.cpp:160
+msgid "key"
+msgstr "调"
+
+#: mainwindow.cpp:443
+msgid "Keyboard insert mode - k"
+msgstr "键盘插入模式 -k"
+
+#: mainwindow.cpp:1625
+msgid "Cannot replay because could not open ALSA sequencer"
+msgstr "无法打开 ALSA 音序器，无法重放"
+
+#: mainwindow.cpp:2776 mainwindow.cpp:5110 mainwindow.cpp:5156
+#: mainwindow.cpp:6090 mainwindow.cpp:6180 mainwindow.cpp:6937
+#: mainwindow.cpp:9584
+msgid "Save Changes ?"
+msgstr "保存更改？"
+
+#: mainwindow.cpp:2894 mainwindow.cpp:2995 mainwindow.cpp:3576
+#: mainwindow.cpp:3696 mainwindow.cpp:9035 mainwindow.cpp:9147
+#: mainwindow.cpp:9271 mainwindow.cpp:9360 dialogs/lyricseditor.cpp:350
+#: dialogs/drumconfigdialog.cpp:493
+#, c-format
+msgid "Cannot open %s for writing"
+msgstr "%s 无法写入 "
+
+#: mainwindow.cpp:2905 mainwindow.cpp:3009
+#, c-format
+msgid "Cannot rename %s to %s"
+msgstr "无法将 %s 重命名 为 %s"
+
+#: mainwindow.cpp:2940
+msgid "Save score"
+msgstr "保存乐谱"
+
+#: mainwindow.cpp:2982 mainwindow.cpp:3564 mainwindow.cpp:3684
+#: mainwindow.cpp:8995 mainwindow.cpp:9135 mainwindow.cpp:9259
+#: mainwindow.cpp:9348 dialogs/lyricseditor.cpp:336
+#: dialogs/drumconfigdialog.cpp:479
+#, c-format
+msgid "File %s already exists. Overwrite ?"
+msgstr "文件 %s 已经存在。确定要覆盖？"
+
+#: mainwindow.cpp:3272 mainwindow.cpp:3416
+msgid "Please select a note or rest!"
+msgstr "请选择音符或休止符！"
+
+#: mainwindow.cpp:3277
+msgid "You select a note in an tuplet"
+msgstr "您在连音中选择了一个音符"
+
+#: mainwindow.cpp:3281
+msgid "You cannot copy incomplete tuplets!"
+msgstr "您不能复制不完整的连音！"
+
+#: mainwindow.cpp:3296
+msgid "Paste not possible: A tuplet would cross a measure"
+msgstr "无法粘贴：连音会超出一小节"
+
+#: mainwindow.cpp:3443
+msgid "Empty not possible because of incomplete tuplets"
+msgstr "连音不完整，无法清空"
+
+#: mainwindow.cpp:4112
+#, c-format
+msgid ""
+"NtEd version %s by Joerg Anders\n"
+"Send bug reports to %s\n"
+"\n"
+"Infos at http://vsr.informatik.tu-chemnitz.de/staff/jan/nted/nted.xhtml\n"
+"\n"
+"Author:\n"
+"               J.Anders <ja@informatik.tu-chemnitz.de>\n"
+"\n"
+"Translation: <no translation>"
+msgstr ""
+"NtEd 版本 %s by Joerg Anders\n"
+"发送 bug 至 %s\n"
+"\n"
+"http://vsr.informatik.tu-chemnitz.de/staff/jan/nted/nted.xhtml\n"
+"\n"
+"作者:\n"
+"               J.Anders <ja@informatik.tu-chemnitz.de>\n"
+"\n"
+"翻译: Tian Shixiong <tiansworld@gmail.com>"
+
+#: mainwindow.cpp:4123
+msgid ""
+"Excuse! The documentation is not available\n"
+"due to an installation error"
+msgstr ""
+"对不起！由于安装问题，文档\n"
+"不存在"
+
+#: mainwindow.cpp:4133
+msgid "Excuse! Cannot exec"
+msgstr "对不起！无法执行"
+
+#: mainwindow.cpp:4138
+msgid "Excuse! Cannot fork"
+msgstr "Excuse! Cannot fork"
+
+#: mainwindow.cpp:4880 mainwindow.cpp:4902 mainwindow.cpp:7850
+msgid "please select a note or rest first"
+msgstr "请先选择一个音符或休止符"
+
+#: mainwindow.cpp:4884 mainwindow.cpp:7854
+msgid "you cannot select an element with dot"
+msgstr "不能选择带 点 的元素"
+
+#: mainwindow.cpp:4894 mainwindow.cpp:7869
+msgid "I'm not able to create a tuplet here"
+msgstr "无法在此创建连音"
+
+#: mainwindow.cpp:4906
+msgid "selected element is not inside a tuplet"
+msgstr "选择连音外的元素"
+
+#: mainwindow.cpp:5171
+msgid "Open score"
+msgstr "打开乐谱"
+
+#: mainwindow.cpp:5211 mainwindow.cpp:6306 mainwindow.cpp:6966
+#: dialogs/lyricseditor.cpp:433 dialogs/drumconfigdialog.cpp:567
+#, c-format
+msgid "Cannot open %s for reading"
+msgstr "无法读取 %s"
+
+#: mainwindow.cpp:6105
+msgid "Import MusicXML"
+msgstr "导入 MusicXML"
+
+#: mainwindow.cpp:7030 mainwindow.cpp:7056
+msgid "Cannot list midi ports because could not open ALSA sequencer"
+msgstr "无法打开 ALSA 音序器，无法列出 midi 端口"
+
+#: mainwindow.cpp:7127
+msgid "Font selection - Measure numbers"
+msgstr "字体 - 小节号"
+
+#: mainwindow.cpp:7749
+msgid "Adjust notes ?"
+msgstr "调整音符？"
+
+#: mainwindow.cpp:8951
+msgid "Create PNG"
+msgstr "创建 PNG"
+
+#: mainwindow.cpp:9091
+msgid "Create SVG"
+msgstr "创建 SVG"
+
+#: mainwindow.cpp:9217
+msgid "Create Postscript"
+msgstr "创建 Postscript"
+
+#: mainwindow.cpp:9306
+msgid "Create PDF"
+msgstr "创建 PDF"
+
+#: mainwindow.cpp:9470 dialogs/lilypondexportdialog.cpp:70
+msgid "select staves"
+msgstr "选择乐谱"
+
+#: mainwindow.cpp:9627
+#, c-format
+msgid "Usage: %s [<filename>.ntd]\n"
+msgstr "用法：%s [<filename>.ntd]\n"
+
+#: mainwindow.cpp:9655
+msgid ""
+"unable to set decimal point to '.'. PostScript output will be erroneous. \t\t"
+"\tPlease set the $LANG environment variable appropriately!"
+msgstr ""
+"无法设置小数点 '.'。PostScript输出将出错。\t\t\t请正确设置 $LANG 环境变量！"
+
+#: resource.cpp:380
+msgid "Piano 1"
+msgstr "钢琴 1"
+
+#: resource.cpp:380
+msgid "Piano 2"
+msgstr "钢琴 2"
+
+#: resource.cpp:380
+msgid "Piano 3"
+msgstr "钢琴 3"
+
+#: resource.cpp:380
+msgid "Honky-tonk"
+msgstr "杭基汤克音乐"
+
+#: resource.cpp:381
+msgid "E.Piano 1"
+msgstr "电钢琴 1"
+
+#: resource.cpp:381
+msgid "E.Piano 2"
+msgstr "电钢琴 1"
+
+#: resource.cpp:381
+msgid "Harpsichord"
+msgstr "大键琴"
+
+#: resource.cpp:381
+msgid "Clavinet"
+msgstr "电子拨弦钢琴"
+
+#: resource.cpp:382
+msgid "Celesta"
+msgstr "钢片琴"
+
+#: resource.cpp:382
+msgid "Glockenspiel"
+msgstr "钟琴"
+
+#: resource.cpp:382
+msgid "Music Box"
+msgstr "音乐盒"
+
+#: resource.cpp:382
+msgid "Vibraphone"
+msgstr "颤音琴"
+
+#: resource.cpp:383
+msgid "Marimba"
+msgstr "马林巴琴"
+
+#: resource.cpp:383
+msgid "Xylophone"
+msgstr "木琴"
+
+#: resource.cpp:383
+msgid "Tubular Bells"
+msgstr "管钟"
+
+#: resource.cpp:383
+msgid "Dulcimer"
+msgstr "扬琴"
+
+#: resource.cpp:384
+msgid "Organ 1"
+msgstr "风琴 1"
+
+#: resource.cpp:384
+msgid "Organ 2"
+msgstr "风琴 2"
+
+#: resource.cpp:384
+msgid "Organ 3"
+msgstr "风琴 3"
+
+#: resource.cpp:384
+msgid "Church Organ"
+msgstr "教堂管风琴"
+
+#: resource.cpp:385
+msgid "Reed Organ"
+msgstr "簧风琴"
+
+#: resource.cpp:385
+msgid "Accordion"
+msgstr "手风琴"
+
+#: resource.cpp:385
+msgid "Harmonica"
+msgstr "口琴"
+
+#: resource.cpp:385
+msgid "Bandoneon"
+msgstr "南美手风琴"
+
+#: resource.cpp:386
+msgid "Nylon Guitar"
+msgstr "尼龙弦吉它"
+
+#: resource.cpp:386
+msgid "Steel Guitar"
+msgstr "钢弦吉它"
+
+#: resource.cpp:386
+msgid "Jazz Guitar"
+msgstr "爵士吉它"
+
+#: resource.cpp:386
+msgid "Clean Guitar"
+msgstr "清音吉它"
+
+#: resource.cpp:387
+msgid "Guitar Mutes"
+msgstr "吉它弱音"
+
+#: resource.cpp:387
+msgid "Overdrive Guitar"
+msgstr "过载吉它"
+
+#: resource.cpp:387
+msgid "Guitar Harmonics"
+msgstr "吉它泛音"
+
+#: resource.cpp:388
+msgid "Acoustic Bass"
+msgstr "原声贝司"
+
+#: resource.cpp:388
+msgid "Fingered Bass"
+msgstr "指弹贝司"
+
+#: resource.cpp:388
+msgid "Picked Bass"
+msgstr "拨片贝司"
+
+#: resource.cpp:388
+msgid "Fretless Bass"
+msgstr "无品贝司"
+
+#: resource.cpp:389
+msgid "Slap Bass 1"
+msgstr "Slap 贝司 1"
+
+#: resource.cpp:389
+msgid "Slap Bass 2"
+msgstr "Slap 贝司 2"
+
+#: resource.cpp:389
+msgid "Synth Bass 1"
+msgstr "合成贝司 1"
+
+#: resource.cpp:389
+msgid "Synth Bass 2"
+msgstr "合成贝司 2"
+
+#: resource.cpp:390
+msgid "Violin"
+msgstr "小提琴"
+
+#: resource.cpp:390
+msgid "Viola"
+msgstr "中提琴"
+
+#: resource.cpp:390
+msgid "Cello"
+msgstr "大提琴"
+
+#: resource.cpp:390
+msgid "Contrabass"
+msgstr "低音提琴"
+
+#: resource.cpp:391
+msgid "Tremolo Strings"
+msgstr "颤弓"
+
+#: resource.cpp:391
+msgid "Pizzicato"
+msgstr "弹拨"
+
+#: resource.cpp:391
+msgid "Harp"
+msgstr "竖琴"
+
+#: resource.cpp:391
+msgid "Timpani"
+msgstr "定音鼓"
+
+#: resource.cpp:392
+msgid "Strings"
+msgstr "弦"
+
+#: resource.cpp:392
+msgid "Slow Strings"
+msgstr "慢速弦乐"
+
+#: resource.cpp:392
+msgid "Synth Strings 1"
+msgstr "合成弦乐 1"
+
+#: resource.cpp:392
+msgid "Synth Strings 2"
+msgstr "合成弦乐 2"
+
+#: resource.cpp:393
+msgid "Choir Aahs"
+msgstr "合唱音"
+
+#: resource.cpp:393
+msgid "Voice Oohs"
+msgstr "人声"
+
+#: resource.cpp:393
+msgid "Synth Vox"
+msgstr "合成声音"
+
+#: resource.cpp:393
+msgid "Orchestra Hit"
+msgstr "管弦乐齐奏"
+
+#: resource.cpp:394
+msgid "Trumpet"
+msgstr "小号"
+
+#: resource.cpp:394
+msgid "Trombone"
+msgstr "长号"
+
+#: resource.cpp:394
+msgid "Tuba"
+msgstr "大号"
+
+#: resource.cpp:394
+msgid "Mute Trumpet"
+msgstr "弱音小号"
+
+#: resource.cpp:395
+msgid "French Horns"
+msgstr "圆号"
+
+#: resource.cpp:395
+msgid "Brass"
+msgstr "铜管乐器"
+
+#: resource.cpp:395
+msgid "Synth Brass 1"
+msgstr "合成铜管乐器 1"
+
+#: resource.cpp:395
+msgid "Synth Brass 2"
+msgstr "合成铜管乐器 2"
+
+#: resource.cpp:396
+msgid "Soprano Sax"
+msgstr "高音萨克斯"
+
+#: resource.cpp:396
+msgid "Alto Sax"
+msgstr "次中音萨克斯"
+
+#: resource.cpp:396
+msgid "Tenor Sax"
+msgstr "中音萨克斯"
+
+#: resource.cpp:396
+msgid "Baritone Sax"
+msgstr "低音萨克斯"
+
+#: resource.cpp:397
+msgid "Oboe"
+msgstr "双簧管"
+
+#: resource.cpp:397
+msgid "English Horn"
+msgstr "英国管"
+
+#: resource.cpp:397
+msgid "Bassoon"
+msgstr "低音管"
+
+#: resource.cpp:397
+msgid "Clarinet"
+msgstr "黑管"
+
+#: resource.cpp:398
+msgid "Piccolo"
+msgstr "短笛"
+
+#: resource.cpp:398
+msgid "Flute"
+msgstr "长笛"
+
+#: resource.cpp:398
+msgid "Recorder"
+msgstr "录音机"
+
+#: resource.cpp:398
+msgid "Pan Flute"
+msgstr "排笛"
+
+#: resource.cpp:399
+msgid "Bottle Chiff"
+msgstr "Bottle Chiff"
+
+#: resource.cpp:399
+msgid "Shakuhachi"
+msgstr "日本萧"
+
+#: resource.cpp:399
+msgid "Whistle"
+msgstr "口哨"
+
+#: resource.cpp:399
+msgid "Ocarina"
+msgstr "小鹅笛"
+
+#: resource.cpp:400
+msgid "Square Wave"
+msgstr "方波"
+
+#: resource.cpp:400
+msgid "Saw Wave"
+msgstr "锯齿波"
+
+#: resource.cpp:400
+msgid "Synth Calliope"
+msgstr "合成汽笛风琴"
+
+#: resource.cpp:400
+msgid "Chiffer Lead"
+msgstr "Chiffer Lead"
+
+#: resource.cpp:401
+msgid "Charang"
+msgstr "人声"
+
+#: resource.cpp:401
+msgid "Solo Vox"
+msgstr "独奏"
+
+#: resource.cpp:401
+msgid "5th Saw Wave"
+msgstr "第五种锯齿波"
+
+#: resource.cpp:401
+msgid "Bass & Lead"
+msgstr "贝司 & 主音"
+
+#: resource.cpp:402
+msgid "Fantasia"
+msgstr "幻想曲"
+
+#: resource.cpp:402
+msgid "Warm Pad"
+msgstr "温暖音色"
+
+#: resource.cpp:402
+msgid "Poly Synth"
+msgstr "多重合成"
+
+#: resource.cpp:402
+msgid "Space Voice"
+msgstr "Space Voice"
+
+#: resource.cpp:403
+msgid "Bowed Glass"
+msgstr "委婉玻璃声"
+
+#: resource.cpp:403
+msgid "Metal Pad"
+msgstr "金属长音"
+
+#: resource.cpp:403
+msgid "Halo Pad"
+msgstr "光晕长音"
+
+#: resource.cpp:403
+msgid "Sweep Pad"
+msgstr "掠过长音"
+
+#: resource.cpp:404
+msgid "Ice Rain"
+msgstr "冰雨"
+
+#: resource.cpp:404
+msgid "Soundtrack"
+msgstr "电音配乐"
+
+#: resource.cpp:404
+msgid "Crystal"
+msgstr "晶体"
+
+#: resource.cpp:404
+msgid "Atmosphere"
+msgstr "空气"
+
+#: resource.cpp:405
+msgid "Brightness"
+msgstr "愉快"
+
+#: resource.cpp:405
+msgid "Goblin"
+msgstr "Goblin"
+
+#: resource.cpp:405
+msgid "Echo Drops"
+msgstr "Echo Drops"
+
+#: resource.cpp:405
+msgid "Star Theme"
+msgstr "加星号主题"
+
+#: resource.cpp:406
+msgid "Sitar"
+msgstr "西塔琴"
+
+#: resource.cpp:406
+msgid "Banjo"
+msgstr "班卓琴"
+
+#: resource.cpp:406
+msgid "Shamisen"
+msgstr "日本三弦"
+
+#: resource.cpp:406
+msgid "Koto"
+msgstr "日本筝"
+
+#: resource.cpp:407
+msgid "Kalimba"
+msgstr "卡林巴琴"
+
+#: resource.cpp:407
+msgid "Bagpipe"
+msgstr "风笛"
+
+#: resource.cpp:407
+msgid "Fiddle"
+msgstr "提琴"
+
+#: resource.cpp:407
+msgid "Shenai"
+msgstr "唢呐"
+
+#: resource.cpp:408
+msgid "Tinker Bell"
+msgstr "叮当"
+
+#: resource.cpp:408
+msgid "Agogo"
+msgstr "摇摆舞铃"
+
+#: resource.cpp:408
+msgid "Steel Drum"
+msgstr "钢鼓"
+
+#: resource.cpp:408
+msgid "Wood Block"
+msgstr "木鱼"
+
+#: resource.cpp:409
+msgid "Taiko Drum"
+msgstr "太鼓"
+
+#: resource.cpp:409
+msgid "Melodic Tom"
+msgstr "旋律鼓"
+
+#: resource.cpp:409
+msgid "Synth Drum"
+msgstr "合成鼓"
+
+#: resource.cpp:409
+msgid "Reverse Cymbal"
+msgstr "背钹"
+
+#: resource.cpp:410
+msgid "Fret Noise"
+msgstr "换把音"
+
+#: resource.cpp:410
+msgid "Breath Noise"
+msgstr "呼吸声"
+
+#: resource.cpp:410
+msgid "Seashore"
+msgstr "海岸"
+
+#: resource.cpp:410
+msgid "Bird"
+msgstr "鸟"
+
+#: resource.cpp:411
+msgid "Telephone"
+msgstr "电话"
+
+#: resource.cpp:411
+msgid "Helicopter"
+msgstr "直升机"
+
+#: resource.cpp:411
+msgid "Applause"
+msgstr "掌声"
+
+#: resource.cpp:411
+msgid "Gun Shot"
+msgstr "枪声"
+
+#: resource.cpp:827
+msgid ""
+"Cannot open ALSA MIDI sequencer --> replay won't work :-((\n"
+"Try (as root)\n"
+"modprobe snd-seq-midi\n"
+"and restart NtEd\n"
+"Perhaps this helps(?)"
+msgstr ""
+"无法打开 ALSA MIDI 音序器 --> 无法回放 :-((\n"
+"尝试(以root用户)\n"
+"modprobe snd-seq-midi\n"
+"然后重启 NtEd\n"
+"可能有所帮助(?)"
+
+#: resource.cpp:835
+msgid "Error creating ALSA sequencer output port --> replay won't work :-(("
+msgstr "创建 ALSA 音序器输出端口时出错 --> 无法回放 :-(("
+
+#: resource.cpp:845
+msgid ""
+"Cannot open ALSA MIDI sequencer --> read/record won't work :-((\n"
+"Try (as root)\n"
+"modprobe snd-seq-midi\n"
+"and restart NtEd\n"
+"Perhaps this helps(?)"
+msgstr ""
+"无法打开 ALSA MIDI 音序器 --> 无法读取/录制 :-((\n"
+"尝试(以root用户)\n"
+"modprobe snd-seq-midi\n"
+"然后重启 NtEd\n"
+"可能有所帮助(?)"
+
+#: resource.cpp:853
+msgid "Error creating ALSA sequencer input port --> record won't work :-(("
+msgstr "创建 ALSA 音序器输入端口时出错 --> 无法录制 :-(("
+
+#: dialogs/paperconfigdialog.cpp:37 dialogs/paperconfigdialog.cpp:41
+msgid "Paper"
+msgstr "纸张"
+
+#: dialogs/paperconfigdialog.cpp:46
+msgid "paper type"
+msgstr "纸张类型"
+
+#: dialogs/paperconfigdialog.cpp:81
+msgid "orientation"
+msgstr "方向"
+
+#: dialogs/paperconfigdialog.cpp:82
+msgid "portrait"
+msgstr "纵向"
+
+#: dialogs/paperconfigdialog.cpp:83
+msgid "landscape"
+msgstr "横向"
+
+#: dialogs/portchoosedialog.cpp:46
+msgid "MIDI ports"
+msgstr "MIDI 端口"
+
+#: dialogs/portchoosedialog.cpp:60 dialogs/staffcontextdialog.cpp:321
+#: dialogs/staffcontextdialog.cpp:437 dialogs/textdialog.cpp:200
+#: dialogs/midirecordconfigdialog.cpp:133 dialogs/staffselectdialog.cpp:69
+#: dialogs/drumconfigdialog.cpp:110
+msgid "no"
+msgstr "序号"
+
+#: dialogs/portchoosedialog.cpp:62
+msgid "port"
+msgstr "端口"
+
+#: dialogs/portchoosedialog.cpp:78
+msgid "midi echo"
+msgstr "midi 回声"
+
+#: dialogs/printconfigdialog.cpp:31
+msgid "Print command"
+msgstr "打印命令"
+
+#: dialogs/printconfigdialog.cpp:35
+msgid "print command"
+msgstr "打印命令"
+
+#: dialogs/staffcontextdialog.cpp:31
+msgid "G flat Major; e flat minor"
+msgstr "降G大调；降e小调"
+
+#: dialogs/staffcontextdialog.cpp:31
+msgid "D flat Major; b flat minor"
+msgstr "降D大调；降b小调"
+
+#: dialogs/staffcontextdialog.cpp:32
+msgid "A flat Major; f minor"
+msgstr "降A大调；f小调"
+
+#: dialogs/staffcontextdialog.cpp:32
+msgid "E flat Major; c minor"
+msgstr "降E大调；c小调"
+
+#: dialogs/staffcontextdialog.cpp:33
+msgid "B flat Major; g minor"
+msgstr "降B大调；g小调"
+
+#: dialogs/staffcontextdialog.cpp:33
+msgid "F Major; d minor"
+msgstr "F大调；d小调"
+
+#: dialogs/staffcontextdialog.cpp:34
+msgid "C Major; a minor"
+msgstr "C大调；a小调"
+
+#: dialogs/staffcontextdialog.cpp:34
+msgid "G Major; e minor"
+msgstr "G大调；e小调"
+
+#: dialogs/staffcontextdialog.cpp:35
+msgid "D Major; b minor"
+msgstr "D大调；b小调"
+
+#: dialogs/staffcontextdialog.cpp:35
+msgid "A Major; f sharp minor"
+msgstr "A大调；升f小调"
+
+#: dialogs/staffcontextdialog.cpp:36
+msgid "E Major; c sharp minor"
+msgstr "E大调；升c小调"
+
+#: dialogs/staffcontextdialog.cpp:36
+msgid "B Major; g sharp minor"
+msgstr "B大调；升g小调"
+
+#: dialogs/staffcontextdialog.cpp:37
+msgid "F sharp Major; d sharp minor"
+msgstr "升F大调；升d小调"
+
+#: dialogs/staffcontextdialog.cpp:120
+msgid "Staff context"
+msgstr "乐谱内容"
+
+#: dialogs/staffcontextdialog.cpp:132 dialogs/clefconfigdialog.cpp:49
+msgid "clef"
+msgstr "谱号"
+
+#: dialogs/staffcontextdialog.cpp:157 dialogs/clefconfigdialog.cpp:74
+msgid "Octave shift:"
+msgstr "八度移动："
+
+#: dialogs/staffcontextdialog.cpp:163 dialogs/keysigdialog.cpp:66
+#: dialogs/clefconfigdialog.cpp:81
+msgid "adjust notes"
+msgstr "调整音符"
+
+#: dialogs/staffcontextdialog.cpp:200 dialogs/measureconfigdialog.cpp:110
+#: dialogs/midirecordconfigdialog.cpp:70
+msgid "time signature"
+msgstr "拍号"
+
+#: dialogs/staffcontextdialog.cpp:204 dialogs/measureconfigdialog.cpp:114
+#: dialogs/midirecordconfigdialog.cpp:74
+msgid "Numerator:"
+msgstr "分子："
+
+#: dialogs/staffcontextdialog.cpp:205 dialogs/measureconfigdialog.cpp:115
+#: dialogs/midirecordconfigdialog.cpp:75
+msgid "Denominator:"
+msgstr "分母："
+
+#: dialogs/staffcontextdialog.cpp:248
+msgid "staff name"
+msgstr "乐谱名称"
+
+#: dialogs/staffcontextdialog.cpp:255
+msgid "staff short name"
+msgstr "乐谱简称"
+
+#: dialogs/staffcontextdialog.cpp:262
+msgid "group name"
+msgstr "组名"
+
+#: dialogs/staffcontextdialog.cpp:269
+msgid "group short name"
+msgstr "组简称"
+
+#: dialogs/staffcontextdialog.cpp:278 dialogs/tempodialog.cpp:154
+#: dialogs/textdialog.cpp:138 dialogs/midirecordconfigdialog.cpp:147
+msgid "tempo"
+msgstr "速度"
+
+#: dialogs/staffcontextdialog.cpp:283
+msgid "chorus"
+msgstr "合唱"
+
+#: dialogs/staffcontextdialog.cpp:289
+msgid "transp."
+msgstr "音符移位"
+
+#: dialogs/staffcontextdialog.cpp:295
+msgid "reverb"
+msgstr "混响"
+
+#: dialogs/staffcontextdialog.cpp:301 dialogs/textdialog.cpp:123
+#: dialogs/midirecordconfigdialog.cpp:153
+msgid "volume"
+msgstr "音量"
+
+#: dialogs/staffcontextdialog.cpp:307
+msgid "pan"
+msgstr "相位"
+
+#: dialogs/staffcontextdialog.cpp:323 dialogs/textdialog.cpp:202
+#: dialogs/midirecordconfigdialog.cpp:135
+msgid "instruments"
+msgstr "乐器"
+
+#: dialogs/staffcontextdialog.cpp:332 dialogs/textdialog.cpp:150
+msgid "channel"
+msgstr "声道"
+
+#: dialogs/staffcontextdialog.cpp:337 dialogs/mutedialog.cpp:69
+msgid "muting"
+msgstr "静音"
+
+#: dialogs/staffcontextdialog.cpp:338 dialogs/staffcontextdialog.cpp:370
+#: dialogs/mutedialog.cpp:72 dialogs/selectordialog.cpp:98
+msgid "all"
+msgstr "全部"
+
+#: dialogs/staffcontextdialog.cpp:369
+msgid "voices"
+msgstr "人声"
+
+#: dialogs/staffcontextdialog.cpp:429 dialogs/staffselectdialog.cpp:58
+msgid "staff"
+msgstr "乐谱"
+
+#: dialogs/staffcontextdialog.cpp:435 dialogs/staffselectdialog.cpp:67
+msgid "item"
+msgstr "项目"
+
+#: dialogs/staffcontextdialog.cpp:485
+msgid "Score"
+msgstr "乐谱"
+
+#: dialogs/staffcontextdialog.cpp:486
+msgid "MIDI"
+msgstr "MIDI"
+
+#: dialogs/staffcontextdialog.cpp:495
+msgid "Staff position"
+msgstr "乐谱位置"
+
+#: dialogs/tupletdialog.cpp:34
+msgid "Tuplet"
+msgstr "连音"
+
+#: dialogs/tupletdialog.cpp:40
+msgid ""
+"Instead of using this dialog\n"
+"you can simply press <Ctrl> + num"
+msgstr ""
+"使用<Ctrl> + num\n"
+"取消显示此对话框"
+
+#: dialogs/tupletdialog.cpp:42
+msgid "Tuplet value:"
+msgstr "连音值："
+
+#: dialogs/tupletdialog.cpp:47
+msgid "method 2"
+msgstr "方法 2"
+
+#: dialogs/insertblockdialog.cpp:32
+msgid "Insert blocks"
+msgstr "插入小节"
+
+#: dialogs/insertblockdialog.cpp:39
+msgid "block count:"
+msgstr "小节数"
+
+#: dialogs/measureconfigdialog.cpp:53
+msgid "Measure type"
+msgstr "小节线类型"
+
+#: dialogs/measureconfigdialog.cpp:62
+msgid "measure type"
+msgstr "小节线类型"
+
+#: dialogs/measureconfigdialog.cpp:89
+msgid "alternative 1"
+msgstr "第1段"
+
+#: dialogs/measureconfigdialog.cpp:90
+msgid "alternative 2"
+msgstr "第2段"
+
+#: dialogs/measureconfigdialog.cpp:99
+msgid "hide following"
+msgstr "隐藏后面的小节"
+
+#: dialogs/measureconfigdialog.cpp:158
+msgid "enable timesig"
+msgstr "显示拍号"
+
+#: dialogs/measureconfigdialog.cpp:160
+msgid "delete timesig"
+msgstr "隐藏拍号"
+
+#: dialogs/keysigdialog.cpp:37
+msgid "New keysignature"
+msgstr "新调号"
+
+#: dialogs/keysigdialog.cpp:64
+msgid "adjust"
+msgstr "调整"
+
+#: dialogs/scoreinfodialog.cpp:71 dialogs/scoreinfodialog.cpp:75
+msgid "Score info"
+msgstr "乐谱信息"
+
+#: dialogs/scoreinfodialog.cpp:79
+msgid "Title:"
+msgstr "标题："
+
+#: dialogs/scoreinfodialog.cpp:87
+msgid "Subject:"
+msgstr "名称："
+
+#: dialogs/scoreinfodialog.cpp:95
+msgid "Composer:"
+msgstr "作曲："
+
+#: dialogs/scoreinfodialog.cpp:103
+msgid "Arranger:"
+msgstr "编曲："
+
+#: dialogs/scoreinfodialog.cpp:111
+msgid "Copyright:"
+msgstr "版权："
+
+#: dialogs/clefconfigdialog.cpp:44
+msgid "Clef configuration"
+msgstr "设置谱号"
+
+#: dialogs/volumedialog.cpp:32
+msgid "Set Volume"
+msgstr "设置音量"
+
+#: dialogs/volumedialog.cpp:44
+msgid "volume:"
+msgstr "卷："
+
+#: dialogs/tempodialog.cpp:56
+msgid "Set Tempo"
+msgstr "设置速度"
+
+#: dialogs/tempodialog.cpp:128
+msgid "kind"
+msgstr "音符类型"
+
+#: dialogs/tempodialog.cpp:150
+msgid "tempo:"
+msgstr "速度："
+
+#: dialogs/lyricseditor.cpp:67
+msgid "Lyrics"
+msgstr "歌词"
+
+#: dialogs/lyricseditor.cpp:85
+msgid "lyrics 1"
+msgstr "歌词 1"
+
+#: dialogs/lyricseditor.cpp:86
+msgid "lyrics 2"
+msgstr "歌词 2"
+
+#: dialogs/lyricseditor.cpp:87
+msgid "lyrics 3"
+msgstr "歌词 3"
+
+#: dialogs/lyricseditor.cpp:88
+msgid "lyrics 4"
+msgstr "歌词 4"
+
+#: dialogs/lyricseditor.cpp:89
+msgid "lyrics 5"
+msgstr "歌词 5"
+
+#: dialogs/lyricseditor.cpp:135 dialogs/drumconfigdialog.cpp:230
+msgid "load from file"
+msgstr "从文件载入"
+
+#: dialogs/lyricseditor.cpp:136 dialogs/drumconfigdialog.cpp:231
+msgid "save to file"
+msgstr "保存到文件"
+
+#: dialogs/lyricseditor.cpp:143 dialogs/drumconfigdialog.cpp:247
+msgid "file"
+msgstr "文件"
+
+#: dialogs/lyricseditor.cpp:292
+msgid "Save lyrics"
+msgstr "保存歌词"
+
+#: dialogs/lyricseditor.cpp:392
+msgid "Open lyrics file"
+msgstr "打开歌词文件"
+
+#: dialogs/mutedialog.cpp:34
+msgid "Muting"
+msgstr "静音"
+
+#: dialogs/mutedialog.cpp:55 dialogs/selectordialog.cpp:61
+#, c-format
+msgid "Staff %d"
+msgstr "乐谱 %d"
+
+#: dialogs/mutedialog.cpp:74 dialogs/selectordialog.cpp:100
+msgid "none"
+msgstr "没有"
+
+#: dialogs/linesdialog.cpp:40
+msgid "Lines"
+msgstr ""
+
+#: dialogs/linesdialog.cpp:46
+msgid "lines"
+msgstr ""
+
+#: dialogs/selectordialog.cpp:35
+msgid "Transpose"
+msgstr "转调"
+
+#: dialogs/selectordialog.cpp:39
+msgid "Select"
+msgstr "选择"
+
+#: dialogs/selectordialog.cpp:73
+msgid "half-tones"
+msgstr "半音"
+
+#: dialogs/selectordialog.cpp:76 dialogs/selectordialog.cpp:95
+#: chords/chorddialog.cpp:159
+msgid "selection"
+msgstr "选择"
+
+#: dialogs/selectordialog.cpp:87
+msgid "use selection"
+msgstr "使用选择"
+
+#: dialogs/textdialog.cpp:69
+msgid "Text"
+msgstr "文本"
+
+#: dialogs/textdialog.cpp:89 chords/chorddialog.cpp:111
+msgid "text"
+msgstr "文本"
+
+#: dialogs/textdialog.cpp:98
+msgid "select font"
+msgstr "选择字体"
+
+#: dialogs/textdialog.cpp:105
+msgid "anchor"
+msgstr "文字位置"
+
+#: dialogs/textdialog.cpp:108
+msgid "left"
+msgstr "左"
+
+#: dialogs/textdialog.cpp:109
+msgid "mid"
+msgstr "中"
+
+#: dialogs/textdialog.cpp:110
+msgid "right"
+msgstr "右"
+
+#: dialogs/textdialog.cpp:130
+msgid "enable volume change"
+msgstr "启用音量变更"
+
+#: dialogs/textdialog.cpp:143
+msgid "enable tempo change"
+msgstr "启用速度变更"
+
+#: dialogs/textdialog.cpp:155
+msgid "enable channel change"
+msgstr "启用声道变更"
+
+#: dialogs/textdialog.cpp:162
+msgid "D.S"
+msgstr "D.S"
+
+#: dialogs/textdialog.cpp:165
+msgid "No segno meaning"
+msgstr "无反复意义"
+
+#: dialogs/textdialog.cpp:166
+msgid "D.S. al Fine"
+msgstr "D.S. al Fine"
+
+#: dialogs/textdialog.cpp:167
+msgid "D.S. al Coda"
+msgstr "D.S. al Coda"
+
+#: dialogs/textdialog.cpp:168
+msgid "D. Capo al Fine"
+msgstr "D. Capo al Fine"
+
+#: dialogs/textdialog.cpp:169
+msgid "D. Capo al Coda"
+msgstr "D. Capo al Coda"
+
+#: dialogs/textdialog.cpp:170
+msgid "Fine"
+msgstr "Fine"
+
+#: dialogs/textdialog.cpp:171
+msgid "al Coda"
+msgstr "al Coda"
+
+#: dialogs/textdialog.cpp:219
+msgid "instrument"
+msgstr "乐器"
+
+#: dialogs/textdialog.cpp:220
+msgid "enable instrument change"
+msgstr "启用乐器变更"
+
+#: dialogs/signsdialog.cpp:44
+msgid "Signs"
+msgstr "记号"
+
+#: dialogs/signsdialog.cpp:50
+msgid "signs"
+msgstr "记号"
+
+#: dialogs/midiimportdialog.cpp:43
+msgid "MIDI import"
+msgstr "MIDI 导入"
+
+#: dialogs/midiimportdialog.cpp:70 dialogs/midirecordconfigdialog.cpp:103
+msgid "triplet recognition"
+msgstr "三连音识别"
+
+#: dialogs/midiimportdialog.cpp:72
+msgid "sort instruments"
+msgstr "分类乐器"
+
+#: dialogs/midiimportdialog.cpp:73 dialogs/midirecordconfigdialog.cpp:105
+msgid "force piano"
+msgstr "强制使用钢琴谱"
+
+#: dialogs/midiimportdialog.cpp:74 dialogs/midirecordconfigdialog.cpp:107
+msgid "don't split tracks"
+msgstr "不分割音轨"
+
+#: dialogs/midiimportdialog.cpp:83
+msgid "tempo density"
+msgstr "节拍密度"
+
+#: dialogs/midiimportdialog.cpp:89
+msgid "volume density"
+msgstr "音量密度"
+
+#: dialogs/midirecordconfigdialog.cpp:65
+msgid "Config Record"
+msgstr "录音设置"
+
+#: dialogs/lilypondexportdialog.cpp:63
+msgid "export params"
+msgstr "导出选项"
+
+#: dialogs/lilypondexportdialog.cpp:66
+msgid "create line breaks"
+msgstr ""
+
+#: dialogs/lilypondexportdialog.cpp:74
+msgid "keep beams"
+msgstr "保留符尾"
+
+#: dialogs/lilypondexportdialog.cpp:172
+msgid "Staff selection"
+msgstr "乐谱选择"
+
+#: dialogs/lilypondexportdialog.cpp:181
+msgid "keep beams selection"
+msgstr "保留符尾"
+
+#: dialogs/staffselectdialog.cpp:76
+msgid "All"
+msgstr "全部"
+
+#: dialogs/staffselectdialog.cpp:79
+msgid "None"
+msgstr "无"
+
+#: dialogs/spacementdialog.cpp:34
+msgid "Horizontal Spacement"
+msgstr "水平间距"
+
+#: dialogs/spacementdialog.cpp:40
+msgid "Spacement"
+msgstr "间距"
+
+#: dialogs/scaledialog.cpp:35 dialogs/scaledialog.cpp:40
+msgid "Scale"
+msgstr "比例"
+
+#: dialogs/drumconfigdialog.cpp:90
+msgid "Config Drums"
+msgstr "鼓设置"
+
+#: dialogs/drumconfigdialog.cpp:112
+msgid "drum element name"
+msgstr "鼓名称"
+
+#: dialogs/drumconfigdialog.cpp:114
+msgid "short name"
+msgstr "缩写"
+
+#: dialogs/drumconfigdialog.cpp:116
+msgid "line"
+msgstr ""
+
+#: dialogs/drumconfigdialog.cpp:119
+msgid "symbol"
+msgstr "记号"
+
+#: dialogs/drumconfigdialog.cpp:121
+msgid "midi pitch"
+msgstr "midi 音高"
+
+#: dialogs/drumconfigdialog.cpp:192
+msgid "change element"
+msgstr "更改样式"
+
+#: dialogs/drumconfigdialog.cpp:197
+msgid "note head"
+msgstr "符头"
+
+#: dialogs/drumconfigdialog.cpp:223
+msgid "preview"
+msgstr "预览"
+
+#: dialogs/drumconfigdialog.cpp:232
+msgid "load defaults"
+msgstr "载入默认设置"
+
+#: dialogs/drumconfigdialog.cpp:233
+msgid "play element"
+msgstr "播放内容"
+
+#: dialogs/drumconfigdialog.cpp:446
+msgid "Save drum configuration"
+msgstr "保存鼓设置"
+
+#: dialogs/drumconfigdialog.cpp:537
+msgid "Open drum configuration"
+msgstr "打开鼓设置"
+
+#: dialogs/chordnamedialog.cpp:50 dialogs/chordnamedialog.cpp:54
+msgid "Chordname"
+msgstr "和弦名称"
+
+#: dialogs/chordnamedialog.cpp:61
+msgid "chordname"
+msgstr "和弦名称"
+
+#: dialogs/chordnamedialog.cpp:80
+msgid "size"
+msgstr "大小"
+
+#: dialogs/chordnamedialog.cpp:84
+msgid "position"
+msgstr "位置"
+
+#: dialogs/tools.cpp:372 dialogs/tools.cpp:392
+msgid "Toolbox"
+msgstr "工具"
+
+#: chords/chorddialog.cpp:95
+msgid "Chords"
+msgstr "和弦"
+
+#: chords/chorddialog.cpp:99
+msgid "chord"
+msgstr "和弦"
+
+#: chords/chorddialog.cpp:109
+msgid "config"
+msgstr "设置"
+
+#: chords/chorddialog.cpp:112
+msgid "diagram"
+msgstr "和弦图"
+
+#: chords/chorddialog.cpp:133
+msgid "root"
+msgstr "根音"
+
+#: chords/chorddialog.cpp:150
+msgid "mody"
+msgstr "类型"
+
+#: chords/chorddialog.cpp:169
+msgid "chordselect"
+msgstr "选择和弦"

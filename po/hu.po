@@ -1,0 +1,2461 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: NtEd\n"
+"Report-Msgid-Bugs-To: ja@informatik.tu-chemnitz.de\n"
+"POT-Creation-Date: 2011-01-27 14:18+0100\n"
+"PO-Revision-Date: 2007-12-03 22:00+0100\n"
+"Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
+"Language-Team: Hungarian <debian-l10n-hungarian@lists.d.o>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural>1;\n"
+"X-Poedit-Language: Hungarian\n"
+"X-Poedit-Country: HUNGARY\n"
+
+#: mainwindow.cpp:310
+msgid "_File"
+msgstr "_Fájl"
+
+#: mainwindow.cpp:311
+msgid "Open_Recent"
+msgstr "Legutóbbi megnyitása"
+
+#: mainwindow.cpp:312
+msgid "_Export"
+msgstr "_Export"
+
+#: mainwindow.cpp:313
+msgid "_View"
+msgstr "Nézet"
+
+#: mainwindow.cpp:314
+msgid "_Edit"
+msgstr "Sz_erkesztés"
+
+#: mainwindow.cpp:315
+msgid "_Tools"
+msgstr ""
+
+#: mainwindow.cpp:316
+msgid "_System layout ..."
+msgstr ""
+
+#: mainwindow.cpp:317
+msgid "_Insert"
+msgstr "Be_szúrás"
+
+#: mainwindow.cpp:318
+#, fuzzy
+msgid "_Upbeat ..."
+msgstr "Megnyitás ..."
+
+#: mainwindow.cpp:319
+msgid "_Preferences ..."
+msgstr ""
+
+#: mainwindow.cpp:320
+msgid "_Dynamics ..."
+msgstr ""
+
+#: mainwindow.cpp:321
+msgid "_Lyrics"
+msgstr ""
+
+#: mainwindow.cpp:322
+msgid "_Help"
+msgstr ""
+
+#: mainwindow.cpp:323
+#, fuzzy
+msgid "Configure MIDI out..."
+msgstr "MIDI beállítás..."
+
+#: mainwindow.cpp:323
+#, fuzzy
+msgid "configure MIDI output"
+msgstr "MIDI beállítás..."
+
+#: mainwindow.cpp:324
+#, fuzzy
+msgid "Configure MIDI in..."
+msgstr "MIDI beállítás..."
+
+#: mainwindow.cpp:324
+#, fuzzy
+msgid "configure MIDI input"
+msgstr "MIDI beállítás..."
+
+#: mainwindow.cpp:325
+msgid "Configure Paper..."
+msgstr "Papír beállítása..."
+
+#: mainwindow.cpp:325
+msgid "configure paper"
+msgstr "papír beállítása"
+
+#: mainwindow.cpp:326
+#, fuzzy
+msgid "Configure Print..."
+msgstr "Nyomtatás beállítása..."
+
+#: mainwindow.cpp:326
+msgid "configure print command"
+msgstr "nyomtató parancs beállítása"
+
+#: mainwindow.cpp:327
+msgid "New"
+msgstr "Új"
+
+#: mainwindow.cpp:327
+msgid "New File"
+msgstr "Új fájl"
+
+#: mainwindow.cpp:328
+msgid "Open  ..."
+msgstr "Megnyitás ..."
+
+#: mainwindow.cpp:328
+msgid "Open a file"
+msgstr "Fájl megnyitása"
+
+#: mainwindow.cpp:329
+msgid "Save  ..."
+msgstr "Mentés ..."
+
+#: mainwindow.cpp:329 mainwindow.cpp:330
+msgid "Save a file"
+msgstr "Fájl mentése"
+
+#: mainwindow.cpp:330
+msgid "Save As  ..."
+msgstr "Mentés mint ..."
+
+#: mainwindow.cpp:331
+msgid "Print"
+msgstr "Nyomtatás"
+
+#: mainwindow.cpp:331
+msgid "print file"
+msgstr "fájl nyomtatása"
+
+#: mainwindow.cpp:332
+msgid "Import MusicXML ..."
+msgstr ""
+
+#: mainwindow.cpp:332
+#, fuzzy
+msgid "import a musicxml file"
+msgstr "exportálás midi fájlba"
+
+#: mainwindow.cpp:333
+#, fuzzy
+msgid "Import MIDI..."
+msgstr "MIDI export ..."
+
+#: mainwindow.cpp:333
+#, fuzzy
+msgid "import a midi file"
+msgstr "exportálás midi fájlba"
+
+#: mainwindow.cpp:334
+#, fuzzy
+msgid "Import MIDI(2)..."
+msgstr "MIDI export ..."
+
+#: mainwindow.cpp:334
+#, fuzzy
+msgid "import a midi file(2)"
+msgstr "exportálás midi fájlba"
+
+#: mainwindow.cpp:335
+msgid "Copy"
+msgstr "Másolás"
+
+#: mainwindow.cpp:335
+msgid "copy - Ctrl + C"
+msgstr "másolás - Ctrl + C"
+
+#: mainwindow.cpp:336
+msgid "Paste"
+msgstr "Beillesztés"
+
+#: mainwindow.cpp:336
+msgid "paste - Ctrl + V"
+msgstr "beillesztés - Ctrl + V"
+
+#: mainwindow.cpp:337
+msgid "Delete block"
+msgstr "Blokk törlése"
+
+#: mainwindow.cpp:337
+msgid "delete block - Ctrl + X"
+msgstr "blokk törlése - Ctrl + X"
+
+#: mainwindow.cpp:338
+#, fuzzy
+msgid "append a system at end"
+msgstr "egy üres lap hozzáadása"
+
+#: mainwindow.cpp:338
+#, fuzzy
+msgid "append system - Ctrl + B"
+msgstr "beillesztés - Ctrl + V"
+
+#: mainwindow.cpp:339
+msgid "Insert block"
+msgstr "Blokk beszúrása"
+
+#: mainwindow.cpp:339
+msgid "insert block"
+msgstr "blokk beszúrása"
+
+#: mainwindow.cpp:340
+#, fuzzy
+msgid "Insert clef ..."
+msgstr "Szünet beszúrása - 'r'"
+
+#: mainwindow.cpp:340
+#, fuzzy
+msgid "insert a clef"
+msgstr "egy basszuskulcs hozzáadása"
+
+#: mainwindow.cpp:341
+msgid "Empty block"
+msgstr "Üres blokk"
+
+#: mainwindow.cpp:341
+msgid "empty block - Ctrl + E"
+msgstr "üres blokk - Ctrl + E"
+
+#: mainwindow.cpp:342
+msgid "reposit all"
+msgstr ""
+
+#: mainwindow.cpp:342
+msgid "reposit the whole score - Ctrl + T"
+msgstr ""
+
+#: mainwindow.cpp:343
+msgid "Export MIDI  ..."
+msgstr "MIDI export ..."
+
+#: mainwindow.cpp:343
+msgid "export a midi file"
+msgstr "exportálás midi fájlba"
+
+#: mainwindow.cpp:344
+#, fuzzy
+msgid "Export LilyPond  ..."
+msgstr "P_S export ..."
+
+#: mainwindow.cpp:344 dialogs/lilypondexportdialog.cpp:44
+msgid "LilyPond export"
+msgstr ""
+
+#: mainwindow.cpp:346
+#, fuzzy
+msgid "Export PDF ..."
+msgstr "P_S export ..."
+
+#: mainwindow.cpp:346
+#, fuzzy
+msgid "export PDF"
+msgstr "P_NG export"
+
+#: mainwindow.cpp:348
+#, fuzzy
+msgid "Export P_NG ..."
+msgstr "P_S export ..."
+
+#: mainwindow.cpp:348
+msgid "Write a png image"
+msgstr "PNG kép írása"
+
+#: mainwindow.cpp:350
+#, fuzzy
+msgid "Export S_VG ..."
+msgstr "P_S export ..."
+
+#: mainwindow.cpp:350
+#, fuzzy
+msgid "Write an svg image"
+msgstr "PNG kép írása"
+
+#: mainwindow.cpp:352
+msgid "Export P_S ..."
+msgstr "P_S export ..."
+
+#: mainwindow.cpp:352
+msgid "Write PostScript"
+msgstr "PostScript írása"
+
+#: mainwindow.cpp:353
+msgid "New Window"
+msgstr ""
+
+#: mainwindow.cpp:353
+msgid "Open a new window"
+msgstr ""
+
+#: mainwindow.cpp:354
+#, fuzzy
+msgid "Excerpt ..."
+msgstr "P_S export ..."
+
+#: mainwindow.cpp:354
+msgid "Make an excerpt of the score"
+msgstr ""
+
+#: mainwindow.cpp:355
+msgid "Close Window"
+msgstr ""
+
+#: mainwindow.cpp:355
+msgid "Close current window"
+msgstr ""
+
+#: mainwindow.cpp:358
+msgid "Remove last page"
+msgstr "Utolsó lap törlése"
+
+#: mainwindow.cpp:358
+msgid "remove the last page"
+msgstr "az utolsó lap törlése"
+
+#: mainwindow.cpp:359
+#, fuzzy
+msgid "Remove empty pages"
+msgstr "Utolsó lap törlése"
+
+#: mainwindow.cpp:359
+#, fuzzy
+msgid "remove empty pages at end"
+msgstr "az utolsó lap törlése"
+
+#: mainwindow.cpp:360
+msgid "Change spacement ..."
+msgstr ""
+
+#: mainwindow.cpp:360
+msgid "change the horizontal spacement"
+msgstr ""
+
+#: mainwindow.cpp:361
+#, fuzzy
+msgid "Change Scale ..."
+msgstr "Szünet beszúrása - 'r'"
+
+#: mainwindow.cpp:361
+#, fuzzy
+msgid "change scale"
+msgstr "csatorna"
+
+#: mainwindow.cpp:362
+#, fuzzy
+msgid "Configure Record ..."
+msgstr "Papír beállítása..."
+
+#: mainwindow.cpp:362
+#, fuzzy
+msgid "configure record"
+msgstr "Nted beállítás"
+
+#: mainwindow.cpp:363
+#, fuzzy
+msgid "Configure Drums ..."
+msgstr "MIDI beállítás..."
+
+#: mainwindow.cpp:363
+#, fuzzy
+msgid "configure drums"
+msgstr "papír beállítása"
+
+#: mainwindow.cpp:364
+msgid "Tools ..."
+msgstr ""
+
+#: mainwindow.cpp:364
+msgid "Tools "
+msgstr ""
+
+#: mainwindow.cpp:365
+msgid "give first measure"
+msgstr ""
+
+#: mainwindow.cpp:365
+msgid "set upbeat by giving the start of first full measure"
+msgstr ""
+
+#: mainwindow.cpp:366
+msgid "give start"
+msgstr ""
+
+#: mainwindow.cpp:366
+msgid "set upbeat by giving the start of the score"
+msgstr ""
+
+#: mainwindow.cpp:367
+#, fuzzy
+msgid "Score info ..."
+msgstr "Mentés ..."
+
+#: mainwindow.cpp:367
+msgid "edit score info"
+msgstr ""
+
+#: mainwindow.cpp:368
+#, fuzzy
+msgid "Insert keysig ... "
+msgstr "Szünet beszúrása - 'r'"
+
+#: mainwindow.cpp:368
+#, fuzzy
+msgid "insert a key signature"
+msgstr "egy üres lap beszúrása"
+
+#: mainwindow.cpp:369
+#, fuzzy
+msgid "Insert lines ... "
+msgstr "Szünet beszúrása - 'r'"
+
+#: mainwindow.cpp:369
+#, fuzzy
+msgid "insert a horizontal line"
+msgstr "egy alt kulcs beszúrása"
+
+#: mainwindow.cpp:370
+#, fuzzy
+msgid "Insert sign ... "
+msgstr "Szünet beszúrása - 'r'"
+
+#: mainwindow.cpp:370
+#, fuzzy
+msgid "insert a free placeable sign"
+msgstr "egy üres lap beszúrása"
+
+#: mainwindow.cpp:371
+msgid "Slur"
+msgstr ""
+
+#: mainwindow.cpp:371
+#, fuzzy
+msgid "insert a slur - Ctrl+H"
+msgstr "egy basszuskulcs hozzáadása"
+
+#: mainwindow.cpp:372
+#, fuzzy
+msgid "chord ..."
+msgstr "Mentés ..."
+
+#: mainwindow.cpp:372
+#, fuzzy
+msgid "insert a chord"
+msgstr "egy basszuskulcs hozzáadása"
+
+#: mainwindow.cpp:373
+#, fuzzy
+msgid "chordname ..."
+msgstr "Mentés ..."
+
+#: mainwindow.cpp:373
+#, fuzzy
+msgid "insert a chordname"
+msgstr "egy basszuskulcs hozzáadása"
+
+#: mainwindow.cpp:374
+msgid "spacer"
+msgstr ""
+
+#: mainwindow.cpp:374
+#, fuzzy
+msgid "insert a staff spacer"
+msgstr "egy üres lap beszúrása"
+
+#: mainwindow.cpp:375
+#, fuzzy
+msgid "Append staff"
+msgstr "Lap hozzáadása"
+
+#: mainwindow.cpp:375
+msgid "append a new staff"
+msgstr ""
+
+#: mainwindow.cpp:376
+#, fuzzy
+msgid "Import recorded"
+msgstr "MIDI export ..."
+
+#: mainwindow.cpp:376
+msgid "import recorded staff"
+msgstr ""
+
+#: mainwindow.cpp:377
+msgid "Lyrics editor ..."
+msgstr ""
+
+#: mainwindow.cpp:377
+msgid "edit lyrics in text editor"
+msgstr ""
+
+#: mainwindow.cpp:378
+msgid "ppp"
+msgstr ""
+
+#: mainwindow.cpp:378
+#, fuzzy
+msgid "insert ppp"
+msgstr "Lap beszúrása"
+
+#: mainwindow.cpp:379
+msgid "pp"
+msgstr ""
+
+#: mainwindow.cpp:379
+#, fuzzy
+msgid "insert pp"
+msgstr "Lap beszúrása"
+
+#: mainwindow.cpp:380
+msgid "p"
+msgstr ""
+
+#: mainwindow.cpp:380
+#, fuzzy
+msgid "insert p"
+msgstr "Lap beszúrása"
+
+#: mainwindow.cpp:381
+msgid "mp"
+msgstr ""
+
+#: mainwindow.cpp:381
+#, fuzzy
+msgid "insert mp"
+msgstr "Lap beszúrása"
+
+#: mainwindow.cpp:382
+msgid "sp"
+msgstr ""
+
+#: mainwindow.cpp:382
+#, fuzzy
+msgid "insert sp"
+msgstr "Lap beszúrása"
+
+#: mainwindow.cpp:383
+msgid "mf"
+msgstr ""
+
+#: mainwindow.cpp:383
+#, fuzzy
+msgid "insert mf"
+msgstr "egy basszuskulcs hozzáadása"
+
+#: mainwindow.cpp:384
+msgid "sf"
+msgstr ""
+
+#: mainwindow.cpp:384
+#, fuzzy
+msgid "insert sf"
+msgstr "egy basszuskulcs hozzáadása"
+
+#: mainwindow.cpp:385
+msgid "f"
+msgstr ""
+
+#: mainwindow.cpp:385
+#, fuzzy
+msgid "insert f"
+msgstr "egy basszuskulcs hozzáadása"
+
+#: mainwindow.cpp:386
+msgid "ff"
+msgstr ""
+
+#: mainwindow.cpp:386
+#, fuzzy
+msgid "insert ff"
+msgstr "egy basszuskulcs hozzáadása"
+
+#: mainwindow.cpp:387
+msgid "fff"
+msgstr ""
+
+#: mainwindow.cpp:387
+#, fuzzy
+msgid "insert fff"
+msgstr "egy basszuskulcs hozzáadása"
+
+#: mainwindow.cpp:388
+#, fuzzy
+msgid "tempo ..."
+msgstr "tempó"
+
+#: mainwindow.cpp:388
+#, fuzzy
+msgid "insert tempo"
+msgstr "Lap beszúrása"
+
+#: mainwindow.cpp:389
+#, fuzzy
+msgid "Text ..."
+msgstr "Megnyitás ..."
+
+#: mainwindow.cpp:389
+#, fuzzy
+msgid "insert text"
+msgstr "Lap beszúrása"
+
+#: mainwindow.cpp:390
+#, fuzzy
+msgid "accelerando"
+msgstr "egy basszuskulcs hozzáadása"
+
+#: mainwindow.cpp:390
+#, fuzzy
+msgid "insert accelerando"
+msgstr "egy basszuskulcs hozzáadása"
+
+#: mainwindow.cpp:391
+msgid "ritardando"
+msgstr ""
+
+#: mainwindow.cpp:391
+#, fuzzy
+msgid "insert ritardando"
+msgstr "Lap beszúrása"
+
+#: mainwindow.cpp:392
+#, fuzzy
+msgid "lyrics1"
+msgstr "blokk beszúrása"
+
+#: mainwindow.cpp:392
+#, fuzzy
+msgid "insert lyrics at line 1"
+msgstr "blokk beszúrása"
+
+#: mainwindow.cpp:393
+#, fuzzy
+msgid "lyrics2"
+msgstr "blokk beszúrása"
+
+#: mainwindow.cpp:393
+#, fuzzy
+msgid "insert lyrics at line 2"
+msgstr "blokk beszúrása"
+
+#: mainwindow.cpp:394
+#, fuzzy
+msgid "lyrics3"
+msgstr "blokk beszúrása"
+
+#: mainwindow.cpp:394
+#, fuzzy
+msgid "insert lyrics at line 3"
+msgstr "blokk beszúrása"
+
+#: mainwindow.cpp:395
+#, fuzzy
+msgid "lyrics4"
+msgstr "blokk beszúrása"
+
+#: mainwindow.cpp:395
+#, fuzzy
+msgid "insert lyrics at line 4"
+msgstr "blokk beszúrása"
+
+#: mainwindow.cpp:396
+#, fuzzy
+msgid "lyrics5"
+msgstr "blokk beszúrása"
+
+#: mainwindow.cpp:396
+#, fuzzy
+msgid "insert lyrics at line 5"
+msgstr "blokk beszúrása"
+
+#: mainwindow.cpp:397
+msgid "Insert tuplet ..."
+msgstr ""
+
+#: mainwindow.cpp:397
+msgid "insert a tuplet (Ctrl + num)"
+msgstr ""
+
+#: mainwindow.cpp:398
+msgid "brace"
+msgstr ""
+
+#: mainwindow.cpp:398
+msgid "group staves by means of a brace"
+msgstr ""
+
+#: mainwindow.cpp:399
+msgid "bracket"
+msgstr ""
+
+#: mainwindow.cpp:399
+msgid "group staves by means of a bracket"
+msgstr ""
+
+#: mainwindow.cpp:400
+msgid "connect barlines"
+msgstr ""
+
+#: mainwindow.cpp:400
+msgid "set connected bar lines"
+msgstr ""
+
+#: mainwindow.cpp:401
+msgid "remove group"
+msgstr ""
+
+#: mainwindow.cpp:401
+msgid "remove a group of connected staves"
+msgstr ""
+
+#: mainwindow.cpp:402
+msgid "Remove tuplet"
+msgstr ""
+
+#: mainwindow.cpp:402
+msgid "remove a tuplet"
+msgstr ""
+
+#: mainwindow.cpp:403
+msgid "Muting ..."
+msgstr ""
+
+#: mainwindow.cpp:403
+msgid "mute some staves"
+msgstr ""
+
+#: mainwindow.cpp:404
+msgid "Transpose ..."
+msgstr ""
+
+#: mainwindow.cpp:404
+msgid "transpose"
+msgstr ""
+
+#: mainwindow.cpp:405
+msgid "hide rests"
+msgstr ""
+
+#: mainwindow.cpp:405
+msgid "hide (selected) rests"
+msgstr ""
+
+#: mainwindow.cpp:406
+msgid "unhide rests"
+msgstr ""
+
+#: mainwindow.cpp:406
+msgid "unhide (selected) rests"
+msgstr ""
+
+#: mainwindow.cpp:407
+msgid "hide rests (all v.)"
+msgstr ""
+
+#: mainwindow.cpp:407
+msgid "hide selected rests (all v.)"
+msgstr ""
+
+#: mainwindow.cpp:408
+msgid "unhide rests (all v.)"
+msgstr ""
+
+#: mainwindow.cpp:408
+msgid "unhide selected rests (all v.)"
+msgstr ""
+
+#: mainwindow.cpp:409
+msgid "set all to sharp ..."
+msgstr ""
+
+#: mainwindow.cpp:409
+msgid "set all flats to sharp"
+msgstr ""
+
+#: mainwindow.cpp:410
+msgid "set all to flat ..."
+msgstr ""
+
+#: mainwindow.cpp:410
+msgid "set all sharps to flat"
+msgstr ""
+
+#: mainwindow.cpp:411
+msgid "About NtEd"
+msgstr "NtEd névjegy"
+
+#: mainwindow.cpp:413
+#, fuzzy
+msgid "Documentation ..."
+msgstr "irány"
+
+#: mainwindow.cpp:415
+msgid "License"
+msgstr "Licenc"
+
+#: mainwindow.cpp:416
+msgid "E_xit"
+msgstr "Kilépés"
+
+#: mainwindow.cpp:416
+msgid "Exit the program"
+msgstr "Kilépés a programból"
+
+#: mainwindow.cpp:420
+msgid "play"
+msgstr "lejátszás"
+
+#: mainwindow.cpp:421
+msgid "voices in different colors"
+msgstr "más színű szólamok"
+
+#: mainwindow.cpp:422
+#, fuzzy
+msgid "show measure numbers"
+msgstr "Betűválasztás - ütemszámok"
+
+#: mainwindow.cpp:423
+msgid "show hidden elements"
+msgstr ""
+
+#: mainwindow.cpp:424
+msgid "midi input"
+msgstr ""
+
+#: mainwindow.cpp:425
+msgid "record midi"
+msgstr ""
+
+#: mainwindow.cpp:425
+#, fuzzy
+msgid "record midi - i"
+msgstr "exportálás midi fájlba"
+
+#: mainwindow.cpp:429
+#, fuzzy
+msgid "in"
+msgstr "_Fájl"
+
+#: mainwindow.cpp:429
+msgid "Zoom in Ctrl + +"
+msgstr "Nagyítás Ctrl + +"
+
+#: mainwindow.cpp:430
+#, fuzzy
+msgid "out"
+msgstr "_Névjegy"
+
+#: mainwindow.cpp:430
+msgid "Zoom out Ctrl + -"
+msgstr "Kicsinyítés Ctrl + -"
+
+#: mainwindow.cpp:431
+#, fuzzy
+msgid "undo"
+msgstr "nincs"
+
+#: mainwindow.cpp:431
+msgid "Undo Ctrl + z"
+msgstr "Vissza Ctrl + z"
+
+#: mainwindow.cpp:432
+msgid "redo"
+msgstr ""
+
+#: mainwindow.cpp:432
+msgid "Redo Ctrl + y"
+msgstr "Újra Ctrl + y"
+
+#: mainwindow.cpp:433
+#, fuzzy
+msgid "customize beam"
+msgstr "beillesztés - Ctrl + V"
+
+#: mainwindow.cpp:433
+#, fuzzy
+msgid "customize beam - Ctrl + j"
+msgstr "beillesztés - Ctrl + V"
+
+#: mainwindow.cpp:434
+#, fuzzy
+msgid "flip stem"
+msgstr "beillesztés - Ctrl + V"
+
+#: mainwindow.cpp:434
+#, fuzzy
+msgid "flip stem - Ctrl + f"
+msgstr "beillesztés - Ctrl + V"
+
+#: mainwindow.cpp:438
+#, fuzzy
+msgid "insert"
+msgstr "Lap beszúrása"
+
+#: mainwindow.cpp:438
+msgid "Toggle Insert/Erase Mode - n"
+msgstr ""
+
+#: mainwindow.cpp:442
+msgid "page"
+msgstr ""
+
+#: mainwindow.cpp:442
+msgid "Page Mode - p"
+msgstr "Lap mód - p"
+
+#: mainwindow.cpp:443 dialogs/staffcontextdialog.cpp:177
+#: dialogs/keysigdialog.cpp:42 dialogs/midirecordconfigdialog.cpp:160
+msgid "key"
+msgstr "módosító"
+
+#: mainwindow.cpp:443
+msgid "Keyboard insert mode - k"
+msgstr ""
+
+#: mainwindow.cpp:1625
+msgid "Cannot replay because could not open ALSA sequencer"
+msgstr ""
+"A lejátszás nem sikerült, mert nem sikerült megnyitni az ALSA szekvenszert."
+
+#: mainwindow.cpp:2776 mainwindow.cpp:5110 mainwindow.cpp:5156
+#: mainwindow.cpp:6090 mainwindow.cpp:6180 mainwindow.cpp:6937
+#: mainwindow.cpp:9584
+msgid "Save Changes ?"
+msgstr "Mented a változásokat?"
+
+#: mainwindow.cpp:2894 mainwindow.cpp:2995 mainwindow.cpp:3576
+#: mainwindow.cpp:3696 mainwindow.cpp:9035 mainwindow.cpp:9147
+#: mainwindow.cpp:9271 mainwindow.cpp:9360 dialogs/lyricseditor.cpp:350
+#: dialogs/drumconfigdialog.cpp:493
+#, c-format
+msgid "Cannot open %s for writing"
+msgstr "%s nem nyitható meg írásra"
+
+#: mainwindow.cpp:2905 mainwindow.cpp:3009
+#, fuzzy, c-format
+msgid "Cannot rename %s to %s"
+msgstr "%s nem nyitható meg írásra"
+
+#: mainwindow.cpp:2940
+msgid "Save score"
+msgstr "Kotta mentése"
+
+#: mainwindow.cpp:2982 mainwindow.cpp:3564 mainwindow.cpp:3684
+#: mainwindow.cpp:8995 mainwindow.cpp:9135 mainwindow.cpp:9259
+#: mainwindow.cpp:9348 dialogs/lyricseditor.cpp:336
+#: dialogs/drumconfigdialog.cpp:479
+#, c-format
+msgid "File %s already exists. Overwrite ?"
+msgstr "%s fájl létezik. Felülírod?"
+
+#: mainwindow.cpp:3272 mainwindow.cpp:3416
+msgid "Please select a note or rest!"
+msgstr "Válassz egy hangjegyet vagy szünetjelet!"
+
+#: mainwindow.cpp:3277
+msgid "You select a note in an tuplet"
+msgstr ""
+
+#: mainwindow.cpp:3281
+msgid "You cannot copy incomplete tuplets!"
+msgstr ""
+
+#: mainwindow.cpp:3296
+msgid "Paste not possible: A tuplet would cross a measure"
+msgstr ""
+
+#: mainwindow.cpp:3443
+msgid "Empty not possible because of incomplete tuplets"
+msgstr ""
+
+#: mainwindow.cpp:4112
+#, fuzzy, c-format
+msgid ""
+"NtEd version %s by Joerg Anders\n"
+"Send bug reports to %s\n"
+"\n"
+"Infos at http://vsr.informatik.tu-chemnitz.de/staff/jan/nted/nted.xhtml\n"
+"\n"
+"Author:\n"
+"               J.Anders <ja@informatik.tu-chemnitz.de>\n"
+"\n"
+"Translation: <no translation>"
+msgstr ""
+"NtEd %s verzió, írta: Joerg Anders\n"
+"A hibákat itt jelezd: ja@informatik.tu-chemnitz.de\n"
+"Leírás itt:  http://vsr.informatik.tu-chemnitz.de/staff/jan/nted/nted.xhtml\n"
+"Magyar fordítás: <SZERVÁC Attila>"
+
+#: mainwindow.cpp:4123
+msgid ""
+"Excuse! The documentation is not available\n"
+"due to an installation error"
+msgstr ""
+
+#: mainwindow.cpp:4133
+msgid "Excuse! Cannot exec"
+msgstr ""
+
+#: mainwindow.cpp:4138
+msgid "Excuse! Cannot fork"
+msgstr ""
+
+#: mainwindow.cpp:4880 mainwindow.cpp:4902 mainwindow.cpp:7850
+msgid "please select a note or rest first"
+msgstr "először válassz egy hangot vagy szünetet"
+
+#: mainwindow.cpp:4884 mainwindow.cpp:7854
+msgid "you cannot select an element with dot"
+msgstr ""
+
+#: mainwindow.cpp:4894 mainwindow.cpp:7869
+msgid "I'm not able to create a tuplet here"
+msgstr ""
+
+#: mainwindow.cpp:4906
+msgid "selected element is not inside a tuplet"
+msgstr ""
+
+#: mainwindow.cpp:5171
+msgid "Open score"
+msgstr "Kotta megnyitása"
+
+#: mainwindow.cpp:5211 mainwindow.cpp:6306 mainwindow.cpp:6966
+#: dialogs/lyricseditor.cpp:433 dialogs/drumconfigdialog.cpp:567
+#, c-format
+msgid "Cannot open %s for reading"
+msgstr "%s nem nyitható meg olvasásra"
+
+#: mainwindow.cpp:6105
+msgid "Import MusicXML"
+msgstr ""
+
+#: mainwindow.cpp:7030 mainwindow.cpp:7056
+msgid "Cannot list midi ports because could not open ALSA sequencer"
+msgstr ""
+"A midi portok nem listázhatók, mert nem tudta megnyitni az ALSA szekvenszert"
+
+#: mainwindow.cpp:7127
+msgid "Font selection - Measure numbers"
+msgstr "Betűválasztás - ütemszámok"
+
+#: mainwindow.cpp:7749
+msgid "Adjust notes ?"
+msgstr ""
+
+#: mainwindow.cpp:8951
+#, fuzzy
+msgid "Create PNG"
+msgstr "PNG létrehozása"
+
+#: mainwindow.cpp:9091
+#, fuzzy
+msgid "Create SVG"
+msgstr "PNG létrehozása"
+
+#: mainwindow.cpp:9217
+msgid "Create Postscript"
+msgstr "Postscript létrehozása"
+
+#: mainwindow.cpp:9306
+#, fuzzy
+msgid "Create PDF"
+msgstr "PNG létrehozása"
+
+#: mainwindow.cpp:9470 dialogs/lilypondexportdialog.cpp:70
+#, fuzzy
+msgid "select staves"
+msgstr "Cseleszta"
+
+#: mainwindow.cpp:9627
+#, c-format
+msgid "Usage: %s [<filename>.ntd]\n"
+msgstr "Használat: %s [<fájlnév>.ntd]\n"
+
+#: mainwindow.cpp:9655
+msgid ""
+"unable to set decimal point to '.'. PostScript output will be erroneous. \t\t"
+"\tPlease set the $LANG environment variable appropriately!"
+msgstr ""
+
+#: resource.cpp:380
+msgid "Piano 1"
+msgstr "Zongora 1"
+
+#: resource.cpp:380
+msgid "Piano 2"
+msgstr "Zongora 2"
+
+#: resource.cpp:380
+msgid "Piano 3"
+msgstr "Zongora 3"
+
+#: resource.cpp:380
+msgid "Honky-tonk"
+msgstr ""
+
+#: resource.cpp:381
+msgid "E.Piano 1"
+msgstr "E.Zongora 1"
+
+#: resource.cpp:381
+msgid "E.Piano 2"
+msgstr "E.Zongora 2"
+
+#: resource.cpp:381
+msgid "Harpsichord"
+msgstr "Csembaló"
+
+#: resource.cpp:381
+msgid "Clavinet"
+msgstr ""
+
+#: resource.cpp:382
+msgid "Celesta"
+msgstr "Cseleszta"
+
+#: resource.cpp:382
+msgid "Glockenspiel"
+msgstr ""
+
+#: resource.cpp:382
+msgid "Music Box"
+msgstr ""
+
+#: resource.cpp:382
+msgid "Vibraphone"
+msgstr "Vibrafon"
+
+#: resource.cpp:383
+msgid "Marimba"
+msgstr "Marimba"
+
+#: resource.cpp:383
+msgid "Xylophone"
+msgstr "Xilofon"
+
+#: resource.cpp:383
+msgid "Tubular Bells"
+msgstr "Csőharang"
+
+#: resource.cpp:383
+msgid "Dulcimer"
+msgstr ""
+
+#: resource.cpp:384
+msgid "Organ 1"
+msgstr "Orgona 1"
+
+#: resource.cpp:384
+msgid "Organ 2"
+msgstr "Orgona 2"
+
+#: resource.cpp:384
+msgid "Organ 3"
+msgstr "Orgona 3"
+
+#: resource.cpp:384
+msgid "Church Organ"
+msgstr ""
+
+#: resource.cpp:385
+msgid "Reed Organ"
+msgstr ""
+
+#: resource.cpp:385
+msgid "Accordion"
+msgstr ""
+
+#: resource.cpp:385
+msgid "Harmonica"
+msgstr "Harmonika"
+
+#: resource.cpp:385
+msgid "Bandoneon"
+msgstr ""
+
+#: resource.cpp:386
+msgid "Nylon Guitar"
+msgstr ""
+
+#: resource.cpp:386
+msgid "Steel Guitar"
+msgstr ""
+
+#: resource.cpp:386
+msgid "Jazz Guitar"
+msgstr "Jazz Gitár"
+
+#: resource.cpp:386
+msgid "Clean Guitar"
+msgstr ""
+
+#: resource.cpp:387
+msgid "Guitar Mutes"
+msgstr ""
+
+#: resource.cpp:387
+msgid "Overdrive Guitar"
+msgstr ""
+
+#: resource.cpp:387
+msgid "Guitar Harmonics"
+msgstr ""
+
+#: resource.cpp:388
+msgid "Acoustic Bass"
+msgstr ""
+
+#: resource.cpp:388
+msgid "Fingered Bass"
+msgstr ""
+
+#: resource.cpp:388
+msgid "Picked Bass"
+msgstr ""
+
+#: resource.cpp:388
+msgid "Fretless Bass"
+msgstr ""
+
+#: resource.cpp:389
+msgid "Slap Bass 1"
+msgstr ""
+
+#: resource.cpp:389
+msgid "Slap Bass 2"
+msgstr ""
+
+#: resource.cpp:389
+msgid "Synth Bass 1"
+msgstr "Szinti Basszus 1"
+
+#: resource.cpp:389
+msgid "Synth Bass 2"
+msgstr "Szinti Basszus 2"
+
+#: resource.cpp:390
+msgid "Violin"
+msgstr "Hegedű"
+
+#: resource.cpp:390
+msgid "Viola"
+msgstr "Brácsa"
+
+#: resource.cpp:390
+msgid "Cello"
+msgstr "Cselló"
+
+#: resource.cpp:390
+msgid "Contrabass"
+msgstr "Bőgő"
+
+#: resource.cpp:391
+msgid "Tremolo Strings"
+msgstr "Vonóstremoló"
+
+#: resource.cpp:391
+msgid "Pizzicato"
+msgstr "Pizzicato"
+
+#: resource.cpp:391
+msgid "Harp"
+msgstr "Hárfa"
+
+#: resource.cpp:391
+msgid "Timpani"
+msgstr "Üstdob"
+
+#: resource.cpp:392
+msgid "Strings"
+msgstr "Vonósok"
+
+#: resource.cpp:392
+msgid "Slow Strings"
+msgstr ""
+
+#: resource.cpp:392
+msgid "Synth Strings 1"
+msgstr "Szinti vonósok 1"
+
+#: resource.cpp:392
+msgid "Synth Strings 2"
+msgstr "Szinti vonósok 2"
+
+#: resource.cpp:393
+msgid "Choir Aahs"
+msgstr "Kórus A"
+
+#: resource.cpp:393
+msgid "Voice Oohs"
+msgstr "Énekhang O"
+
+#: resource.cpp:393
+msgid "Synth Vox"
+msgstr "Szinti énekhang"
+
+#: resource.cpp:393
+msgid "Orchestra Hit"
+msgstr "Zenekari ütés"
+
+#: resource.cpp:394
+msgid "Trumpet"
+msgstr "Trombita"
+
+#: resource.cpp:394
+msgid "Trombone"
+msgstr "Harsona"
+
+#: resource.cpp:394
+msgid "Tuba"
+msgstr "Tuba"
+
+#: resource.cpp:394
+msgid "Mute Trumpet"
+msgstr "Szordinált trombita"
+
+#: resource.cpp:395
+msgid "French Horns"
+msgstr "Franciakürt"
+
+#: resource.cpp:395
+msgid "Brass"
+msgstr "Rezesek"
+
+#: resource.cpp:395
+msgid "Synth Brass 1"
+msgstr "Szinti rezesek 1"
+
+#: resource.cpp:395
+msgid "Synth Brass 2"
+msgstr "Szinti rezesek 2"
+
+#: resource.cpp:396
+msgid "Soprano Sax"
+msgstr "Szopránszaxofon"
+
+#: resource.cpp:396
+msgid "Alto Sax"
+msgstr "Altszaxofon"
+
+#: resource.cpp:396
+msgid "Tenor Sax"
+msgstr "Tenorszaxofon"
+
+#: resource.cpp:396
+msgid "Baritone Sax"
+msgstr "Baritonszaxofon"
+
+#: resource.cpp:397
+msgid "Oboe"
+msgstr "Oboa"
+
+#: resource.cpp:397
+msgid "English Horn"
+msgstr "Angolkürt"
+
+#: resource.cpp:397
+msgid "Bassoon"
+msgstr "Fagott"
+
+#: resource.cpp:397
+msgid "Clarinet"
+msgstr "Klarinét"
+
+#: resource.cpp:398
+msgid "Piccolo"
+msgstr "Pikkoló"
+
+#: resource.cpp:398
+msgid "Flute"
+msgstr "Fuvola"
+
+#: resource.cpp:398
+msgid "Recorder"
+msgstr "Furulya"
+
+#: resource.cpp:398
+msgid "Pan Flute"
+msgstr "Pánsíp"
+
+#: resource.cpp:399
+msgid "Bottle Chiff"
+msgstr ""
+
+#: resource.cpp:399
+msgid "Shakuhachi"
+msgstr "Sakuhacsi"
+
+#: resource.cpp:399
+msgid "Whistle"
+msgstr "Síp"
+
+#: resource.cpp:399
+msgid "Ocarina"
+msgstr "Okarína"
+
+#: resource.cpp:400
+msgid "Square Wave"
+msgstr "Négyzetes hullám"
+
+#: resource.cpp:400
+msgid "Saw Wave"
+msgstr "Fűrészfogú hullám"
+
+#: resource.cpp:400
+msgid "Synth Calliope"
+msgstr ""
+
+#: resource.cpp:400
+msgid "Chiffer Lead"
+msgstr ""
+
+#: resource.cpp:401
+msgid "Charang"
+msgstr ""
+
+#: resource.cpp:401
+msgid "Solo Vox"
+msgstr ""
+
+#: resource.cpp:401
+msgid "5th Saw Wave"
+msgstr ""
+
+#: resource.cpp:401
+msgid "Bass & Lead"
+msgstr ""
+
+#: resource.cpp:402
+msgid "Fantasia"
+msgstr ""
+
+#: resource.cpp:402
+msgid "Warm Pad"
+msgstr ""
+
+#: resource.cpp:402
+msgid "Poly Synth"
+msgstr ""
+
+#: resource.cpp:402
+msgid "Space Voice"
+msgstr ""
+
+#: resource.cpp:403
+msgid "Bowed Glass"
+msgstr ""
+
+#: resource.cpp:403
+msgid "Metal Pad"
+msgstr ""
+
+#: resource.cpp:403
+msgid "Halo Pad"
+msgstr ""
+
+#: resource.cpp:403
+msgid "Sweep Pad"
+msgstr ""
+
+#: resource.cpp:404
+msgid "Ice Rain"
+msgstr "Jégeső"
+
+#: resource.cpp:404
+msgid "Soundtrack"
+msgstr "Hangsáv"
+
+#: resource.cpp:404
+msgid "Crystal"
+msgstr "Kristály"
+
+#: resource.cpp:404
+msgid "Atmosphere"
+msgstr "Atmoszféra"
+
+#: resource.cpp:405
+msgid "Brightness"
+msgstr "Ragyogás"
+
+#: resource.cpp:405
+msgid "Goblin"
+msgstr "Manó"
+
+#: resource.cpp:405
+msgid "Echo Drops"
+msgstr "Visszhang"
+
+#: resource.cpp:405
+msgid "Star Theme"
+msgstr "Csillag téma"
+
+#: resource.cpp:406
+msgid "Sitar"
+msgstr "Szitár"
+
+#: resource.cpp:406
+msgid "Banjo"
+msgstr "Bendzsó"
+
+#: resource.cpp:406
+msgid "Shamisen"
+msgstr "Samiszen"
+
+#: resource.cpp:406
+msgid "Koto"
+msgstr "Koto"
+
+#: resource.cpp:407
+msgid "Kalimba"
+msgstr "Kalimba"
+
+#: resource.cpp:407
+msgid "Bagpipe"
+msgstr "Duda"
+
+#: resource.cpp:407
+msgid "Fiddle"
+msgstr ""
+
+#: resource.cpp:407
+msgid "Shenai"
+msgstr ""
+
+#: resource.cpp:408
+msgid "Tinker Bell"
+msgstr ""
+
+#: resource.cpp:408
+msgid "Agogo"
+msgstr ""
+
+#: resource.cpp:408
+msgid "Steel Drum"
+msgstr ""
+
+#: resource.cpp:408
+msgid "Wood Block"
+msgstr ""
+
+#: resource.cpp:409
+msgid "Taiko Drum"
+msgstr ""
+
+#: resource.cpp:409
+msgid "Melodic Tom"
+msgstr ""
+
+#: resource.cpp:409
+msgid "Synth Drum"
+msgstr ""
+
+#: resource.cpp:409
+msgid "Reverse Cymbal"
+msgstr ""
+
+#: resource.cpp:410
+msgid "Fret Noise"
+msgstr ""
+
+#: resource.cpp:410
+msgid "Breath Noise"
+msgstr ""
+
+#: resource.cpp:410
+msgid "Seashore"
+msgstr ""
+
+#: resource.cpp:410
+msgid "Bird"
+msgstr ""
+
+#: resource.cpp:411
+msgid "Telephone"
+msgstr ""
+
+#: resource.cpp:411
+msgid "Helicopter"
+msgstr ""
+
+#: resource.cpp:411
+msgid "Applause"
+msgstr ""
+
+#: resource.cpp:411
+msgid "Gun Shot"
+msgstr ""
+
+#: resource.cpp:827
+msgid ""
+"Cannot open ALSA MIDI sequencer --> replay won't work :-((\n"
+"Try (as root)\n"
+"modprobe snd-seq-midi\n"
+"and restart NtEd\n"
+"Perhaps this helps(?)"
+msgstr ""
+"Nem tudom megnyitni az ALSA MIDI szekvenszert --> a lejátszás nem működik :-"
+"((\n"
+"Próbáld ezt (mint root)\n"
+"modprobe snd-seq-midi\n"
+"és indítsd újra az NtEd programot\n"
+"Lehet, hogy ez segít(?)"
+
+#: resource.cpp:835
+msgid "Error creating ALSA sequencer output port --> replay won't work :-(("
+msgstr ""
+
+#: resource.cpp:845
+#, fuzzy
+msgid ""
+"Cannot open ALSA MIDI sequencer --> read/record won't work :-((\n"
+"Try (as root)\n"
+"modprobe snd-seq-midi\n"
+"and restart NtEd\n"
+"Perhaps this helps(?)"
+msgstr ""
+"Nem tudom megnyitni az ALSA MIDI szekvenszert --> a lejátszás nem működik :-"
+"((\n"
+"Próbáld ezt (mint root)\n"
+"modprobe snd-seq-midi\n"
+"és indítsd újra az NtEd programot\n"
+"Lehet, hogy ez segít(?)"
+
+#: resource.cpp:853
+msgid "Error creating ALSA sequencer input port --> record won't work :-(("
+msgstr ""
+
+#: dialogs/paperconfigdialog.cpp:37 dialogs/paperconfigdialog.cpp:41
+msgid "Paper"
+msgstr "Papír"
+
+#: dialogs/paperconfigdialog.cpp:46
+msgid "paper type"
+msgstr "papír típusa"
+
+#: dialogs/paperconfigdialog.cpp:81
+msgid "orientation"
+msgstr "irány"
+
+#: dialogs/paperconfigdialog.cpp:82
+msgid "portrait"
+msgstr "portré"
+
+#: dialogs/paperconfigdialog.cpp:83
+msgid "landscape"
+msgstr "tájkép"
+
+#: dialogs/portchoosedialog.cpp:46
+msgid "MIDI ports"
+msgstr "MIDI portok"
+
+#: dialogs/portchoosedialog.cpp:60 dialogs/staffcontextdialog.cpp:321
+#: dialogs/staffcontextdialog.cpp:437 dialogs/textdialog.cpp:200
+#: dialogs/midirecordconfigdialog.cpp:133 dialogs/staffselectdialog.cpp:69
+#: dialogs/drumconfigdialog.cpp:110
+msgid "no"
+msgstr "nincs"
+
+#: dialogs/portchoosedialog.cpp:62
+msgid "port"
+msgstr "port"
+
+#: dialogs/portchoosedialog.cpp:78
+msgid "midi echo"
+msgstr "midi visszhang"
+
+#: dialogs/printconfigdialog.cpp:31
+msgid "Print command"
+msgstr "Nyomató parancs"
+
+#: dialogs/printconfigdialog.cpp:35
+msgid "print command"
+msgstr "nyomtató parancs"
+
+#: dialogs/staffcontextdialog.cpp:31
+msgid "G flat Major; e flat minor"
+msgstr "Gesz dúr; esz moll"
+
+#: dialogs/staffcontextdialog.cpp:31
+msgid "D flat Major; b flat minor"
+msgstr "Desz dúr; b moll"
+
+#: dialogs/staffcontextdialog.cpp:32
+msgid "A flat Major; f minor"
+msgstr "Asz dúr; f moll"
+
+#: dialogs/staffcontextdialog.cpp:32
+msgid "E flat Major; c minor"
+msgstr "Esz dúr; c moll"
+
+#: dialogs/staffcontextdialog.cpp:33
+msgid "B flat Major; g minor"
+msgstr "B dúr; g moll"
+
+#: dialogs/staffcontextdialog.cpp:33
+msgid "F Major; d minor"
+msgstr "F dúr; d moll"
+
+#: dialogs/staffcontextdialog.cpp:34
+msgid "C Major; a minor"
+msgstr "C dúr; a moll"
+
+#: dialogs/staffcontextdialog.cpp:34
+msgid "G Major; e minor"
+msgstr "G dúr; e moll"
+
+#: dialogs/staffcontextdialog.cpp:35
+msgid "D Major; b minor"
+msgstr "D dúr; h moll"
+
+#: dialogs/staffcontextdialog.cpp:35
+msgid "A Major; f sharp minor"
+msgstr "A dúr; fisz moll"
+
+#: dialogs/staffcontextdialog.cpp:36
+msgid "E Major; c sharp minor"
+msgstr "E dúr; cisz moll"
+
+#: dialogs/staffcontextdialog.cpp:36
+msgid "B Major; g sharp minor"
+msgstr "H dúr; gisz moll"
+
+#: dialogs/staffcontextdialog.cpp:37
+msgid "F sharp Major; d sharp minor"
+msgstr "Fisz moll; disz moll"
+
+#: dialogs/staffcontextdialog.cpp:120
+msgid "Staff context"
+msgstr ""
+
+#: dialogs/staffcontextdialog.cpp:132 dialogs/clefconfigdialog.cpp:49
+msgid "clef"
+msgstr "kulcs"
+
+#: dialogs/staffcontextdialog.cpp:157 dialogs/clefconfigdialog.cpp:74
+msgid "Octave shift:"
+msgstr ""
+
+#: dialogs/staffcontextdialog.cpp:163 dialogs/keysigdialog.cpp:66
+#: dialogs/clefconfigdialog.cpp:81
+#, fuzzy
+msgid "adjust notes"
+msgstr "leszállított hangok"
+
+#: dialogs/staffcontextdialog.cpp:200 dialogs/measureconfigdialog.cpp:110
+#: dialogs/midirecordconfigdialog.cpp:70
+msgid "time signature"
+msgstr "ütemmutató"
+
+#: dialogs/staffcontextdialog.cpp:204 dialogs/measureconfigdialog.cpp:114
+#: dialogs/midirecordconfigdialog.cpp:74
+msgid "Numerator:"
+msgstr "Számláló:"
+
+#: dialogs/staffcontextdialog.cpp:205 dialogs/measureconfigdialog.cpp:115
+#: dialogs/midirecordconfigdialog.cpp:75
+msgid "Denominator:"
+msgstr "Nevező:"
+
+#: dialogs/staffcontextdialog.cpp:248
+msgid "staff name"
+msgstr ""
+
+#: dialogs/staffcontextdialog.cpp:255
+msgid "staff short name"
+msgstr ""
+
+#: dialogs/staffcontextdialog.cpp:262
+#, fuzzy
+msgid "group name"
+msgstr "Mentés ..."
+
+#: dialogs/staffcontextdialog.cpp:269
+#, fuzzy
+msgid "group short name"
+msgstr "Mentés ..."
+
+#: dialogs/staffcontextdialog.cpp:278 dialogs/tempodialog.cpp:154
+#: dialogs/textdialog.cpp:138 dialogs/midirecordconfigdialog.cpp:147
+msgid "tempo"
+msgstr "tempó"
+
+#: dialogs/staffcontextdialog.cpp:283
+#, fuzzy
+msgid "chorus"
+msgstr "Visszhang"
+
+#: dialogs/staffcontextdialog.cpp:289
+msgid "transp."
+msgstr ""
+
+#: dialogs/staffcontextdialog.cpp:295
+msgid "reverb"
+msgstr ""
+
+#: dialogs/staffcontextdialog.cpp:301 dialogs/textdialog.cpp:123
+#: dialogs/midirecordconfigdialog.cpp:153
+msgid "volume"
+msgstr "hangerő"
+
+#: dialogs/staffcontextdialog.cpp:307
+#, fuzzy
+msgid "pan"
+msgstr "Üstdob"
+
+#: dialogs/staffcontextdialog.cpp:323 dialogs/textdialog.cpp:202
+#: dialogs/midirecordconfigdialog.cpp:135
+msgid "instruments"
+msgstr "hangszerek"
+
+#: dialogs/staffcontextdialog.cpp:332 dialogs/textdialog.cpp:150
+msgid "channel"
+msgstr "csatorna"
+
+#: dialogs/staffcontextdialog.cpp:337 dialogs/mutedialog.cpp:69
+#, fuzzy
+msgid "muting"
+msgstr "Vonósok"
+
+#: dialogs/staffcontextdialog.cpp:338 dialogs/staffcontextdialog.cpp:370
+#: dialogs/mutedialog.cpp:72 dialogs/selectordialog.cpp:98
+msgid "all"
+msgstr ""
+
+#: dialogs/staffcontextdialog.cpp:369
+#, fuzzy
+msgid "voices"
+msgstr "Énekhang O"
+
+#: dialogs/staffcontextdialog.cpp:429 dialogs/staffselectdialog.cpp:58
+msgid "staff"
+msgstr ""
+
+#: dialogs/staffcontextdialog.cpp:435 dialogs/staffselectdialog.cpp:67
+msgid "item"
+msgstr "elem"
+
+#: dialogs/staffcontextdialog.cpp:485
+msgid "Score"
+msgstr "Kotta"
+
+#: dialogs/staffcontextdialog.cpp:486
+msgid "MIDI"
+msgstr "MIDI"
+
+#: dialogs/staffcontextdialog.cpp:495
+msgid "Staff position"
+msgstr ""
+
+#: dialogs/tupletdialog.cpp:34
+msgid "Tuplet"
+msgstr ""
+
+#: dialogs/tupletdialog.cpp:40
+msgid ""
+"Instead of using this dialog\n"
+"you can simply press <Ctrl> + num"
+msgstr ""
+
+#: dialogs/tupletdialog.cpp:42
+msgid "Tuplet value:"
+msgstr ""
+
+#: dialogs/tupletdialog.cpp:47
+msgid "method 2"
+msgstr "2. mód"
+
+#: dialogs/insertblockdialog.cpp:32
+msgid "Insert blocks"
+msgstr "Blokkok beszúrása"
+
+#: dialogs/insertblockdialog.cpp:39
+msgid "block count:"
+msgstr "blokk szám:"
+
+#: dialogs/measureconfigdialog.cpp:53
+msgid "Measure type"
+msgstr "Ütem típus"
+
+#: dialogs/measureconfigdialog.cpp:62
+msgid "measure type"
+msgstr "ütem típus"
+
+#: dialogs/measureconfigdialog.cpp:89
+msgid "alternative 1"
+msgstr "1. variáns"
+
+#: dialogs/measureconfigdialog.cpp:90
+msgid "alternative 2"
+msgstr "2. variáns"
+
+#: dialogs/measureconfigdialog.cpp:99
+msgid "hide following"
+msgstr ""
+
+#: dialogs/measureconfigdialog.cpp:158
+msgid "enable timesig"
+msgstr "metrum bekapcsolása"
+
+#: dialogs/measureconfigdialog.cpp:160
+msgid "delete timesig"
+msgstr "metrum törlése"
+
+#: dialogs/keysigdialog.cpp:37
+#, fuzzy
+msgid "New keysignature"
+msgstr "ütemmutató"
+
+#: dialogs/keysigdialog.cpp:64
+msgid "adjust"
+msgstr ""
+
+#: dialogs/scoreinfodialog.cpp:71 dialogs/scoreinfodialog.cpp:75
+#, fuzzy
+msgid "Score info"
+msgstr "Kotta"
+
+#: dialogs/scoreinfodialog.cpp:79
+#, fuzzy
+msgid "Title:"
+msgstr "Síp"
+
+#: dialogs/scoreinfodialog.cpp:87
+msgid "Subject:"
+msgstr ""
+
+#: dialogs/scoreinfodialog.cpp:95
+msgid "Composer:"
+msgstr ""
+
+#: dialogs/scoreinfodialog.cpp:103
+msgid "Arranger:"
+msgstr ""
+
+#: dialogs/scoreinfodialog.cpp:111
+msgid "Copyright:"
+msgstr ""
+
+#: dialogs/clefconfigdialog.cpp:44
+msgid "Clef configuration"
+msgstr ""
+
+#: dialogs/volumedialog.cpp:32
+#, fuzzy
+msgid "Set Volume"
+msgstr "hangerő"
+
+#: dialogs/volumedialog.cpp:44
+#, fuzzy
+msgid "volume:"
+msgstr "hangerő"
+
+#: dialogs/tempodialog.cpp:56
+#, fuzzy
+msgid "Set Tempo"
+msgstr "tempó"
+
+#: dialogs/tempodialog.cpp:128
+msgid "kind"
+msgstr ""
+
+#: dialogs/tempodialog.cpp:150
+#, fuzzy
+msgid "tempo:"
+msgstr "tempó"
+
+#: dialogs/lyricseditor.cpp:67
+#, fuzzy
+msgid "Lyrics"
+msgstr "blokk beszúrása"
+
+#: dialogs/lyricseditor.cpp:85
+#, fuzzy
+msgid "lyrics 1"
+msgstr "blokk beszúrása"
+
+#: dialogs/lyricseditor.cpp:86
+#, fuzzy
+msgid "lyrics 2"
+msgstr "blokk beszúrása"
+
+#: dialogs/lyricseditor.cpp:87
+#, fuzzy
+msgid "lyrics 3"
+msgstr "blokk beszúrása"
+
+#: dialogs/lyricseditor.cpp:88
+#, fuzzy
+msgid "lyrics 4"
+msgstr "blokk beszúrása"
+
+#: dialogs/lyricseditor.cpp:89
+#, fuzzy
+msgid "lyrics 5"
+msgstr "blokk beszúrása"
+
+#: dialogs/lyricseditor.cpp:135 dialogs/drumconfigdialog.cpp:230
+msgid "load from file"
+msgstr ""
+
+#: dialogs/lyricseditor.cpp:136 dialogs/drumconfigdialog.cpp:231
+#, fuzzy
+msgid "save to file"
+msgstr "Fájl mentése"
+
+#: dialogs/lyricseditor.cpp:143 dialogs/drumconfigdialog.cpp:247
+#, fuzzy
+msgid "file"
+msgstr "_Fájl"
+
+#: dialogs/lyricseditor.cpp:292
+#, fuzzy
+msgid "Save lyrics"
+msgstr "blokk beszúrása"
+
+#: dialogs/lyricseditor.cpp:392
+#, fuzzy
+msgid "Open lyrics file"
+msgstr "Fájl megnyitása"
+
+#: dialogs/mutedialog.cpp:34
+#, fuzzy
+msgid "Muting"
+msgstr "Vonósok"
+
+#: dialogs/mutedialog.cpp:55 dialogs/selectordialog.cpp:61
+#, c-format
+msgid "Staff %d"
+msgstr ""
+
+#: dialogs/mutedialog.cpp:74 dialogs/selectordialog.cpp:100
+#, fuzzy
+msgid "none"
+msgstr "nincs"
+
+#: dialogs/linesdialog.cpp:40
+#, fuzzy
+msgid "Lines"
+msgstr "Licenc"
+
+#: dialogs/linesdialog.cpp:46
+#, fuzzy
+msgid "lines"
+msgstr "Klarinét"
+
+#: dialogs/selectordialog.cpp:35
+msgid "Transpose"
+msgstr ""
+
+#: dialogs/selectordialog.cpp:39
+#, fuzzy
+msgid "Select"
+msgstr "Cseleszta"
+
+#: dialogs/selectordialog.cpp:73
+msgid "half-tones"
+msgstr ""
+
+#: dialogs/selectordialog.cpp:76 dialogs/selectordialog.cpp:95
+#: chords/chorddialog.cpp:159
+msgid "selection"
+msgstr ""
+
+#: dialogs/selectordialog.cpp:87
+msgid "use selection"
+msgstr ""
+
+#: dialogs/textdialog.cpp:69
+msgid "Text"
+msgstr ""
+
+#: dialogs/textdialog.cpp:89 chords/chorddialog.cpp:111
+msgid "text"
+msgstr ""
+
+#: dialogs/textdialog.cpp:98
+msgid "select font"
+msgstr ""
+
+#: dialogs/textdialog.cpp:105
+#, fuzzy
+msgid "anchor"
+msgstr "Visszhang"
+
+#: dialogs/textdialog.cpp:108
+#, fuzzy
+msgid "left"
+msgstr "kulcs"
+
+#: dialogs/textdialog.cpp:109
+msgid "mid"
+msgstr ""
+
+#: dialogs/textdialog.cpp:110
+#, fuzzy
+msgid "right"
+msgstr "Ragyogás"
+
+#: dialogs/textdialog.cpp:130
+msgid "enable volume change"
+msgstr ""
+
+#: dialogs/textdialog.cpp:143
+#, fuzzy
+msgid "enable tempo change"
+msgstr "metrum bekapcsolása"
+
+#: dialogs/textdialog.cpp:155
+#, fuzzy
+msgid "enable channel change"
+msgstr "metrum bekapcsolása"
+
+#: dialogs/textdialog.cpp:162
+msgid "D.S"
+msgstr ""
+
+#: dialogs/textdialog.cpp:165
+msgid "No segno meaning"
+msgstr ""
+
+#: dialogs/textdialog.cpp:166
+msgid "D.S. al Fine"
+msgstr ""
+
+#: dialogs/textdialog.cpp:167
+msgid "D.S. al Coda"
+msgstr ""
+
+#: dialogs/textdialog.cpp:168
+msgid "D. Capo al Fine"
+msgstr ""
+
+#: dialogs/textdialog.cpp:169
+msgid "D. Capo al Coda"
+msgstr ""
+
+#: dialogs/textdialog.cpp:170
+#, fuzzy
+msgid "Fine"
+msgstr "_Fájl"
+
+#: dialogs/textdialog.cpp:171
+msgid "al Coda"
+msgstr ""
+
+#: dialogs/textdialog.cpp:219
+#, fuzzy
+msgid "instrument"
+msgstr "hangszerek"
+
+#: dialogs/textdialog.cpp:220
+#, fuzzy
+msgid "enable instrument change"
+msgstr "metrum bekapcsolása"
+
+#: dialogs/signsdialog.cpp:44
+#, fuzzy
+msgid "Signs"
+msgstr "Vonósok"
+
+#: dialogs/signsdialog.cpp:50
+#, fuzzy
+msgid "signs"
+msgstr "Licenc"
+
+#: dialogs/midiimportdialog.cpp:43
+#, fuzzy
+msgid "MIDI import"
+msgstr "MIDI portok"
+
+#: dialogs/midiimportdialog.cpp:70 dialogs/midirecordconfigdialog.cpp:103
+msgid "triplet recognition"
+msgstr ""
+
+#: dialogs/midiimportdialog.cpp:72
+#, fuzzy
+msgid "sort instruments"
+msgstr "hangszerek"
+
+#: dialogs/midiimportdialog.cpp:73 dialogs/midirecordconfigdialog.cpp:105
+#, fuzzy
+msgid "force piano"
+msgstr "Kotta"
+
+#: dialogs/midiimportdialog.cpp:74 dialogs/midirecordconfigdialog.cpp:107
+msgid "don't split tracks"
+msgstr ""
+
+#: dialogs/midiimportdialog.cpp:83
+msgid "tempo density"
+msgstr ""
+
+#: dialogs/midiimportdialog.cpp:89
+#, fuzzy
+msgid "volume density"
+msgstr "hangerő"
+
+#: dialogs/midirecordconfigdialog.cpp:65
+#, fuzzy
+msgid "Config Record"
+msgstr "_Beállítás"
+
+#: dialogs/lilypondexportdialog.cpp:63
+msgid "export params"
+msgstr ""
+
+#: dialogs/lilypondexportdialog.cpp:66
+msgid "create line breaks"
+msgstr ""
+
+#: dialogs/lilypondexportdialog.cpp:74
+msgid "keep beams"
+msgstr ""
+
+#: dialogs/lilypondexportdialog.cpp:172
+msgid "Staff selection"
+msgstr ""
+
+#: dialogs/lilypondexportdialog.cpp:181
+msgid "keep beams selection"
+msgstr ""
+
+#: dialogs/staffselectdialog.cpp:76
+msgid "All"
+msgstr ""
+
+#: dialogs/staffselectdialog.cpp:79
+#, fuzzy
+msgid "None"
+msgstr "nincs"
+
+#: dialogs/spacementdialog.cpp:34
+msgid "Horizontal Spacement"
+msgstr ""
+
+#: dialogs/spacementdialog.cpp:40
+msgid "Spacement"
+msgstr ""
+
+#: dialogs/scaledialog.cpp:35 dialogs/scaledialog.cpp:40
+#, fuzzy
+msgid "Scale"
+msgstr "kulcs"
+
+#: dialogs/drumconfigdialog.cpp:90
+#, fuzzy
+msgid "Config Drums"
+msgstr "MIDI beállítás..."
+
+#: dialogs/drumconfigdialog.cpp:112
+msgid "drum element name"
+msgstr ""
+
+#: dialogs/drumconfigdialog.cpp:114
+#, fuzzy
+msgid "short name"
+msgstr "Mentés ..."
+
+#: dialogs/drumconfigdialog.cpp:116
+#, fuzzy
+msgid "line"
+msgstr "Klarinét"
+
+#: dialogs/drumconfigdialog.cpp:119
+msgid "symbol"
+msgstr ""
+
+#: dialogs/drumconfigdialog.cpp:121
+#, fuzzy
+msgid "midi pitch"
+msgstr "midi visszhang"
+
+#: dialogs/drumconfigdialog.cpp:192
+#, fuzzy
+msgid "change element"
+msgstr "csatorna"
+
+#: dialogs/drumconfigdialog.cpp:197
+msgid "note head"
+msgstr ""
+
+#: dialogs/drumconfigdialog.cpp:223
+msgid "preview"
+msgstr ""
+
+#: dialogs/drumconfigdialog.cpp:232
+msgid "load defaults"
+msgstr ""
+
+#: dialogs/drumconfigdialog.cpp:233
+msgid "play element"
+msgstr ""
+
+#: dialogs/drumconfigdialog.cpp:446
+msgid "Save drum configuration"
+msgstr ""
+
+#: dialogs/drumconfigdialog.cpp:537
+msgid "Open drum configuration"
+msgstr ""
+
+#: dialogs/chordnamedialog.cpp:50 dialogs/chordnamedialog.cpp:54
+#, fuzzy
+msgid "Chordname"
+msgstr "Mentés ..."
+
+#: dialogs/chordnamedialog.cpp:61
+#, fuzzy
+msgid "chordname"
+msgstr "Mentés ..."
+
+#: dialogs/chordnamedialog.cpp:80
+msgid "size"
+msgstr ""
+
+#: dialogs/chordnamedialog.cpp:84
+#, fuzzy
+msgid "position"
+msgstr "irány"
+
+#: dialogs/tools.cpp:372 dialogs/tools.cpp:392
+msgid "Toolbox"
+msgstr ""
+
+#: chords/chorddialog.cpp:95
+#, fuzzy
+msgid "Chords"
+msgstr "Visszhang"
+
+#: chords/chorddialog.cpp:99
+#, fuzzy
+msgid "chord"
+msgstr "Visszhang"
+
+#: chords/chorddialog.cpp:109
+#, fuzzy
+msgid "config"
+msgstr "_Beállítás"
+
+#: chords/chorddialog.cpp:112
+msgid "diagram"
+msgstr ""
+
+#: chords/chorddialog.cpp:133
+msgid "root"
+msgstr ""
+
+#: chords/chorddialog.cpp:150
+msgid "mody"
+msgstr ""
+
+#: chords/chorddialog.cpp:169
+msgid "chordselect"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Append staff <ctrl> + A"
+#~ msgstr "beillesztés - Ctrl + V"
+
+#, fuzzy
+#~ msgid "use alto clef"
+#~ msgstr "Alt kulcs hozzáadása"
+
+#, fuzzy
+#~ msgid "E_xtras"
+#~ msgstr "Kilépés"
+
+#~ msgid "rest"
+#~ msgstr "szünet"
+
+#~ msgid "Insert rests - 'r'"
+#~ msgstr "Szünet beszúrása - 'r'"
+
+#~ msgid "sharp - #"
+#~ msgstr "kereszt - #"
+
+#~ msgid "flat notes - -"
+#~ msgstr "leszállított hangok"
+
+#~ msgid "natural notes - ="
+#~ msgstr "törzshangok - ="
+
+#, fuzzy
+#~ msgid "Full Note - 1"
+#~ msgstr "Egész hang - F1"
+
+#, fuzzy
+#~ msgid "Half Note - 2"
+#~ msgstr "Fél hang - F2"
+
+#, fuzzy
+#~ msgid "Quarter Note - 4"
+#~ msgstr "Negyed hang - F4"
+
+#, fuzzy
+#~ msgid "1/8 Note - 5"
+#~ msgstr "1/8 hang - F5"
+
+#, fuzzy
+#~ msgid "l/16 Note - 6"
+#~ msgstr "l/16 hang - F6"
+
+#, fuzzy
+#~ msgid "1/32 Note - 7"
+#~ msgstr "1/32 hang - F7"
+
+#, fuzzy
+#~ msgid "1/64 Note - 8"
+#~ msgstr "1/64 hang - F8"
+
+#, fuzzy
+#~ msgid "drum note 7"
+#~ msgstr "leszállított hangok"
+
+#, fuzzy
+#~ msgid "drum note 8"
+#~ msgstr "leszállított hangok"
+
+#, fuzzy
+#~ msgid "drum note 9"
+#~ msgstr "leszállított hangok"
+
+#, fuzzy
+#~ msgid "Test Menu ..."
+#~ msgstr "Megnyitás ..."
+
+#, fuzzy
+#~ msgid "Import MIDI"
+#~ msgstr "MIDI export ..."
+
+#~ msgid "Insert page"
+#~ msgstr "Lap beszúrása"
+
+#, fuzzy
+#~ msgid "strong pizzicato"
+#~ msgstr "Pizzicato"
+
+#~ msgid "_Clefs"
+#~ msgstr "_Kulcsok"
+
+#~ msgid "Insert bass clef"
+#~ msgstr "Basszuskulcs hozzáadása"
+
+#~ msgid "Configure measure num. font ..."
+#~ msgstr "Ütemszám betűk beállítása..."
+
+#~ msgid "configure font for measure numbers"
+#~ msgstr "ütemszám betűjének beállítása"
+
+#~ msgid "Insert Spec Meas"
+#~ msgstr "Különleges ütemek beszúrása"

@@ -1,0 +1,459 @@
+/****************************************************************************************/
+/*											*/
+/* This program is free software; you can redistribute it and/or modify it under the	*/
+/* terms of the GNU General Public License as published by the Free Software		*/
+/* Foundation; either version 2 of the License, or (at your option) any later version.	*/
+/*											*/
+/* This program is distributed in the hope that it will be useful, but WITHOUT ANY	*/
+/* WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A	*/
+/* PARTICULAR PURPOSE. See the GNU General Public License for more details.		*/
+/*											*/
+/* You should have received a copy of the GNU General Public License along with this	*/
+/* program; (See "COPYING"). If not, If not, see <http://www.gnu.org/licenses/>.        */
+/*											*/
+/*--------------------------------------------------------------------------------------*/
+/*											*/
+/*  Copyright   Joerg Anders, TU Chemnitz, Fakultaet fuer Informatik, GERMANY           */
+/*		ja@informatik.tu-chemnitz.de						*/
+/*											*/
+/*											*/
+/****************************************************************************************/
+
+#include "resource.h"
+#include "mainwindow.h"
+#include "midiexport.h"
+#include "pangocairotext.h"
+#include "note.h"
+
+#define META_TEXT       0x01
+#define META_TRACK_NAME 0x03
+#define META_TIMESIG    0x58
+#define META_KEYSIG     0x59
+#define META_TEMPO      0x51
+
+#define MIDI_CTL_REVERB  0x5b
+#define MIDI_CTL_CHORUS  0x5d
+#define MIDI_CTL_PAN     0x0a
+#define MIDI_CTL_VOLUME  0x07
+#define MIDI_CTL_SUSTAIN 0x40
+
+#define DEFAULT_TEMPO 100
+#define TICKS_PER_QUARTER 96
+
+#define MY2MIDITIME(t) ((unsigned int) ((((double) t) * (double) (TICKS_PER_QUARTER)) / ((double) (NOTE_4))))
+
+
+static unsigned char trackend[] = {0x00, 0xff , 0x2f, 0x00};
+unsigned char NedMidiExport::m_channel_pgms[16];
+
+bool NedMidiExport::m_first_lyrics = true;
+
+FILE *NedMidiExport::m_midiout = NULL;
+NedMainWindow *NedMidiExport::m_main_window = NULL;
+
+void NedMidiExport::writeByte(unsigned char b) {
+	putc(0xff & b, m_midiout);
+}
+
+void NedMidiExport::writeWord(unsigned int w) {
+	putc((0xff & (w >> 8)), m_midiout);
+	putc(0xff & w, m_midiout);
+}
+
+void NedMidiExport::writeDWord(unsigned int dw) {
+	putc((0xff & (dw >> 24)), m_midiout);
+	putc((0xff & (dw >> 16)), m_midiout);
+	putc((0xff & (dw >> 8)), m_midiout);
+	putc(0xff & dw, m_midiout);
+}
+
+void NedMidiExport::writeString(char *s) {
+	while (*s) {
+		putc(0xff & (*s++), m_midiout);
+	}
+}
+
+void NedMidiExport::writeTime(unsigned long long  time) {
+	unsigned char b;
+	bool byteswritten = false;
+
+	b = (time >> 9*7) & 0x7f;
+	if (b) {
+		writeByte(0x80 | b);
+		byteswritten = true;
+	}
+	b = (time >> 8*7) & 0x7f;
+	if (b) {
+		writeByte(0x80 | b);
+		byteswritten = true;
+	}
+	b = (time >> 7*7) & 0x7f;
+	if (b) {
+		writeByte(0x80 | b);
+		byteswritten = true;
+	}
+	b = (time >> 6*7) & 0x7f;
+	if (b) {
+		writeByte(0x80 | b);
+		byteswritten = true;
+	}
+	b = (time >> 5*7) & 0x7f;
+	if (b) {
+		writeByte(0x80 | b);
+		byteswritten = true;
+	}
+	b = (time >> 4*7) & 0x7f;
+	if (b) {
+		writeByte(0x80 | b);
+		byteswritten = true;
+	}
+	b = (time >> 3*7) & 0x7f;
+	if (b) {
+		writeByte(0x80 | b);
+		byteswritten = true;
+	}
+	b = (time >> 2*7) & 0x7f;
+	if (b || byteswritten) {
+		writeByte(0x80 | b);
+		byteswritten = true;
+	}
+	b = (time >> 7) & 0x7f;
+	if (b || byteswritten) {
+		writeByte(0x80 | b);
+		byteswritten = true;
+	}
+	b = time & 0x7f;
+	writeByte(b);
+}
+
+void NedMidiExport::writeNoteOn(unsigned long long  time, unsigned char ch, unsigned char ptch, unsigned char vel, unsigned char pgm) {
+	if (m_channel_pgms[ch] != pgm) {
+		writeTime(time);
+		writeByte(0xc0 | ch);
+		writeByte(pgm);
+		writeTime(0);
+		m_channel_pgms[ch] = pgm;
+	}
+	else {
+		writeTime(time);
+	}
+	writeByte(0x90 | ch);
+	writeByte(ptch);
+	writeByte(vel);
+}
+
+void NedMidiExport::writeNoteOff(unsigned long long  time, unsigned char ch, unsigned char ptch, unsigned char vel) {
+	writeTime(time);
+	writeByte(0x80 | ch);
+	writeByte(ptch);
+	writeByte(vel);
+}
+
+void NedMidiExport::writePgmChange(unsigned long long  time, unsigned char chn, unsigned char pgm) {
+	writeTime(time);
+	writeByte(0xc0 | chn);
+	writeByte(pgm);
+	m_channel_pgms[chn] = pgm;
+}
+
+
+void NedMidiExport::writeCtlChange(unsigned long long  time, unsigned char chn, unsigned char ctl, unsigned char pgm) {
+	writeTime(time);
+	writeByte(0xb0 | chn);
+	writeByte(ctl);
+	writeByte(pgm);
+}
+
+void NedMidiExport::exportMidi(FILE *fp, NedMainWindow *main_window, char *miditext, GList *midi_events) {
+	m_main_window = main_window;
+	m_midiout = fp;
+	int track_nr;
+	m_first_lyrics = true;
+
+	for (track_nr = 0; track_nr < 16; m_channel_pgms[track_nr++] = 0);
+
+	
+	writeString(strdup("MThd"));
+	writeDWord(6);
+	writeWord(1);
+	writeWord(m_main_window->getStaffCount() + 1);
+	writeWord(TICKS_PER_QUARTER);
+	writeCtrlTrack(strdup("Music generated by \"nted\""), NULL, main_window);
+
+	for (track_nr = 0; track_nr < m_main_window->getStaffCount(); track_nr++) {
+		writeTrack(midi_events, track_nr, m_main_window->getNumerator(), m_main_window->getDenominator());
+	}
+}
+
+void NedMidiExport::writeTrackName(unsigned long long time, const char *s) {
+	const char *cptr = s;
+	if (s == NULL) return;
+	if (*s == '\0') return;
+	writeTime(time);
+	writeByte(0xff); writeByte(META_TRACK_NAME); writeByte(strlen(s));
+	while (*cptr) {
+		putc(0xff & (*cptr++), m_midiout);
+	}
+}
+
+void NedMidiExport::writeText(unsigned long long time, const char *s) {
+	const char *cptr = s;
+	writeTime(time);
+	writeByte(0xff); writeByte(META_TEXT); writeByte(strlen(s));
+	while (*cptr) {
+		putc(0xff & (*cptr++), m_midiout);
+	}
+}
+
+void NedMidiExport::writeTimeSig(unsigned long long time, int num, int denom) {
+	writeTime(time);
+	writeByte(0xff); writeByte(META_TIMESIG); writeByte(0x04);
+	writeByte(num);
+	if (denom <= 1) {
+		writeByte(0);
+	}
+	else if (denom <= 2) {
+		writeByte(1);
+	}
+	else if (denom <= 4) {
+		writeByte(2);
+	}
+	else if (denom <= 8) {
+		writeByte(3);
+	}
+	else if (denom <= 16) {
+		writeByte(4);
+	}
+	else if (denom <= 32) {
+		writeByte(5);
+	}
+	else if (denom <= 64) {
+		writeByte(6);
+	}
+	else {
+		writeByte(7);
+	}
+	writeByte(0x1); writeByte(0x8);
+}
+
+void NedMidiExport::writeKeySig(unsigned long long  time, int sig) {
+	writeTime(time);
+	writeByte(0xff); writeByte(META_KEYSIG);  writeByte(0x02);
+	writeByte(sig); writeByte(0x00); 
+}
+
+void NedMidiExport::writeTempo(unsigned long long  time, unsigned int tempo) {
+	writeTime(time);
+	writeByte(0xff); writeByte(META_TEMPO); writeByte(0x03);
+	writeByte(0xff & (tempo >> 16));
+	writeByte(0xff & (tempo >> 8));
+	writeByte(0xff & tempo);
+}
+
+class special_events {
+	public:
+		special_events(unsigned long long ti, int ty, int num = 4, int denom = 4, double tempo_inv = 120.0) {
+			time = ti; type = ty; numerator = num; denominator = denom; tempo_inverse = tempo_inv;
+		}
+
+		unsigned long long time;
+		int type;
+#define TEMPO_TYPE 1
+#define TIMESIG_TYPE 2
+		int numerator, denominator;
+		double tempo_inverse;
+};
+
+static int comparare_epecial_events(special_events *sp1,  special_events *sp2) {
+	if (sp1->time < sp2->time) return -1;
+	if (sp1->time == sp2->time) return 0;
+	return 1;
+}
+
+void NedMidiExport::writeCtrlTrack(char *Title, char *miditext, NedMainWindow *main_window) {
+	long pos0, pos1;
+	unsigned int length;
+	double quarter_tempo;
+	unsigned long long lastEventTime = 0, neweventtime;
+	unsigned long long timedist = 0;
+	GList *lptr, *tempo_chords = NULL;
+	GList *spec_events = NULL;
+		
+
+	quarter_tempo = 1000.0 * m_main_window->getMidiTempoInverse();
+	writeString(strdup("MTrk"));
+	pos0 = ftell(m_midiout);
+	writeDWord(0);
+	writeText(0, Title);
+	if (miditext != NULL) {
+		writeText(0, miditext);
+	}
+	writeKeySig(0, m_main_window->m_staff_contexts[0].m_key_signature_number);
+	writeTempo(0, (int) quarter_tempo);
+	NedResource::collectTempoEvents(&tempo_chords);
+	for (lptr = g_list_first(tempo_chords); lptr; lptr = g_list_next(lptr)) {
+		spec_events = g_list_insert_sorted(spec_events, new special_events(((MidiEventStruct *)lptr->data)->midi_time, TEMPO_TYPE, 4, 4, ((MidiEventStruct *)lptr->data)->tempoinverse), (gint (*)(const void*, const void*)) comparare_epecial_events);
+
+/*
+		neweventtime = ((NedChordOrRest *)lptr->data)->getMidiTime();
+		timedist = MY2MIDITIME(neweventtime - lastEventTime);
+		writeTempo(timedist, 1000.0 * ((NedChordOrRest *)lptr->data)->getTempoInverse());
+		NedResource::DbgMsg(DBG_TESTING, "(1)tempo %f bei %llu, neweventtime = %llu, lastEventTime = %llu \n", 1000.0 * ((NedChordOrRest *)lptr->data)->getTempoInverse(), timedist,
+			neweventtime, lastEventTime);
+		lastEventTime = neweventtime;
+		*/
+	}
+	for (lptr = g_list_first(main_window->m_special_measures) /* friend !! */; lptr; lptr = g_list_next(lptr)) {
+		SpecialMeasure *specm = (SpecialMeasure *) lptr->data;
+		if ((specm->type & TIMESIG) == 0) continue;
+		if (!main_window->findTimeOfMeasure(specm->measure_number, &neweventtime)) continue;
+		spec_events = g_list_insert_sorted(spec_events, new special_events(neweventtime, TIMESIG_TYPE, specm->numerator, specm->denominator), (gint (*)(const void*, const void*)) comparare_epecial_events);
+		/*
+
+		timedist = MY2MIDITIME(neweventtime - lastEventTime);
+		writeTimeSig(timedist, specm->numerator, specm->denominator);
+		lastEventTime = neweventtime;
+		*/
+	}
+
+	writeTimeSig(0, main_window->getNumerator(), main_window->getDenominator());
+	
+	for (lptr = g_list_first(spec_events); lptr; lptr = g_list_next(lptr)) {
+		neweventtime = ((special_events *) lptr->data)->time;
+		timedist = MY2MIDITIME(neweventtime - lastEventTime);
+		switch (((special_events *) lptr->data)->type) {
+			case TEMPO_TYPE: writeTempo(timedist, (int) (1000.0 * ((special_events *) lptr->data)->tempo_inverse));
+				break;
+			case TIMESIG_TYPE: writeTimeSig(timedist, ((special_events *) lptr->data)->numerator, ((special_events *) lptr->data)->denominator); 
+				break;
+		}
+		lastEventTime = neweventtime;
+	}
+	for (lptr = g_list_first(spec_events); lptr; lptr = g_list_next(lptr)) {
+		delete ((special_events *) lptr->data);
+	}
+	for (lptr = g_list_first(tempo_chords); lptr; lptr = g_list_next(lptr)) {
+		g_free(lptr->data);
+	}
+	g_list_free(spec_events);
+	spec_events = NULL;
+	g_list_free(tempo_chords);
+	tempo_chords = NULL;
+
+	fwrite(trackend, sizeof(trackend), 1, m_midiout);
+	length = (pos1 = ftell(m_midiout)) - pos0 - 4;
+	fseek(m_midiout, pos0, SEEK_SET);
+	writeDWord(length);
+	fseek(m_midiout, pos1, SEEK_SET);
+}
+
+void NedMidiExport::writeTrack(GList *midi_events, int track_nr, int num, int denom) {
+	GList *lptr1, *lptr2;
+	unsigned long long  myTime, lastEventTime = 0, newlasteventtime = 0;
+	int channel = m_main_window->m_staff_contexts[track_nr].m_midi_channel;
+	long pos1, pos0, length;
+	bool time_written;
+	unsigned long long timedist;
+#define MAXTEXTLEN 40
+	char aaa[128];
+	unsigned int textlen = 0;
+	int lyrics_idx;
+
+	myTime = 0;
+	
+	writeString(strdup("MTrk"));
+	pos0 = ftell(m_midiout);
+	writeDWord(0);
+	if (m_main_window->m_staff_contexts[track_nr].m_staff_name != NULL) {
+		writeTrackName(0, m_main_window->m_staff_contexts[track_nr].m_staff_name->getText());
+	}
+	writeTimeSig(0, m_main_window->getNumerator(), m_main_window->getDenominator());
+	writeKeySig(0, m_main_window->m_staff_contexts[track_nr].m_key_signature_number);
+	writePgmChange(0, channel, m_main_window->m_staff_contexts[track_nr].voices[0].m_midi_program);
+	writeCtlChange(0, channel, MIDI_CTL_REVERB, m_main_window->m_staff_contexts[track_nr].m_midi_reverb);
+	writeCtlChange(0, channel, MIDI_CTL_CHORUS, m_main_window->m_staff_contexts[track_nr].m_midi_chorus);
+	writeCtlChange(0, channel, MIDI_CTL_PAN, m_main_window->m_staff_contexts[track_nr].voices[0].m_midi_pan);
+
+	for (lptr1 = g_list_first(midi_events); lptr1; lptr1 = g_list_next(lptr1)) {
+		time_written = FALSE;
+		for (lptr2 = g_list_first(((MidiListStruct *) lptr1->data)->notes); lptr2; lptr2 = g_list_next(lptr2)) {
+			if (((MidiEventStruct *) lptr2->data)->channel != channel) continue;
+			switch (((MidiEventStruct *) lptr2->data)->type) {
+				case SND_SEQ_EVENT_NOTEOFF: if (((MidiEventStruct *) lptr2->data)->note->getTieForward() == NULL) {
+								if (time_written) {
+									timedist = 0;
+								}
+								else {
+									timedist = MY2MIDITIME(((MidiEventStruct *) lptr2->data)->midi_time - lastEventTime);
+									time_written = TRUE;
+								}
+							    	writeNoteOff(timedist, channel, ((MidiEventStruct *) lptr2->data)->data1, 0);
+							    	newlasteventtime = ((MidiEventStruct *) lptr2->data)->midi_time;
+							    }
+							    break;
+			}
+		}
+		for (lptr2 = g_list_first(((MidiListStruct *) lptr1->data)->notes); lptr2; lptr2 = g_list_next(lptr2)) {
+			if (((MidiEventStruct *) lptr2->data)->channel != channel) continue;
+			switch (((MidiEventStruct *) lptr2->data)->type) {
+				case PSEUDO_EVENT_KEY_CHANGE: if (time_written) {
+									timedist = 0;
+								}
+								else {
+									timedist = MY2MIDITIME(((MidiEventStruct *) lptr2->data)->midi_time - lastEventTime);
+									time_written = TRUE;
+								}
+							      writeKeySig(timedist, ((MidiEventStruct *) lptr2->data)->data1);
+							      newlasteventtime = ((MidiEventStruct *) lptr2->data)->midi_time;
+							      break;
+			}
+		}
+		for (lptr2 = g_list_first(((MidiListStruct *) lptr1->data)->notes); lptr2; lptr2 = g_list_next(lptr2)) {
+			if (((MidiEventStruct *) lptr2->data)->channel != channel) continue;
+			switch (((MidiEventStruct *) lptr2->data)->type) {
+				case SND_SEQ_EVENT_NOTEON: if (((MidiEventStruct *) lptr2->data)->note->getTieBackward() == NULL) {
+								if (time_written) {
+									timedist = 0;
+								}
+								else {
+									timedist = MY2MIDITIME(((MidiEventStruct *) lptr2->data)->midi_time - lastEventTime);
+									time_written = TRUE;
+								}
+							    	writeNoteOn(timedist, channel,
+							    		((MidiEventStruct *) lptr2->data)->data1, ((MidiEventStruct *) lptr2->data)->data2,
+									((MidiEventStruct *) lptr2->data)->pgm);
+							    	newlasteventtime = ((MidiEventStruct *) lptr2->data)->midi_time;
+							    }
+							    if (((MidiEventStruct *) lptr2->data)->note->isFirstNote()) {
+							    	if (((MidiEventStruct *) lptr2->data)->note->getChord()->getLyrics(0) != NULL) {
+									if (((MidiEventStruct *) lptr2->data)->repetition && ((MidiEventStruct *) lptr2->data)->note->getChord()->getLyrics(1) != NULL) {
+										lyrics_idx = 1;
+									}
+									else {
+										lyrics_idx = 0;
+									}
+									if (m_first_lyrics || textlen > MAXTEXTLEN) {
+										sprintf(aaa, "/%s ", ((MidiEventStruct *) lptr2->data)->note->getChord()->getLyrics(lyrics_idx));
+										textlen = strlen(((MidiEventStruct *) lptr2->data)->note->getChord()->getLyrics(lyrics_idx));
+										writeText(0, aaa);
+										m_first_lyrics = false;
+									}
+									else {
+										sprintf(aaa, "%s ", ((MidiEventStruct *) lptr2->data)->note->getChord()->getLyrics(lyrics_idx));
+										writeText(0, aaa);
+										textlen += strlen(((MidiEventStruct *) lptr2->data)->note->getChord()->getLyrics(lyrics_idx));
+									}
+								}
+							    }
+							    break;
+			}
+		}
+		lastEventTime = newlasteventtime;
+	}
+
+	fwrite(trackend, sizeof(trackend), 1, m_midiout);
+	length = (pos1 = ftell(m_midiout)) - pos0 - 4;
+	fseek(m_midiout, pos0, SEEK_SET);
+	writeDWord(length);
+	fseek(m_midiout, pos1, SEEK_SET);
+}

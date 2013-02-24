@@ -1,0 +1,162 @@
+NTED version 15
+HEAD
+TITLE : Kilgary Mountain
+SUBJECT : folk song
+COMPOSER : unknown composer
+ARRANGER : Arr.:J.Anders
+COPYRIGHT : traditional
+MEDIA A4
+ORIENTATION Portrait
+SPACEMENT 1.000000
+SCALE 50
+NUMERATOR 4
+DENOMINATOR 4
+TEMPOINVERSE 500
+UPBEAT_INVERSE 40360320
+STAFFS 1
+STAFF 0: NAME: 6 voice1
+NAME_SHORT_NAME: 0  KEY: 1 CLEF: TREBLE 0 CHANNEL: 0 VOL: 64 MIDIPGM: 0 PAN: 64 CHORUS: 20 REVERB: 20 FLAGS: 0
+PLAY_TRANSPOSED: 0
+SPEC_MEASURES
+( 18 END_BAR HIDE_FOLLOWING )
+MUSIC
+PAGE 0
+SYSTEM 0: 3 MEASURES
+MEASURE: 1 1.000000
+MEASURE: 2 1.000000
+MEASURE: 3 1.000000
+STAFF 0
+VOICE 0
+(nd 64, 0  { _4  } [ 1.)As  ,  2)The  ,  3)When  ,  4.)They  ,  5.)Now  ] )(<1>nu 64, 1  D 1  { _2  , _6  } [ I  ,  shi-  ,  I  ,  put  ,  some  ] )(<2>nu 32, 1  { _2  , _6  } [ wa-  ,  nin'  ,  wa-  ,  me  ,  take  ] )(<3>nu 64, 1  { _2  , _6  } [ as  ,  gol-  ,  as  ,  in-  ,  the  ] )(<4>nu 64, 1  { _2  , _7  } [ a-  ,  den  ,  a-  ,  to  ,  de-  ] )(nu 64, 1  { _2  , _6  } [ wal-  ,  coid  ,  wake-  ,  ja-  ,  li-  ] )(nu 128, 1  { _-1  , _4  } [ kin'  ,  did  ,  ned  ,  il  ,  light  ] )(nu 64, 1  { _2  , _6  } [ 'rou-  ,  lo-  ,  bet-  ,  with-  ,  in  ] )(<5>nu 64, 1  D 1  { _2  , _7  } [ ound  ,  ok  ,  we-  ,  out  ,  fi-  ] )(<6>nu 32, 1  { _2  , _7  } [ Kil-  ,  so  ,  en  ,  ju-  ,  shin'  ] )(<7>nu 64, 1  { _2  , _7  } [ ga-  ,  bright  ,  six  ,  udge  ,  and  ] )(<8>nd 64, 0  { _4  , _8  } [ ry  ,  and  ,  and  ,  or  ,  in  ] )(<9>nu 64, 1  { _2  , _7  } [ Moun-  ,  jol-  ,  se-  ,  ari-  ,  bow-  ] )(<10>nu 64, 1  { _2  , _4  } [ tain  ,  ly  ,  ven  ,  tin'  ,  lin'  ] )(r 64, 0 )(nu 64, 1  { _2  , _7  } [ I  ,  I  ,  the  ,  For  ,  And  ] )
+BEAMS
+(u 1  , 2 )
+(d 3  , 4 )
+(d 5  , 6 )
+(d 7  , 8 )
+(u 9  , 10 )
+VOICE 1
+(rh 64, 0 )(rh 512, 0 )(rh 512, 0 )
+VOICE 2
+(rh 64, 0 )(rh 512, 0 )(rh 512, 0 )
+VOICE 3
+(rh 64, 0 )(rh 512, 0 )(rh 512, 0 )
+SYSTEM 1: 2 MEASURES
+MEASURE: 4 1.000000
+MEASURE: 5 1.000000
+STAFF 0
+VOICE 0
+(<11>nu 64, 1  D 1  { _2  , _7  } [ met  ,  took  ,  guards  ,  rob-  ,  o-  ] )(<12>nu 32, 1  { _2  , _7  } [ with  ,  'em  ,  were  ,  bing  ,  thers  ] )(<13>nd 64, 0  { _5  , _7  } [ Cap-  ,  with  ,  all  ,  Col-  ,  take  ] )(<14>nd 64, 0  { _5  , _8  } [ tain  ,  me  ,  a-  ,  on-  ,  the  ] )(<15>nd 64, 0  { _5  , _9  } [ Pep-  ,  home  ,  round  ,  nel  ,  del-  ] )(<16>nd 64, 0  { _5  , _9  } [ per  ,  and  ,  me  ,  Pep-  ,  li-  ] )(<17>nd 64, 0  { _5  , _8  } [ as  ,  I  ,  i-  ,  per  ,  light  ] )(<18>nd 64, 0  { _5  , _7  } [ his  ,  gave  ,  in  ,  on  ,  in  ] )(<19>nu 64, 1  D 1  { _2  , _6  } [ mon-  ,  'em  ,  num-  ,  Kil-  ,  cari-  ] )(<20>nu 32, 1  { _2  , _6  } [ ney  ,  to  ,  bers  ,  ga-  ,  a-  ] )(<21>nd 64, 0  { _4  , _9  } [ he  ,  my-  ,  odd  ,  ry-  ,  ges  ] )(<22>nd 64, 0  { _4  , _8  } [ was  ,  y  ,  and  ,  y  ,  en-  ] )(<23>nu 64, 1  { _2  , _7  } [ coun-  ,  Mol-  ,  e-  ,  Moun-  ,  rol-  ] )(<24>nu 64, 1  { _2  , _6  } [ tin.  ,  ly  ,  ven.  ,  tain.  ,  lin'  ] )(r 64, 0 )(nd 64, 0  { _4  } [ I  ,  She  ,  I  ,  But  ,  But  ] )
+BEAMS
+(d 11  , 12 )
+(d 13  , 14 )
+(d 15  , 16  , 17  , 18 )
+(u 19  , 20 )
+(d 21  , 22 )
+(d 23  , 24 )
+VOICE 1
+(rh 512, 0 )(rh 512, 0 )
+VOICE 2
+(rh 512, 0 )(rh 512, 0 )
+VOICE 3
+(rh 512, 0 )(rh 512, 0 )
+SYSTEM 2: 2 MEASURES
+MEASURE: 6 1.000000
+MEASURE: 7 1.000000
+STAFF 0
+VOICE 0
+(<25>nu 64, 1  D 1  { _2  , _6  } [ rat-  ,  pro-  ,  flew  ,  they  ,  I  ] )(<26>nu 32, 1  { _2  , _6  } [ tled  ,  mised  ,  to  ,  didn't  ,  take  ] )(<27>nu 64, 1  { _2  , _6  } [ my  ,  and  ,  my  ,  take  ,  the  ] )(<28>nu 64, 1  { _2  , _7  } [ pis-  ,  she  ,  pis-  ,  my  ,  de-  ] )(nu 64, 1  { _2  , _6  } [ tols  ,  vowed  ,  tols  ,  fits  ,  li-  ] )(nu 128, 1  { _-1  , _4  } [ and  ,  that  ,  but  ,  so  ,  light  ] )(nu 64, 1  { _2  , _6  } [ I  ,  she  ,  a-  ,  I  ,  in  ] )(<29>nu 64, 1  D 1  { _2  , _7  } [ dre-  ,  ne-  ,  las  ,  knocked  ,  ju-  ] )(<30>nu 32, 1  { _2  , _7  } [ ew  ,  ver  ,  I  ,  the  ,  ice  ] )(<31>nu 64, 1  { _2  , _7  } [ forth  ,  would  ,  was  ,  sen-  ,  of  ] )(<32>nd 64, 0  { _4  , _8  } [ my  ,  de-  ,  mis-  ,  try  ,  the  ] )(<33>nu 64, 1  { _2  , _7  } [ sa-  ,  ceive  ,  ta-  ,  do-  ,  bar-  ] )(<34>nu 64, 1  { _2  , _4  } [ ber  ,  me  ,  ken.  ,  own  ,  ley  ] )(r 64, 0 )(nu 64, 1  { _2  , _7  } [ Say.-  ,  But  ,  For  ,  And  ,  And  ] )
+BEAMS
+(u 25  , 26 )
+(d 27  , 28 )
+(d 29  , 30 )
+(d 31  , 32 )
+(u 33  , 34 )
+VOICE 1
+(rh 512, 0 )(rh 512, 0 )
+VOICE 2
+(rh 512, 0 )(rh 512, 0 )
+VOICE 3
+(rh 512, 0 )(rh 512, 0 )
+SYSTEM 3: 2 MEASURES
+MEASURE: 8 1.000000
+MEASURE: 9 1.000000
+STAFF 0
+VOICE 0
+(<35>nu 64, 1  D 1  { _2  , _7  } [ in:  ,  the  ,  Mol-  ,  bit  ,  coun-  ] )(<36>nu 32, 1  { _2  , _7  } [ "Stand  ,  de-  ,  ly's  ,  a  ,  tin'  ] )(<37>nd 64, 0  { _5  , _7  } [ and  ,  vil's  ,  drwan  ,  fond  ,  pret-  ] )(<38>nd 64, 0  { _5  , _8  } [ de-  ,  in  ,  my  ,  fa-  ,  ty  ] )(<39>nd 64, 0  { _5  , _9  } [ li-  ,  wom-  ,  pis-  ,  re-  ,  gi-  ] )(<40>nd 64, 0  { _5  , _9  } [ ver,  ,  men  ,  tols  ,  well  ,  irls  ] )(<41>nd 64, 0  { _5  , _8  } [ for  ,  and  ,  and  ,  to  ,  in  ] )(<42>nd 64, 0  { _5  , _7  } [ I  ,  thy  ,  a  ,  the  ,  the  ] )(<43>nu 64, 1  D 1  { _2  , _6  } [ am  ,  ne-  ,  Pris-  ,  jail  ,  mor-  ] )(<44>nu 32, 1  { _2  , _6  } [ the  ,  ver  ,  ner  ,  in  ,  ni-  ] )(<45>nd 64, 0  { _4  , _9  } [ bold  ,  can  ,  I  ,  Sli-  ,  ing  ] )(<46>nd 64, 0  { _4  , _8  } [ de-  ,  be  ,  was  ,  go  ,  so  ] )(<47>nu 64, 1  { _2  , _7  } [ cei-  ,  ea-  ,  ta-  ,  to-  ,  ear-  ] )(<48>nu 64, 1  { _2  , _6  } [ ver."  ,  sy  ,  ken  ,  own.  ,  ly.  ] )(r 64, 0 )(nu 64, 1  { _2  , _4  } [ Mu-  ] )
+BEAMS
+(d 35  , 36 )
+(d 37  , 38 )
+(d 39  , 40  , 41  , 42 )
+(u 43  , 44 )
+(d 45  , 46 )
+(d 47  , 48 )
+VOICE 1
+(rh 512, 0 )(rh 512, 0 )
+VOICE 2
+(rh 512, 0 )(rh 512, 0 )
+VOICE 3
+(rh 512, 0 )(rh 512, 0 )
+SYSTEM 4: 3 MEASURES
+MEASURE: 10 1.000000
+MEASURE: 11 1.000000
+MEASURE: 12 1.000000
+STAFF 0
+VOICE 0
+(<49>nu 64, 1  D 1  { _1  , _3  } [ sha  ] )(<50>nu 32, 1  { _1  , _3  } [ rig  ] )(<51>nu 64, 1  D 1  { _1  , _3  } [ um  ] )(<52>nu 32, 1  { _1  , _3  } [ du  ] )(<53>nu 64, 1  { _1  , _3  } [ ru-  ] )(<54>nu 64, 1  { _2  , _4  } )(nu 128, 1  { _1  , _3  } [ da  ] )(r 64, 0 )(<55>nu 64, 1  { _2  , _4  } [ Whack  ] )(<56>nu 64, 1  D 1  { _2  , _4  } [ fol  ] )(<57>nu 32, 1  { _1  , #3  } [ the  ] )(nu 64, 1  { _2  , _4  } [ dad-  ] )(nu 128, 1  D 1  { _2  , _6  } [ dy  ] )(r 64, 0 )(<58>nd 64, 0  { _5  , _7  } [ Wack  ] )(<59>nd 64, 0  D 1  { _5  , _7  } [ fol  ] )(<60>nd 32, 0  { _5  , _7  } [ the  ] )(<61>nd 64, 0  { _5  , _7  } [ dad-  ] )(<62>nd 64, 0  { _5  , _8  } [ dy  ] )(<63>nd 64, 0  { _5  , _9  } [ o  ] )(<64>nu 64, 1  { _2  , _7  } [ There's  ] )
+BEAMS
+(u 49  , 50 )
+(u 51  , 52 )
+(u 53  , 54 )
+(u 55  , 56  , 57 )
+(d 58  , 59  , 60 )
+(d 61  , 62  , 63  , 64 )
+VOICE 1
+(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )
+VOICE 2
+(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )
+VOICE 3
+(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )
+PAGE 1
+SYSTEM 0: 3 MEASURES
+MEASURE: 13 1.000000
+MEASURE: 14 1.000000
+MEASURE: 15 1.000000
+STAFF 0
+VOICE 0
+(<65>nu 64, 1  { _2  , _6  } [ whis-  ] )(<66>nu 64, 1  { _-1  , _4  } [ key  ] )(<67>nu 64, 1  { #-2  , _3  } [ in  ] )(<68>nu 64, 1  { _-2  , _2  } [ the  ] )(<69>nu 64, 1  { =-2  , _0  , _2  , _3  } [ jar.  ] )(<70>nu 64, 1  { _2  , _3  , _5  , _7  } )(<71>nu 64, 1  { _1  , _3  , _5  , _6  } )(<72>nd 64, 0  { _4  } [ As  ] )(<73>nu 64, 1  D 1  { _2  , _6  } [ I  ] )(<74>nu 32, 1  { _2  , _6  } [ wa-  ] )(<75>nu 64, 1  { _2  , _6  } [ as  ] )(<76>nu 64, 1  { _2  , _7  } [ a-  ] )(nu 64, 1  { _2  , _6  } [ wal-  ] )(nu 128, 1  { _-1  , _4  } [ kin'  ] )(nu 64, 1  { _2  , _6  } [ 'rou-  ] )(<77>nu 64, 1  D 1  { _2  , _4  , _7  } [ ound  ] )(<78>nu 32, 1  { _2  , _4  , _7  } [ Kil-  ] )(<79>nu 64, 1  { _2  , _4  , _7  } [ ga-  ] )(<80>nu 64, 1  { _1  , _4  , _6  , _8  } [ ry  ] )(nu 128, 1  D 1  { #2  , _4  , _7  } [ Moun....  ] )(nu 64, 1  { _-1  , _2  , _4  , _7  } [ Mus-  ] )
+BEAMS
+(u 65  , 66  , 67  , 68 )
+(u 69  , 70  , 71  , 72 )
+(u 73  , 74 )
+(d 75  , 76 )
+(d 77  , 78 )
+(d 79  , 80 )
+VOICE 1
+(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )
+VOICE 2
+(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )
+VOICE 3
+(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )
+SYSTEM 1: 9 MEASURES
+MEASURE: 16 1.000000
+MEASURE: 17 1.000000
+MEASURE: 18 1.000000
+MEASURE: 19 1.000000
+MEASURE: 20 1.000000
+MEASURE: 21 1.000000
+MEASURE: 22 1.000000
+MEASURE: 23 1.000000
+MEASURE: 24 1.000000
+STAFF 0
+VOICE 0
+(<81>nu 64, 1  D 1  { _-4  , _2  , #5  , _7  } [ ha  ] )(<82>nu 32, 1  { _-4  , _2  , _5  , _7  } [ rig  ] )(<83>nu 64, 1  { _-4  , _2  , _5  , _7  } [ Ther-  ] )(<84>nu 64, 1  { _-4  , _2  , _5  , _8  } [ e's  ] )(<85>nu 64, 1  { _-1  , _3  , _6  , _9  } [ whis-  ] )(<86>nu 64, 1  { _-1  , _3  , _6  , _9  } [ key  ] )(<87>nu 64, 1  { _-1  , _1  , _3  , =5  , _8  } [ in  ] )(<88>nu 64, 1  { _-1  , _1  , _3  , _5  , _10  } [ the  ] )(nu 256, 1  { _-5  , _2  , _6  , _9  } [ jar.  ] )(r 256, 0 )(r 512, 0 )(r 512, 0 )(r 512, 0 )(r 512, 0 )(r 512, 0 )(r 512, 0 )(r 512, 0 )
+BEAMS
+(u 81  , 82 )
+(u 83  , 84 )
+(d 85  , 86  , 87  , 88 )
+VOICE 1
+(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )
+VOICE 2
+(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )
+VOICE 3
+(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )(rh 512, 0 )

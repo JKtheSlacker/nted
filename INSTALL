@@ -1,0 +1,103 @@
+Installation
+------------
+
+How to obtain NtEd
+----------------------
+
+NtEd can be found at
+
+http://vsr.informatik.tu-chemnitz.de/staff/jan/nted/nted.xhtml
+
+Installing from source
+----------------------
+
+Requirements for source compilation
+-----------------------------------
+
+You need the following packages:
+  * g++ compiler (see: http://gcc.gnu.org)
+  * pkgconfig (see: http://pkg-config.freedesktop.org)
+  * X11 (include and libraries) (see: http://wiki.x.org/wiki)
+  * Gtk-2.x (include and libraries) (see http://www.gtk.org)
+  * Cairo-1.x (include and libraries) (see: http://cairographics.org/)
+  * ALSA-1.x (include and libraries) (see: http://www.alsa-project.org/)
+  * gettext (see: http://www.gnu.org/software/gettext/gettext.html)
+
+If you want the immediate help you need further:
+  * yelp Is part of the GNOME project (see: http://www.gnome.org; package gnome-extra)
+  * xmlto (see: http://cyberelk.net/tim/xmlto)
+  * xml2pot, po2xml from kdesdk package (http://www.kde.org)
+     GNOME users: Many distributions offer a package kdesdk-utils which includes
+	 both programs but has (almost) no further KDE dependencies
+
+xmlto in turn requires:
+  * docbook-xsl-stylesheets (see: http://wiki.docbook.org/topic/DocBookXslStylesheets)
+  * docbook-xml-dtd (see: http://www.docbook.org/xml)
+
+
+Building
+--------
+
+  tar -xvzf nted-x.y.z.tgz
+
+  cd nted-x.y.z
+
+  ./configure
+
+If you want to install NtEd in a certain directory use:
+
+  ./configure --prefix=<installation_path>
+
+If you want to install the docs into a special directory, add
+--docdir=... and/or --htmldir=... to the configure line.
+
+If you have trouble with the documentation creation:
+
+  ./configure --without-doc
+
+Type:
+
+  make
+
+This should create NtEd
+
+Type (as root):
+
+  make install
+
+This should install NtEd
+
+If you don't like NtEd type (as root):
+
+  make uninstall
+
+This should remove NtEd
+
+Then start the program type:
+
+         nted
+
+or:
+
+     nted <file>.ntd
+
+This should start the score editor.
+
+First test
+----------
+
+File-->Open examples/example1.ntd
+
+or:
+
+File-->Open examples/example2.ntd
+
+Press the play button You should see running red notes ans you should
+hear the music. If you hear the music the
+program works :-))
+
+If not then try to change the MIDI port (
+Configure-->Configure MIDI 
+select a port)
+
+If nothing helps refer to the appropriate question in FAQ.

@@ -1,0 +1,2414 @@
+# translation of nl.po to Nederlands
+# translation of nl.po to
+# Copyright (C) 2008 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Martin Tarenskeen <m.tarenskeen@zonnet.nl>, 2008, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: nl\n"
+"Report-Msgid-Bugs-To: ja@informatik.tu-chemnitz.de\n"
+"POT-Creation-Date: 2011-01-27 14:18+0100\n"
+"PO-Revision-Date: 2009-10-25 14:11+0100\n"
+"Last-Translator: Martin Tarenskeen <m.tarenskeen@zonnet.nl>\n"
+"Language-Team: Dutch <en@li.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: mainwindow.cpp:310
+msgid "_File"
+msgstr "_Bestand"
+
+#: mainwindow.cpp:311
+msgid "Open_Recent"
+msgstr "Open_Recent"
+
+#: mainwindow.cpp:312
+msgid "_Export"
+msgstr "_Exporteren"
+
+#: mainwindow.cpp:313
+msgid "_View"
+msgstr "_Beeld"
+
+#: mainwindow.cpp:314
+msgid "_Edit"
+msgstr "_Bewerken"
+
+#: mainwindow.cpp:315
+msgid "_Tools"
+msgstr "_Gereedschap"
+
+#: mainwindow.cpp:316
+msgid "_System layout ..."
+msgstr "_Systeem Layout ..."
+
+#: mainwindow.cpp:317
+msgid "_Insert"
+msgstr "_Invoegen"
+
+#: mainwindow.cpp:318
+msgid "_Upbeat ..."
+msgstr "_Opmaat ..."
+
+#: mainwindow.cpp:319
+msgid "_Preferences ..."
+msgstr "_Voorkeuren"
+
+#: mainwindow.cpp:320
+msgid "_Dynamics ..."
+msgstr "_Dynamiek ..."
+
+#: mainwindow.cpp:321
+msgid "_Lyrics"
+msgstr "_Liedtekst"
+
+#: mainwindow.cpp:322
+msgid "_Help"
+msgstr "_Help"
+
+#: mainwindow.cpp:323
+msgid "Configure MIDI out..."
+msgstr "MIDI Uit instellen..."
+
+#: mainwindow.cpp:323
+msgid "configure MIDI output"
+msgstr "MIDI Uitgang instellen..."
+
+#: mainwindow.cpp:324
+msgid "Configure MIDI in..."
+msgstr "MIDI In instellen..."
+
+#: mainwindow.cpp:324
+msgid "configure MIDI input"
+msgstr "MIDI ingang instellen..."
+
+#: mainwindow.cpp:325
+msgid "Configure Paper..."
+msgstr "Papier instellen"
+
+#: mainwindow.cpp:325
+msgid "configure paper"
+msgstr "Papier instellen"
+
+#: mainwindow.cpp:326
+msgid "Configure Print..."
+msgstr "Printen instellen..."
+
+#: mainwindow.cpp:326
+msgid "configure print command"
+msgstr "Printopdracht instellen"
+
+#: mainwindow.cpp:327
+msgid "New"
+msgstr "Nieuw"
+
+#: mainwindow.cpp:327
+msgid "New File"
+msgstr "Nieuw bestand"
+
+#: mainwindow.cpp:328
+msgid "Open  ..."
+msgstr "Open  ..."
+
+#: mainwindow.cpp:328
+msgid "Open a file"
+msgstr "Bestand openen"
+
+#: mainwindow.cpp:329
+msgid "Save  ..."
+msgstr "Opslaan  ..."
+
+#: mainwindow.cpp:329 mainwindow.cpp:330
+msgid "Save a file"
+msgstr "Bestand opslaan"
+
+#: mainwindow.cpp:330
+msgid "Save As  ..."
+msgstr "Opslaan als  ..."
+
+#: mainwindow.cpp:331
+msgid "Print"
+msgstr "Print"
+
+#: mainwindow.cpp:331
+msgid "print file"
+msgstr "Bestand printen"
+
+#: mainwindow.cpp:332
+msgid "Import MusicXML ..."
+msgstr "MusicXML importeren"
+
+#: mainwindow.cpp:332
+msgid "import a musicxml file"
+msgstr "MusicXML importeren"
+
+#: mainwindow.cpp:333
+msgid "Import MIDI..."
+msgstr "MIDI importeren..."
+
+#: mainwindow.cpp:333
+msgid "import a midi file"
+msgstr "MIDI bestand importeren"
+
+#: mainwindow.cpp:334
+#, fuzzy
+msgid "Import MIDI(2)..."
+msgstr "Importeer MIDI 2..."
+
+#: mainwindow.cpp:334
+#, fuzzy
+msgid "import a midi file(2)"
+msgstr "importeer MIDI bestand 2"
+
+#: mainwindow.cpp:335
+msgid "Copy"
+msgstr "Kopieer"
+
+#: mainwindow.cpp:335
+msgid "copy - Ctrl + C"
+msgstr "Kopieer Ctrl + C"
+
+#: mainwindow.cpp:336
+msgid "Paste"
+msgstr "Plakken"
+
+#: mainwindow.cpp:336
+msgid "paste - Ctrl + V"
+msgstr "Plakken Ctrl + V"
+
+#: mainwindow.cpp:337
+msgid "Delete block"
+msgstr "Blok wissen"
+
+#: mainwindow.cpp:337
+msgid "delete block - Ctrl + X"
+msgstr "Blok wissen - Ctrl + X"
+
+#: mainwindow.cpp:338
+msgid "append a system at end"
+msgstr "Voeg systeem toe na einde"
+
+#: mainwindow.cpp:338
+msgid "append system - Ctrl + B"
+msgstr "Systeem toevoegen - Ctrl + B"
+
+#: mainwindow.cpp:339
+msgid "Insert block"
+msgstr "Blok invoegen"
+
+#: mainwindow.cpp:339
+msgid "insert block"
+msgstr "Blok invoegen"
+
+#: mainwindow.cpp:340
+msgid "Insert clef ..."
+msgstr "Sleutel invoegen"
+
+#: mainwindow.cpp:340
+msgid "insert a clef"
+msgstr "Sleutel invoegen"
+
+#: mainwindow.cpp:341
+msgid "Empty block"
+msgstr "Blok leegmaken"
+
+#: mainwindow.cpp:341
+msgid "empty block - Ctrl + E"
+msgstr "Blok leegmaken - Ctrl + E"
+
+#: mainwindow.cpp:342
+msgid "reposit all"
+msgstr "Alles bewaren"
+
+#: mainwindow.cpp:342
+msgid "reposit the whole score - Ctrl + T"
+msgstr "Complete partituur bewaren"
+
+#: mainwindow.cpp:343
+msgid "Export MIDI  ..."
+msgstr "MIDI exporteren  ..."
+
+#: mainwindow.cpp:343
+msgid "export a midi file"
+msgstr "MIDI Bestand exporteren"
+
+#: mainwindow.cpp:344
+msgid "Export LilyPond  ..."
+msgstr "LilyPond exporteren ..."
+
+#: mainwindow.cpp:344 dialogs/lilypondexportdialog.cpp:44
+msgid "LilyPond export"
+msgstr "LilyPond exporteren"
+
+#: mainwindow.cpp:346
+msgid "Export PDF ..."
+msgstr "PDF exporteren ..."
+
+#: mainwindow.cpp:346
+msgid "export PDF"
+msgstr "PDF exporteren ..."
+
+#: mainwindow.cpp:348
+msgid "Export P_NG ..."
+msgstr "P_NG exporteren ..."
+
+#: mainwindow.cpp:348
+msgid "Write a png image"
+msgstr "Bewaar als PNG afbeelding"
+
+#: mainwindow.cpp:350
+msgid "Export S_VG ..."
+msgstr "S_VG exporteren ..."
+
+#: mainwindow.cpp:350
+msgid "Write an svg image"
+msgstr "Bewaar als SVG afbeelding"
+
+#: mainwindow.cpp:352
+msgid "Export P_S ..."
+msgstr "P_S exporteren ..."
+
+#: mainwindow.cpp:352
+msgid "Write PostScript"
+msgstr "Bewaar als Postscript"
+
+#: mainwindow.cpp:353
+msgid "New Window"
+msgstr "Nieuw venster"
+
+#: mainwindow.cpp:353
+msgid "Open a new window"
+msgstr "Open een venster"
+
+#: mainwindow.cpp:354
+msgid "Excerpt ..."
+msgstr "Uitsnede ..."
+
+#: mainwindow.cpp:354
+msgid "Make an excerpt of the score"
+msgstr "Maak een uitsnede van de partituur"
+
+#: mainwindow.cpp:355
+msgid "Close Window"
+msgstr "Sluit venster"
+
+#: mainwindow.cpp:355
+msgid "Close current window"
+msgstr "Sluit huidig venster"
+
+#: mainwindow.cpp:358
+msgid "Remove last page"
+msgstr "Laatste pagina verwijderen"
+
+#: mainwindow.cpp:358
+msgid "remove the last page"
+msgstr "Laatste pagina verwijderen"
+
+#: mainwindow.cpp:359
+msgid "Remove empty pages"
+msgstr "Lege paginas verwijderen"
+
+#: mainwindow.cpp:359
+msgid "remove empty pages at end"
+msgstr "Verwijder lege laatste paginas"
+
+#: mainwindow.cpp:360
+msgid "Change spacement ..."
+msgstr "Verander spatiering"
+
+#: mainwindow.cpp:360
+msgid "change the horizontal spacement"
+msgstr "Verander horizontale spatiering"
+
+#: mainwindow.cpp:361
+msgid "Change Scale ..."
+msgstr "Verander schaal ..."
+
+#: mainwindow.cpp:361
+msgid "change scale"
+msgstr "Verander schaal"
+
+#: mainwindow.cpp:362
+msgid "Configure Record ..."
+msgstr "Opname instellen ..."
+
+#: mainwindow.cpp:362
+msgid "configure record"
+msgstr "Opname instellen"
+
+#: mainwindow.cpp:363
+msgid "Configure Drums ..."
+msgstr "Drums Instellen..."
+
+#: mainwindow.cpp:363
+msgid "configure drums"
+msgstr "Drums instellen"
+
+#: mainwindow.cpp:364
+msgid "Tools ..."
+msgstr "Gereedschap ..."
+
+#: mainwindow.cpp:364
+msgid "Tools "
+msgstr "Gereedschap"
+
+#: mainwindow.cpp:365
+msgid "give first measure"
+msgstr "Geef eerste maat"
+
+#: mainwindow.cpp:365
+msgid "set upbeat by giving the start of first full measure"
+msgstr ""
+"Stel opmaat in door het begin van de eerste volledige maat aan te geven"
+
+#: mainwindow.cpp:366
+msgid "give start"
+msgstr "Geef Begin"
+
+#: mainwindow.cpp:366
+msgid "set upbeat by giving the start of the score"
+msgstr "Stel Opmaat in door het begin van de partituur aan te geven"
+
+#: mainwindow.cpp:367
+msgid "Score info ..."
+msgstr "Partituur info  ..."
+
+#: mainwindow.cpp:367
+msgid "edit score info"
+msgstr "Partituur Info bewerken"
+
+#: mainwindow.cpp:368
+msgid "Insert keysig ... "
+msgstr "Toonsoort invoegen ... "
+
+#: mainwindow.cpp:368
+msgid "insert a key signature"
+msgstr "Toonsoort invoegen"
+
+#: mainwindow.cpp:369
+msgid "Insert lines ... "
+msgstr "Lijnen invoegen ... "
+
+#: mainwindow.cpp:369
+msgid "insert a horizontal line"
+msgstr "Horizontale lijn invoegen"
+
+#: mainwindow.cpp:370
+msgid "Insert sign ... "
+msgstr "Teken invoegen ... "
+
+#: mainwindow.cpp:370
+msgid "insert a free placeable sign"
+msgstr "Vrij plaatsbaar teken invoegen"
+
+#: mainwindow.cpp:371
+msgid "Slur"
+msgstr "Legatoboog"
+
+#: mainwindow.cpp:371
+msgid "insert a slur - Ctrl+H"
+msgstr "Legatoboog invoegen - Ctrl+H"
+
+#: mainwindow.cpp:372
+msgid "chord ..."
+msgstr "Akkoord  ..."
+
+#: mainwindow.cpp:372
+msgid "insert a chord"
+msgstr "Akkoord invoegen"
+
+#: mainwindow.cpp:373
+msgid "chordname ..."
+msgstr "Akkoordnaam ..."
+
+#: mainwindow.cpp:373
+msgid "insert a chordname"
+msgstr "Akkoordnaam invoegen"
+
+#: mainwindow.cpp:374
+msgid "spacer"
+msgstr "Afstandhouder"
+
+#: mainwindow.cpp:374
+msgid "insert a staff spacer"
+msgstr "Notenbalk afstandhouder invoegen"
+
+#: mainwindow.cpp:375
+msgid "Append staff"
+msgstr "Voeg notenbalk toe"
+
+#: mainwindow.cpp:375
+msgid "append a new staff"
+msgstr "Voeg een nieuwe notenbalk toe"
+
+#: mainwindow.cpp:376
+msgid "Import recorded"
+msgstr "Opname importeren"
+
+#: mainwindow.cpp:376
+msgid "import recorded staff"
+msgstr "Opgenomen balk importeren"
+
+#: mainwindow.cpp:377
+msgid "Lyrics editor ..."
+msgstr "Liedtekst bewerker"
+
+#: mainwindow.cpp:377
+msgid "edit lyrics in text editor"
+msgstr "bewerk liedteksten in tekst bewerker"
+
+#: mainwindow.cpp:378
+msgid "ppp"
+msgstr "ppp"
+
+#: mainwindow.cpp:378
+msgid "insert ppp"
+msgstr "ppp invoegen"
+
+#: mainwindow.cpp:379
+msgid "pp"
+msgstr "pp"
+
+#: mainwindow.cpp:379
+msgid "insert pp"
+msgstr "pp invoegen"
+
+#: mainwindow.cpp:380
+msgid "p"
+msgstr "p"
+
+#: mainwindow.cpp:380
+msgid "insert p"
+msgstr "p invoegen"
+
+#: mainwindow.cpp:381
+msgid "mp"
+msgstr "mp"
+
+#: mainwindow.cpp:381
+msgid "insert mp"
+msgstr "mp invoegen"
+
+#: mainwindow.cpp:382
+msgid "sp"
+msgstr "sp"
+
+#: mainwindow.cpp:382
+msgid "insert sp"
+msgstr "sp invoegen"
+
+#: mainwindow.cpp:383
+msgid "mf"
+msgstr "mf"
+
+#: mainwindow.cpp:383
+msgid "insert mf"
+msgstr "mf invoegen"
+
+#: mainwindow.cpp:384
+msgid "sf"
+msgstr "sf"
+
+#: mainwindow.cpp:384
+msgid "insert sf"
+msgstr "sf invoegen"
+
+#: mainwindow.cpp:385
+msgid "f"
+msgstr "f"
+
+#: mainwindow.cpp:385
+msgid "insert f"
+msgstr "f invoegen"
+
+#: mainwindow.cpp:386
+msgid "ff"
+msgstr "ff"
+
+#: mainwindow.cpp:386
+msgid "insert ff"
+msgstr "ff invoegen"
+
+#: mainwindow.cpp:387
+msgid "fff"
+msgstr "fff"
+
+#: mainwindow.cpp:387
+msgid "insert fff"
+msgstr "fff invoegen"
+
+#: mainwindow.cpp:388
+msgid "tempo ..."
+msgstr "Tempo ..."
+
+#: mainwindow.cpp:388
+msgid "insert tempo"
+msgstr "Tempo invoegen"
+
+#: mainwindow.cpp:389
+msgid "Text ..."
+msgstr "Tekst ..."
+
+#: mainwindow.cpp:389
+msgid "insert text"
+msgstr "Tekst invoegen"
+
+#: mainwindow.cpp:390
+msgid "accelerando"
+msgstr "Accelerando"
+
+#: mainwindow.cpp:390
+msgid "insert accelerando"
+msgstr "Accelerando invoegen"
+
+#: mainwindow.cpp:391
+msgid "ritardando"
+msgstr "Ritardando"
+
+#: mainwindow.cpp:391
+msgid "insert ritardando"
+msgstr "Ritardando invoegen"
+
+#: mainwindow.cpp:392
+msgid "lyrics1"
+msgstr "Liedtekst1"
+
+#: mainwindow.cpp:392
+msgid "insert lyrics at line 1"
+msgstr "Liedtekst invoegen bij regel 1"
+
+#: mainwindow.cpp:393
+msgid "lyrics2"
+msgstr "Liedtekst2"
+
+#: mainwindow.cpp:393
+msgid "insert lyrics at line 2"
+msgstr "Liedtekst invoegen bij regel 2"
+
+#: mainwindow.cpp:394
+msgid "lyrics3"
+msgstr "Liedtekst3"
+
+#: mainwindow.cpp:394
+msgid "insert lyrics at line 3"
+msgstr "Liedtekst invoegen bij regel 3"
+
+#: mainwindow.cpp:395
+msgid "lyrics4"
+msgstr "Liedtekst4"
+
+#: mainwindow.cpp:395
+msgid "insert lyrics at line 4"
+msgstr "Liedtekst invoegen bij regel 4"
+
+#: mainwindow.cpp:396
+msgid "lyrics5"
+msgstr "Liedtekst5"
+
+#: mainwindow.cpp:396
+msgid "insert lyrics at line 5"
+msgstr "Liedtekst invoegen bij regel 5"
+
+#: mainwindow.cpp:397
+msgid "Insert tuplet ..."
+msgstr "N-tool invoegen ..."
+
+#: mainwindow.cpp:397
+msgid "insert a tuplet (Ctrl + num)"
+msgstr "N-tool invoegen (Ctrl + num)"
+
+#: mainwindow.cpp:398
+msgid "brace"
+msgstr "Accolade"
+
+#: mainwindow.cpp:398
+msgid "group staves by means of a brace"
+msgstr "Groepeer balken d.m.v. accolade"
+
+#: mainwindow.cpp:399
+msgid "bracket"
+msgstr "Haak"
+
+#: mainwindow.cpp:399
+msgid "group staves by means of a bracket"
+msgstr "Groepeer balken d.m.v. een haak"
+
+#: mainwindow.cpp:400
+msgid "connect barlines"
+msgstr "Maatstrepen verbinden"
+
+#: mainwindow.cpp:400
+msgid "set connected bar lines"
+msgstr "Maatstrepen verbinden instellen"
+
+#: mainwindow.cpp:401
+msgid "remove group"
+msgstr "Verwijder groep"
+
+#: mainwindow.cpp:401
+msgid "remove a group of connected staves"
+msgstr "Vewijder een groep verbonden balken"
+
+#: mainwindow.cpp:402
+msgid "Remove tuplet"
+msgstr "N-tool verwijderen"
+
+#: mainwindow.cpp:402
+msgid "remove a tuplet"
+msgstr "N-tool verwijderen"
+
+#: mainwindow.cpp:403
+msgid "Muting ..."
+msgstr "Dempen ..."
+
+#: mainwindow.cpp:403
+msgid "mute some staves"
+msgstr "Demp enkele balken"
+
+#: mainwindow.cpp:404
+msgid "Transpose ..."
+msgstr "Transponeer ..."
+
+#: mainwindow.cpp:404
+msgid "transpose"
+msgstr "Transponeer"
+
+#: mainwindow.cpp:405
+msgid "hide rests"
+msgstr "Verberg rusten"
+
+#: mainwindow.cpp:405
+msgid "hide (selected) rests"
+msgstr "Verberg (geselecteerde) rusten"
+
+#: mainwindow.cpp:406
+msgid "unhide rests"
+msgstr "Laat verborgen rusten weer zien"
+
+#: mainwindow.cpp:406
+msgid "unhide (selected) rests"
+msgstr "Laat (geselecteerde) verborgen rusten weer zien"
+
+#: mainwindow.cpp:407
+msgid "hide rests (all v.)"
+msgstr "Verberg rusten (alle stemmen)"
+
+#: mainwindow.cpp:407
+msgid "hide selected rests (all v.)"
+msgstr "Verberg geselecteerde rusten (alle stemmen)"
+
+#: mainwindow.cpp:408
+msgid "unhide rests (all v.)"
+msgstr "Laat rusten weer zien (alle stemmen)"
+
+#: mainwindow.cpp:408
+msgid "unhide selected rests (all v.)"
+msgstr "Laat geselecteerde rusten weer zien (alle stemmen)"
+
+#: mainwindow.cpp:409
+msgid "set all to sharp ..."
+msgstr "Alleen kruizen gebruiken ..."
+
+#: mainwindow.cpp:409
+msgid "set all flats to sharp"
+msgstr "Gebruik mollen ipv kruizen"
+
+#: mainwindow.cpp:410
+msgid "set all to flat ..."
+msgstr "Alleen mollen gebruiken ..."
+
+#: mainwindow.cpp:410
+msgid "set all sharps to flat"
+msgstr "Gebruik kruizen ipv mollen"
+
+#: mainwindow.cpp:411
+msgid "About NtEd"
+msgstr "Over NtEd"
+
+#: mainwindow.cpp:413
+msgid "Documentation ..."
+msgstr "Documentatie ..."
+
+#: mainwindow.cpp:415
+msgid "License"
+msgstr "Licentie"
+
+#: mainwindow.cpp:416
+msgid "E_xit"
+msgstr "Afsluiten"
+
+#: mainwindow.cpp:416
+msgid "Exit the program"
+msgstr "Programma afsluiten"
+
+#: mainwindow.cpp:420
+msgid "play"
+msgstr "Afspelen"
+
+#: mainwindow.cpp:421
+msgid "voices in different colors"
+msgstr "Stemmen in verschillende kleuren"
+
+#: mainwindow.cpp:422
+msgid "show measure numbers"
+msgstr "Maatnummers tonen"
+
+#: mainwindow.cpp:423
+msgid "show hidden elements"
+msgstr "Toon verborgen elementen"
+
+#: mainwindow.cpp:424
+msgid "midi input"
+msgstr "Midi invoer"
+
+#: mainwindow.cpp:425
+msgid "record midi"
+msgstr "Midi opname"
+
+#: mainwindow.cpp:425
+msgid "record midi - i"
+msgstr "Midi opname - i"
+
+#: mainwindow.cpp:429
+msgid "in"
+msgstr "in"
+
+#: mainwindow.cpp:429
+msgid "Zoom in Ctrl + +"
+msgstr "Inzoomen Ctrl + +"
+
+#: mainwindow.cpp:430
+msgid "out"
+msgstr "uit"
+
+#: mainwindow.cpp:430
+msgid "Zoom out Ctrl + -"
+msgstr "Uitzoomen Ctrl + -"
+
+#: mainwindow.cpp:431
+msgid "undo"
+msgstr "ongedaan maken"
+
+#: mainwindow.cpp:431
+msgid "Undo Ctrl + z"
+msgstr "Ongedaan maken Ctrl + z"
+
+#: mainwindow.cpp:432
+msgid "redo"
+msgstr "opnieuw"
+
+#: mainwindow.cpp:432
+msgid "Redo Ctrl + y"
+msgstr "Opnieuw Ctrl + y"
+
+#: mainwindow.cpp:433
+msgid "customize beam"
+msgstr "Waardestreep aanpassen"
+
+#: mainwindow.cpp:433
+msgid "customize beam - Ctrl + j"
+msgstr "Waardestreep aanpassen - Ctrl + j"
+
+#: mainwindow.cpp:434
+msgid "flip stem"
+msgstr "Stokrichting omkeren"
+
+#: mainwindow.cpp:434
+msgid "flip stem - Ctrl + f"
+msgstr "Stokrichting omkeren Ctrl + f"
+
+#: mainwindow.cpp:438
+msgid "insert"
+msgstr "invoegen"
+
+#: mainwindow.cpp:438
+msgid "Toggle Insert/Erase Mode - n"
+msgstr "Wissel invoeg/verwijder modus - n"
+
+#: mainwindow.cpp:442
+msgid "page"
+msgstr "pagina"
+
+#: mainwindow.cpp:442
+msgid "Page Mode - p"
+msgstr "Pagina modus - p"
+
+#: mainwindow.cpp:443 dialogs/staffcontextdialog.cpp:177
+#: dialogs/keysigdialog.cpp:42 dialogs/midirecordconfigdialog.cpp:160
+msgid "key"
+msgstr "Toonsoort"
+
+#: mainwindow.cpp:443
+msgid "Keyboard insert mode - k"
+msgstr "Keyboard invoeg modus - k"
+
+#: mainwindow.cpp:1625
+msgid "Cannot replay because could not open ALSA sequencer"
+msgstr "Afspelen niet mogelijk - kon ALSA sequencer niet openen"
+
+#: mainwindow.cpp:2776 mainwindow.cpp:5110 mainwindow.cpp:5156
+#: mainwindow.cpp:6090 mainwindow.cpp:6180 mainwindow.cpp:6937
+#: mainwindow.cpp:9584
+msgid "Save Changes ?"
+msgstr "Veranderingen opslaan ?"
+
+#: mainwindow.cpp:2894 mainwindow.cpp:2995 mainwindow.cpp:3576
+#: mainwindow.cpp:3696 mainwindow.cpp:9035 mainwindow.cpp:9147
+#: mainwindow.cpp:9271 mainwindow.cpp:9360 dialogs/lyricseditor.cpp:350
+#: dialogs/drumconfigdialog.cpp:493
+#, c-format
+msgid "Cannot open %s for writing"
+msgstr "Kan %s niet openen om te schrijven"
+
+#: mainwindow.cpp:2905 mainwindow.cpp:3009
+#, c-format
+msgid "Cannot rename %s to %s"
+msgstr "Kan naam %s niet veranderen in %s"
+
+#: mainwindow.cpp:2940
+msgid "Save score"
+msgstr "Partituur opslaan"
+
+#: mainwindow.cpp:2982 mainwindow.cpp:3564 mainwindow.cpp:3684
+#: mainwindow.cpp:8995 mainwindow.cpp:9135 mainwindow.cpp:9259
+#: mainwindow.cpp:9348 dialogs/lyricseditor.cpp:336
+#: dialogs/drumconfigdialog.cpp:479
+#, c-format
+msgid "File %s already exists. Overwrite ?"
+msgstr "Bestand %s bestaat al. Overschrijven ?"
+
+#: mainwindow.cpp:3272 mainwindow.cpp:3416
+msgid "Please select a note or rest!"
+msgstr "Selecteer a.u.b. een noot of rust!"
+
+#: mainwindow.cpp:3277
+msgid "You select a note in an tuplet"
+msgstr "Je selecteert een noot in een N-tool"
+
+#: mainwindow.cpp:3281
+msgid "You cannot copy incomplete tuplets!"
+msgstr "Je kunt een onvolledige N-tool niet kopieren!"
+
+#: mainwindow.cpp:3296
+msgid "Paste not possible: A tuplet would cross a measure"
+msgstr "Plakken niet mogelijk. N-tool overschrijdt maatstreep"
+
+#: mainwindow.cpp:3443
+msgid "Empty not possible because of incomplete tuplets"
+msgstr "Leegmaken niet mogelijk met onvolledige N-tolen"
+
+#: mainwindow.cpp:4112
+#, c-format
+msgid ""
+"NtEd version %s by Joerg Anders\n"
+"Send bug reports to %s\n"
+"\n"
+"Infos at http://vsr.informatik.tu-chemnitz.de/staff/jan/nted/nted.xhtml\n"
+"\n"
+"Author:\n"
+"               J.Anders <ja@informatik.tu-chemnitz.de>\n"
+"\n"
+"Translation: <no translation>"
+msgstr ""
+"NtEd version %s door Joerg Anders\n"
+"Zend bug rapporten naar %s\n"
+"\n"
+"Informatie op http://vsr.informatik.tu-chemnitz.de/staff/jan/nted/nted."
+"xhtml\n"
+"\n"
+"Auteur:\n"
+"               J.Anders <ja@informatik.tu-chemnitz.de>\n"
+"\n"
+"Nederlandse Vertaling: Wouter Stomp en Martin Tarenskeen"
+
+#: mainwindow.cpp:4123
+msgid ""
+"Excuse! The documentation is not available\n"
+"due to an installation error"
+msgstr ""
+"Helaas! De documentatie is niet beschikbaar\n"
+"door een installatie fout"
+
+#: mainwindow.cpp:4133
+msgid "Excuse! Cannot exec"
+msgstr "Helaas! Exec niet mogelijk"
+
+#: mainwindow.cpp:4138
+msgid "Excuse! Cannot fork"
+msgstr "Helaas! Fork niet mogelijk"
+
+#: mainwindow.cpp:4880 mainwindow.cpp:4902 mainwindow.cpp:7850
+msgid "please select a note or rest first"
+msgstr "Selecteer eerst een noot of rust"
+
+#: mainwindow.cpp:4884 mainwindow.cpp:7854
+msgid "you cannot select an element with dot"
+msgstr "Je kunt geen element met een punt selecteren"
+
+#: mainwindow.cpp:4894 mainwindow.cpp:7869
+msgid "I'm not able to create a tuplet here"
+msgstr "Kan hier geen N-ool maken hier"
+
+#: mainwindow.cpp:4906
+msgid "selected element is not inside a tuplet"
+msgstr "Geselecteerde element is niet in een N-tiool"
+
+#: mainwindow.cpp:5171
+msgid "Open score"
+msgstr "Open partituur"
+
+#: mainwindow.cpp:5211 mainwindow.cpp:6306 mainwindow.cpp:6966
+#: dialogs/lyricseditor.cpp:433 dialogs/drumconfigdialog.cpp:567
+#, c-format
+msgid "Cannot open %s for reading"
+msgstr "Kan %s niet openen om te lezen"
+
+#: mainwindow.cpp:6105
+msgid "Import MusicXML"
+msgstr "MusicXML importeren"
+
+#: mainwindow.cpp:7030 mainwindow.cpp:7056
+msgid "Cannot list midi ports because could not open ALSA sequencer"
+msgstr "Kan MIDI poorten niet tonen - Kon ALSA sequencer niet openen"
+
+#: mainwindow.cpp:7127
+msgid "Font selection - Measure numbers"
+msgstr "Font selectie - Maat nummers"
+
+#: mainwindow.cpp:7749
+msgid "Adjust notes ?"
+msgstr "Noten aanpassen ?"
+
+#: mainwindow.cpp:8951
+msgid "Create PNG"
+msgstr "Maak PNG"
+
+#: mainwindow.cpp:9091
+msgid "Create SVG"
+msgstr "Maak SVG"
+
+#: mainwindow.cpp:9217
+msgid "Create Postscript"
+msgstr "Maak Postscript"
+
+#: mainwindow.cpp:9306
+msgid "Create PDF"
+msgstr "Maak PDF"
+
+#: mainwindow.cpp:9470 dialogs/lilypondexportdialog.cpp:70
+msgid "select staves"
+msgstr "Balken selecteren"
+
+#: mainwindow.cpp:9627
+#, c-format
+msgid "Usage: %s [<filename>.ntd]\n"
+msgstr "Gebruik: %s [<bestandsnaam>.ntd]\n"
+
+#: mainwindow.cpp:9655
+msgid ""
+"unable to set decimal point to '.'. PostScript output will be erroneous. \t\t"
+"\tPlease set the $LANG environment variable appropriately!"
+msgstr ""
+"Kan decimale punt niet naar '.' zetten. Postscript uitvoer zal fouten "
+"bevatten.\t\t \tZet de $LANG omgevingsvariabele correct!"
+
+#: resource.cpp:380
+msgid "Piano 1"
+msgstr "Piano 1"
+
+#: resource.cpp:380
+msgid "Piano 2"
+msgstr "Piano 2"
+
+#: resource.cpp:380
+msgid "Piano 3"
+msgstr "Piano 3"
+
+#: resource.cpp:380
+msgid "Honky-tonk"
+msgstr "Honky-tonk"
+
+#: resource.cpp:381
+msgid "E.Piano 1"
+msgstr "E.Piano 1"
+
+#: resource.cpp:381
+msgid "E.Piano 2"
+msgstr "E.Piano 2"
+
+#: resource.cpp:381
+msgid "Harpsichord"
+msgstr "Klavecimbel"
+
+#: resource.cpp:381
+msgid "Clavinet"
+msgstr "Clavinet"
+
+#: resource.cpp:382
+msgid "Celesta"
+msgstr "Celesta"
+
+#: resource.cpp:382
+msgid "Glockenspiel"
+msgstr "Klokkenspel"
+
+#: resource.cpp:382
+msgid "Music Box"
+msgstr "Muziekdoos"
+
+#: resource.cpp:382
+msgid "Vibraphone"
+msgstr "Vibrafoon"
+
+#: resource.cpp:383
+msgid "Marimba"
+msgstr "Marimba"
+
+#: resource.cpp:383
+msgid "Xylophone"
+msgstr "Xylofoon"
+
+#: resource.cpp:383
+msgid "Tubular Bells"
+msgstr "Buisklokken"
+
+#: resource.cpp:383
+msgid "Dulcimer"
+msgstr "Dulcimer"
+
+#: resource.cpp:384
+msgid "Organ 1"
+msgstr "Orgel 1"
+
+#: resource.cpp:384
+msgid "Organ 2"
+msgstr "Orgel 2"
+
+#: resource.cpp:384
+msgid "Organ 3"
+msgstr "Orgel 3"
+
+#: resource.cpp:384
+msgid "Church Organ"
+msgstr "Kerkorgel"
+
+#: resource.cpp:385
+msgid "Reed Organ"
+msgstr "Rietorgel"
+
+#: resource.cpp:385
+msgid "Accordion"
+msgstr "Accordeon"
+
+#: resource.cpp:385
+msgid "Harmonica"
+msgstr "Harmonica"
+
+#: resource.cpp:385
+msgid "Bandoneon"
+msgstr "Bandoneon"
+
+#: resource.cpp:386
+msgid "Nylon Guitar"
+msgstr "Gitaar Ac.(nylon)"
+
+#: resource.cpp:386
+msgid "Steel Guitar"
+msgstr "Gitaar Ac.(staal)"
+
+#: resource.cpp:386
+msgid "Jazz Guitar"
+msgstr "Jazz Gitaar"
+
+#: resource.cpp:386
+msgid "Clean Guitar"
+msgstr "Gitaar El.(clean)"
+
+#: resource.cpp:387
+msgid "Guitar Mutes"
+msgstr "Gitaar El.(gedempt)"
+
+#: resource.cpp:387
+msgid "Overdrive Guitar"
+msgstr "Gitaar El.Overstuurd"
+
+#: resource.cpp:387
+msgid "Guitar Harmonics"
+msgstr "Gitaar Flageolet"
+
+#: resource.cpp:388
+msgid "Acoustic Bass"
+msgstr "Akoestische Bas"
+
+#: resource.cpp:388
+msgid "Fingered Bass"
+msgstr "Vinger Bas"
+
+#: resource.cpp:388
+msgid "Picked Bass"
+msgstr "Pluk bas"
+
+#: resource.cpp:388
+msgid "Fretless Bass"
+msgstr "Fretloze Bas"
+
+#: resource.cpp:389
+msgid "Slap Bass 1"
+msgstr "Slap Bas 1"
+
+#: resource.cpp:389
+msgid "Slap Bass 2"
+msgstr "Slap Bas 2"
+
+#: resource.cpp:389
+msgid "Synth Bass 1"
+msgstr "Synth Bas 1"
+
+#: resource.cpp:389
+msgid "Synth Bass 2"
+msgstr "Synth Bas 2"
+
+#: resource.cpp:390
+msgid "Violin"
+msgstr "Viool"
+
+#: resource.cpp:390
+msgid "Viola"
+msgstr "Altviool"
+
+#: resource.cpp:390
+msgid "Cello"
+msgstr "Cello"
+
+#: resource.cpp:390
+msgid "Contrabass"
+msgstr "Contrabas"
+
+#: resource.cpp:391
+msgid "Tremolo Strings"
+msgstr "Tremolo Strijkers"
+
+#: resource.cpp:391
+msgid "Pizzicato"
+msgstr "Pizzicato"
+
+#: resource.cpp:391
+msgid "Harp"
+msgstr "Harp"
+
+#: resource.cpp:391
+msgid "Timpani"
+msgstr "Pauken"
+
+#: resource.cpp:392
+msgid "Strings"
+msgstr "Strijkers"
+
+#: resource.cpp:392
+msgid "Slow Strings"
+msgstr "Langzame Strijkers"
+
+#: resource.cpp:392
+msgid "Synth Strings 1"
+msgstr "Synth Strijkers 1"
+
+#: resource.cpp:392
+msgid "Synth Strings 2"
+msgstr "Synth Strijkers 2"
+
+#: resource.cpp:393
+msgid "Choir Aahs"
+msgstr "Koor Aahs"
+
+#: resource.cpp:393
+msgid "Voice Oohs"
+msgstr "Stem Oohs"
+
+#: resource.cpp:393
+msgid "Synth Vox"
+msgstr "Synth Vox"
+
+#: resource.cpp:393
+msgid "Orchestra Hit"
+msgstr "Orkest Klap"
+
+#: resource.cpp:394
+msgid "Trumpet"
+msgstr "Trompet"
+
+#: resource.cpp:394
+msgid "Trombone"
+msgstr "Trombone"
+
+#: resource.cpp:394
+msgid "Tuba"
+msgstr "Tuba"
+
+#: resource.cpp:394
+msgid "Mute Trumpet"
+msgstr "Gedempte Trompet"
+
+#: resource.cpp:395
+msgid "French Horns"
+msgstr "Franse Hoorns"
+
+#: resource.cpp:395
+msgid "Brass"
+msgstr "Koperblazers"
+
+#: resource.cpp:395
+msgid "Synth Brass 1"
+msgstr "Synth Koperblazers 1"
+
+#: resource.cpp:395
+msgid "Synth Brass 2"
+msgstr "Synth Koperblazers 2"
+
+#: resource.cpp:396
+msgid "Soprano Sax"
+msgstr "Sopraan Sax"
+
+#: resource.cpp:396
+msgid "Alto Sax"
+msgstr "Alt Sax"
+
+#: resource.cpp:396
+msgid "Tenor Sax"
+msgstr "Tenor Sax"
+
+#: resource.cpp:396
+msgid "Baritone Sax"
+msgstr "Bariton Sax"
+
+#: resource.cpp:397
+msgid "Oboe"
+msgstr "Hobo"
+
+#: resource.cpp:397
+msgid "English Horn"
+msgstr "Engelse Hoorn"
+
+#: resource.cpp:397
+msgid "Bassoon"
+msgstr "Fagot"
+
+#: resource.cpp:397
+msgid "Clarinet"
+msgstr "Klarinet"
+
+#: resource.cpp:398
+msgid "Piccolo"
+msgstr "Piccolo"
+
+#: resource.cpp:398
+msgid "Flute"
+msgstr "Fluit"
+
+#: resource.cpp:398
+msgid "Recorder"
+msgstr "Blokfluit"
+
+#: resource.cpp:398
+msgid "Pan Flute"
+msgstr "Panfluit"
+
+#: resource.cpp:399
+msgid "Bottle Chiff"
+msgstr "Bottle Chiff"
+
+#: resource.cpp:399
+msgid "Shakuhachi"
+msgstr "Shakuhachi"
+
+#: resource.cpp:399
+msgid "Whistle"
+msgstr "Fluitje"
+
+#: resource.cpp:399
+msgid "Ocarina"
+msgstr "Ocarina"
+
+#: resource.cpp:400
+msgid "Square Wave"
+msgstr "Blok Golf"
+
+#: resource.cpp:400
+msgid "Saw Wave"
+msgstr "Zaagtand Golf"
+
+#: resource.cpp:400
+msgid "Synth Calliope"
+msgstr "Synth Calliope"
+
+#: resource.cpp:400
+msgid "Chiffer Lead"
+msgstr "Chiffer Lead"
+
+#: resource.cpp:401
+msgid "Charang"
+msgstr "Charang"
+
+#: resource.cpp:401
+msgid "Solo Vox"
+msgstr "Solo Vox"
+
+#: resource.cpp:401
+msgid "5th Saw Wave"
+msgstr "Zaagtand Kwint"
+
+#: resource.cpp:401
+msgid "Bass & Lead"
+msgstr "Bas & Lead"
+
+#: resource.cpp:402
+msgid "Fantasia"
+msgstr "Fantasie"
+
+#: resource.cpp:402
+msgid "Warm Pad"
+msgstr "Warm Klanktapijt"
+
+#: resource.cpp:402
+msgid "Poly Synth"
+msgstr "Poly Synth"
+
+#: resource.cpp:402
+msgid "Space Voice"
+msgstr "Ruimtestem"
+
+#: resource.cpp:403
+msgid "Bowed Glass"
+msgstr "Gestreken Glas"
+
+#: resource.cpp:403
+msgid "Metal Pad"
+msgstr "Metaal Klanktapijt"
+
+#: resource.cpp:403
+msgid "Halo Pad"
+msgstr "Halo Klanktapijt"
+
+#: resource.cpp:403
+msgid "Sweep Pad"
+msgstr "Sweep Klanktapijt"
+
+#: resource.cpp:404
+msgid "Ice Rain"
+msgstr "Hagel"
+
+#: resource.cpp:404
+msgid "Soundtrack"
+msgstr "Soundtrack"
+
+#: resource.cpp:404
+msgid "Crystal"
+msgstr "Kristal"
+
+#: resource.cpp:404
+msgid "Atmosphere"
+msgstr "Atmosfeer"
+
+#: resource.cpp:405
+msgid "Brightness"
+msgstr "Helderheid"
+
+#: resource.cpp:405
+msgid "Goblin"
+msgstr "Goblin"
+
+#: resource.cpp:405
+msgid "Echo Drops"
+msgstr "Echo Druppels"
+
+#: resource.cpp:405
+msgid "Star Theme"
+msgstr "Sterren Thema"
+
+#: resource.cpp:406
+msgid "Sitar"
+msgstr "Sitar"
+
+#: resource.cpp:406
+msgid "Banjo"
+msgstr "Banjo"
+
+#: resource.cpp:406
+msgid "Shamisen"
+msgstr "Shamisen"
+
+#: resource.cpp:406
+msgid "Koto"
+msgstr "Koto"
+
+#: resource.cpp:407
+msgid "Kalimba"
+msgstr "Kalimba"
+
+#: resource.cpp:407
+msgid "Bagpipe"
+msgstr "Doedelzak"
+
+#: resource.cpp:407
+msgid "Fiddle"
+msgstr "Vedel"
+
+#: resource.cpp:407
+msgid "Shenai"
+msgstr "Shenai"
+
+#: resource.cpp:408
+msgid "Tinker Bell"
+msgstr "Tinker Bel"
+
+#: resource.cpp:408
+msgid "Agogo"
+msgstr "Agogo"
+
+#: resource.cpp:408
+msgid "Steel Drum"
+msgstr "Steel Drum"
+
+#: resource.cpp:408
+msgid "Wood Block"
+msgstr "Houtblok"
+
+#: resource.cpp:409
+msgid "Taiko Drum"
+msgstr "Taiko Drum"
+
+#: resource.cpp:409
+msgid "Melodic Tom"
+msgstr "Melodische Tom"
+
+#: resource.cpp:409
+msgid "Synth Drum"
+msgstr "Synth Drum"
+
+#: resource.cpp:409
+msgid "Reverse Cymbal"
+msgstr "Bekken Achterstevoren"
+
+#: resource.cpp:410
+msgid "Fret Noise"
+msgstr "Fret Lawaai"
+
+#: resource.cpp:410
+msgid "Breath Noise"
+msgstr "Ademruis"
+
+#: resource.cpp:410
+msgid "Seashore"
+msgstr "Zeegeruis"
+
+#: resource.cpp:410
+msgid "Bird"
+msgstr "Vogel"
+
+#: resource.cpp:411
+msgid "Telephone"
+msgstr "Telefoon"
+
+#: resource.cpp:411
+msgid "Helicopter"
+msgstr "Helikopter"
+
+#: resource.cpp:411
+msgid "Applause"
+msgstr "Applaus"
+
+#: resource.cpp:411
+msgid "Gun Shot"
+msgstr "Geweerschot"
+
+#: resource.cpp:827
+msgid ""
+"Cannot open ALSA MIDI sequencer --> replay won't work :-((\n"
+"Try (as root)\n"
+"modprobe snd-seq-midi\n"
+"and restart NtEd\n"
+"Perhaps this helps(?)"
+msgstr ""
+"Kan ALSA MIDI sequencer niet openen --> Afspelen zal niet werken :-((\n"
+"Probeer (als root)\n"
+"modprobe snd-seq-midi\n"
+"en start NtEd opnieuw\n"
+"Misschien helpt dit(?)"
+
+#: resource.cpp:835
+msgid "Error creating ALSA sequencer output port --> replay won't work :-(("
+msgstr ""
+"Fout tijdens creatie van ALSA seq. uitgang. --> afspelen zal niet werken :(( "
+
+#: resource.cpp:845
+msgid ""
+"Cannot open ALSA MIDI sequencer --> read/record won't work :-((\n"
+"Try (as root)\n"
+"modprobe snd-seq-midi\n"
+"and restart NtEd\n"
+"Perhaps this helps(?)"
+msgstr ""
+"Kan ALSA MIDI sequencer niet openen --> Afspelen/Opnemen zal niet werken :-"
+"((\n"
+"Probeer (als root)\n"
+"modprobe snd-seq-midi\n"
+"en start NtEd opnieuw\n"
+"Misschien helpt dit(?)"
+
+#: resource.cpp:853
+msgid "Error creating ALSA sequencer input port --> record won't work :-(("
+msgstr ""
+"Fout bij creatie van ALSA sequencer ingang. --> afspelen zal niet werken :(( "
+
+#: dialogs/paperconfigdialog.cpp:37 dialogs/paperconfigdialog.cpp:41
+msgid "Paper"
+msgstr "Papier"
+
+#: dialogs/paperconfigdialog.cpp:46
+msgid "paper type"
+msgstr "Papiersoort"
+
+#: dialogs/paperconfigdialog.cpp:81
+msgid "orientation"
+msgstr "Orientatie"
+
+#: dialogs/paperconfigdialog.cpp:82
+msgid "portrait"
+msgstr "Portret"
+
+#: dialogs/paperconfigdialog.cpp:83
+msgid "landscape"
+msgstr "Landschap"
+
+#: dialogs/portchoosedialog.cpp:46
+msgid "MIDI ports"
+msgstr "MIDI poorten"
+
+#: dialogs/portchoosedialog.cpp:60 dialogs/staffcontextdialog.cpp:321
+#: dialogs/staffcontextdialog.cpp:437 dialogs/textdialog.cpp:200
+#: dialogs/midirecordconfigdialog.cpp:133 dialogs/staffselectdialog.cpp:69
+#: dialogs/drumconfigdialog.cpp:110
+msgid "no"
+msgstr "Nee"
+
+#: dialogs/portchoosedialog.cpp:62
+msgid "port"
+msgstr "Poort"
+
+#: dialogs/portchoosedialog.cpp:78
+msgid "midi echo"
+msgstr "MIDI echo"
+
+#: dialogs/printconfigdialog.cpp:31
+msgid "Print command"
+msgstr "Printopdracht"
+
+#: dialogs/printconfigdialog.cpp:35
+msgid "print command"
+msgstr "Printopdracht"
+
+#: dialogs/staffcontextdialog.cpp:31
+msgid "G flat Major; e flat minor"
+msgstr "Ges Majeur; es mineur"
+
+#: dialogs/staffcontextdialog.cpp:31
+msgid "D flat Major; b flat minor"
+msgstr "Des Majeur; bes mineur"
+
+#: dialogs/staffcontextdialog.cpp:32
+msgid "A flat Major; f minor"
+msgstr "As Majeur; f mineur"
+
+#: dialogs/staffcontextdialog.cpp:32
+msgid "E flat Major; c minor"
+msgstr "Es Majeur; c mineur"
+
+#: dialogs/staffcontextdialog.cpp:33
+msgid "B flat Major; g minor"
+msgstr "Bes Majeur; g mineur"
+
+#: dialogs/staffcontextdialog.cpp:33
+msgid "F Major; d minor"
+msgstr "F Majeur; d mineur"
+
+#: dialogs/staffcontextdialog.cpp:34
+msgid "C Major; a minor"
+msgstr "C Majeur; a mineur"
+
+#: dialogs/staffcontextdialog.cpp:34
+msgid "G Major; e minor"
+msgstr "G Majeur; e mineur"
+
+#: dialogs/staffcontextdialog.cpp:35
+msgid "D Major; b minor"
+msgstr "D Majeur; b mineur"
+
+#: dialogs/staffcontextdialog.cpp:35
+msgid "A Major; f sharp minor"
+msgstr "A Majeur; fis mineur"
+
+#: dialogs/staffcontextdialog.cpp:36
+msgid "E Major; c sharp minor"
+msgstr "E Majeur; cis mineur"
+
+#: dialogs/staffcontextdialog.cpp:36
+msgid "B Major; g sharp minor"
+msgstr "B Majeur; gis mineur"
+
+#: dialogs/staffcontextdialog.cpp:37
+msgid "F sharp Major; d sharp minor"
+msgstr "Fis Majeur; dis mineur"
+
+#: dialogs/staffcontextdialog.cpp:120
+msgid "Staff context"
+msgstr "Notenbalk context"
+
+#: dialogs/staffcontextdialog.cpp:132 dialogs/clefconfigdialog.cpp:49
+msgid "clef"
+msgstr "Sleutel"
+
+#: dialogs/staffcontextdialog.cpp:157 dialogs/clefconfigdialog.cpp:74
+msgid "Octave shift:"
+msgstr "Oktaaf verschuiving"
+
+#: dialogs/staffcontextdialog.cpp:163 dialogs/keysigdialog.cpp:66
+#: dialogs/clefconfigdialog.cpp:81
+msgid "adjust notes"
+msgstr "Noten aanpassen"
+
+#: dialogs/staffcontextdialog.cpp:200 dialogs/measureconfigdialog.cpp:110
+#: dialogs/midirecordconfigdialog.cpp:70
+msgid "time signature"
+msgstr "Maatsoort"
+
+#: dialogs/staffcontextdialog.cpp:204 dialogs/measureconfigdialog.cpp:114
+#: dialogs/midirecordconfigdialog.cpp:74
+msgid "Numerator:"
+msgstr "Teller:"
+
+#: dialogs/staffcontextdialog.cpp:205 dialogs/measureconfigdialog.cpp:115
+#: dialogs/midirecordconfigdialog.cpp:75
+msgid "Denominator:"
+msgstr "Noemer:"
+
+#: dialogs/staffcontextdialog.cpp:248
+msgid "staff name"
+msgstr "Notenbalk naam"
+
+#: dialogs/staffcontextdialog.cpp:255
+msgid "staff short name"
+msgstr "notenbalk korte naam"
+
+#: dialogs/staffcontextdialog.cpp:262
+msgid "group name"
+msgstr "groepsnaam"
+
+#: dialogs/staffcontextdialog.cpp:269
+msgid "group short name"
+msgstr "korte groepsnaam"
+
+#: dialogs/staffcontextdialog.cpp:278 dialogs/tempodialog.cpp:154
+#: dialogs/textdialog.cpp:138 dialogs/midirecordconfigdialog.cpp:147
+msgid "tempo"
+msgstr "Tempo"
+
+#: dialogs/staffcontextdialog.cpp:283
+msgid "chorus"
+msgstr "Chorus"
+
+#: dialogs/staffcontextdialog.cpp:289
+msgid "transp."
+msgstr "Transp."
+
+#: dialogs/staffcontextdialog.cpp:295
+msgid "reverb"
+msgstr "Galm"
+
+#: dialogs/staffcontextdialog.cpp:301 dialogs/textdialog.cpp:123
+#: dialogs/midirecordconfigdialog.cpp:153
+msgid "volume"
+msgstr "Volume"
+
+#: dialogs/staffcontextdialog.cpp:307
+msgid "pan"
+msgstr "Stereo balans"
+
+#: dialogs/staffcontextdialog.cpp:323 dialogs/textdialog.cpp:202
+#: dialogs/midirecordconfigdialog.cpp:135
+msgid "instruments"
+msgstr "Instrumenten"
+
+#: dialogs/staffcontextdialog.cpp:332 dialogs/textdialog.cpp:150
+msgid "channel"
+msgstr "Kanaal"
+
+#: dialogs/staffcontextdialog.cpp:337 dialogs/mutedialog.cpp:69
+msgid "muting"
+msgstr "Dempen"
+
+#: dialogs/staffcontextdialog.cpp:338 dialogs/staffcontextdialog.cpp:370
+#: dialogs/mutedialog.cpp:72 dialogs/selectordialog.cpp:98
+msgid "all"
+msgstr "Alles"
+
+#: dialogs/staffcontextdialog.cpp:369
+msgid "voices"
+msgstr "Stemmen"
+
+#: dialogs/staffcontextdialog.cpp:429 dialogs/staffselectdialog.cpp:58
+msgid "staff"
+msgstr "Notenbalk"
+
+#: dialogs/staffcontextdialog.cpp:435 dialogs/staffselectdialog.cpp:67
+msgid "item"
+msgstr "Item"
+
+#: dialogs/staffcontextdialog.cpp:485
+msgid "Score"
+msgstr "Partituur"
+
+#: dialogs/staffcontextdialog.cpp:486
+msgid "MIDI"
+msgstr "MIDI"
+
+#: dialogs/staffcontextdialog.cpp:495
+msgid "Staff position"
+msgstr "Notenbalk positie"
+
+#: dialogs/tupletdialog.cpp:34
+msgid "Tuplet"
+msgstr "N-tool"
+
+#: dialogs/tupletdialog.cpp:40
+msgid ""
+"Instead of using this dialog\n"
+"you can simply press <Ctrl> + num"
+msgstr ""
+"In plaats van dit dialoogvenster\n"
+"kun je ook gewoon <Ctrl> + num gebruiken"
+
+#: dialogs/tupletdialog.cpp:42
+msgid "Tuplet value:"
+msgstr "N-tool waarde: "
+
+#: dialogs/tupletdialog.cpp:47
+msgid "method 2"
+msgstr "Methode 2"
+
+#: dialogs/insertblockdialog.cpp:32
+msgid "Insert blocks"
+msgstr "Blok invoegen"
+
+#: dialogs/insertblockdialog.cpp:39
+msgid "block count:"
+msgstr "Aantal blokken:"
+
+#: dialogs/measureconfigdialog.cpp:53
+msgid "Measure type"
+msgstr "Maat soort"
+
+#: dialogs/measureconfigdialog.cpp:62
+msgid "measure type"
+msgstr "Maat soort"
+
+#: dialogs/measureconfigdialog.cpp:89
+msgid "alternative 1"
+msgstr "Alternatief 1"
+
+#: dialogs/measureconfigdialog.cpp:90
+msgid "alternative 2"
+msgstr "Alternatief 2"
+
+#: dialogs/measureconfigdialog.cpp:99
+msgid "hide following"
+msgstr "Verberg volgende"
+
+#: dialogs/measureconfigdialog.cpp:158
+msgid "enable timesig"
+msgstr "Maatsoort inschakelen"
+
+#: dialogs/measureconfigdialog.cpp:160
+msgid "delete timesig"
+msgstr "Wis maatsoort"
+
+#: dialogs/keysigdialog.cpp:37
+msgid "New keysignature"
+msgstr "Nieuwe toonsoort"
+
+#: dialogs/keysigdialog.cpp:64
+msgid "adjust"
+msgstr "aanpassen"
+
+#: dialogs/scoreinfodialog.cpp:71 dialogs/scoreinfodialog.cpp:75
+msgid "Score info"
+msgstr "Partituur info"
+
+#: dialogs/scoreinfodialog.cpp:79
+msgid "Title:"
+msgstr "Titel:"
+
+#: dialogs/scoreinfodialog.cpp:87
+msgid "Subject:"
+msgstr "Onderwerp:"
+
+#: dialogs/scoreinfodialog.cpp:95
+msgid "Composer:"
+msgstr "Componist:"
+
+#: dialogs/scoreinfodialog.cpp:103
+msgid "Arranger:"
+msgstr "Arrangeur:"
+
+#: dialogs/scoreinfodialog.cpp:111
+msgid "Copyright:"
+msgstr "Auteursrechten:"
+
+#: dialogs/clefconfigdialog.cpp:44
+msgid "Clef configuration"
+msgstr "Sleutel configureren"
+
+#: dialogs/volumedialog.cpp:32
+msgid "Set Volume"
+msgstr "Volume instellen"
+
+#: dialogs/volumedialog.cpp:44
+msgid "volume:"
+msgstr "Volume:"
+
+#: dialogs/tempodialog.cpp:56
+msgid "Set Tempo"
+msgstr "Tempo instellen"
+
+#: dialogs/tempodialog.cpp:128
+msgid "kind"
+msgstr "Soort"
+
+#: dialogs/tempodialog.cpp:150
+msgid "tempo:"
+msgstr "Tempo:"
+
+#: dialogs/lyricseditor.cpp:67
+msgid "Lyrics"
+msgstr "Liedtekst"
+
+#: dialogs/lyricseditor.cpp:85
+msgid "lyrics 1"
+msgstr "Liedtekst 1"
+
+#: dialogs/lyricseditor.cpp:86
+msgid "lyrics 2"
+msgstr "Liedtekst 2"
+
+#: dialogs/lyricseditor.cpp:87
+msgid "lyrics 3"
+msgstr "Liedtekst 3"
+
+#: dialogs/lyricseditor.cpp:88
+msgid "lyrics 4"
+msgstr "Liedtekst 4"
+
+#: dialogs/lyricseditor.cpp:89
+msgid "lyrics 5"
+msgstr "Liedtekst 5"
+
+#: dialogs/lyricseditor.cpp:135 dialogs/drumconfigdialog.cpp:230
+msgid "load from file"
+msgstr "laad van bestand"
+
+#: dialogs/lyricseditor.cpp:136 dialogs/drumconfigdialog.cpp:231
+msgid "save to file"
+msgstr "opslaan naar bestand"
+
+#: dialogs/lyricseditor.cpp:143 dialogs/drumconfigdialog.cpp:247
+msgid "file"
+msgstr "bestand"
+
+#: dialogs/lyricseditor.cpp:292
+msgid "Save lyrics"
+msgstr "Bewaar Liedtekst"
+
+#: dialogs/lyricseditor.cpp:392
+msgid "Open lyrics file"
+msgstr "Liedtekst Bestand openen"
+
+#: dialogs/mutedialog.cpp:34
+msgid "Muting"
+msgstr "Dempen"
+
+#: dialogs/mutedialog.cpp:55 dialogs/selectordialog.cpp:61
+#, c-format
+msgid "Staff %d"
+msgstr "Notenbalk %d"
+
+#: dialogs/mutedialog.cpp:74 dialogs/selectordialog.cpp:100
+msgid "none"
+msgstr "Geen"
+
+#: dialogs/linesdialog.cpp:40
+msgid "Lines"
+msgstr "Lijnen"
+
+#: dialogs/linesdialog.cpp:46
+msgid "lines"
+msgstr "Lijnen"
+
+#: dialogs/selectordialog.cpp:35
+msgid "Transpose"
+msgstr "Transponeer"
+
+#: dialogs/selectordialog.cpp:39
+msgid "Select"
+msgstr "Selecteer"
+
+#: dialogs/selectordialog.cpp:73
+msgid "half-tones"
+msgstr "Halve tonen"
+
+#: dialogs/selectordialog.cpp:76 dialogs/selectordialog.cpp:95
+#: chords/chorddialog.cpp:159
+msgid "selection"
+msgstr "Selectie"
+
+#: dialogs/selectordialog.cpp:87
+msgid "use selection"
+msgstr "Gebruik selectie"
+
+#: dialogs/textdialog.cpp:69
+msgid "Text"
+msgstr "Tekst"
+
+#: dialogs/textdialog.cpp:89 chords/chorddialog.cpp:111
+msgid "text"
+msgstr "Tekst"
+
+#: dialogs/textdialog.cpp:98
+msgid "select font"
+msgstr "Font selecteren"
+
+#: dialogs/textdialog.cpp:105
+msgid "anchor"
+msgstr "Anker"
+
+#: dialogs/textdialog.cpp:108
+msgid "left"
+msgstr "Links"
+
+#: dialogs/textdialog.cpp:109
+msgid "mid"
+msgstr "Midden"
+
+#: dialogs/textdialog.cpp:110
+msgid "right"
+msgstr "Rechts"
+
+#: dialogs/textdialog.cpp:130
+msgid "enable volume change"
+msgstr "Volume verandering mogelijk"
+
+#: dialogs/textdialog.cpp:143
+msgid "enable tempo change"
+msgstr "Tempo verandering mogelijk"
+
+#: dialogs/textdialog.cpp:155
+msgid "enable channel change"
+msgstr "tempo verandering mogelijk"
+
+#: dialogs/textdialog.cpp:162
+msgid "D.S"
+msgstr "D.S."
+
+#: dialogs/textdialog.cpp:165
+msgid "No segno meaning"
+msgstr "Geen Segno betekenis"
+
+#: dialogs/textdialog.cpp:166
+msgid "D.S. al Fine"
+msgstr "D.S. al Fine"
+
+#: dialogs/textdialog.cpp:167
+msgid "D.S. al Coda"
+msgstr "D.S. al Code"
+
+#: dialogs/textdialog.cpp:168
+msgid "D. Capo al Fine"
+msgstr "D.C. al Fine"
+
+#: dialogs/textdialog.cpp:169
+msgid "D. Capo al Coda"
+msgstr "D.C. al Coda"
+
+#: dialogs/textdialog.cpp:170
+msgid "Fine"
+msgstr "Einde"
+
+#: dialogs/textdialog.cpp:171
+msgid "al Coda"
+msgstr "al Coda"
+
+#: dialogs/textdialog.cpp:219
+msgid "instrument"
+msgstr "instrument"
+
+#: dialogs/textdialog.cpp:220
+msgid "enable instrument change"
+msgstr "volume verandering mogelijk"
+
+#: dialogs/signsdialog.cpp:44
+msgid "Signs"
+msgstr "Voortekens"
+
+#: dialogs/signsdialog.cpp:50
+msgid "signs"
+msgstr "Voortekens"
+
+#: dialogs/midiimportdialog.cpp:43
+msgid "MIDI import"
+msgstr "MIDI importeren"
+
+#: dialogs/midiimportdialog.cpp:70 dialogs/midirecordconfigdialog.cpp:103
+msgid "triplet recognition"
+msgstr "Triool herkenning"
+
+#: dialogs/midiimportdialog.cpp:72
+msgid "sort instruments"
+msgstr "Instrumenten sorteren"
+
+#: dialogs/midiimportdialog.cpp:73 dialogs/midirecordconfigdialog.cpp:105
+msgid "force piano"
+msgstr "piano afdwingen"
+
+#: dialogs/midiimportdialog.cpp:74 dialogs/midirecordconfigdialog.cpp:107
+msgid "don't split tracks"
+msgstr "sporen niet splitsen"
+
+#: dialogs/midiimportdialog.cpp:83
+msgid "tempo density"
+msgstr "tempo dichtheid"
+
+#: dialogs/midiimportdialog.cpp:89
+msgid "volume density"
+msgstr "volume dichtheid"
+
+#: dialogs/midirecordconfigdialog.cpp:65
+msgid "Config Record"
+msgstr "Opname Instellen"
+
+#: dialogs/lilypondexportdialog.cpp:63
+msgid "export params"
+msgstr "Parameters exporteren"
+
+#: dialogs/lilypondexportdialog.cpp:66
+msgid "create line breaks"
+msgstr "Maak regeleindes"
+
+#: dialogs/lilypondexportdialog.cpp:74
+msgid "keep beams"
+msgstr "waardestrepen behouden"
+
+#: dialogs/lilypondexportdialog.cpp:172
+msgid "Staff selection"
+msgstr "Notenbalk selectie"
+
+#: dialogs/lilypondexportdialog.cpp:181
+msgid "keep beams selection"
+msgstr "behoud waardestreep selectie"
+
+#: dialogs/staffselectdialog.cpp:76
+msgid "All"
+msgstr "Alles"
+
+#: dialogs/staffselectdialog.cpp:79
+msgid "None"
+msgstr "Geen"
+
+#: dialogs/spacementdialog.cpp:34
+msgid "Horizontal Spacement"
+msgstr "Horizontale spatiering"
+
+#: dialogs/spacementdialog.cpp:40
+msgid "Spacement"
+msgstr "Spatiering"
+
+#: dialogs/scaledialog.cpp:35 dialogs/scaledialog.cpp:40
+msgid "Scale"
+msgstr "Schaal"
+
+#: dialogs/drumconfigdialog.cpp:90
+msgid "Config Drums"
+msgstr "Drums instellen..."
+
+#: dialogs/drumconfigdialog.cpp:112
+msgid "drum element name"
+msgstr "Drum element naam"
+
+#: dialogs/drumconfigdialog.cpp:114
+msgid "short name"
+msgstr "korte naam"
+
+#: dialogs/drumconfigdialog.cpp:116
+msgid "line"
+msgstr "lijn"
+
+#: dialogs/drumconfigdialog.cpp:119
+msgid "symbol"
+msgstr "symbool"
+
+#: dialogs/drumconfigdialog.cpp:121
+msgid "midi pitch"
+msgstr "MIDI toonhoogte"
+
+#: dialogs/drumconfigdialog.cpp:192
+msgid "change element"
+msgstr "Verander element"
+
+#: dialogs/drumconfigdialog.cpp:197
+msgid "note head"
+msgstr "notenkop"
+
+#: dialogs/drumconfigdialog.cpp:223
+msgid "preview"
+msgstr "bekijk vooraf"
+
+#: dialogs/drumconfigdialog.cpp:232
+msgid "load defaults"
+msgstr "laad standaard instellingen"
+
+#: dialogs/drumconfigdialog.cpp:233
+msgid "play element"
+msgstr "element afspelen"
+
+#: dialogs/drumconfigdialog.cpp:446
+msgid "Save drum configuration"
+msgstr "Drum in stellingen bewaren"
+
+#: dialogs/drumconfigdialog.cpp:537
+msgid "Open drum configuration"
+msgstr "Drum instellingen openen"
+
+#: dialogs/chordnamedialog.cpp:50 dialogs/chordnamedialog.cpp:54
+msgid "Chordname"
+msgstr "Akkoordnaam"
+
+#: dialogs/chordnamedialog.cpp:61
+msgid "chordname"
+msgstr "Akkoordnaam"
+
+#: dialogs/chordnamedialog.cpp:80
+msgid "size"
+msgstr "grootte"
+
+#: dialogs/chordnamedialog.cpp:84
+msgid "position"
+msgstr "positie"
+
+#: dialogs/tools.cpp:372 dialogs/tools.cpp:392
+msgid "Toolbox"
+msgstr "Gereedschapskist"
+
+#: chords/chorddialog.cpp:95
+msgid "Chords"
+msgstr "Akkoorden"
+
+#: chords/chorddialog.cpp:99
+msgid "chord"
+msgstr "Akkoord"
+
+#: chords/chorddialog.cpp:109
+msgid "config"
+msgstr "Instellen"
+
+#: chords/chorddialog.cpp:112
+msgid "diagram"
+msgstr "Diagram"
+
+#: chords/chorddialog.cpp:133
+msgid "root"
+msgstr "Grondtoon"
+
+#: chords/chorddialog.cpp:150
+msgid "mody"
+msgstr "Modi"
+
+#: chords/chorddialog.cpp:169
+msgid "chordselect"
+msgstr "Akkoord selectie"
+
+#~ msgid "Append staff <ctrl> + A"
+#~ msgstr "Notenbalk toevoegen <ctrl> + A"
+
+#~ msgid "triplets"
+#~ msgstr "Triolen"
+
+#~ msgid "triplets with rests"
+#~ msgstr "Triolen met rusten"
+
+#~ msgid "use alto clef"
+#~ msgstr "Gebruik altsleutel"
+
+#~ msgid "Number of voices:"
+#~ msgstr "Aantal stemmen:"
+
+#~ msgid "E_xtras"
+#~ msgstr "E_xtras"
+
+#~ msgid "rest"
+#~ msgstr "rust"
+
+#~ msgid "Insert rests - 'r'"
+#~ msgstr "Rusten invoegen - 'r'"
+
+#~ msgid "make ties - _"
+#~ msgstr "Maak overbindingen - _"
+
+#~ msgid "dotted notes - ."
+#~ msgstr "Gepunkteerde noten - ."
+
+#~ msgid "double dotted notes"
+#~ msgstr "Dubbel gepunkteerde noten - ."
+
+#~ msgid "sharp - #"
+#~ msgstr "kruis - #"
+
+#~ msgid "flat notes - -"
+#~ msgstr "mol - -"
+
+#~ msgid "natural notes - ="
+#~ msgstr "Herstellingsteken - ="
+
+#~ msgid "double cross"
+#~ msgstr "dubbelkruis"
+
+#~ msgid "double flat"
+#~ msgstr "dubbelmol"
+
+#~ msgid "staccato"
+#~ msgstr "Staccato"
+
+#~ msgid "staccatissimo"
+#~ msgstr "staccatissimo"
+
+#~ msgid "tenuto"
+#~ msgstr "tenuto"
+
+#~ msgid "sforzato"
+#~ msgstr "Sforzato"
+
+#~ msgid "sforzando"
+#~ msgstr "Sforzando"
+
+#~ msgid "bow up"
+#~ msgstr "opstreek"
+
+#~ msgid "bow down"
+#~ msgstr "afstreek"
+
+#~ msgid "pedal on"
+#~ msgstr "pedaal neer"
+
+#~ msgid "pedal off"
+#~ msgstr "pedaal op"
+
+#~ msgid "trill"
+#~ msgstr "triller"
+
+#~ msgid "prall"
+#~ msgstr "pralltriller"
+
+#~ msgid "open"
+#~ msgstr "open"
+
+#~ msgid "mordent"
+#~ msgstr "mordent"
+
+#~ msgid "fermata"
+#~ msgstr "fermate"
+
+#~ msgid "arpeggio"
+#~ msgstr "arpeggio"
+
+#~ msgid "show graces toolbar"
+#~ msgstr "toon versieringen toolbar"
+
+#~ msgid "show drumbar"
+#~ msgstr "toon drumbar"
+
+#~ msgid "show drum heads toolbar"
+#~ msgstr "toon drumnoten toolbar"
+
+#~ msgid "show more acc."
+#~ msgstr "toon meer acc."
+
+#~ msgid "show the more accidentals toolbar"
+#~ msgstr "toon de meer acc. toolbar"
+
+#~ msgid "Full Note - 1"
+#~ msgstr "Hele Noot - 1"
+
+#~ msgid "Half Note - 2"
+#~ msgstr "Halve Noot - 2"
+
+#~ msgid "Quarter Note - 4"
+#~ msgstr "Kwart Noot - 4"
+
+#~ msgid "1/8 Note - 5"
+#~ msgstr "1/8 Noot - 5"
+
+#~ msgid "l/16 Note - 6"
+#~ msgstr "1/16 Noot - 6"
+
+#~ msgid "1/32 Note - 7"
+#~ msgstr "1/32 Noot - 7"
+
+#~ msgid "1/64 Note - 8"
+#~ msgstr "1/64 Noot - 8"
+
+#~ msgid "stroken grace"
+#~ msgstr "Voorslag met streepje"
+
+#~ msgid "eighth grace"
+#~ msgstr "1/8 voorslagnootje"
+
+#~ msgid "16 grace"
+#~ msgstr "16e voorslagnootje"
+
+#~ msgid "drum note 1"
+#~ msgstr "Drum noot 1"
+
+#~ msgid "drum note 2"
+#~ msgstr "Drum noot 2"
+
+#~ msgid "drum note 3"
+#~ msgstr "Drum noot 3"
+
+#~ msgid "drum note 4"
+#~ msgstr "Drum noot 4"
+
+#~ msgid "drum note 5"
+#~ msgstr "Drum noot 5"
+
+#~ msgid "drum note 6"
+#~ msgstr "Drum noot 6"
+
+#~ msgid "drum note 7"
+#~ msgstr "Drum noot 7"
+
+#~ msgid "drum note 8"
+#~ msgstr "Drum noot 8"
+
+#~ msgid "drum note 9"
+#~ msgstr "Drum noot 9"
+
+#~ msgid "drum note 10"
+#~ msgstr "Drum noot 10"
+
+#~ msgid "guitar  note"
+#~ msgstr "Gitaar noot"
+
+#~ msgid "guitar note without stem"
+#~ msgstr "Gitaarnoot zonder stok"
+
+#~ msgid "Test Menu ..."
+#~ msgstr "Test Menu ..."

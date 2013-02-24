@@ -1,0 +1,6687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+ "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
+  <!ENTITY nted "NtEd">
+  <!ENTITY nbsp "&#160;">
+  <!ENTITY % addindex "IGNORE">
+]>
+
+<book>
+<bookinfo>
+<title
+>El manual de &nted;</title>
+
+<authorgroup>
+<author
+><firstname
+>Jörg</firstname
+><surname
+>Anders</surname
+> <affiliation
+><orgname
+> <ulink url="http://vsr.informatik.tu-chemnitz.de/index.html"
+> </ulink
+> <ulink url="http://www.tu-chemnitz.de"
+> <foreignphrase lang="de"
+>TU-Chemnitz</foreignphrase
+> </ulink
+> </orgname
+> <address
+><email
+>j.anders@informatik.tu-chemnitz.de</email
+></address
+> </affiliation>
+</author>
+
+<othercredit role="translator"
+><firstname
+>Maximiliano</firstname
+><surname
+></surname
+> <contrib
+>Traducción al español</contrib>
+<affiliation>
+<address
+><email
+>mxgdvg@yahoo.it</email
+></address>
+</affiliation>
+</othercredit>
+<othercredit role="translator"
+><firstname
+>Mariano</firstname
+><surname
+>Marini</surname
+> <contrib
+>Traducción al italiano</contrib>
+<affiliation>
+<address
+><email
+>mariano.marini@alice.itk</email
+></address>
+</affiliation>
+</othercredit>
+
+<othercredit role="translator"
+><firstname
+>Jörg</firstname
+><surname
+>Anders</surname
+> <contrib
+>Traducción al alemán</contrib>
+<affiliation>
+<address
+><email
+>ja@informatik.tu-chemnitz.de</email
+></address>
+</affiliation>
+</othercredit>
+
+</authorgroup>
+
+<copyright>
+<year
+>2008</year>
+<holder
+>Jörg Anders</holder>
+</copyright>
+
+<!-- <legalnotice
+>&FDLNotice;</legalnotice
+> -->
+
+<legalnotice
+><para
+>Se concede permiso para copiar, distribuir y/o modificar este documento bajo los términos de la GNU Free Documentation License, Version 1.2 o cualquier versión posterior publicada por la Free Software Foundation; sin secciones que cambien, ni textos de portada, y contraportada. Una copia de la licencia se incluye en la sección titulada <link linkend="credits"
+>"GNU Free Documentation License"</link
+>.</para
+></legalnotice>
+<date
+>2010-09-28</date>
+<releaseinfo
+>1.10.16</releaseinfo>
+<abstract>
+
+<para
+>&nted; es un editor de partituras para Linux.</para>
+
+</abstract>
+
+<keywordset>
+<keyword
+>Gtk</keyword>
+<keyword
+>&nted;</keyword>
+<keyword
+>music</keyword>
+<keyword
+>editor</keyword>
+<keyword
+>notes</keyword>
+<keyword
+>score</keyword>
+<keyword
+>MIDI</keyword>
+</keywordset>
+</bookinfo>
+
+<chapter id="using_nted">
+<title
+>Usando &nted;</title>
+<sect1 id="starting">
+<title
+>Iniciando &nted;</title>
+
+<para
+>Este capítulo describe cómo editar notas con &nted;.</para>
+
+<para
+>Puede arrancar &nted; escribiendo lo siguiente en la línea de comandos:</para>
+<para
+><prompt
+>%</prompt
+> <command
+>nted</command
+> &amp; </para>
+
+<para
+>Una vez &nted; arranca, verá una ventana como la siguiente: <mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/ntedwin.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>&nted; Mainwindow</phrase>
+</textobject>
+</mediaobject>
+</para>
+
+</sect1>
+<sect1 id="first_sound">
+<title
+>El primer sonido</title>
+<tip
+><para
+>Por favor, para escuchar mis ejemplos use la fuente de sonido citada aquí: <ulink url="http://alsa.opensrc.org/8MBGMSFX.SF2"
+>http://alsa.opensrc.org/8MBGMSFX.SF2</ulink
+></para>
+<para
+>Para mayor información sobre cómo usar el archivo SF2 lea la correspondiente cuestión en <link linkend="no_sound"
+>FAQ</link
+> o también sobre la configuración del <link linkend="timidity_server"
+>servidor TiMidity</link
+>.</para>
+</tip>
+
+<para
+>Para escuchar un breve ejemplo elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Abrir ...</guimenuitem
+> </menuchoice>
+</para>
+<para
+>Seleccione <filename
+>datafiles/nted/examples/example1.ntd</filename
+> en la ventana de diálogo y pulse OK!</para>
+<para
+>Los ejemplos se copian durante el proceso de instalación. Por tanto, si no puede encontrarlos, especialmente si instaló mediante un paquete, entonces busque en</para>
+<para
+><filename
+>/usr/share/nted/examples</filename
+></para>
+<para
+>o:</para>
+<para
+><filename
+>/usr/local/share/nted/examples</filename
+></para>
+<para
+>Debería ver una partitura. Elija un puerto MIDI:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>E</accel
+>ditar</guimenu
+> <guimenuitem
+><accel
+>P</accel
+>referencias</guimenuitem
+> <guimenuitem
+>Configurar MIDI ...</guimenuitem
+> </menuchoice>
+</para>
+<para
+>y pulse el botón de tocar (play) (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/play_button.png"/></imageobject
+></inlinemediaobject
+>). Debería ver en rojo las notas mientras suenan. Si no puede escuchar el sonido entonces elija un puerto MIDI distinto. Si esto no sirve entonces consulte la cuestión correspondiente en <link linkend="no_sound"
+>FAQ</link
+>.</para>
+</sect1>
+
+<sect1 id="toolbox">
+<title
+>La caja de herramientas</title>
+
+<para
+>La caja de herramientas es una pequeña ventana que aparece siempre encima de todas las demás ventanas de &nted;</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/toolbox1.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>La caja de herramientas</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Si la caja de herramientas desaparece puede hacerla de nuevo visible pulsando el botón de herramientas ( <inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/toolbox_button.png"/></imageobject
+></inlinemediaobject
+>).</para>
+
+<para
+>La caja de herramientas tiene varios paneles:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/toolbox_panels.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>Los paneles de la caja de herramientas</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Para cambiar el panel use el botón de panel siguiente (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/next_panel_button.png"/></imageobject
+></inlinemediaobject
+>) o bien el de panel previo (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/previous_panel_button.png"/></imageobject
+></inlinemediaobject
+>).</para>
+<para
+>Alternativamente, puede acceder directamente usando los botones de panel situados arriba de la caja de herramientas: </para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/panel_buttons.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>Los botones de panel directo</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Los paneles agrupan botones relacionados con diferentes campos de la notación de la partitura.</para>
+<para
+>Es más, cada panel está estructurado como su teclado numérico:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/numpad_toolbox.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>La caja de herramientas y el teclado numérico</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Instead of pressing a button at the toolbox, you can press the appropriate button on numpad. For instance: If you want half notes, make sure the <computeroutput
+>num</computeroutput
+> light is off and choose the first toolbox panel. Then press <computeroutput
+>4</computeroutput
+> on num pad. The half note button is selected.</para>
+
+<para
+>Además, algunas teclas (silencio, ligadura, sostenido, bemol, natural, puntillo) pueden activarse/desactivarse con las teclas del teclado independientemente del panel actual, vea <link linkend="shortcuts"
+>atajos</link
+>.</para>
+</sect1>
+
+<sect1 id="inserting">
+<title
+>Insertando notas y silencios</title>
+
+<sect2 id="the_modes">
+<title
+>Los 3 modos</title>
+<para
+>&nted; está siempre en uno de 3 modos posibles. El modo queda determinado por el par de botones insertar y página. Al comienzo el botón insertar está activo y el botón página desactivado (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/insert_and_page_button1.png"/></imageobject
+></inlinemediaobject
+>). &nted; está en el modo insertar/suprimir. Si desactiva el botón de insertar/suprimir clicándolo o pulsando la tecla 'n' se pasa al modo editar (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/insert_and_page_button2.png"/></imageobject
+></inlinemediaobject
+>). Si activa el botón de página clicándolo o pulsando la tecla 'p' se pasa al modo página (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/insert_and_page_button3.png"/></imageobject
+></inlinemediaobject
+>). </para>
+
+<para
+>Además puede activar temporalmente el modo editar pulsando la tecla Ctrl mientras acciona el ratón. Puede incluso activar el modo página pulsando la tecla Shift en combinación con el ratón.</para>
+
+
+<para>
+<itemizedlist>
+<listitem>
+<para
+>En el modo insertar/suprimir puede insertar y suprimir notas y silencios.</para>
+</listitem>
+<listitem>
+<para
+>En el modo editar puede modificar la partitura.</para>
+</listitem>
+<listitem>
+<para
+>En el modo página puede desplazar el papel moviendo el ratón.</para>
+</listitem>
+</itemizedlist>
+</para>
+</sect2>
+
+<sect2 id="insert_notes">
+<title
+>Insertando/Suprimiendo notas</title>
+<para
+>Asegúrese que &nted; esté en el modo insertar/suprimir (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Para insertar notas elija una duración de nota en el primer panel de la caja de herramientas:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/toolbox_length.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>The note length</phrase>
+</textobject>
+</mediaobject>
+<para
+>y haga clic en el pentagrama. Si hace clic cerca una nota existente creará un acorde. Si hace clic en una nota existente la nota se elimina. Para suprimir una nota también puede usar la tecla retroceso (Backspace). Para eliminar un única nota de un acorde use la tecla <userinput
+>DEL</userinput
+>.</para>
+
+
+<para
+>Si desea insertar una nota con una alteración elija la alteración en el 2º y/o 3er panel de la caja de herramientas:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/toolbox_accidentals.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>The note length</phrase>
+</textobject>
+</mediaobject>
+<para
+>(vea también <link linkend="beam_handling"
+>Manipulando las barras</link
+>, <link linkend="handle_stems"
+>Manipulando las plicas</link
+>).</para>
+</sect2>
+
+
+<sect2 id="insert_drum_notes">
+<title
+>Insertando notas de percusión</title>
+<para
+>&nted; offers different note head types. Choose one at 5th toolbox panel:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/toolbox_note_heads.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>Los tipos de cabezas de notas</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Seleccione un tipo de cabeza de nota e inserte la nota de percusión como se describe en el capítulo <link linkend="insert_notes"
+>Insertando/Suprimiendo notas</link
+>.</para>
+
+<para
+>Observe: El significado de las notas de percusión depende de la <link linkend="staff_props"
+>clave seleccionada</link
+>. Vea <link linkend="staff_props"
+>claves</link
+> y lea sobre <link linkend="drum_system"
+>el sistema de percusión</link
+>.</para>
+
+<para
+>Observe también: Para producir el sonido de percusión debe seleccionar un canal específico (frecuentemente el canal 10). ¡Vea <link linkend="midi_tab"
+>La pestaña MIDI</link
+>!</para>
+
+</sect2>
+<sect2 id="insert_tremolo_notes">
+<title
+>Inserting tremolo notes</title>
+<para
+>To insert tremolo notes select the tremolo sign at 5th panel of the toolbox:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/toolbox_tremolo.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the tremolo types</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Select a tremolo type and insert the note as described in chapter <link linkend="insert_notes"
+>Inserting/Deleting notes</link
+>.</para>
+
+<para
+>Note: The tremolo does not influence the replay.</para>
+</sect2>
+
+<sect2 id="insert_rests">
+<title
+>Insertando/Suprimiendo silencios</title>
+<para
+>Asegúrese que &nted; está en modo insertar/suprimir (vea <link linkend="the_modes"
+> Los 3 modos</link
+>). Para insertar silencios elija una duración de nota en el 1er panel de la caja de herramientas y presione el botón de silencio:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/toolbox_rest.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>Toolbox rest selected</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>En realidad no puede "suprimir" un silencio porque no puede destruir el compás. Pero en muchos casos la situación es como la siguiente: <mediaobject
+> <imageobject
+> <imagedata fileref="../docimages/delete_rests1.png" format="PNG"/> </imageobject
+> <textobject
+><phrase
+>shift example 1</phrase
+> </textobject
+> </mediaobject
+> Esto puede ocurrir especialmente luego de eliminar una serie de notas porque cada nota borrada deja su correspondiente silencio. Si ahora <emphasis
+>inserta</emphasis
+>  un silencio de blanca en la posición del primer silencio de corchea la situación cambia: <mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/delete_rests2.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>shift example 1</phrase>
+</textobject>
+</mediaobject>
+</para>
+
+</sect2>
+<sect2 id="generalization">
+<title
+>Generalización</title>
+<para
+>Podemos generalizar el último ejemplo. La realidad es que independientemente de si inserta una nota o un silencio, &nted; consume todo el tiempo que sea necesario para insertar la nota o silencio. Asumamos de nuevo esta situación: <mediaobject
+> <imageobject
+> <imagedata fileref="../docimages/delete_rests1.png" format="PNG"/> </imageobject
+> <textobject
+><phrase
+>shift example 1</phrase
+> </textobject
+> </mediaobject
+> Si inserta una blanca en la posición del segundo silencio de corchea el resultado queda: <mediaobject
+> <imageobject
+> <imagedata fileref="../docimages/insert_example.png" format="PNG"/> </imageobject
+> <textobject
+><phrase
+>shift example 1</phrase
+> </textobject
+> </mediaobject
+> &nted; se "come" 3 silencios de corchea y acorta la negra en una corchea. </para>
+</sect2>
+
+<sect2 id="insert_notes_by_keys">
+<title
+>Insertando notas y silencios usando el teclado del PC</title>
+<para
+>Puede cambiar la duración de la nota pulsando algunos números:</para>
+
+<para>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row
+><entry
+>1</entry
+><entry
+>establece la redonda como duración actual</entry
+></row>
+<row
+><entry
+>2</entry
+><entry
+>establece la blanca como duración actual</entry
+></row>
+<row
+><entry
+>4</entry
+><entry
+>establece la negra como duración actual</entry
+></row>
+<row
+><entry
+>5</entry
+><entry
+>establece la corchea como duración actual</entry
+></row>
+<row
+><entry
+>6</entry
+><entry
+>establece la semicorchea como duración actual</entry
+></row>
+<row
+><entry
+>7</entry
+><entry
+>establece la fusa como duración actual</entry
+></row>
+<row
+><entry
+>8</entry
+><entry
+>establece la semifusa como duración actual</entry
+></row>
+</tbody>
+</tgroup>
+</informaltable>
+</para>
+
+<para
+>Para insertar notas usando estas teclas active el botón de inserción con teclado  (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/keyboard_insertion_button.png"/></imageobject
+></inlinemediaobject
+>) o presione 'k'. Esto cambia a &nted; al modo de inserción con teclado. Si ahora presiona una tecla de la tabla de arriba una nota de la duración apropiada se inserta en la posición del cursor. Para insertar un silencio presione simultáneamente la tecla Alt. Use las teclas del Cursor arriba/abajo para determinar la altura. Use las teclas del Cursor izquierda/derecha para cambiar al compás previo/ siguiente.</para>
+
+<para
+>La tecla retroceso (Backspace) elimina la última nota insertada</para>
+
+<para
+>Vea también <link linkend="read_midi_keyboard"
+>Insertando notas con altura determinada por un teclado midi</link
+>.</para>
+</sect2>
+</sect1>
+
+<sect1 id="append_systems">
+<title
+>Añadir un sistema</title>
+
+<para
+>Al inicio &nted; muestra solo un sistema con pocos compases. Para añadir más sistemas presione <keycombo
+><keycap
+>Ctrl</keycap
+> <keycap
+>B</keycap
+></keycombo
+>. Esto añadirá un sistema al final de la partitura.</para>
+
+<para
+>Vea también: <link linkend="delete_system"
+>eliminando sistemas</link
+></para>
+</sect1>
+
+
+<sect1 id="modification">
+<title
+>Modificaciones</title>
+
+<sect2 id="shifting_notes">
+<title
+>Desplazando notas y silencios</title>
+<para
+>Puede desplazar notas y silencios vertical y horizontalmente. Asegúrese que &nted; esté en modo edición (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Recuerde: Puede activar temporalmente este modo manteniendo pulsanda la tecla Ctrl. Haga clic en una nota o silencio con el botón izquierdo. La nota o silencio queda seleccionada. Un acorde o silencio seleccionado aparece en color rojo. Desplácelo manteniendo pulsado el botón izquierdo. La nota o silencio seleccionado seguirá al ratón. Si desplaza una nota verticalmente ésta cambiará su altura. Si desplaza la nota o silencio horizontalmente por delante o por detrás de otra nota o silencio intercambiará sus posiciones.</para>
+
+<para
+>Más aún, si hay una nota seleccionada puede cambiar su altura utilizando las teclas del cursor arriba/abajo. Las teclas del cursor izquierda/derecha cambian la nota o silencio seleccionado.</para>
+
+<para
+>El movimiento horizontal es especialmente útil en casos en los que quiere lograr esto: <mediaobject
+> <imageobject
+> <imagedata fileref="../docimages/hor_shift_example1.png" format="PNG"/> </imageobject
+> <textobject
+><phrase
+>shift example 1</phrase
+> </textobject
+> </mediaobject
+> pero la situación es: <mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/hor_shift_example2.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>shift example 2</phrase>
+</textobject>
+</mediaobject>
+</para>
+
+<para
+>Moviendo la nota por delante del silencio o el silencio por detrás de la nota ambos intercambian su posición.</para>
+</sect2>
+
+<sect2 id="hiding_rests">
+<title
+>Ocultando silencios</title>
+<para
+>Puede ocultar algunos silencios si lo desea. Hay 2 formas de hacerlo. Si quiere ocultar los silencios de una voz completa, selecione esa voz en el selector de voces (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/voice_selector.png"/></imageobject
+></inlinemediaobject
+>) y elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>H</accel
+>erramientas</guimenu
+> <guimenuitem
+>ocultar silencios</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>O simplemente pulse <userinput
+>Ctrl + R</userinput
+>.</para>
+<para
+>Para revelar silencios ocultos elija:</para>
+
+<para>
+<menuchoice
+><guimenu
+><accel
+>H</accel
+>erramientas</guimenu
+> <guimenuitem
+>des-ocultar silencios</guimenuitem
+> </menuchoice>
+</para>
+<para
+>O simplemente pulse <userinput
+>Ctrl + U</userinput
+>.</para>
+
+<para
+>Para limitar esta operación a un pentagrama concreto simplemente seleccione una nota arbitraria (o silencio) de ese pentagrama antes de la operación.</para>
+
+<para
+>La segunda forma es ocultar un grupo de silencios de un rectángulo de selección: Dibuje un rectángulo de selección como se describe en <link linkend="block_select"
+>Selección de un bloque</link
+>. Luego elija <userinput
+>ocultar silencios</userinput
+> o <userinput
+>des-ocultar silencios</userinput
+> tal como se describe arriba. Nota: Esta operación está también limitada a la voz seleccionada.</para>
+
+<para
+>Para (des)ocultar todos los silencios en todas las voces elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>H</accel
+>erramientas</guimenu
+> <guimenuitem
+>ocultar silencios (todas las voces)</guimenuitem
+> </menuchoice>
+</para>
+
+
+<para
+>o:</para>
+
+<para>
+<menuchoice
+><guimenu
+><accel
+>H</accel
+>erramientas</guimenu
+> <guimenuitem
+>des-ocultar silencios (todas las voces)</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Ocultar silencios también es útil en el caso de una <link linkend="handling_upbeats"
+>anacrusa</link
+>.</para>
+
+<para
+>Para hacer visibles los silencios ocultos elija:</para>
+
+<para>
+<menuchoice
+><guimenu
+><accel
+>V</accel
+>er</guimenu
+> <guimenuitem
+>mostrar elementos ocultos</guimenuitem
+> </menuchoice>
+</para>
+</sect2>
+
+<sect2 id="rests-ypos">
+<title
+>Posicionar verticalmente los silencios</title>
+<para
+>&nted; intenta posicionar los silencios de forma que no se solapen con otros elementos. Aunque lo logra en la mayoría de los casos, algunas veces, el usuario deseará personalizar la posición vertical.</para>
+
+<para
+>Para mover un silencio verticalmente selecciónelo, y luego use las teclas del cursor arriba/abajo para cambiar su posición.</para>
+
+<note
+><para
+>A partir de este momento es su responsabilidad colocar el silencio. &nted; no hará nada para solucionar cualquier conflicto. La única forma de conseguir que &nted; vuelva a manejar el silencio es insertando un nuevo silencio.</para
+></note>
+
+<para
+>De esta forma puede conseguir tener 2 voces compartiendo "un" silencio (uno encima de otro):</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/united_rests.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>selected a tie</phrase>
+</textobject>
+</mediaobject>
+
+<note
+><para
+>¡Debe mover ambos silencios al menos un paso! En otro caso &nted; mueve el otro silencio para evitar la colisión.</para
+></note>
+</sect2>
+
+
+<sect2 id="inserting_ties">
+<title
+>Insertando ligaduras de unión</title>
+<para
+>Hay dos maneras de insertar ligaduras de unión:</para>
+<orderedlist>
+<listitem
+><para
+>Este método asume que desea insertar las ligaduras después de haber insertado una serie de notas. Por tanto, nunca pulse el botón de ligadura de unión durante la inserción de notas:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/toolbox_tie.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the tie button</phrase>
+</textobject>
+</mediaobject>
+<para
+>Púlselo luego de haber insertado una serie de notas. Luego seleccione todos los pares de notas a ligar (primero una nota y luego la otra) con el botón izquierdo del ratón.</para>
+<note
+><para
+>No olvide desactivar el botón de la ligadura de unión:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/toolbox_tie.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the tie button</phrase>
+</textobject>
+</mediaobject>
+<para
+>Este botón tiene una prioridad alta por lo que bloquea otras funciones.</para
+></note
+></listitem>
+<listitem
+><para
+>Inserte una nota o acorde seguido por una nota o acorde con la(s) misma(s) altura(s):</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/before_tie_method1.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>before tie method 1</phrase>
+</textobject>
+</mediaobject>
+<para
+>Luego presione <userinput
+>','</userinput
+> <emphasis
+>(coma)</emphasis
+>. Las notas con las misma altura se ligarán:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/after_tie_method2.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>before tie method 2</phrase>
+</textobject>
+</mediaobject>
+</listitem>
+</orderedlist>
+
+</sect2>
+<sect2 id="cost_ties">
+<title
+>Ligaduras de unión personalizadas</title>
+<para
+>&nted; coloca las ligaduras automáticamente dependiendo de la dirección de la plica. Quedará bienen la mayoría de los casos, pero algunas veces, el usuario deseará personalizarlas. Para personalizar una ligadura asegúrese que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Seleccione una ligadura con el botón izquierdo del ratón:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/tie_select.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>selected a tie</phrase>
+</textobject>
+</mediaobject>
+<para
+>La ligadura seleccionada aparece en rojo. Use las teclas del cursor arriba/abajo para modificar la curva:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/tie_changes.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>change the tie's curve</phrase>
+</textobject>
+</mediaobject>
+</sect2>
+<sect2 id="mod_other">
+<title
+>Modificando la duración, alteraciones, puntillos y ligaduras de unión</title>
+<para
+>Asegúrese de que &nted; esté en el modo editar (vea <link linkend="the_modes"
+> Los 3 modos</link
+>). Recuerde: Puede conseguirlo temporalmente pulsando la tecla Ctrl. Haga clic en una nota o silencio con el botón izquierdo del ratón. La nota o silencio queda seleccionada. Un acorde o silencio aparece en color rojo. Los botones de la ventana de herramientas reflejan el estado de la nota o silencio. Puede cambiarlo activando o desactivando los botones correspondientes. Esto incluye: <itemizedlist>
+<listitem
+><para
+>cambiar la duración</para
+></listitem>
+<listitem
+><para
+>cambiar el tipo de cabeza de la nota</para
+></listitem>
+<listitem
+><para
+>insertar/suprimir alteraciones/puntillos</para
+></listitem>
+<listitem
+><para
+>eliminar ligaduras de unión</para
+></listitem>
+</itemizedlist>
+</para>
+</sect2>
+
+<sect2 id="mod_view_undo">
+<title
+>Deshacer/Rehacer y Vista</title>
+<para
+>&nted; registra (sin límite) todas sus acciones. Siempre podrá deshacer una operación previa pulsando el botón deshacer (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/undo_button.png"/></imageobject
+></inlinemediaobject
+>) o pulsando <keycombo
+><keycap
+>Ctrl</keycap
+> <keycap
+>Z</keycap
+></keycombo
+>. Para rehacer algo deshecho pulse el botón rehacer (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/redo_button.png"/></imageobject
+></inlinemediaobject
+>) o pulse <keycombo
+><keycap
+>Ctrl</keycap
+> <keycap
+>Y</keycap
+></keycombo
+>. Para acercar la vista pulse el botón de acercar(<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/zoom_in_button.png"/></imageobject
+></inlinemediaobject
+>) o pulse <keycombo
+><keycap
+>Ctrl</keycap
+> <keycap
+>+</keycap
+></keycombo
+>. Para alejar la vista actual pulse el botón de alejar(<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/zoom_out_button.png"/></imageobject
+></inlinemediaobject
+>) o pulse <keycombo
+><keycap
+>Ctrl</keycap
+> <keycap
+>-</keycap
+></keycombo
+>. </para>
+</sect2>
+</sect1>
+<sect1 id="handling_staffs">
+<title
+>Pentagramas y sistemas</title>
+
+<sect2 id="append_staff">
+<title
+>Añadir un nuevo pentagrama</title>
+<para
+>Para añadir un pentagrama elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>I</accel
+>nsertar</guimenu
+> <guimenuitem
+>Añadir pentagrama</guimenuitem
+> </menuchoice>
+</para>
+<para
+>o simplemente pulse <userinput
+>Ctrl + A</userinput
+>. El pentagrama siempre se añade en última posición. </para>
+</sect2>
+
+<sect2 id="staff_props">
+<title
+>Cambiar las propiedades del pentagrama</title>
+<para
+>Para cambiar las propiedades del pentagrama haga clic derecho en el pentagrama pero no muy cerca de una línea divisoria. Aparece el menu de configuración del pentagrama:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/staff_config_menu.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the staff config menu</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Elija el nombre del prentagrama, la clave, el compás (igualmente <inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/comm_symbol.png"/></imageobject
+></inlinemediaobject
+> o <inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/cut_symbol.png"/></imageobject
+></inlinemediaobject
+>), y la armadura en los paneles correspondientes y pulse OK. <computeroutput
+>ajustar notas</computeroutput
+> determina si &nted; debe ajustar las notas de tal manera que la altura se mantenga. Esto está relacionado con cambios de clave y de tonalidad. La transposición de octava determina una transposición opcional de octava en la clave.</para>
+
+
+<para
+>¡Observe! LilyPond tiene instrucciones propias para seleccionar el signo <inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/comm_symbol.png"/></imageobject
+></inlinemediaobject
+> o <inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/cut_symbol.png"/></imageobject
+></inlinemediaobject
+>. Por tanto, no espere los mismos signos en LilyPond!</para>
+
+<para
+>El <computeroutput
+>nombre abreviado de pentagrama</computeroutput
+> se imprime en la 2ª, 3ª, ... página.</para>
+
+<para id="group_names"
+>El <computeroutput
+>nombre de grupo</computeroutput
+> y el <computeroutput
+>nombre abreviado de grupo</computeroutput
+> tienen el mismo significado que el <computeroutput
+>nombre de pentagrama</computeroutput
+> y el <computeroutput
+>nombre abreviado de pentagrama</computeroutput
+> para grupos de pentagramas. (Vea <link linkend="system_layout"
+>Disposición de los sistemas</link
+>)</para>
+
+<para
+>La clave neutra tiene 3 formas:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/the_neutral_clefs.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the neutral clefs</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>La diferencia está en el mapeado MIDI. La primera forma - indicada con "1" - mapea las notas tal como lo haría la clave de sol. La segunda forma - indicada con "2" - mapea las notas tal como lo haría la clave de fa. La diferencia no es visible.</para>
+
+<para
+>Observe: Si elige la clave neutra 1 o 2 la notación entra en conflicto con la notación de percusión usual y no se exporta a <link linkend="lilypond_export"
+>LilyPond</link
+>. Una alternativa es usar <link linkend="drum_system"
+>el sistema de percusión</link
+>.</para>
+
+<para id="midi_tab"
+>En la pestaña MIDI puede cambiar los parámetros midi que influyen en el sonido durante la reproducción:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/midi_tab.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the midi panel</phrase>
+</textobject>
+</mediaobject>
+<para
+>The instrument panel lets you select the timbre. It assumes a general midi table. Furthermore you can choose the volume of the staff.</para>
+<para id="different_voice_sounds"
+>Actually, each voice has the same timbre (plays the same sound). But on <computeroutput
+>voices</computeroutput
+> panel you can change this behaviour:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/voices_panel.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the instrument panel</phrase>
+</textobject>
+</mediaobject>
+<para
+>If the radio button <userinput
+>all</userinput
+> is selected immediately before closing the staff configuration menu, all voices produce the same sound (play the same instrument). Otherwise you can determine the sound of the different voices by selecting one of the radio buttons <userinput
+>1</userinput
+>, <userinput
+>2</userinput
+>, <userinput
+>3</userinput
+>, or <userinput
+>4</userinput
+>. Choose a sound, a volume, and a stereo position (pan) of each voice.</para>
+<note
+><para
+>Different sounds on the same staff produce different sounds on the same MIDI track which causes a very complicated and expansive MIDI output! Thus, if you have the choice between multiple sounds on the same staff or multiple staves you with uniform sound you should choose the latter one!</para
+></note>
+<para
+>On channel panel you can assign a midi channel. You should assign a different midi channel to different staves. This is automatically done by &nted;. </para>
+<note
+><para
+>El canal 10 es el canal de percusión en la mayoría de las tarjetas de sonido y nunca se asigna automáticamente</para
+></note>
+<para
+>El regulador del tempo afecta a todos los pentagramas.</para
+> 
+<para
+>El regulador de <computeroutput
+>balance</computeroutput
+> determina la posición stereo del instrumento. El regulador de <computeroutput
+>chorus</computeroutput
+>  y el de <computeroutput
+>reverb</computeroutput
+> determinan los efectos esperados.</para>
+<note
+><para
+>El sistema de sonido ALSA no soporta el efecto de reverberación de todas las tarjetas de sonido. El módulo frecuentemente usado <computeroutput
+>snd_emu10k1_synth</computeroutput
+> por ejemplo no soporta reverberación. Pero <link linkend="timidity_server"
+>TiMidity</link
+> lo soporta.</para
+></note>
+<para
+>On mute panel:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/mute_panel.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the instrument panel</phrase>
+</textobject>
+</mediaobject>
+<para
+>you can mute the whole staff by using the <userinput
+>all</userinput
+> checkbox. You can also mute single voices by selecting the voice number. (see also <link linkend="muting"
+>Muting</link
+>).</para>
+<para
+>El regulador transp. produce un desplazamiento de alturas durante la reproducción. Esta característica es útil para instrumentos transpositores que no están afinados en DO.</para>
+</sect2>
+
+<sect2 id="spec_letters_in_staffnames">
+<title
+>Letras especiales en los nombres de pentagrama</title>
+
+<para
+>&nted; le permite colocar letras especiales como el símbolo del bemol en los nombres de pentagrama:</para>
+
+<para
+>Flute in A\b --&gt;</para
+><para
+> <inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/flat_example.png"/></imageobject
+></inlinemediaobject
+></para>
+
+<para
+>La siguiente tabla resume los signos posibles:</para>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row
+><entry
+>\O</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/coda_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\S</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/segno_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\#</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/sharp_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\b</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/flat_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\n</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/neutral_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\o</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/circle_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\c</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/copy_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\r</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/registerd_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\p</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/recording_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\.</entry
+><entry
+>espacio sin separación</entry
+></row>
+<row
+><entry
+>\...</entry
+><entry
+>puntos suspensivos</entry
+></row>
+<row
+><entry
+>\--</entry
+><entry
+>guión</entry
+></row>
+</tbody>
+</tgroup>
+</informaltable>
+</sect2>
+
+
+<sect2 id="staff_pos">
+<title
+>Cambiando la posición del pentagrama</title>
+<para
+>Si hay más de un pentagrama habrá una tercera pestaña, la pestaña de la posición del pentagrama:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/pos_tab.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the position panel</phrase>
+</textobject>
+</mediaobject>
+<para
+>El cursor muestra la posición del pentagrama actual. Clicando en una posición diferente y luego en OK se mueve el pentagrama a la nueva posición.</para>
+</sect2>
+
+<sect2 id="delete_staff">
+<title
+>Eliminando un pentagrama</title>
+<para
+>Si hay más de un pentagrama se mostrará un botón "Delete Staff":</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/staff_config_menu2.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the staff delete button</phrase>
+</textobject>
+</mediaobject>
+<para
+>Para eliminar el pentagrama, pulse ese botón.</para>
+
+</sect2>
+<sect2 id="staff_dist">
+<title
+>Cambiando la distancia entre pentagramas</title>
+<para
+>&nted; elige la distancia entre pentagramas automáticamente de acuerdo con la posición y altura de los elementos. Quedará bien en la mayoría de los casos, pero a veces el usuario deseará personalizar esa distancia. Para incrementarla asegúrese que &nted; esté en modo insertar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>I</accel
+>nsertar</guimenu
+> <guimenuitem
+>espaciador</guimenuitem
+> </menuchoice>
+</para>
+<para
+>Haga clic en la posición que desee colocar el espaciador. Pase a modo editar (o mantenga Ctrl pulsado) y haciendo clic y arrastrando el espaciador verticalmente podrá ajustar la distancia entre el pentagrama actual y los pentagramas adyacentes.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/staff_distances.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the spacer</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Para ocultar el espaciador desmarque:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>V</accel
+>er</guimenu
+> <guimenuitem
+>mostrar elementos ocultos</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Modificar y eliminar espaciadores es similar a <link linkend="change_arb_text_position"
+>modificar y eliminar un texto arbitrario</link
+>.</para>
+</sect2>
+<sect2 id="delete_system">
+<title
+>Eliminando sistemas</title>
+<para
+>Si hay más de un sistema (en una página) aparecerá un botón "Delete Systems"</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/staff_config_menu3.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the system delete button</phrase>
+</textobject>
+</mediaobject>
+<para
+>Para borrar el sistema (en el que hizo clic derecho), pulse el botón.</para>
+
+<note
+><para
+>No podrá borrar el sistema de la primera página si sólo contiene uno.</para
+></note>
+</sect2>
+
+<sect2 id="hide_measure_numbers">
+<title
+>Ocultar los números de compás</title>
+<para
+>&nted; muestra los número de compás a comienzo de sistema. Puede evitarlo así:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>V</accel
+>er</guimenu
+> <guimenuitem
+>mostrar los números de compás</guimenuitem
+> </menuchoice>
+</para>
+
+</sect2>
+
+</sect1>
+
+<sect1 id="drum_system">
+<title
+>El sistema de percusión</title>
+<sect2 id="default_drum_system">
+<title
+>El sistema de percusión predefinido</title>
+
+<para
+>Si elige la clave neutra 1 o 2 desde la ventana de diálogo de clave:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/the_neutral_clefs.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the neutral clefs</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>las alturas se mapean de acuerdo al sistema General MIDI. Esto entra en conflicto con la notación usual de percusión. Para evitarlo &nted; ofrece un sistema de percusión orientado hacia la notación de percusión convencional.</para>
+
+<para
+>Para activar el sistema de percusión elija la tercera clave de percusión (El 3 no aparece). En la versión actual debería ver sólo los siguientes 20 elementos de percusión:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/drumsystem.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>el sistema de percusión</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Estas notas se mapean a MIDI de tal forma que durante la reproducción suene el elemento de percusión apropiado. Es más, estas notas se exportan a <link linkend="lilypond_export"
+>LilyPond</link
+>.</para>
+
+<para
+>Observe también: Para producir el sonido de percusión debe seleccionar un canal específico (frecuentemente el canal 10). ¡Vea <link linkend="midi_tab"
+>La pestaña MIDI</link
+>!</para>
+
+</sect2>
+<sect2 id="config_drum_system">
+<title
+>Configuración del sistema de percusión</title>
+<para
+>El sistema de percusión por defecto abarca los elementos de percusión más usuales. Los usarios que deseen usar más elementos pueden reconfigurar el sistema de percusión:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Configurar Percusión ...</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Aparecerá la ventana de diálogo de configuración de percusión:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/drum_config_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>La ventana de diálogo de la configuración de percusión</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>La tabla central lista todos los elementos de percusión: el nombre, el nombre corto (igual al nombre de <link linkend="lilypond_export"
+>LilyPond</link
+>), la línea, la cabeda de la nota, y la nota MIDI asociada. Si selecciona un elemento de percusión, los botones de las cabezas de nota y la pequeña ventana de previsualización reflejarán el estado actual de la nota de percusión. Puede cambiar la línea haciendo click en las flechas arriba/abajo o con las teclas del cursor arriba/abajo. La cabeza de la nota se cambia haciendo click el el botón de cabeza adecuado. Si hace click en <computeroutput
+>cambiar elemento</computeroutput
+>, la nueva cabeza de nota y la nueva línea se cambian de forma permanente.</para>
+
+<para
+>Para recargar los valores por defecto, presione el botón <computeroutput
+>por defecto</computeroutput
+>. Puede salvar y recargar una configuración en un archivo, presionando los botones <computeroutput
+>guardar en archivo</computeroutput
+> y <computeroutput
+>cargar desde archivo</computeroutput
+>.</para>
+
+<para
+>El botón <computeroutput
+>toca elemento</computeroutput
+> reproduce el elemento de percusión apropiado (si su <link linkend="prepare_replay"
+>dispositivo de salida MIDI está correctamente configurado</link
+>).</para>
+
+<note
+><para
+>Si coloca 2 elementos de percusión en la misma línea con la misma cabeza de nota, &nted; usará el primer elemento que aparezca en esta configuración.</para
+></note>
+</sect2>
+
+</sect1>
+
+
+
+
+<sect1 id="handling_voices">
+<title
+>Voces</title>
+
+<para
+>Dispone de 4 voces para escribir música. Determine la voz a usar con el selector de voces (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/voice_selector.png"/></imageobject
+></inlinemediaobject
+>).</para>
+<para
+>Puede identificar la distintas voces usando el botón  (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/color_button.png"/></imageobject
+></inlinemediaobject
+>), que las dibuja en colores. <mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/color_score.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>colored score</phrase>
+</textobject>
+</mediaobject
+></para>
+<para
+>Los colores de cada voz se corresponden con los indicados en el selector de voz.</para>
+<para
+>The normal case is: Every voice produces the same sound (plays the same instrument) during replay. But you can change this behaviour by attaching <link linkend="different_voice_sounds"
+> different sounds to different voices</link
+>.</para>
+</sect1>
+<sect1 id="block_instructions">
+<title
+>Instrucciones de bloque</title>
+<sect2 id="block_overview">
+<title
+>Esquema - resúmen</title>
+<para
+>&nted; dispone de 4 instrucciones de bloque diferentes:</para>
+<para>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row
+><entry
+>Copiar bloque</entry
+><entry
+>Eliminar bloque</entry
+></row>
+<row>
+<entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/copy_demo.png"/></imageobject
+></inlinemediaobject
+></entry>
+<entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/del_demo.png"/></imageobject
+></inlinemediaobject
+></entry>
+</row>
+<row
+><entry
+>Vaciar bloque</entry
+><entry
+>Insertar bloque</entry
+></row>
+<row>
+<entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/empty_demo.png"/></imageobject
+></inlinemediaobject
+></entry>
+<entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/ins_block_demo.png"/></imageobject
+></inlinemediaobject
+></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</para>
+
+</sect2>
+<sect2 id="block_select">
+<title
+>Seleccionar un bloque</title>
+<para
+>Para seleccionar un bloque asegúrese que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Dibuje una diagonal arrastrando el ratón con el botón izquierdo pulsado de forma que el rectángulo encierre todos los elementos con los que quiere trabajar:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/selection.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>selection</phrase>
+</textobject>
+</mediaobject>
+<para
+>Los elementos seleccionados aparecerán en violeta.</para>
+
+<para
+>Dentro del rectángulo de selección puede hacer clic derecho en los pentagramas que desee deseleccionar.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/desel_selective.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>deselect from selection</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Esto puede ser especialmente últil si por ejemplo desea copiar solo el 1er y 3er pentagrama de 3:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/copy_selective.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>copy selective</phrase>
+</textobject>
+</mediaobject>
+
+</sect2>
+<sect2 id="block_copy">
+<title
+>Copiar bloque</title>
+<para
+>Para copiar un bloque seleccione algunos elementos tal como se describió en <link linkend="block_select"
+>Seleccionar un bloque</link
+>. Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>E</accel
+>ditar</guimenu
+> <guimenuitem
+>Copiar</guimenuitem
+> </menuchoice>
+</para>
+<para
+>o pulse <keycombo
+><keycap
+>Ctrl</keycap
+> <keycap
+>C</keycap
+></keycombo
+>. Los elementos seleccionados se copiarán en un portapapeles interno.</para>
+</sect2>
+
+<sect2 id="block_paste">
+<title
+>Pegar bloques</title>
+<para
+>Para pegar un bloque seleccione una nota o silencio tal como se describió en <link linkend="shifting_notes"
+>Desplazando notas y silencios</link
+>. (No olvide antes copiar el bloque) El acorde o silencio seleccionado debe elegirlo como si estuviera situado en la esquina superior izquierda de un rectágulo imaginario de destino:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/virt_dest_rectangle.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>virtual destination rectangle</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>E</accel
+>ditar</guimenu
+> <guimenuitem
+>Pegar</guimenuitem
+> </menuchoice>
+</para>
+<para
+>o presione <keycombo
+><keycap
+>Ctrl</keycap
+> <keycap
+>V</keycap
+></keycombo
+>. Los elementos del portapapeles interno serán copiados al rectángulo imaginario o virtual de destino:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/paste_complete.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>paste complete</phrase>
+</textobject>
+</mediaobject>
+</sect2>
+
+<sect2 id="block_delete">
+<title
+>Eliminar un bloque</title>
+<para
+>Para eliminar un bloque seleccione algunos elementos tal como se describe en <link linkend="block_select"
+>Seleccionar un bloque</link
+>. Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>E</accel
+>ditar</guimenu
+> <guimenuitem
+>Eliminar bloque</guimenuitem
+> </menuchoice>
+</para>
+<para
+>O simplemente presione Ctrl + X. El boque se eliminará.</para>
+<note
+><para
+>Independientemente de la selección concreta la operación de eliminar influye a todos los pentagramas. Sólo serán eliminados compases completos.</para
+></note>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/block_delete_demo.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>block delete removes whole measures</phrase>
+</textobject>
+</mediaobject>
+</sect2>
+<sect2 id="block_empty">
+<title
+>Vaciar un bloque</title>
+<para
+>Vaciar un bloque significa convertir todas las notas a silencios de la duración adecuada. Seleccione algunos elementos tal como se describe en <link linkend="block_select"
+>Seleccionar un bloque</link
+>:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/sel_for_empty1.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>selection for empty a block</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>De nuevo, puede deseleccionar algunos pentagramas haciendo clic con el botón derecho en ellos:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/sel_for_empty2.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>selection for empty a block, staff 2 deselected</phrase>
+</textobject>
+</mediaobject>
+<para
+>Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>E</accel
+>ditar</guimenu
+> <guimenuitem
+>Vaciar bloque</guimenuitem
+> </menuchoice>
+</para>
+<para
+>O simplemente pulse Ctrl + E. El bloque se vaciará:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/perform_empty.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>block emptied</phrase>
+</textobject>
+</mediaobject>
+</sect2>
+<sect2 id="block_insert">
+<title
+>Insertar un bloque de compases vacíos.</title>
+<para
+>Para insertar un bloque de compases vacíos elija una nota o silencio arbitrario tal como se describe en <link linkend="shifting_notes"
+>Desplazando notas y silencios</link
+>.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/ins_block1.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>select before block insertion</phrase>
+</textobject>
+</mediaobject>
+<para
+>Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>I</accel
+>nsertar</guimenu
+> <guimenuitem
+>Insertar bloque de compases vacíos</guimenuitem
+> </menuchoice>
+</para>
+<para
+>Determine el número de compases vacíos que desea insertar en la ventana de diálogo. Haga clic en OK.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/ins_block_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>block insertion dialog</phrase>
+</textobject>
+</mediaobject>
+<para
+>Los compases se insertarán luego del que contiene la nota o silencio seleccionado.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/ins_block2.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>block insertion performed</phrase>
+</textobject>
+</mediaobject>
+</sect2>
+
+</sect1>
+
+<sect1 id="beam_handling">
+<title
+>Personalizando las barras</title>
+<sect2 id="beam_groups">
+<title
+>Agrupando</title>
+
+<para
+>&nted; pone las barras automáticamente dependiendo de la duración de la nota y del compás. Esto funciona en la mayoría de los casos. Pero algunas veces el usuario desea personalizarlas. Para cambiar el barraje use un botón especial en la barra de herramientas. Este botón cambia de apariencia dependiendo de si hay o no un rectágulo de selección (vea <link linkend="block_select"
+>Seleccionar un bloque</link
+>). Si no hay rectángulo de selección al presionar el botón se aislará la nota actual barrada  (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/isolate_button.png"/></imageobject
+></inlinemediaobject
+>). Para aislar asegúrese de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Seleccione una nota barrada haciendo clic izquierdo en ella:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/before_isolation.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>The situation before isolation</phrase>
+</textobject>
+</mediaobject>
+<para
+>Luego pulse el botón 'personalizar barra' (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/isolate_button.png"/></imageobject
+></inlinemediaobject
+>):</para>
+
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/after_isolation.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>The situation after isolation</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>La nota queda aislada.</para>
+
+<para
+>Para conectar algunas notas con una barra, selcciónelas tal como se describe en <link linkend="block_select"
+>Seleccionar un bloque</link
+>:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/before_connection.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>The situation before connection</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>El botón cambia su apariencia (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/beam_button.png"/></imageobject
+></inlinemediaobject
+>). Púlselo y &nted; connectará las notas con una barra:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/after_connection.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>The situation before connection</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>¡Observe! Esta función puede romper también barras si el rectángulo de selección cruza un barra existente:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/before_connection2.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>The situation before connection</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Quedando así:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/after_connection2.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>The situation before connection</phrase>
+</textobject>
+</mediaobject>
+
+<tip
+><para
+>En vez de pulsar el botón puede usar <keycombo
+><keycap
+>Ctrl</keycap
+> <keycap
+>J</keycap
+></keycombo
+> independientemente de la aparariencia del botón.</para
+></tip>
+</sect2>
+
+<sect2 id="beam_params">
+<title
+>Cambiando los parámetros de las barras</title>
+
+<para
+>Para cambiar la dirección de las plicas asegúrese que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>) seleccione la primera o última nota de un grupo de notas barradas con el borón izquierdo del ratón y pulse el botón de voltear plica (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/change_stem_dir_button.png"/></imageobject
+></inlinemediaobject
+>).</para>
+
+<tip
+><para
+>En vez de pulsar el botón de voltear plica (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/change_stem_dir_button.png"/></imageobject
+></inlinemediaobject
+>) puede simplemente pulsar <keycombo
+><keycap
+>Ctrl</keycap
+> <keycap
+>F</keycap
+></keycombo
+>.</para
+></tip>
+
+<para
+>&nted; calcula la posición e inclinación de las barras dependiendo de la posición de las notas barradas. Esto funciona en la mayoría de los casos. Pero algunas veces el usuario puede desear cambiar estos parámetros. Para cambiar la posición de la barra asegúrese que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>) y seleccione la primera nota barrada con el botón izquierdo del ratón:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/beam_position0.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>beam position 0</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>La plica tiene un manejador representado por un pequenño cuadrado azul. Seleccione y mueva arriba y abajo este cuadrado con el botón izquierdo del ratón. La barra seguirá este movimiento:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/beam_position1.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>beam position 1</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Para cambiar la inclinación de la barra seleccione la última nota barrada con el botón izquierdo del ratón:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/beam_slope0.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>beam slope 0</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>La plica tiene un manejador representado por un pequeño cuadrado azul. Seleccione este manejador con el botón izquierdo del ratón y muévalo arriba y abajo. La inclinación cambiará de acuerdo a este movimiento:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/beam_slope1.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>beam slope 1</phrase>
+</textobject>
+</mediaobject>
+</sect2>
+
+</sect1>
+
+<sect1 id="handle_stems">
+<title
+>Manejando las plicas</title>
+
+<para
+>Para cambiar la dirección de las plicas asegúrese de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>), seleccione la nota con el botón izquierdo del ratón y pulse el botón de voltear plica (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/change_stem_dir_button.png"/></imageobject
+></inlinemediaobject
+>).</para>
+
+
+<tip
+><para
+>En vez de pulsar el botón de voltear plica (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/change_stem_dir_button.png"/></imageobject
+></inlinemediaobject
+>) puede simplemente pulsar <keycombo
+><keycap
+>Ctrl</keycap
+> <keycap
+>F</keycap
+></keycombo
+>.</para
+></tip>
+
+<para
+>Todas las notas tienen una longitud de plica por defecto. Esto funciona en la mayoría de los casos. Pero algunas veces el usuario puede desear cambiar esta longitud. Para hacerlo asegúrese de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>) y seleccione la nota con el botón izquierdo del ratón:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/stem_length0.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>stem length 0</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>La plica tiene un manejador representado por un pequeño cuadrado azul. Selecciónelo con el botón izquierdo del ratón y muévalo arriba o abajo. La longitud de la plica cambiará de acuerdo a este movimiento:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/stem_length1.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>stem length 1</phrase>
+</textobject>
+</mediaobject>
+
+</sect1>
+
+<sect1 id="spacenemt">
+<title
+>Espaciado horizontal</title>
+<sect2 id="global_spacement">
+<title
+>Espaciado global</title>
+<para
+>&nted; aplica un espaciado horizontal predefinido (espacio entre notas consecutivas). Su partitura tendrá un buen aspecto en la mayoría de los casos. Pero a veces el usuario puede querer un espaciado diferente. Para cambiar globalmente el espaciado horizontal elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>E</accel
+>ditar</guimenu
+> <guimenuitem
+>Cambiar espaciado ...</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Aparecerá la ventana de diálogo del espaciado horizontal:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/spacement_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the spacement dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Cambie el factor de espaciado y pulse OK. &nted; aplicará el nuevo espaciado horizontal:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/global_spacement.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the global spacement</phrase>
+</textobject>
+</mediaobject>
+</sect2>
+
+<sect2 id="spacement_per_measure">
+<title
+>Cambiando el espaciado horizontal en un compás</title>
+<para
+>&nted; le permite cambiar el espaciado de un compás. Para hacerlo seleccione una nota arbitraria del compás, tal como se describió en <link linkend="shifting_notes"
+>Desplazando notas y silencios</link
+>. Luego manteniendo presionada la tecla Shift gire la rueda del ratón. El espaciado del compás cambiará conforme lo hace.</para>
+
+<para
+>En vez de usar la rueda del ratón puede también usar <keycombo
+><keycap
+>Shift</keycap
+> <keycap
+>Cursor Arriba</keycap
+></keycombo
+> y <keycombo
+><keycap
+>Shift</keycap
+> <keycap
+>Cursor Abajo</keycap
+></keycombo
+>.</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/measure_spacing.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>horizontal space per measure</phrase>
+</textobject>
+</mediaobject>
+</sect2>
+
+</sect1>
+
+
+<sect1 id="system_layout">
+<title
+>Disposición de los sistemas</title>
+<para
+>Puede agrupar los pentagramas con llaves y corchetes. Además &nted; le permite conectar las líneas divisorias de pentagramas adyacentes.</para>
+<para
+>Para hacerlo seleccione un bloque de pentagramas tal como se describión en el capítulo <link linkend="block_select"
+>Seleccionar un bloque</link
+>.</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/block_select2.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>selected block</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>E</accel
+>ditar</guimenu
+> <guimenuitem
+>Disposición de sistemas ...</guimenuitem
+> </menuchoice>
+</para>
+<para
+>Seleccione uno de los items ofrecidos:</para>
+<itemizedlist>
+<listitem
+><para
+><computeroutput
+>llave</computeroutput
+> - Esto agrupa los pentagramas seleccionados con una llave.</para
+></listitem>
+<listitem
+><para
+><computeroutput
+>corchete</computeroutput
+> - Esto agrupa los pentagramas seleccionados con un corchete.</para
+></listitem>
+<listitem
+><para
+><computeroutput
+>concetar líneas divisorias</computeroutput
+> - Esto conectará las líneas divisorias de los pentagramas seleccionados.</para
+></listitem>
+<listitem
+><para
+><computeroutput
+>eliminar grupo</computeroutput
+> - Esto elimina el grupo de pentagramas creado con uno de los 3 métodos anteriores.</para
+></listitem>
+</itemizedlist>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/stafflayout.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>staff layout</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Para poner nombre a un grupo de pentagramas, rellene la casilla <computeroutput
+>nombre de grupo</computeroutput
+>, o <computeroutput
+>nombre abreviado de grupo</computeroutput
+>, respectivamente (vea: <link linkend="staff_props"
+>Cambiar las propiedades del pentagrama</link
+>) del <emphasis
+>pentagrama más abajo del grupo</emphasis
+>:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/group_name.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>a group name</phrase>
+</textobject>
+</mediaobject>
+</sect1>
+<sect1 id="handling_tuplets">
+<title
+>Grupos de valoración especial</title>
+
+<sect2 id="create_tuplets">
+<title
+>Crear grupos de valoración especial (grupos artificiales)</title>
+<para
+>&nted; puede tratar desde dosillos a trecenas. Para crear un grupo de valoración especial seleccione la nota o silencio que deba ser la primera del mismo. Pulse Ctrl y el número del grupo. Por ejemplo: Si quiere que una negra sea la primera de un tresillo entonces selecciónela:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/before_triplet.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>before triplet creation</phrase>
+</textobject>
+</mediaobject>
+<para
+>y pulse Ctrl + 3:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/triplet_gen1.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>after triplet creation (method1)</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Hay un segundo procedimiento si en vez de lo anterior presiona Ctrl+Alt+&lt;num&gt;, quedando así:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/triplet_gen2.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>after triplet creation (method2)</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>¿Cuál es la diferencia? En el primer caso &nted; considera a la nota seleccionada como el primer miembro del grupo. En el segundo caso la negra tiene la duración de 2 miembros del tresillo. Esto es especialmente útil para música swing donde se repite muy a menudo esta combinación.</para>
+
+</sect2>
+
+<sect2 id="delete_tuplets">
+<title
+>Eliminar grupos de valoración especial</title>
+<para
+>Para eliminar un grupo de valoración especial seleccione a cualquier miembro del grupo y elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>E</accel
+>ditar</guimenu
+> <guimenuitem
+>Eliminar grupo de valoración especial</guimenuitem
+> </menuchoice>
+</para>
+</sect2>
+<sect2 id="higher_tuplets">
+<title
+>Grupos de 10 a 13 notas</title>
+<para
+>Para crearlos elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>I</accel
+>nsertar</guimenu
+> <guimenuitem
+>Insertar grupo de valoración especial ...</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Estableza en 'Valor grupo' el número del grupo deseado en la ventana de diálogo. Para crear un grupo de acuerdo al 2º método (vea más arriba) marque <computeroutput
+>método 2</computeroutput
+>.</para>
+</sect2>
+</sect1>
+
+<sect1 id="slurs">
+<title
+>Ligaduras</title>
+
+<sect2 id="insert_slurs">
+<title
+>Insertando ligaduras</title>
+
+<para
+>To insert a slur make sure &nted; is in edit mode (see <link linkend="the_modes"
+>The 3 modes</link
+>). Select some notes as described in <link linkend="block_select"
+>Select a block</link
+>:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/before_slur.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>before a slur is created</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Then Choose:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>I</accel
+>nsertar</guimenu
+> <guimenuitem
+>Ligadura</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>or press <keycombo
+><keycap
+>Ctrl</keycap
+> <keycap
+>H</keycap
+></keycombo
+>. The slur appears:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/after_slur.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>after a slur is created</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Como puede ver la ligadura tiene 3 manejadores. Manteniendo presionado Ctrl (modo editar), haga clic izquierdo y arrastre estos manejadores para determinar la figura exacta de la ligadura:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/slur2.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>a slur is created</phrase>
+</textobject>
+</mediaobject>
+</sect2>
+
+<sect2 id="modify_slurs">
+<title
+>Modificando las ligaduras</title>
+
+<para
+>Aunque los manejadores de la ligadura parecen poder colocarse libremente, siempre están asignados a un símbolo. El símbolo se sabe por una fina línea azul:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/slur_handles.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the assignment of the slur handles</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Esto tiene consecuencias:</para>
+<itemizedlist>
+<listitem
+><para
+>&nted; trata de mantener la posición de la ligadura relativa al símbolo al que está asignada;</para
+></listitem>
+<listitem
+><para
+>&nted; elimina la ligadura si el símbolo al que está asociada se elimina;</para
+></listitem>
+</itemizedlist>
+
+<para
+>Para cambiar la figura de la ligadura asegúrese de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Seleccione el comienzo o final de una ligadura con el botón izquierdo del ratón. Aparecerán los 3 manejadores de nuevo:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/slur_handles_select.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the selection of the slur handles</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Así, puede cambiar de nuevo la forma de la ligadura arrastrando los 3 manejadores.</para>
+</sect2>
+
+<sect2 id="del_slur">
+<title
+>Eliminando una ligadura</title>
+<para
+>Para eliminar una ligadura asegúrese de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). De nuevo: Puede conseguirlo temporalmente teniendo pulsada la tecla Ctrl. Haga clic izquierdo al comienzo o final de una ligadura. Aparecerá en rojo el manejador seleccionado. Pulse la tecla retroceso (Backspace) y se borrará la ligadura.</para>
+</sect2>
+</sect1>
+
+<sect1 id="repeats">
+<title
+>Repeticiones y otros tipos de barras</title>
+<sect2 id="simple_repeats">
+<title
+>Repeticiones simples</title>
+<para
+>Para colocar una doble barra de repetición asegúrese de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Haga clic derecho en una línea divisoria. Aparecerá la ventana de diálogo 'Tipo de compás':</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/repeat_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the repeat dialog</phrase>
+</textobject>
+</mediaobject>
+<para
+>Elija uno de los tipos de repetición disponibles haciéndo clic en las flechas y luego en el botón OK. El compás cambiará su tipo de línea divisoria:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/repeat_open_measure.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the repeat open measure</phrase>
+</textobject>
+</mediaobject>
+</sect2>
+<sect2 id="alternatives">
+<title
+>Iª y IIª volta</title>
+<para
+>Si selecciona una repetición 'cerrada' (final) en la ventana de diálogo, dispondrá de la casilla  <computeroutput
+>1ª volta</computeroutput
+>. Si la marca, dispondrá de la casilla <computeroutput
+>2ª volta</computeroutput
+>:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/check_alternatives.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the alternative checkboxes</phrase>
+</textobject>
+</mediaobject>
+<para
+>De esta manera podrá poner las correspondientes alternativas:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/the_alternatives.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the alternative</phrase>
+</textobject>
+</mediaobject>
+<para
+>Ambas alternativas cubren un compás. Para cambiarlo seleccione  <computeroutput
+>1.</computeroutput
+> o <computeroutput
+>2.</computeroutput
+> con el botón izquierdo del ratón. El número seleccionado aparecerá en rojo:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/sel_alternative.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the selected alternative</phrase>
+</textobject>
+</mediaobject>
+<para
+>Cambie la longitud de la alternativa pulsando las teclas del cursor izquierda/derecha:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/changed_alternative.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the changed alternative</phrase>
+</textobject>
+</mediaobject>
+<para
+>Para eliminar una alternativa haga clic derecho en la repetición 'cerrada' apropiada y desmarque la casilla correspondiente de la ventana de diálogo.</para>
+</sect2>
+<sect2 id="end_bars">
+<title
+>Doble barra final</title>
+<para
+>De la misma forma puede insertar una doble barra final:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/endbar.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>double bar and end bar</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Si elige la doble barra final o la repetición 'cerrada' puede controlar mediante <userinput
+>ocultar lo que sigue</userinput
+> si &nted; mostrará o no la música que siga al final en el mismo sistema:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/endbar_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the end bar dialog</phrase>
+</textobject>
+</mediaobject>
+<note
+><para
+>¡Es su responsabilidad borrar los sistemas y páginas que sigan!</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/end_bar_following.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the end bar dialog</phrase>
+</textobject>
+</mediaobject>
+</note>
+</sect2>
+<sect2 id="double_bars">
+<title
+>La doble barra</title>
+<para
+>De la misma forma puede insertar una doble barra:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/double_bar.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>double bar</phrase>
+</textobject>
+</mediaobject>
+</sect2>
+</sect1>
+
+<sect1 id="time_sig_change">
+<title
+>Cambios de compás</title>
+<sect2 id="ins_time_sig_change">
+<title
+>Insertando o modificando cambios de compás</title>
+<para
+>Para poner un cambio de compás asegúrese de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Haga clic derecho en una línea divisoria. En la ventana de diálogo seleccione <userinput
+>permitir indicación de compás</userinput
+></para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/timesig_change_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the timesig changed dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>En el panel indicación de compás elija el nuevo numerador, denominador, el signo <inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/comm_symbol.png"/></imageobject
+></inlinemediaobject
+> o <inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/cut_symbol.png"/></imageobject
+></inlinemediaobject
+> y pulse <userinput
+>Ok</userinput
+>:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/timesig_change.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the timesig changed dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>¡Observe! LilyPond tiene instrucciones propias para seleccionar el signo <inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/comm_symbol.png"/></imageobject
+></inlinemediaobject
+> o <inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/cut_symbol.png"/></imageobject
+></inlinemediaobject
+>. Por tanto, no espere los mismos signos en LilyPond!</para>
+</sect2>
+<sect2 id="remove_time_sig_change">
+<title
+>Eliminando un cambio de compás</title>
+<para
+>Para eliminar un cambio de compás existente marque también <userinput
+>borrar indicación de compás</userinput
+> en el mismo panel 'Indicación de compás'.</para>
+</sect2>
+</sect1>
+
+<sect1 id="clef_change">
+<title
+>Cambios de clave</title>
+<sect2 id="ins_clef_change">
+<title
+>Insertando un cambio de clave</title>
+<para
+>Para poner un cambio de clave asegúrese que &nted; esté en modo insertar/suprimir (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>I</accel
+>nsertar</guimenu
+> <guimenuitem
+>Insertar clave ...</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>La ventana de diálogo de cambiar clave aparecerá:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/clef_change_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the clef change dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Elija una clave haciendo clic en las flechas. Puede añadirle a la clave transposición de octava.</para>
+
+<para
+>La clave neutra tiene 3 formas:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/the_neutral_clefs.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the neutral clefs</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>La diferencia está en el mapeado MIDI. La primera forma - indicada con "1" - mapea las notas tal como lo haría la clave de sol. La segunda forma - indicada con "2" - mapea las notas tal como lo haría la clave de fa. La diferencia no es visible.</para>
+
+<para
+>Observe: Si elige la clave neutra 1 o 2 la notación entra en conflicto con la notación de percusión usual y no se exporta a <link linkend="lilypond_export"
+>LilyPond</link
+>. Una alternativa es usar <link linkend="drum_system"
+>el sistema de percusión</link
+>.</para>
+
+
+<para
+><computeroutput
+>ajustar notas</computeroutput
+> determina si &nted; deberá o no ajustar las notas que estén a continuación de la nueva clave de forma que mantengan su altura (si está marcada) o su posición en el pentagrama (si no lo está). Pulse el botón <computeroutput
+>Ok</computeroutput
+>. Haga clic en la posición que desee colocar la clave. La nueva clave aparecerá:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/clef_change.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the clef change</phrase>
+</textobject>
+</mediaobject>
+</sect2>
+
+<sect2 id="del_clef_change">
+<title
+>Eliminando un cambio de clave</title>
+<para
+>Para eliminar un cambio de clave asegúrese de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). De nuevo: Puede activar temporalmente este modo manteniendo pulsada la tecla Ctrl. Haga clic izquierdo en el cambio de clave. La clave seleccionada aparecerá en color rojo. Pulse la tecla retroceso (Backspace) y el cambio de clave se eliminará.</para>
+</sect2>
+</sect1>
+
+<sect1 id="keysig_change">
+<title
+>Cambios de armadura</title>
+<sect2 id="ins_keysig_change">
+<title
+>Insertando un cambio de armadura</title>
+<para
+>Para poner un cambio de armadura asegúrese de que &nted; esté en modo insertar/suprimir. (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>I</accel
+>nsertar</guimenu
+> <guimenuitem
+>Insertar armadura ...</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>La ventana de diálogo 'Tonalidad nueva' aparecerá:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/keysig_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>key signature dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Elija una nueva armadura. <computeroutput
+>ajustar notas</computeroutput
+> determina si &nted; debe o no mantener la altura de las notas que siguen a la nueva armadura conforme al nuevo cambio de tonalidad. Pulse el botón <computeroutput
+>Ok</computeroutput
+>. Haga clic en la posición donde quiera colocar el cambio de armadura:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/keysig_change.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the key signature change</phrase>
+</textobject>
+</mediaobject>
+</sect2>
+
+<sect2 id="del_keysig_change">
+<title
+>eliminando un cambio de armadura</title>
+<para
+>Para eliminar un cambio de armadura asegúrese de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>los 3 modos</link
+>). De nuevo: Puede activar este modo manteniendo pulsada la tecla Ctrl. Haga clic izquierdo en el cambio de armadura. La armadura aparecerá en color rojo. Pulse la tecla retroceso y eliminará el cambio de armadura.</para>
+</sect2>
+</sect1>
+
+<sect1 id="dynamics">
+<title
+>Dinámica</title>
+<sect2 id="ins_dynamics">
+<title
+>Insertar elementos de dinámica</title>
+
+<para
+>Para insertar una abreviación dinámica (matices) asegúrese de que &nted; esté en modo insertar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>I</accel
+>nsertar</guimenu
+> <guimenuitem
+><accel
+>D</accel
+>inámica ...</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Elija el signo dinámico y haga clic en la posición donde lo quiera colocar.</para>
+</sect2>
+
+<sect2 id="change_dynamics_pos">
+<title
+>Cambiar la posición de la dinámica</title>
+<para
+>Para mover una abreviación dinámica asegúrese de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Selecciónela haciéndo clic izquierdo en ella. Aparecerá en rojo. Mantenga el botón izquierdo hundido y mueva el ratón. El signo dinámico seguirá el movimiento del ratón.</para>
+
+<para
+>Aunque los signos dinámicos parecen colocarse libremente, siempre se asignan a un elemento. El elemento se muestra con una fina línea azul:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/dynamic_assignment.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the assignment of dynamics</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Esto tiene consecuencias:</para>
+<itemizedlist>
+<listitem
+><para
+>&nted; intenta mantener la posición del signo dinámico relativa al elemento al que está asignado;</para
+></listitem>
+<listitem
+><para
+>&nted; copia el signo dinámico si copia el elemento al que está asignado;</para
+></listitem>
+<listitem
+><para
+>&nted; elimina el signo dinámico si elimina el elemento al que está asignado;</para
+></listitem>
+<listitem
+><para
+>&nted; determina el volúmen del pentagrama que tiene asignado el signo;</para
+></listitem>
+</itemizedlist>
+</sect2>
+
+<sect2 id="dynamics_midi_volume">
+<title
+>Determinar el volúmen MIDI de un signo dinámico</title>
+<para
+>Todo signo dinámico tiene un volúmen predefinido entre 0 y 127. Para cambiarlo haga clic derecho en el signo dinámico. Aparecerá la ventana de diálogo de 'Establecer volúmen':</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/volume_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the volume dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Seleccione el volúmen MIDI y presione OK.</para>
+</sect2>
+
+
+<sect2 id="remove_dynamics">
+<title
+>Eliminando signos dinámicos</title>
+<para
+>Para eliminar un signo dinámico asegúrese de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Haga clic izquierdo en el signo dinámico para seleccionarlo. Aparecerá en rojo. Pulse la tecla retroceso y el signo dinámico se eliminará.</para>
+</sect2>
+
+</sect1>
+
+<sect1 id="lines">
+<title
+>Líneas horizontales</title>
+<sect2 id="ins_lines">
+<title
+>Insertando líneas horizontales</title>
+
+<para
+>&nted; le permite insertar algunas líneas horizontales. Entre ellas (de-)crescendo (reguladores), 8va, 8vb, 15ma y 15mb. Para insertar una línea asegúrese de que &nted; esté en modo insertar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>I</accel
+>nsertar</guimenu
+> <guimenuitem
+>Insertar líneas.</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Aparecerá la ventana de diálogo 'Líneas'</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/line_dialog1.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the line dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Haga clic en el tipo de línea apropiada. La línea seleccionada aparecerá encerrada en un cuadro rojo:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/line_dialog2.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the line dialog (selected) </phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Pulse OK y haga clic izquierdo en la posición que desee colocar la línea. Se creará la línea correspondiente:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/crescendo1.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>a (de-)crescendo is created</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Como puede ver la línea tiene 2 manejadores. Haciéndo clic izquierdo y arrastrándolos puede determinar la posición y longitud:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/crescendo2.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>a (de-) crescendo is placed</phrase>
+</textobject>
+</mediaobject>
+
+<tip
+><para
+>Si quiere que una línea abarque múltiples pentagramas (renglones) primero mueva el punto final verticalmente, !incluso si el manejador no sigue inmediatamente al puntero del ratón!</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/multi_stave_line.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>create multi stave lines</phrase>
+</textobject>
+</mediaobject>
+
+</tip>
+
+
+<para
+>¡Observe! El manejador izquierdo determina la posición de comienzo. El manejador derecho solo determina el punto final horizontal, no la posición vertical.</para>
+</sect2>
+
+<sect2 id="modify_lines">
+<title
+>Modificando las líneas</title>
+
+<para
+>Aunque los manejadores de las líneas parecen poder colocarse libremente, siempre están asignados a un signo. El signo se muestra por una fina línea azul:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/crescendo_handles.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the assignment of the crescendo handles</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Esto tiene consecuencias:</para>
+<itemizedlist>
+<listitem
+><para
+>&nted; intenta mantener la posición del manejador relativa al signo que tiene asignado;</para
+></listitem>
+<listitem
+><para
+>&nted; elimina la línea si se elimina el signo al que está asignada;</para
+></listitem>
+<listitem
+><para
+>&nted; determina la reproducción MIDI del pentagrama correspondiente, si es posible;</para
+></listitem>
+</itemizedlist>
+
+<para
+>Para cambiar la longitud y posición de la línea asegúrese de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Haga clic izquierdo en el comienzo de la línea. Los dos manejadores volverán a aparecer:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/crescendo_handles_select.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the selection of the crescendo handles</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Así, podrá cambiar de nuevo la longitud y posición de la línea arrastrando los 2 manejadores.</para>
+
+</sect2>
+
+<sect2 id="del_line">
+<title
+>Eliminando una línea</title>
+<para
+>Para eliminar una línea asegúrese de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>los 3 modos</link
+>). De nuevo: Puede conseguirlo temporalmente manteniendo pulsada la tecla Ctrl. Haga clic izquierdo al comienzo de la línea. El manejador seleccionado aparece en rojo. Pulse la tecla retroceso para eliminar la línea.</para>
+</sect2>
+
+<sect2 id="crescendo">
+<title
+>(de-)cresendi (reguladores)</title>
+
+<para id="crescendo_param"
+>Para determinar el comportamiento MIDI de los (de-)crescendi asegúrese de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Haga clic derecho al comienzo del (de-)crescendo. Defina el volúmen de comienzo en la ventana de diálogo 'Establecer volúmen':</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/volume_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the volume dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Define the MIDI volume difference caused by the (de-) crescendo and press OK!</para>
+</sect2>
+
+<sect2 id="octaviation">
+<title
+>Líneas de octava: 8va, 8va, 15ma, 15mb</title>
+
+<para
+>Estos signos cambian la octava de las notas que abarcan.</para>
+
+</sect2>
+</sect1>
+
+<sect1 id="tempo">
+<title
+>Indicaciones metronómicas</title>
+<sect2 id="ins_tempo">
+<title
+>Insertando una indicación metronómica</title>
+
+<para
+>Para insertarla asegúrese antes de que &nted; esté en modo insertar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>I</accel
+>nsertar</guimenu
+> <guimenuitem
+><accel
+>t</accel
+>empo ...</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>La ventana de diálogo 'Establecer tempo' aparecerá:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/tempo_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the tempo dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Seleccione una figura y su valor metronómico. Pulse "OK". Luego haga clic en la posición que desee colocarla.</para>
+</sect2>
+
+<sect2 id="change_tempo_pos">
+<title
+>Cambiar la posición de una indicación metronómica</title>
+<para
+>Para moverla asegúrese antes de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Haga clic izquierdo en la indicación para seleccionarla. Cambiará a color rojo. Mantenga pulsado el botón izquierdo mientras la arrastra. La indicación metronómica seguirá sus movimientos.</para>
+
+<para
+>Aunque estas indicaciones parecen colocarse libremente, siempre se asignan a un signo. El signo asociado se sabe por una fina línea azul:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/tempo_assignment.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the assignment of tempo markers</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Esto tiene consecuencias:</para>
+<itemizedlist>
+<listitem
+><para
+>&nted; intenta mantener la posición de la indicación metronómica relativa al signo con el que está asociada;</para
+></listitem>
+<listitem
+><para
+>&nted; copia la indicación si el signo al que está asignada se copia;</para
+></listitem>
+<listitem
+><para
+>&nted; elimina la indicación si el signo al que está asignada se elimina;</para
+></listitem>
+</itemizedlist>
+</sect2>
+
+<sect2 id="change_tempo_values">
+<title
+>Cambiando los valores de la indicación metronómica</title>
+<para
+>Para cambiar el valor o la figura haga clic derecho en la indicación metronómica. Aparecerá la ventana de diálogo siguiente:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/tempo_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the tempo dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Seleccione la nueva figura o el nuevo valor y presione OK.</para>
+</sect2>
+
+
+<sect2 id="remove_tempo">
+<title
+>Eliminando  una indicación metronómica</title>
+<para
+>Para eliminarla asegúrese antes de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Haga clic izquierdo en la indicación para seleccionarla. Aparecerá en color rojo. Pulse la tecla retroceso para eliminarla.</para>
+</sect2>
+
+</sect1>
+
+
+<sect1 id="arbitraty_text">
+<title
+>Texto arbitrario</title>
+<sect2 id="ins_arb_text">
+<title
+>Insertando un texto arbitrario</title>
+
+<note
+><para
+>¡No use esta función para añadir letras, dinámicas, un accelerando, ritardando, o un (de-)cresendo ya que &nted; tiene métodos especiales para esos términos, los cuales afectan parcialmente a la reproducción MIDI de la manera correspondiente. (Vea <link linkend="lyrics"
+>Letras</link
+>, <link linkend="dynamics"
+>Dinámica </link
+>, <link linkend="accel"
+>Accelerando, Ritardando</link
+>, y <link linkend="crescendo"
+>(de-)crescendi (reguladores)</link
+>)! </para
+></note>
+
+<para
+>Para insertar texto arbitrario asegúrese de que &nted; esté en modo insertar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>I</accel
+>nsertar</guimenu
+> <guimenuitem
+>Texto ...</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Aparecerá la venta de diálogo 'Texto':</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/text_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the text dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Inserte un texto en el campo 'texto'. Pulse el botón de fuente bajo el campo de texto si desea una fuente diferente. También puede determinar el punto de anclaje:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/text_alignment.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the text alignment</phrase>
+</textobject>
+</mediaobject>
+
+<note
+><para
+>Por favor dé preferencia a fuentes como <computeroutput
+>Sans</computeroutput
+> o <computeroutput
+>Serif</computeroutput
+>. Dependiendo de la configuración de sus sistema otras fuentes pueden causar problemas (apariencia pixelada) en las salidas PostScript/PDF. Esto atañe con frecuencia a fuentes como <computeroutput
+>Helvetica</computeroutput
+> o <computeroutput
+>Times</computeroutput
+>.</para
+></note>
+
+<para
+>El texto a veces tiene que ver con el tempo (<userinput
+>allegro</userinput
+>) o la intesidad (<userinput
+>forte</userinput
+>). Los 2 campos bajo el botón de fuente le permiten influir en la reproducción MIDI. Para influir en el volúmen marque <userinput
+>permitir cambio de volúmen</userinput
+> y elija un volúmen. Para influir en el tempo marque <userinput
+>permitir cambio de tempo</userinput
+> y elija un valor.</para>
+<para id="instrument_change"
+>Además, el texto puede producir un cambio de instrumento. Para activarlo marque <userinput
+>permitir cambio de instrumento</userinput
+> y seleccione el nuevo instrumento.</para>
+<para
+>If you enable the channel change, then playing the note will cause the staff to change MIDI channel.</para>
+
+<para
+>Si todo es correcto pulse  "OK". Luego haga clic en la posición donde desee colocar el texto.</para>
+
+<para
+>Para un pentagrama con Segno consulte la sección <link linkend="segno_staff"
+>D.S./Capo al Coda/D.S./Capo al Fine</link
+>.</para>
+
+</sect2>
+
+<sect2 id="spec_letters">
+<title
+>Letras especiales</title>
+
+<para
+>&nted; le permite colocar letras especiales como coda dentro del texto:</para>
+
+<para
+>D.S. al \O --&gt; </para
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/dsalcoda_example.png"/></imageobject
+></inlinemediaobject
+></para>
+
+<para
+>La siguiente tabla resume los signos posibles:</para>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row
+><entry
+>\O</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/coda_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\S</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/segno_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\#</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/sharp_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\b</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/flat_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\n</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/neutral_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\o</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/circle_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\c</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/copy_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\r</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/registerd_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\p</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/recording_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\.</entry
+><entry
+>espacio sin separación</entry
+></row>
+<row
+><entry
+>\...</entry
+><entry
+>puntos suspensivos</entry
+></row>
+<row
+><entry
+>\--</entry
+><entry
+>guión</entry
+></row>
+</tbody>
+</tgroup>
+</informaltable>
+</sect2>
+
+
+<sect2 id="change_arb_text_position">
+<title
+>Cambiar la posición del texto</title>
+<para
+>Asegúrese antes de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Haga clic izquierdo al comienzo del texto para seleccionarlo. El texto se pondrá rojo. Mantenga hundido el botón izquierdo y mueva el ratón. El texto seguirá sus movimientos.</para>
+
+<para
+>Aunque el texto parezca ser libremente colocable, siempre estará asignado a un signo. El signo se sabe por una fina línea azul:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/text_assignment.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the assignment of arbitrary text</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Esto tiene consecuencias:</para>
+<itemizedlist>
+<listitem
+><para
+>&nted; trata de mantener la posición del texto relativa al signo al cual está asignado;</para
+></listitem>
+<listitem
+><para
+>&nted; copia el texto si el signo al que está asociado se copia;</para
+></listitem>
+<listitem
+><para
+>&nted; elimina el texto si se elimina el signo al que está asociado;</para
+></listitem>
+</itemizedlist>
+</sect2>
+
+<sect2 id="change_arb_text">
+<title
+>Modificando un texto arbitrario</title>
+<para
+>Para cambiar el texto haga clic derecho en él. Aparecerá de nuevo la ventana de diálogo 'Texto'. Así, puede cambiar el texto y sus propiedades.</para>
+</sect2>
+
+
+<sect2 id="remove_text">
+<title
+>Eliminando un texto arbitrario</title>
+<para
+>Para eliminar el texto asegúrese antes de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Haga clic izquierdo en el texto para seleccionarlo. El texto aparecerá en rojo. Pulse la tecla retroceso y el texto se eliminará.</para>
+</sect2>
+
+</sect1>
+
+<sect1 id="accel">
+<title
+>Accelerando, Ritardando</title>
+<sect2 id="ins_accel">
+<title
+>Insertando un Accelerando/Ritardando</title>
+
+<para
+>Para insertar un accelerando o ritardando &nted; debe estar en modo insertar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>I</accel
+>nsertar</guimenu
+> <guimenuitem
+>accelerando</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>o:</para>
+
+<para>
+<menuchoice
+><guimenu
+><accel
+>I</accel
+>nsertar</guimenu
+> <guimenuitem
+>ritardando</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Haga clic izquierdo donde deba aparecer el accelerando o ritardando:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/ritardando1.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>an ritardando is created</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Como puede ver, el accelerando (ritardando) tiene 3 manejadores. Haciéndo clic izquierdo y arrastrando estos manejadores puede determinar la posición y el alcance del mismo:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/ritardando2.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>an ritardando is placed</phrase>
+</textobject>
+</mediaobject>
+
+<tip
+><para
+>Si desea un accelerando o ritardando cuya influecia abarque múltiples pentagramas (renglones) primero mueva el punto inicial o final verticalmente, ¡incluso si el manejador no sigue inmediatamente al puntero del ratón!</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/multi_stave_ritardando.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>create multi stave ritardando</phrase>
+</textobject>
+</mediaobject>
+
+</tip>
+
+
+<para
+>¡Observe! El manejador central determina la posición del texto 'accel.' o del 'ritard.' (tanto vertical como horizontal). Los manejadores izquierdo y derecho solo determinan la posición horizontal y de influencia del mismo. Este alcance no es visible si el accelerando o ritardando no está seleccionado.</para>
+</sect2>
+
+<sect2 id="modify_accel">
+<title
+>Modificando un accelerando o ritardando</title>
+
+<para
+>Aunque los manejadores del accelerando (ritardando) parecen colocarse libremente, siempre están asignados a un signo. El signo se sabe por una fina línea azul: </para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/ritardando_handles.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the assignment of the ritardando handles</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Esto tiene consecuencias:</para>
+<itemizedlist>
+<listitem
+><para
+>&nted; trata de mantener la posición de los manejadores del accelerando (ritardando) relativa a los signos a los que están asignados;</para
+></listitem>
+<listitem
+><para
+>&nted; elimina el accelerando (ritardando) si se eliminan los signos a los que está asignado;</para
+></listitem>
+<listitem
+><para
+>&nted; controla la reproducción MIDI del pentagrama correspondiente;</para
+></listitem>
+</itemizedlist>
+
+<para id="accel_param"
+>Para cambiar el alcance y posición del accelerando (ritardando) asegúrese de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Haga clic izquierdo en él. Aparecerán los 3 manajadores de nuevo:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/ritardando_handles_select.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the selection of the ritardando handles</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Así, podrá cambiar de nuevo el alcance y posición del mismo arrastrando los 3 manejadores.</para>
+
+<para
+>Para determinar el comportamiento MIDI del accelerando o ritardando asegúrese de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Selecciónelo haciendo clic derecho. Aparecerá la venta de diálogo 'Establecer tempo':</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/tempo_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the tempo dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Define the MIDI tempo diffenrence of the accelerando or ritardando and press OK!</para>
+</sect2>
+
+<sect2 id="del_accel">
+<title
+>Eliminando un accelerando o ritardando</title>
+<para
+>Para eliminar un accelerando o ritardando asegúrese de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los tres modos</link
+>). De nuevo: Puede activarlo temporalmente manteniendo pulsada la tecla Ctrl. Haga clic izquierdo en el accelerando o ritardando. aparecerá en color rojo. Pulse la tecla retroceso y se eliminará el accelerando o ritardando.</para>
+</sect2>
+
+</sect1>
+
+<sect1 id="chordnames">
+<title
+>Nombres de acordes</title>
+<para
+>Puede adjuntar nombres de acorde a notas y silencios. Para ello &nted; debe estar en modo insertar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Elija:</para>
+
+<para>
+<menuchoice
+><guimenu
+><accel
+>I</accel
+>nsertar</guimenu
+> <guimenuitem
+>nombre de acorde ...</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Aparecerá la ventana de diálogo 'Nombre de acorde'</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/chordnamedialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the chord name dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Inserte la base (fundamental), un texto superior e inferior (cifrado). Elija luego un tamaño y la posición relativa respecto a la nota y pulse OK. Luego haga clic en la posición donde desee colocarlo:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/chordnameexample.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the chord name dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>&nted; le permite colocar letras especiales como el signo del bemol dentro del texto:</para>
+
+<para
+>A\b --&gt; </para
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/as_example.png"/></imageobject
+></inlinemediaobject
+></para>
+
+<para
+>La siguiente tabla resume los signos posibles:</para>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row
+><entry
+>\O</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/coda_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\S</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/segno_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\#</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/sharp_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\b</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/flat_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\n</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/neutral_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+<row
+><entry
+>\o</entry
+><entry
+><inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/circle_sym.png"/></imageobject
+></inlinemediaobject
+></entry
+></row>
+</tbody>
+</tgroup>
+</informaltable>
+
+<para
+>La ventana de diálogo Nombre de acorde permanecerá abierta hasta que presione <userinput
+>Cancelar</userinput
+>. De esta manera puede colocar el mismo acorde en diferentes lugares. Si cambia el acorde en la ventana de diálogo el próximo click de ratón insertará el nuevo acorde.</para>
+
+<para
+>Modificar y eliminar nombres de acordes se hace de la misma forma que <link linkend="change_arb_text_position"
+>modificar y eliminar texto arbitrario</link
+>.</para>
+
+<note
+><para
+>Los nombres de acordes se exportan a Lilypond. Pero Lilypond ofrece un número limitado de modificadores. Es su responsabilidad usar sólo los nombres de acordes a los que se ajusta Lylipond.</para
+></note>
+
+</sect1>
+
+
+<sect1 id="guitar_chords">
+<title
+>Diagramas de acordes para guitarra y notación de acordes</title>
+<para
+>&nted; ofrece diagramas de acordes para guitarra y notación de acordes</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/chordexamples.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>chord examples</phrase>
+</textobject>
+</mediaobject>
+<note
+><para
+>Use esta característica sólo si realmente quiere mostrar un diagrama de acorde para guitarra o si necesita exportar a Lilypond. Para mostrar un nombre de acorde vea <link linkend="chordnames"
+>Nombres de acordes</link
+></para
+></note>
+<note
+><para
+><link linkend="lilypond_export"
+>LilyPond</link
+> no permite todas las especies de acordes. La especie queda en blanco si &nted; tiene que exportar tal tipo de nombre de acorde.</para
+></note>
+<para
+>Para insertar un diagrama de acorde para guitarra o una anotación de acorde elija:</para>
+
+<para>
+<menuchoice
+><guimenu
+><accel
+>I</accel
+>nsertar</guimenu
+> <guimenuitem
+>acorde ...</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Aparecerá la ventana de diálogo de selección de acordes</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/chorddialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the chord dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>elija una base y una especie. Si quiere colocar un diagrama debe también seleccionarlo en el panel derecho. El diagrama seleccionado aparecerá en el panel izquierdo.</para>
+
+<para
+>Marcando <userinput
+>diagrama</userinput
+> puede determinar si crear o no en la partitura el diagrama del acorde.</para>
+<para
+>Marcando <userinput
+>texto</userinput
+> aparecerá una descripión textual del acorde en la partitura.</para>
+
+<para
+>De esta forma puede elegir entre:</para>
+<itemizedlist>
+<listitem
+><para
+>sólo el diagrama del acorde</para
+></listitem>
+<listitem
+><para
+>sólo la descripción textual del acorde (no se recomienda, vea <link linkend="chordnames"
+>Nombres de acorde</link
+> para estos casos)</para
+></listitem>
+<listitem
+><para
+>ambos, diagrama del acorde y descripción</para
+></listitem>
+</itemizedlist>
+
+<para
+>La modificación y eliminación de los diagramas y las anotaciones de acordes es similar a la <link linkend="change_arb_text_position"
+>modificación y eliminación de texto arbitrario</link
+>.</para>
+
+</sect1>
+
+
+
+<sect1 id="handling_upbeats">
+<title
+>Anacrusa</title>
+<para
+>Hay 2 maneras de determinar una anacrusa. La primera es principalmente para las partituras recién creadas. Seleccione la nota o siliencio que sigue a la anacrua:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/upbeat1_before.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>prepare upbeat (give measure)</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Elija:</para>
+
+<para>
+<menuchoice
+><guimenu
+><accel
+>E</accel
+>ditar</guimenu
+> <guimenuitem
+><accel
+>A</accel
+>nacrusa</guimenuitem
+> <guimenuitem
+>nota seleccionada (precedida de anacrusa) -> primera nota del primer compás</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>&nted; cambia el comienzo de tal forma que el acorde o silencio sea el primer elemento del primer compás completo:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/upbeat1_after.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>upbeat given (give measure)</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>El 2º procedimiento es sobre todo para partituras con silencios al comienzo (a eliminar). Seleccione la nota o silencio que desea sea el primer elemento de la anacrusa:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/upbeat2_before.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>prepare upbeat (give start)</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Elija:</para>
+
+<para>
+<menuchoice
+><guimenu
+><accel
+>E</accel
+>ditar</guimenu
+> <guimenuitem
+><accel
+>A</accel
+>nacrusa</guimenuitem
+> <guimenuitem
+>nota seleccionada (precedida de silencios) -> comienzo de anacrusa</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>&nted; elimina todo lo anterior. Así, el elemento seleccionado se convierte en el primer elemento.</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/upbeat2_after.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>upbeat given (give start)</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Las reglas de la anacrusa requieren acortar el último compás en la duración de la misma. &nted; no lo realiza automáticamente. Para acortar el último compás seleccione todos los silencios correspondientes en todas las voces tal como se describió en <link linkend="block_select"
+>Seleccionar un bloque</link
+>:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/upbeat_end_before.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>mark the rests</phrase>
+</textobject>
+</mediaobject>
+<para
+>Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>H</accel
+>erramientas</guimenu
+> <guimenuitem
+>ocultar silencios (todas las voces)</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Los silencios correspondientes se harán invisibles:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/upbeat_end_after.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>mark the rests</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Vea también: <link linkend="hiding_rests"
+>Ocultando silencios</link
+></para>
+</sect1>
+
+
+
+<sect1 id="grace_notes">
+<title
+>Notas de adorno</title>
+<para
+>&nted; ofrece 3 tipos de notas de adrono:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/grace_notes_types.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>The grace notes</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Para insertar notas de adorno elija el tipo de nota apropiado del 2º panel de la caja de herramientas:</para
+> 
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/toolbox_graces.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>The grace on toolbox</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Seleccione un tipo de nota de adorno e insértela como se describió en el capítulo <link linkend="insert_notes"
+>Insertando/Suprimiendo notas</link
+>.</para>
+<para
+>Para eliminar una nota de adorno selecciónela como se describió en el capítulo <link linkend="shifting_notes"
+>desplazando notas y silencios</link
+> y pulse la tecla retroceso.</para>
+</sect1>
+
+<sect1 id="lyrics">
+<title
+>Letras</title>
+<sect2 id="insert_lyrics">
+<title
+>Insertando letras</title>
+<para
+>Puede añadir hasta 5 líneas de letra a cada nota. Puede usar los mismos caracteres especiales descritos en <link linkend="spec_letters_in_staffnames"
+>Letras especiales en los nombres de pentagrama</link
+>. Hay dos maneras: Escribirlas directamente o usar el editor de letras.</para>
+</sect2>
+
+<sect2 id="lyrics_direct">
+<title
+>Escribirlas directamente</title>
+
+<para
+>Para insertar letras directamente, seleccione una nota y elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>I</accel
+>nsertar</guimenu
+> <guimenuitem
+><accel
+>L</accel
+>etras</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Elija una línea de letras entre 1 y 5. &nted; pasa a modo letras. Escriba un texto con el teclado. El texto aparecerá bajo la nota.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/lyrics.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>Lyrics</phrase>
+</textobject>
+</mediaobject>
+<para
+>To skip to next note either press a <userinput
+>-</userinput
+> key or press space key. To place a space inside a syllable insert an underscore(<userinput
+>_</userinput
+>) or a non breaking space symbol(\.). Finish the lyrics mode with ESC.</para>
+<note
+><para
+>Se recomienda encarecidamente rellenar la letras desde la 1ª línea a la 5ª.</para
+></note>
+
+</sect2>
+
+<sect2 id="modify_lyrics">
+<title
+>Modificando las letras</title>
+<para
+>Para modificar las letras asegúrese de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Seleccione una nota con letras y elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>I</accel
+>nsertar</guimenu
+> <guimenuitem
+><accel
+>L</accel
+>etras</guimenuitem
+> </menuchoice>
+</para>
+<para
+>Elija la línea de letras a modificar. Aparecerá el cursor. Puede moverlo con las teclas izquierda/derecha. Puede insertar una letra pulsando la tecla correspondiente. Puede borrar una letra pulsando la tecla retroceso. Si elimina la última letra de una línea de letras ésta también se elimina. Termine el modo letras pulsando ESC.</para>
+</sect2>
+
+<sect2 id="lyrics_editor">
+<title
+>Editor de letras</title>
+<para
+>La 2ª posibilidad es usar el editor de letras. Si hay más de 2 pentagramas seleccione un elemento cualquiera del pentagrama al que deba añadirlas. Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>H</accel
+>erramientas</guimenu
+> <guimenuitem
+>Editor de letras</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Aparecerá la ventana del editor de letras:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/lyrics_editor.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>The lyrics editor</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Select the verse by selecting a tab! Then insert the lyrics syllable by syllable. Every hyphen and every space is interpreted as separator. To leave on note blank place a single dot('.'). To place a space inside a syllable insert an underscore(<userinput
+>_</userinput
+>) or a non breaking space symbol(\.).</para>
+
+
+<para
+>Puede salvar y cargar el verso pulsando los botones <computeroutput
+>guardar en archivo</computeroutput
+> o <computeroutput
+>cargar desde archivo</computeroutput
+>, respectivamente.</para>
+
+<para
+>If all is correct press <computeroutput
+>Apply</computeroutput
+> or <computeroutput
+>OK</computeroutput
+>! Both will update the lyrics, but <computeroutput
+>OK</computeroutput
+> closes the lyrics editor.</para>
+</sect2>
+</sect1>
+
+<sect1 id="segno_staff">
+<title
+>D.S./Capo al Coda/D.S./Capo al Fine</title>
+
+<para
+>Un ejemplo con D.S. al Coda podría ser como el siguiente:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/segno_principle.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the segno principle</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Para poner el signo de la Coda y del Segno asegúrese de que &nted; esté en modo insertar/suprimir (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Elija:</para>
+
+<para>
+<menuchoice
+><guimenu
+><accel
+>I</accel
+>nsertar</guimenu
+> <guimenuitem
+>Insertar signo ...</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Aparecerá la ventána de diálogo 'Signos'</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/sign_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>The sign dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Elija el signo apropiado y haga clic en la posición a colocarlo. Modificar y eliminar signos funciona de forma similar a <link linkend="change_arb_text_position"
+>modificar y eliminar texto arbitrario</link
+>.</para>
+
+<para
+>Para poner un texto como <userinput
+>"D.S. al Coda"</userinput
+> o <userinput
+>"Repetir desde el Segno hasta la Coda"</userinput
+> vea <link linkend="arbitraty_text"
+>Texto arbitrario</link
+>. Para expresar que estos textos controlan la reproducción tiene que eligir las propiedades adecuadas en la ventana de diálogo de 'Texto':</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/segno_on_text_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the segno on text dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>De la misma forma puede crear <userinput
+>D.S. al Fine</userinput
+>, <userinput
+>Da Capo al Coda</userinput
+> y <userinput
+>Da Capo al Fine</userinput
+>. Vea también: <link linkend="arbitraty_text"
+>Texto arbitrario</link
+>.</para>
+
+
+</sect1>
+
+<sect1 id="staff_signs">
+<title
+>Signos de respiración</title>
+
+<para
+>Para poner un signo de respiración asegúrese que &nted; esté en modo insertar/suprimir (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Elija:</para>
+
+<para>
+<menuchoice
+><guimenu
+><accel
+>I</accel
+>nsertar</guimenu
+> <guimenuitem
+>Insertar signo ...</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Aparecerá la ventána de diálogo 'Signos'</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/sign_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>The sign dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Elija el signo apropiado y haga clic donde desee colocarlo. Eliminar respiraciones funciona de forma similar a <link linkend="change_arb_text_position"
+>modificar y eliminar texto arbitrario</link
+>.</para>
+
+</sect1>
+
+<sect1 id="transpose">
+<title
+>Transposición</title>
+<para
+>&nted; tiene la capacidad de transportar. Si desea transportar sólo un subconjunto de notas, dibuje un rectángulo de selección tal como se describió en <link linkend="block_select"
+>Seleccionar un bloque</link
+>. Luego elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>H</accel
+>erramientas</guimenu
+> <guimenuitem
+>Transportar ...</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Aparecerá la ventana de diálogo 'Transportar'</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/transposition_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>The transposition dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Elija el número de semitonos. Si dibujó un rectángulo de selección estará marcado <computeroutput
+>utilizar selección</computeroutput
+>. Puede determinar si usar o no el rectángulo de selección.</para>
+
+<para
+>Si no hay rectángulo de selección podrá seleccionar los pentagramas a transposrtar. Pulse OK y &nted; transportará las notas correspondientes.</para>
+
+<note
+><para
+>Es su responsabilidad cambiar la armadura (vea <link linkend="staff_props"
+>Cambiar las propiedades del pentagrama</link
+> e <link linkend="ins_keysig_change"
+>Insertando un cambio de armadura</link
+>.</para
+></note>
+</sect1>
+
+<sect1 id="change_acc">
+<title
+>Cambiar alteraciones</title>
+<para
+>En algunos pocos casos se desea cambiar sostenidos por bemoles, y vice versa:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/change_sharp_flat.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>change accidentals</phrase>
+</textobject>
+</mediaobject>
+<para
+>&nted; tiene esta capacidad. Si desea realizarlo sólo con un subconjunto de notas, entonces dibuje un rectángulo de selección tal como se describió en <link linkend="block_select"
+>Seleccionar un bloque</link
+>. Luego elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>H</accel
+>erramientas</guimenu
+> <guimenuitem
+>cambiar todo a sostenidos ...</guimenuitem
+> </menuchoice>
+</para>
+<para
+>o:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>H</accel
+>erramientas</guimenu
+> <guimenuitem
+>cambiar todo a bemoles ...</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Aparecerá la ventana de diálogo 'Selección':</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/selection_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>The selection dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Si dibuja un rectángulo de selección <computeroutput
+>utilizar selección</computeroutput
+> estará marcada. Puede decidir si utilizar o no el rectángulo de selección.</para>
+
+<para
+>Si no hay rectángulo de selección podrá seleccionar los pentagramas sobre los que tendrá efecto el cambio. Pulse OK y &nted; cambiará las notas correspondientes.</para>
+</sect1>
+
+
+<sect1 id="score_info">
+<title
+>Título, compositor y arreglista</title>
+<para
+>Para añadir alguna información a la partitura (título, tema, compositor, arreglista, copyright) seleccione:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>E</accel
+>ditar</guimenu
+> <guimenuitem
+>Información de la partitura ...</guimenuitem
+> </menuchoice>
+</para>
+<para
+>Aparecerá la ventana de diálogo siguiente:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/score_info_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>The score information dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Introduzca el nombre del compositor, el arreglista, el tema, el copyright y pulse OK. Esta información se mostrará en la primera página de la partitura.</para>
+</sect1>
+<sect1 id="handling_pages">
+<title
+>Páginas</title>
+
+<sect2 id="page_layout">
+<title
+>Tamaño de la página</title>
+<para
+>Para cambiarlo elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Configurar Página ...</guimenuitem
+> </menuchoice>
+</para>
+<para
+>Choose A3, A4, A5, B4, Letter, Legal, or 230x293 and the orientation (portrait or landscape). </para>
+</sect2>
+
+<sect2 id="page_navigation">
+<title
+>Navegación de páginas</title>
+<para
+>&nted; presenta la partitura en un papel aparentemente infinito. Puede mover el papel en modo página (vea (see <link linkend="the_modes"
+>Los 3 modos</link
+>). De nuevo: Puede activar este modo temporalmente si mantiene presionada la tecla Shift (mayúscula). En modo página si mantiene hundido el botón izquierdo del ratón puede mover el papel moviendo el ratón.</para>
+
+<para
+>Además puede saltar a una página determinada usando el selector de página (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/page_selector.png"/></imageobject
+></inlinemediaobject
+>) o las teclas de avance y retroceso de página.</para>
+
+<para
+>Incluso puede usar la rueda del ratón para desplazar la página.</para>
+</sect2>
+
+<sect2 id="delete_page">
+<title
+>Eliminar la última página</title>
+<para
+>Si hay más de una página, puede eliminar la última. Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>E</accel
+>ditar</guimenu
+> <guimenuitem
+>Eliminar última página</guimenuitem
+> </menuchoice>
+</para>
+</sect2>
+
+<sect2 id="remove_empty_pages">
+<title
+>Eliminar páginas vacías finales</title>
+<para
+>Bajo ciertas circunstancias puede suceder que haya algunas páginas vacías al final de la partitura, por ejemplo, páginas llenas de silencios. Para eliminarlas elija:</para>
+
+
+<para>
+<menuchoice
+><guimenu
+><accel
+>E</accel
+>ditar</guimenu
+> <guimenuitem
+>Eliminar páginas vacías</guimenuitem
+> </menuchoice>
+</para>
+</sect2>
+</sect1>
+
+<sect1 id="multiple_windows_and_excerpt">
+<title
+>Ventanas múltiples y Partes</title>
+
+<sect2 id="multiple_windows">
+<title
+>Ventanas múltiples</title>
+
+<para
+>&nted; le permite abrir tantas ventanas como quiera. Esto es útil si desea comparar dos partituras diferentes o copiar partes de una a otra. Para abrir una nueva ventana elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Ventana nueva</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Aparecerá una nueva ventana:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/new_window1.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>A new window</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Con la nueva ventana puede hacer todo lo que podía hacer en la primera. Si quiere copiar/pegar entre diferentes ventanas por favor asegúrese de que <emphasis
+>ambas</emphasis
+> estén en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>):</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/new_window2.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>copy/paste between 2 windows</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Vea también: <link linkend="block_instructions"
+>Instrucciones de bloque</link
+>.</para>
+
+<para
+>Para eliminar una ventana elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Cerrar Ventana</guimenuitem
+> </menuchoice>
+</para>
+</sect2>
+<sect2 id="excerpt">
+<title
+>Extraer un subconjunto de pentagramas</title>
+<para
+>&nted; le permite copiar un subconjunto de pentagramas en otra ventana. Para hacerlo elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Extraer partes ...</guimenuitem
+> </menuchoice>
+</para>
+<para
+>Aparecerá la ventana de diálogo de 'Seleccionar partes':</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/staff_selection_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>The staff selection dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Seleccione el subconjunto de pentagramas que desee copiar. Para seleccionar más de uno persione Ctrl. Para seleccionar un rango de pentagramas presione y mantenga hundida la tecla Shift (mayúscula). Luego seleccione el primer y el último pentagrama del rango.</para>
+
+<para
+>Pulse <userinput
+>Ok</userinput
+>. El subconjunto de pentagramas se copiará a la otra ventana:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/the_excerpt.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the excerpt</phrase>
+</textobject>
+</mediaobject>
+</sect2>
+</sect1>
+
+<sect1 id="scale_score">
+<title
+>Graduando el nivel de ampliación de la partitura completa</title>
+
+<para
+>&nted; le permite un escalado continuo de la partitura. Como resultado las notas toman tamaños diferentes:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/scale_score.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>scaling the score</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Para graduar el nivel de ampliación elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Ampliar/reducir ...</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Aparece la siguiente ventana de diálogo:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/scale_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the scale dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Establezca el grado de ampliación y pulse OK.</para>
+</sect1>
+
+<sect1 id="documentation">
+<title
+>Documentación</title>
+<para
+>Para consultar la documentación elija</para>
+<para>
+<menuchoice
+><guimenu
+>A<accel
+>y</accel
+>uda</guimenu
+> <guimenuitem
+>Documentación ...</guimenuitem
+> </menuchoice>
+</para>
+
+<note
+><para
+>La documentación sólo estará disponible si los siguientes programas estaban instalados en su sistema durante el paso <userinput
+>./configure</userinput
+>:</para
+></note>
+
+<orderedlist>
+<listitem
+><para
+><application
+>yelp</application
+> del <ulink url="http://www.gnome.org"
+>proyecto GNOME</ulink
+> (paquete gnome-extra)</para
+></listitem>
+<listitem
+><para
+><ulink url="http://cyberelk.net/tim/xmlto"
+>xmlto</ulink
+></para
+></listitem>
+</orderedlist>
+</sect1>
+
+<sect1 id="save_restore">
+<title
+>Guardar y recuperar</title>
+<sect2 id="save">
+<title
+>Guardar</title>
+<para
+>Para guardar su partitura elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Guardar como ...</guimenuitem
+> </menuchoice>
+</para>
+<para
+>Decida el nombre del archivo en la ventana de diálogo y pulse OK. La extensión por defecto es <computeroutput
+>.ntd</computeroutput
+>.</para>
+<para
+>Para guardar un archivo que ha sido previamente guardado con un nombre elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Guardar</guimenuitem
+> </menuchoice>
+</para>
+</sect2>
+<sect2 id="restore">
+<title
+>Recuperar</title>
+<para
+>Para recuperar un archivo anteriormente guardado elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Abrir ...</guimenuitem
+> </menuchoice>
+</para>
+<para
+>Seleccione un nombre de archivo en la ventana de diálogo y pulse OK.</para>
+</sect2>
+<sect2 id="new_file">
+<title
+>Nuevo archivo</title>
+<para
+>Para empezar con una partitura completamente nueva (vacía) elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Nuevo</guimenuitem
+> </menuchoice>
+</para>
+</sect2>
+
+<sect2 id="terminate">
+<title
+>Cerrar el programa</title>
+<para
+>Para cerrar el programa elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Salir</guimenuitem
+> </menuchoice>
+</para>
+</sect2>
+</sect1>
+
+<sect1 id="exporting">
+<title
+>Imprimir, exportar, Karaoke e importar</title>
+<sect2 id="config_print">
+<title
+>Configuración</title>
+<para
+>&nted; asume que:</para>
+<para
+><computeroutput
+>lpr &lt;archivo&gt;.ps</computeroutput
+></para>
+<para
+>imprime un archivo PostScript con nombre <computeroutput
+>&lt;archivo&gt;.ps</computeroutput
+> en su sistema. Si este no es el caso entonces configure el comando de impresión. Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>E</accel
+>ditar</guimenu
+> <guimenuitem
+><accel
+>P</accel
+>referencias</guimenuitem
+> <guimenuitem
+>Configurar impresión ...</guimenuitem
+> </menuchoice>
+</para>
+<para
+>En la ventana de diálogo debería ver:</para>
+<para
+><computeroutput
+>lpr %s</computeroutput
+></para>
+<para
+>La <computeroutput
+>%s</computeroutput
+> será reemplazada por el nombre de un archivo PostScript. Cambie esta cadena de caracteres de acuerdo a sus necesidades. Por ejemplo: Si desea usar <application
+>kprinter</application
+> de <application
+>KDE</application
+> entonces cambie la cadena por:</para>
+<para
+><computeroutput
+>kprinter %s</computeroutput
+></para>
+<para
+>y presione OK.</para>
+
+<para
+>Si todo está configurado entonces elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Imprimir</guimenuitem
+> </menuchoice>
+</para>
+</sect2>
+
+<sect2 id="export_ps">
+<title
+>Exportar PostScript</title>
+<para
+>Puede exportar la partitura como PostScript. Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Exportar P<accel
+>S</accel
+>...</guimenuitem
+> </menuchoice>
+</para>
+<para
+>Seleccione el nombre del archivo en la ventana de diálogo y pulse OK.</para>
+<para
+>Dado que la mayoría de las impresoras son capaces de imprimir archivos PostScript puede imprimir el archivo generado usando su comando de impresión preferido  (<application
+>lpr</application
+>, <application
+>kprinter</application
+>, ...)</para>
+</sect2>
+
+<sect2 id="export_pdf">
+<title
+>Exportar PDF</title>
+<note
+><para
+>Estará disponible sólo si su librería Cairo soporta PDF.</para
+></note>
+<para
+>Puede exportar la partitura como PDF. Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Exportar PDF...</guimenuitem
+> </menuchoice>
+</para>
+<para
+>Seleccione el nombre del archivo en la ventana de diálogo y pulse OK.</para>
+<para
+>Dado que la mayoría de impresoras son capaces de imprimir archivos PDF puede imprimir el archivo generado usando su comando de impresión favorito  (<application
+>lpr</application
+>, <application
+>kprinter</application
+>, ...)</para>
+</sect2>
+
+<sect2 id="export_midi">
+<title
+>Exportar MIDI</title>
+<para
+>Puede exportar la partitura como datos MIDI. Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Exportar MIDI...</guimenuitem
+> </menuchoice>
+</para>
+<para
+>Seleccione el nombre del archivo en la ventana de diálogo y pulse OK.</para>
+</sect2>
+
+
+<sect2 id="karaoke">
+<title
+>Karaoke</title>
+<para
+>Si la partitura contiene letras, &nted; las exportará al MIDI. Esto produce en muchos reproductores midi, entre ellos <application
+>kmid</application
+>, un comportamiento tipo Karaoke:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/kmid_karaoke.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>Karaoke con kmid</phrase>
+</textobject>
+</mediaobject>
+
+</sect2>
+
+<sect2 id="import_musicxml">
+<title
+>Importar MusicXML</title>
+<para
+>Puede importar un archivo MusicXML. Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Importar MusicXML...</guimenuitem
+> </menuchoice>
+</para>
+<para
+>Seleccione el nombre del archivo en la ventana de diálogo y pulse OK.</para>
+<note
+><para
+>Hay un error en NoteEdit (otro programa del mismo autor) que tiene que ver con la exportación de pentagramas con varias voces a MusicXML. Como resultado NtEd tiene problemas importando esos archivos. Para resolver el problema NoteEdit debe parchearse. Vea <ulink url="http://vsr.informatik.tu-chemnitz.de/staff/jan/nted/noteedit_musml_patch.html"
+> http://vsr.informatik.tu-chemnitz.de/staff/jan/nted/noteedit_musml_patch.html</ulink
+> para más información.</para
+></note>
+</sect2>
+
+</sect1>
+
+<sect1 id="export_png_svg">
+<title
+>Exportar PNG y SVG</title>
+<para
+>&nted; puede exportar la página actual a PNG (Portable Network Graphics) y a SVG (Scalable Vector Graphics). La página actual es la mostrada en el selector de página. Ambos formatos son muy útiles para la publicación WEB o tareas gráficas relacionadas. Muchos procesadores de texto permiten gráfico PNG y/o SVG embebidos.</para>
+
+<para
+>Especially the SVG format - an XML instance - is very useful because - as the name indicates - it is scaleable without strange effects which are usually visible in scaled pixel graphics.</para>
+
+<note
+><para
+>La exportación SVG estará disponible sólo si su librería Cairo soporta SVG.</para
+></note>
+
+<para
+>Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Exportar <accel
+>P</accel
+>NG ...</guimenuitem
+> </menuchoice>
+</para>
+<para
+>o</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Exportar S<accel
+>V</accel
+>G ...</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Elija un nombre de archivo y presione OK.</para>
+
+<note
+><para
+>El tamaño de la imágen PNG/SVG dependerá del grado de ampliación actual.</para
+></note>
+</sect1>
+
+<sect1 id="lilypond_export">
+<title
+>Exportar Lilypond</title>
+<para
+>Lilypond (<ulink url="http://lilypond.org/"
+>http://lilypond.org/</ulink
+>) es con seguridad el editor de música con mejor salida. Esto es así principalmente por 2 razones:</para>
+<itemizedlist>
+<listitem
+><para
+>Los desarrolladores hicieron un gran esfuerzo en crear fuentes musicales especiales, derivadas de impresiones de música tradicionales. Incluso crearon sus propias herramientas para la conversión de formatos de fuente para conseguir el mejor resultado.</para
+></listitem>
+<listitem
+><para
+>Lilypond utiliza una técnica de varias pasadas que toma todo el tiempo necesario para lograr una colocación excelente de los signos musicales.</para
+></listitem>
+</itemizedlist>
+
+<para
+>Además, Lilypond tiene un montón de conocimiento ortográfico musical, lo que previene errores de notación.</para>
+
+<para
+>Lilypond crea salida PostScript o PDF desde un archivo que contiene un transcripción en formato de texto de la música. Por ejemplo, la entrada:</para>
+<para>
+<literallayout
+>\relative c' { \clef treble \key d \major
+   d4  e  fis  g a  b  cis  d 
+}
+
+</literallayout>
+</para>
+
+<para
+>produce la siguiente salida:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/dscale.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>&nted; Mainwindow</phrase>
+</textobject>
+</mediaobject>
+
+
+<para
+>&nted; puede crear transcripciones de texto Lilypond. Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Exportar LilyPond...</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>La ventana de diálogo de Exportación Lilypond aparecerá:</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/lilyeportdialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>LilyPond export dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>En la casilla 'crear saltos de línea' puede determinar si &nted; debe colocar las sentencias <computeroutput
+>\break</computeroutput
+> para obtener los mismos saltos de línea como aparecen en &nted;</para>
+
+
+<para
+>Si desea exportar un subconjunto de pentagramas pulse el botón <computeroutput
+>seleccionar pentagramas</computeroutput
+>. Aparecerá la ventana de diálogo 'Seleccionar partes':</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/staff_selection_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>the staff selection dialog</phrase>
+</textobject>
+</mediaobject>
+
+
+<para
+>Seleccione un subconjunto de pentagramas. Para seleccionar más de un pentagrama pulse Ctrl. Para seleccionar un rango de pentagramas pulse y mantenga hundido Shift (mayúscula). Luego seleccione el primer y último compás del rango.</para>
+
+<para
+>LilyPond has its own beaming rules. Therefore, the LilyPond beaming differs from &nted;-beaming. If you want the same beams as in &nted; then select the <computeroutput
+>keep beams</computeroutput
+> button. Select the staves to keep the beams for and press <computeroutput
+>OK</computeroutput
+>.</para>
+
+<para
+>Elija un nombre de archivo - la extensión debe ser <filename
+>.ly</filename
+> - y pulse <computeroutput
+>OK</computeroutput
+>.</para>
+
+<para
+>Para crear una salida PostScript o PDF desde este archivo, instale Lilypond y escriba:</para>
+
+<para
+><userinput
+>lilypond </userinput
+>&lt;archivo&gt;<userinput
+>.ly</userinput
+> </para>
+
+<para
+>Para previsualizar y/o imprimir la salida use sus comandos de ver/imprimir favoritos (<application
+>gv, ggv, evince, xpdf, lpr, kprinter, ...</application
+>).</para>
+
+<note
+><para
+>Como se mencionó arriba, Lilypond usa su propia estrategia de colocación y sus propias fuentes. Como consecuencia el principio WYSIWYG (what you see is what you get: lo que ve es lo que tiene) se rompe. La salida diferirá de la de &nted;.</para
+></note>
+
+</sect1>
+
+<sect1 id="import_midi">
+<title
+>Importar MIDI</title>
+<para
+>&nted; puede (intentar) construir una partitura a partir de un archivo MIDI. ¡Observe! Hay muchas partituras que generarían los mismos datos MIDI. Por tanto la transformación MIDI a partitura es ambigua.</para>
+
+<para
+>Para importar un archivo MIDI elija</para>
+
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Importar MIDI ...</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Aparecerá la ventana de diálogo de importación MIDI:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/midiimport_dialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>MIDI import dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>¡Determine si &nted; debe intentar reconocer los tresillos!</para
+> 
+
+<para
+>Con los controles deslizantes puede influir en la densidad del tempo y de los signos de intensidad. Un valor 0 significa "sin signos". Si elige 100 puede ocurrir que casi toda nota tenga un signo de intensidad o de volúmen.</para>
+
+<para
+>Con frecuencia, los archivos MIDI tienen pistas que contienen un amplio rango de alturas. Colocar esas notas en un solo pentagrama conduce a salidas deficientes:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/not_splitted.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>MIDI program changes</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Por consiguiente, el comportamiento normal de &nted; es dividir esas pistas:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/splitted.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>MIDI program changes</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Pero a veces esto no se desea. Especialmente si el archivo MIDI ya ha dividido adecuadamente las pistas. Utilice <computeroutput
+>no dividir pistas</computeroutput
+> en este caso.</para>
+
+<para
+>El botón <computeroutput
+>forzar piano</computeroutput
+> fuerza una partitura con 2 pentagramas por sistema.</para>
+
+<para
+>El botón <computeroutput
+>ordenar instrumentos</computeroutput
+> es útil para archivos MIDI donde todos o muchos instrumentos están situados en la misma pista:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/midi_pgm_changes.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>MIDI program changes</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Los puntos rojos representan operadores MIDI especiales llamados <userinput
+>MIDI program change</userinput
+> que notifican al dispositivo el cambio de instrumento. Así, teóricamente un archivo MIDI puede situar una orquesta entera en una solo pista. Los archivos producidos por teclados son frecuentemente de este tipo. &nted; colocaría realmente todas las notas en un pentagrama y atribuiría el primer instrumento dado a este pentagrama. Si <computeroutput
+>ordenar instrumentos</computeroutput
+> se activa, ordenará los instrumentos en pentagramas diferentes:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/sorted_prms.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>sorted MIDI program changes</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>En la mayoría de casos el estado de los botones dado por defecto da buenos resultados. Pero si la partitura tiene una apariencia extraña o la reproducción difiere drásticamente del sonido MIDI entonces intente jugar con los botones para mejorar la partitura.</para>
+
+<para
+>Seleccione el archivo MIDI y pulse OK. En la última ventana de diálogo puede determinar el tamaño del papel y la orientación.</para>
+
+<!--
+<note
+><para
+>In some circumstances it can happen that &nted; hangs or crashes during MIDI import. Try
+to repeat the MIDI import with other parameters (no triplet recognition, other paper, ...)
+in this case.</para
+></note>
+-->
+</sect1>
+
+<sect1 id="read_midi_keyboard">
+<title
+>Insertando notas con altura determinada por un teclado midi</title>
+<para
+>Si tiene un teclado MIDI conectado a su tarjeta de sonido puede determinar la altura de las notas pulsando la tecla adecuada en el teclado MIDI. Para hacerlo debe antes comprobar el dispositivo MIDI IN. Active <userinput
+>MIDI echo</userinput
+> (vea <link linkend="prepare_replay"
+>Preparar la reproducción</link
+>) y pulse el botón de lectura MIDI (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/midi_read_button.png"/></imageobject
+></inlinemediaobject
+>) ¡Mueva el puntero del ratón sobre un pentagrama cualquiera!</para>
+<note
+><para
+>¡Es importante mover el ratón sobre un pentagrama porque de esta forma determina el instrumento que toca la nota!</para
+></note>
+<para
+>Si ahora pulsa una tecla en el teclado midi debería oír el tono correspondiente tocado por el instrumento asociado al pentagrama sobre el que está posicionado el ratón (vea <link linkend="midi_tab"
+>la pestaña MIDI</link
+>). Si no es así entonces configure el dispositivo de entrada MIDI:</para>
+
+<para>
+<menuchoice
+><guimenu
+><accel
+>E</accel
+>ditar</guimenu
+> <guimenuitem
+><accel
+>P</accel
+>referencias</guimenuitem
+> <guimenuitem
+>Configurar MIDI in...</guimenuitem
+> </menuchoice>
+</para>
+<para
+>Aparecerá un listado con todos los puertos midi de entrada. Seleccione uno y pulse OK. Si el puerto no funciona pruebe con otro diferente.</para>
+
+<para
+>Si todo funciona entonces pulse además el botón de modo insertar (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/insert_and_page_button1.png"/></imageobject
+></inlinemediaobject
+>) y el botón de inserción con teclado (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/keyboard_insertion_button.png"/></imageobject
+></inlinemediaobject
+>). Si ahora coloca el ratón en una posición de un pentagrama las notas que toque en el teclado midi se insertarán. <emphasis
+>¡Observe!</emphasis
+> Las teclas determinan la altura no la duración! La duración de las notas se establecen tal como se describió en <link linkend="insert_notes"
+>Insertando/Suprimiendo notas</link
+>.</para>
+<para
+>Para finalizar este modo desactive el botón de lectura MIDI (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/midi_read_button.png"/></imageobject
+></inlinemediaobject
+>)!</para>
+
+</sect1>
+
+<sect1 id="record_midi_keyboard">
+<title
+>Crear un partitura tocándola desde un teclado midi</title>
+<para
+>Si tiene conectado un teclado midi a su tarjeta de sonido puede tocarlo y &nted; convertirá (lo intentará) su música en notas.</para>
+
+<para
+>Antes de hacerlo debe asegurarse de que la reproducción funciona. Si no, no podrá oir el metrónomo. Vea <link linkend="prepare_replay"
+>Preparar la reproducción</link
+>, y eventualmente el<link linkend="timidity_server"
+>servidor TiMidity</link
+> y la pregunta correspondiente en <link linkend="no_sound"
+>FAQ</link
+>.</para>
+
+<para
+>Es más, asegúrese de que la entrada midi funciona y de que ha seleccionado el puerto de entrada MIDI correcto. Vea: <link linkend="read_midi_keyboard"
+>Insertando notas con altura determinada por un teclado midi</link
+>.</para>
+
+<para
+>Si todo funciona entonces asegúrese que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). ¡Luego seleccione una nota o silencio con el botón izquierdo del ratón! El acorde o silencio seleccionado aparecerá en rojo. Las notas nuevas se insertarán exactamente en esa posición. Luego configure los parámetros de grabación:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>A</accel
+>rchivo</guimenu
+> <guimenuitem
+>Configurar Grabación ...</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Aparecerá la ventaca de diálogo de cofigurar grabación MIDI:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/midi_record_config.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>The MIDI record config dialog</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>El instrumento, compás y tonalidad deben coincidir con los valores del pentagrama donde seleccionó el acorde o silencio. Puede cambiar estos valores pero no se recomienda.</para>
+
+<para
+>El botón <computeroutput
+>reconocimiento de tresillo</computeroutput
+> determina si &nted; debe o no (intentar) reconocer tresillos.</para>
+
+<para
+>El botón <computeroutput
+>forzar piano</computeroutput
+> fuerza una partitura de pianocon 2 pentagramas por sistema.</para>
+
+<para
+>Quizás su pieza de música abarca un rango muy amplio de alturas. Colocando estas notass en un pentagrama resulta una mala salida:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/not_splitted.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>MIDI program changes</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Por consiguiente, el comportamiento normal de &nted; es dividir el pentagrama:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/splitted.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>MIDI program changes</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Pero a veces esto no se desea. Utilice el botón <computeroutput
+>no dividir pistas</computeroutput
+> es este caso.</para>
+
+<para
+>El regulador de <computeroutput
+>tempo</computeroutput
+> determina el tempo de la grabación (i.e. el tempo del metrónomo) en negras por minuto.</para>
+
+<para
+>The <computeroutput
+>volume</computeroutput
+> slider determins the volume of the metronome.</para>
+
+<para
+>¡Si todo es correcto pulse <computeroutput
+>Ok</computeroutput
+>!</para>
+
+<para
+>Ahora pulse el botón de grabación MIDI (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/midi_record_button.png"/></imageobject
+></inlinemediaobject
+>). Deberá oir los ticks del metrónomo. Los ticks representan blancas, negras, corcheas, o semicorcheas, dependiendo del denomonador de su compás. El metrónomo hace un tick grave y N-1 agudos, donde N es el numerador de su compás. Luego de N ticks se completa un compás y vuelve a empezar otro. Toque lo más exactamente posible de acuerdo al metrónomo.</para>
+
+<para
+>Cuando termine pulse de nuevo el botón de grabación MIDI (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/midi_record_button.png"/></imageobject
+></inlinemediaobject
+>). Aparecerá la ventana de diálogo Papel. ¡Elija el formato y pulse <computeroutput
+>Ok</computeroutput
+>! El pentagrama importado aparecerá en una nueva ventana de &nted;. Aquí puede corregir algunos errores o cerrarla si la grabación fue muy mala.</para>
+
+<note
+><para
+>En vez de pulsar el botón de grabación MIDI (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/midi_record_button.png"/></imageobject
+></inlinemediaobject
+>) puede pulsar <userinput
+>i</userinput
+> en el teclado del PC.</para
+></note>
+
+<para
+>Si todo es correcto lleve al frente de nuevo la ventana con el acorde o silencio en rojo. Elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>I</accel
+>nsertar</guimenu
+> <guimenuitem
+>Importar grabación</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Las notas del pentagrama importado se copian al pentagrama con el acorde o silencio seleccioando. Después de esto es recomendable cerrar la ventana de importación.</para>
+
+<para
+>Ahora puede continuar importando al mismo pentagrama seleccionando un elemento al final de su pieza. O puede <link linkend="append_staff"
+>añadir un nuevo pentagrama</link
+> y grabar un instrumento nuevo.</para>
+</sect1>
+
+<sect1 id="replay">
+<title
+>Reproducción</title>
+<sect2 id="prepare_replay">
+<title
+>Preparar la reproducción</title>
+
+<tip
+><para
+>Por favor, para escuchar mis ejemplos use la fuente de sonido citada aquí: <ulink url="http://alsa.opensrc.org/8MBGMSFX.SF2"
+>http://alsa.opensrc.org/8MBGMSFX.SF2</ulink
+></para>
+<para
+>Para mayor información sobre cómo usar el archivo SF2 lea la correspondiente cuestión en <link linkend="no_sound"
+>FAQ</link
+> o también sobre la configuración del <link linkend="timidity_server"
+>servidor TiMidity</link
+>.</para>
+</tip>
+
+<para
+>Para preparar la reproducción elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>E</accel
+>ditar</guimenu
+> <guimenuitem
+><accel
+>P</accel
+>referencias</guimenuitem
+> <guimenuitem
+>Configurar MIDI out...</guimenuitem
+> </menuchoice>
+</para>
+<para
+>Aparecerá un listado con todos los puertos de salida midi. Seleccione uno y pulse OK. Si el puerto no funciona pruebe con otro diferente. Si ninguno funciona vea la correspondiente pregunta en <link linkend="no_sound"
+>FAQ</link
+>.</para>
+<para
+>Si marca <computeroutput
+>eco midi</computeroutput
+> escuchará la nota al insertarla.</para>
+</sect2>
+
+<sect2 id="do_replay">
+<title
+>Comenzar la reproducción</title>
+<para
+>Para reproducir pulse el botón tocar (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/play_button.png"/></imageobject
+></inlinemediaobject
+>). Para parar pulse de nuevo el mismo botón.</para>
+<para
+>Para reproducir desde un lugar concreto seleccione primero una nota. Para hacerlo asegúrese de que &nted; esté en modo editar (vea <link linkend="the_modes"
+>Los 3 modos</link
+>). Luego seleccione una nota (¡no un silencio!) con el botón izquierdo del ratón. ¡Pulse el botón tocar (<inlinemediaobject
+><imageobject
+><imagedata fileref="../docimages/play_button.png"/></imageobject
+></inlinemediaobject
+>)! </para>
+</sect2>
+
+<sect2 id="muting">
+<title
+>Silenciando</title>
+
+<para
+>Es posible excluir un subconjunto de pentagramas de la reproducción. Para hacerlo elija:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>H</accel
+>erramientas</guimenu
+> <guimenuitem
+>Silenciar ...</guimenuitem
+> </menuchoice>
+</para>
+
+<para
+>Aparecerá la ventana de diálogo de silenciar:</para>
+
+<mediaobject>
+<imageobject>
+<imagedata fileref="../docimages/mutedialog.png" format="PNG"/>
+</imageobject>
+<textobject
+><phrase
+>&nted; Mainwindow</phrase>
+</textobject>
+</mediaobject>
+
+<para
+>Select the staves to be muted and press OK. To mute some voices of a certain staff refer to <link linkend="midi_tab"
+>Staves</link
+>.</para>
+
+</sect2>
+</sect1>
+
+<sect1 id="shortcuts">
+<title
+>Atajos</title>
+
+<informaltable>
+<tgroup cols="2">
+<tbody>
+
+<row
+><entry
+>tecla</entry
+><entry
+>función</entry
+></row>
+<row
+><entry
+>I</entry
+><entry
+>comienza/para la grabación con teclado MIDI</entry
+></row>
+<row
+><entry
+>N</entry
+><entry
+>activa/desactiva el modo insertar/eliminar</entry
+></row>
+<row
+><entry
+>P</entry
+><entry
+>Activa/desactiva el modo página</entry
+></row>
+<row
+><entry
+>R</entry
+><entry
+>Activa/desactiva botón de silencio en la caja de herramientas</entry
+></row>
+<row
+><entry
+>K</entry
+><entry
+>Activa/desactiva la inserción con teclado</entry
+></row>
+<row
+><entry
+>Supr</entry
+><entry
+>Delete a note from chord</entry
+></row>
+<row
+><entry
+>,</entry
+><entry
+>inserta ligadura(s) de unión (2º método)</entry
+></row>
+<row
+><entry
+>Ctrl A</entry
+><entry
+>Añade un pentagrama</entry
+></row>
+<row
+><entry
+>Ctrl B</entry
+><entry
+>Añade un sistema</entry
+></row>
+<row
+><entry
+>Ctrl J</entry
+><entry
+>maneja barras (vea <link linkend="beam_handling"
+>Personalizando las barras</link
+>)</entry
+></row>
+<row
+><entry
+>Ctrl F</entry
+><entry
+>voltea plica</entry
+></row>
+<row
+><entry
+>Ctrl R</entry
+><entry
+>oculta silencios</entry
+></row>
+<row
+><entry
+>Ctrl U</entry
+><entry
+>des-oculta silencios</entry
+></row>
+<row
+><entry
+>cursor arriba</entry
+><entry
+>mueve la nota seleccionada un grado ascendente</entry
+></row>
+<row
+><entry
+>cursor abajo</entry
+><entry
+>mueve la nota seleccionada un grado descendente</entry
+></row>
+<row
+><entry
+>cursor izquierda</entry
+><entry
+>selecciona la nota o silencio anterior</entry
+></row>
+<row
+><entry
+>cursor derecha</entry
+><entry
+>seleccionra la nota o silencio siguiente</entry
+></row>
+<row
+><entry
+>page up</entry
+><entry
+>view next page</entry
+></row>
+<row
+><entry
+>page down</entry
+><entry
+>view previous page</entry
+></row>
+<row
+><entry
+>retroceso</entry
+><entry
+>elimina la nota seleccionada</entry
+></row>
+<row
+><entry
+>_</entry
+><entry
+>Activa/desactiva el botón de ligadura de unión de la caja de herramientas</entry
+></row>
+<row
+><entry
+>.</entry
+><entry
+>Activa/desactiva el botón del puntillo de la caja de herramientas</entry
+></row>
+<row
+><entry
+>#</entry
+><entry
+>Activa/desactiva el botón de sostenido de la caja de herramientas</entry
+></row>
+<row
+><entry
+>-</entry
+><entry
+>Activa/desactiva el botón bemol de la caja de herramientas</entry
+></row>
+<row
+><entry
+>=</entry
+><entry
+>Activa/descativa el botón natural de la caja de herramientas</entry
+></row>
+<row
+><entry
+>1</entry
+><entry
+>establece la redonda como duración actual</entry
+></row>
+<row
+><entry
+>2</entry
+><entry
+>establece la blanca como duración actual</entry
+></row>
+<row
+><entry
+>4</entry
+><entry
+>establece la negra como duración actual</entry
+></row>
+<row
+><entry
+>5</entry
+><entry
+>establece la corchea como duración actual</entry
+></row>
+<row
+><entry
+>6</entry
+><entry
+>establece la semicorchea como duración actual</entry
+></row>
+<row
+><entry
+>7</entry
+><entry
+>establece la fusa como duración actual</entry
+></row>
+<row
+><entry
+>8</entry
+><entry
+>establece la semifusa como duración actual</entry
+></row>
+<row
+><entry
+>Ctrl +</entry
+><entry
+>amplía</entry
+></row>
+<row
+><entry
+>Ctrl -</entry
+><entry
+>reduce</entry
+></row>
+<row
+><entry
+>Ctrl C</entry
+><entry
+>copia bloque</entry
+></row>
+<row
+><entry
+>Ctrl V</entry
+><entry
+>pega bloque</entry
+></row>
+<row
+><entry
+>Ctrl X</entry
+><entry
+>elimina bloque</entry
+></row>
+<row
+><entry
+>Ctrl E</entry
+><entry
+>vacía bloque</entry
+></row>
+<row
+><entry
+>Ctrl Z</entry
+><entry
+>deshace</entry
+></row>
+<row
+><entry
+>Ctrl Y</entry
+><entry
+>rehace</entry
+></row>
+<row
+><entry
+>Ctrl H</entry
+><entry
+>inserta una ligadura</entry
+></row>
+<row
+><entry
+>Ctrl + &lt;núm&gt;</entry
+><entry
+>crea un grupo artificial (1er método)</entry
+></row>
+<row
+><entry
+>Ctrl + Alt + &lt;núm&gt;</entry
+><entry
+>crea un grupo artificial (2º método)</entry
+></row>
+<row
+><entry
+>Mayús. + CursosArriba</entry
+><entry
+>incrementa el espaciado del compás</entry
+></row>
+<row
+><entry
+>Mayús. + CursorAbajo</entry
+><entry
+>decrementa el espaciado del compás</entry
+></row>
+</tbody>
+</tgroup>
+</informaltable>
+
+<para
+>Además si la luz del teclado numérico está apagada: Las teclas del teclado numérico se corresponden con los botones de la caja de herramientas (vea <link linkend="toolbox"
+>La caja de herramientas</link
+>).</para>
+</sect1>
+
+<sect1 id="config_file">
+<title
+>Archivo de configuración</title>
+<para
+>&nted; guarda la configuración actual (puerto MIDI, últimos archivos abiertos, comando de impresión) en <filename
+>$HOME/.nted/ntedrc</filename
+></para>
+</sect1>
+
+<sect1 id="pulseaudio">
+<title
+>Atención: Pulseaudio</title>
+<para
+>Desafortunadamente, el siguiente capítulo sobre <link linkend="timidity_server"
+>El servidor TiMidity</link
+> no funcionará si tiene una nueva tecnología de sonido llamada <computeroutput
+>pulseaudio</computeroutput
+>. Esto involucra a usuarios de Fedora 11 y Ubuntu 9.10 y posiblemente a otros. Si usa la fuente de sonido citada en <ulink url="http://alsa.opensrc.org/8MBGMSFX.SF2"
+>http://alsa.opensrc.org/8MBGMSFX.SF2</ulink
+>, experimentará algunos efectos no deseados tales como distorsión o una total falta de sonido.</para>
+
+<para
+>Para saber si tiene o no pulseaudio haga:</para>
+<para
+><userinput
+>which pulseaudio</userinput
+></para>
+<para
+>Si obtiene un camino como respuesta entonces tiene pulseaudio.</para>
+<para
+>La única forma de solucionarlo es compilar su propio TiMidity++. Para hacerlo descargue las fuentes más recientes de:</para>
+<para
+><ulink url="http://timidity.sourceforge.net/#download"
+>http://timidity.sourceforge.net/#download"</ulink
+></para>
+
+<para
+>Extraiga y configure las fuentes:</para>
+<para>
+<literallayout
+>tar -xvjf TiMidity++-x.y.z.tar.bz2
+   cd TiMidity++-x.y.z
+   ./configure --enable-audio=alsa --enable-server --enable-alsaseq
+   make
+   su (de la contraseña si se la pide)
+   make install
+   exit
+</literallayout>
+</para>
+
+<para
+>Ahora tendrá posiblemente 2 timititis: Uno en /usr/bin/timidity dependiente de pulseaudio y el recién compilado independiente de pulseaudio en /usr/local/bin/timidity. ¡Utilice el timidity independiente de pulseaudio!</para>
+
+<para
+>Una buena idea es preparar un comando. Debe como root copiar la fuente de sonido en un lugar específico:</para>
+
+<para>
+<literallayout
+>cd /usr/share
+   mkdir sfbank
+   chmod 0755 sfbank
+   cd sfbank
+   cp /&lt;algúnlugar&gt;/8mbgmsfx.sf2 .
+   echo 'dir /usr/share/sfbank' &gt;timidity.cfg
+   echo 'soundfont 8mbgmsfx.sf2' &gt;&gt; timidity.cfg
+   chmod 0644 8mbgmsfx.sf2 timidity.cfg
+   cd /usr/bin
+   echo '#!/bin/bash' &gt; alsatimidity.sh
+   echo '' &gt;&gt; alsatimidity.sh
+   echo '/usr/local/bin/timidity -c /usr/share/sfbank/timidity.cfg -iA -B2,8 -Os1l -s 44100'  &gt;&gt; alsatimidity.sh
+   chmod 0755 alsatimidity.sh
+</literallayout>
+</para>
+
+<para
+>Ahora la llamada</para>
+<para>
+<literallayout
+>alsatimidity.sh
+</literallayout>
+</para>
+
+<para
+>debería iniciar timidity en modo servidor.</para>
+
+<para
+>¡Si persisten los problemas de sonido elimine el paquete pulseaudio de su sistema!</para>
+</sect1>
+
+
+<sect1 id="timidity_server">
+<title
+>El servidor TiMidity</title>
+<note
+><para
+>Todo lo que se menciona a continuación no funcionará si tiene una tecnología llamada <computeroutput
+>pulseaudio</computeroutput
+>. Esto incumbe a los usuarios de Fedora 11 y Ubuntu 9.10 y posiblemente a otros. Por favor vea el capítulo de <link linkend="pulseaudio"
+>Pulseaudio</link
+> para saber más.</para
+></note>
+<para
+>Puede utilizar el reproductor y conversor de MIDI a WAVE <application
+>TiMidity++</application
+> (<ulink url="http://timidity.sourceforge.net"
+> http://timidity.sourceforge.net</ulink
+>) en <emphasis
+>modo servidor</emphasis
+>. Este método es interesante para aquellos que no logren hacer funcionar su dispositovo MIDI.</para>
+<para
+>Se presupone que <application
+>TiMidity++</application
+> está compilado con (al menos) estas opciones en el paso <option
+>configure</option
+>:</para>
+<para
+><option
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --enable-audio=alsa --enable-server --enable-alsaseq</option
+></para>
+<para
+>Puede comprobar si <application
+>TiMidity++</application
+> se compiló con esas opciones arrancándolo con la opción <option
+>-iA</option
+>:</para>
+<para
+><userinput
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; timidity -iA -B2,8 -Os1l -s 44100 </userinput
+> &nbsp;&nbsp;&nbsp;</para>
+<para
+>Si se muestra: <computeroutput
+>"-A option not compiled in"</computeroutput
+> entonces compílelo "a mano" como se dijo arriba.</para>
+
+<para
+>Puede también intentar cambiar "la orquesta" instalando fuentes de sonido diferentes. Para conseguirlas debe primero echar un vistazo al CDROM de su tarjeta de sonido. Quizás encuentre allí un archivo con extensión <filename
+>.sf2</filename
+>. Pero tenga cuidado: Asegúrese que es un archivo General MIDI.</para>
+
+<para
+>Si no lo es, entonces cargue la fuente mencionada en <ulink url="http://alsa.opensrc.org/8MBGMSFX.SF2"
+>http://alsa.opensrc.org/8MBGMSFX.SF2</ulink
+>. Descárguela y en <filename
+>/usr/share/timidity/timidity.cfg</filename
+> (o <filename
+>/usr/local/share/timidity/timidity.cfg</filename
+>) cambie:</para>
+<para
+><userinput
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dir</userinput
+> <replaceable
+>&lt;camino_al_directorio_donde_guarde_el_archivo_8MBGMSFX.SF2&gt;</replaceable
+></para>
+<para
+>y:</para>
+<para
+><userinput
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;soundfont 8MBGMSFX.SF2</userinput
+></para>
+
+
+<para
+>¡Comente todas las demás líneas! Si todo va bien, puede arrancar <application
+>TiMidity++</application
+> con:</para>
+<para
+><userinput
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; timidity -iA -B2,8 -Os1l -s 44100 </userinput
+> &nbsp;&nbsp;&nbsp;</para>
+
+<para
+>Seleccione la ventana de diálogo:</para>
+<para>
+<menuchoice
+><guimenu
+><accel
+>C</accel
+>onfigurar</guimenu
+> <guimenuitem
+>Configurar MIDI ...</guimenuitem
+> </menuchoice>
+</para>
+<para
+>Verá 4 dispositivos MIDI nuevos:</para>
+<itemizedlist>
+<listitem
+><para
+>Timidity port 0 128:0</para
+></listitem>
+<listitem
+><para
+>Timidity port 1 128:1</para
+></listitem>
+<listitem
+><para
+>Timidity port 2 128:2</para
+></listitem>
+<listitem
+><para
+>Timidity port 3 128:3</para
+></listitem>
+</itemizedlist>
+
+<para
+>¡Elija uno de ellos y la reproducción funcionará!</para>
+
+<para
+>Consejo: Si la reproducción se interrumpe durante el paso de página entonces arranque <application
+>TiMidity++</application
+> como <filename
+>root</filename
+>. Esto incrementará la prioridad del proceso <application
+>TiMidity++</application
+>. Utilice el siguiente comando en este caso:</para>
+<para
+><userinput
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;timidity --realtime-priority=100 -iA -B2,8 -Os1l -s 44100</userinput
+></para>
+
+<note
+><para
+>¡Esto puede causar problemas al sistema operativo si su CPU es poco potente! Si es así, entonces intente decrementar la prioridad y/o la frecuencia:</para>
+<para
+><userinput
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;timidity --realtime-priority=60 -iA -B2,8 -Os1l -s 22050</userinput
+></para
+></note>
+<para
+>A veces ayuda incrementar el número de fragmentos de buffer:</para>
+<para
+><userinput
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; timidity -iA -B8,8 -Os1l -s 22050 </userinput
+> &nbsp;&nbsp;&nbsp;</para>
+
+<para
+>Si quiere un sonido diferente eche un vistazo a <link linkend="hammersound"
+>Página de instalación Hammersound</link
+>.</para>
+
+</sect1>
+
+<sect1 id="hammersound">
+<title
+>Página de instalación Hammersound</title>
+
+<para
+>Para mis ejemplos recomiendo la fuente de sonido mencionada en <link linkend="timidity_server"
+>El servidor Timidity</link
+>. Pero puede probar otras fuentes en <ulink url="http://www.hammersound.net/"
+>http://www.hammersound.net/</ulink
+>, por ejemplo la fuente de sonido <filename
+>FluidR3</filename
+>.</para>
+<para
+>Para hacerlo busque <filename
+>FluidR3122501.zip</filename
+> en <ulink url="http://www.hammersound.net/"
+>http://www.hammersound.net</ulink
+> y descárguelo.</para>
+
+
+<para
+>Esta fuente está en formato de compresión <filename
+>sfArk</filename
+>. Descargue el descompresor desde <ulink url="http://www.melodymachine.com"
+>http://www.melodymachine.com</ulink
+> y desempaquétela:</para>
+<para
+><userinput
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tar -xvzf sfarkxtc_lx86.tar.gz</userinput
+></para>
+<para
+>Luego descomprima el archivo <filename
+>FluidR3122501.zip</filename
+> (Dado que el archivo tiene espacios en blanco en el nombre necesita las comillas):</para>
+<para
+><userinput
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unzip FluidR3122501.zip</userinput
+></para>
+<para
+><userinput
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;./sfarkxtc "FluidR3 GM.sfArk"</userinput
+></para>
+<para
+>Se recomienda renombrar el archivo <filename
+>FluidR3 GM.SF2</filename
+> para evitar problemas del intérprete de órdenes de Linux que tengan que ver con los espacios en los nombres:</para>
+<para
+><userinput
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mv "FluidR3 GM.SF2" FluidR3.sf2</userinput
+></para>
+<para
+>Luego en <filename
+>/usr/share/timidity/timidity.cfg</filename
+> (o <filename
+>/usr/local/share/timidity/timidity.cfg</filename
+>) cambie:</para>
+<para
+><userinput
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dir</userinput
+> <replaceable
+>&lt;camino_al_directorio_donde_se_encuentra_el_archivo_FluidR3.sf2&gt;</replaceable
+></para>
+<para
+>y:</para>
+<para
+><userinput
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;soundfont FluidR3.sf2</userinput
+></para>
+
+<para
+>Arranque <application
+>TiMidity</application
+> tal como se mencionó en <link linkend="timidity_server"
+>El servidor TiMidity</link
+>.</para>
+</sect1>
+
+
+</chapter>
+
+<chapter id="credits">
+<title
+>Créditos y Licencia</title>
+
+<para
+>&nted; Copyright 2007 Jörg Anders </para>
+
+
+<para
+>Esta documentación se suministra bajo los términos de la  <ulink url="http://www.gnu.org/licenses/fdl.html"
+>GNU Free Documentation License.</ulink
+></para>
+<para
+>Este programa se suministra bajo los términos de la <ulink url="http://www.fsf.org/copyleft/gpl.html"
+>GNU General Public License.</ulink
+></para>
+
+</chapter>
+
+
+<appendix id="faq"
+><title
+>Preguntas frecuentemente realizadas (FAQ)</title>
+<qandaset>
+<qandaentry>
+<question id="no_sound">
+<para
+>¡No oigo nada! Veo las notas rojas correr pero no hay sonido. ¿Qué pasa? </para>
+</question>
+<answer>
+<para
+>¡Esto no tiene nada que ver con &nted;! Es un problema de su dispositivo MIDI. ¡Toda aplicación basada en MIDI (por ejemplo <application
+>kmid</application
+> (<emphasis
+>¡¡¡ no kmidi !!!</emphasis
+>) o <application
+>pmidi</application
+>) funcionará mal!</para>
+<para
+>Primero que nada: Intente reproducir un MIDI con <application
+>kmid</application
+> (<emphasis
+>no (!!!)</emphasis
+> <application
+>kmidi</application
+>). Al igual que <application
+>kmid</application
+> no funciona, &nted; (y cualquier otro software basado en dispositivo MIDI) tampoco lo hará. La razón es: O bien su tarjeta de sonido no tiene sintetizador MIDI hardware o lo tiene pero no está soportado por Linux.</para>
+<para
+>Por favor consulte la <ulink url="http://www.alsa-project.org"
+>página del proyecto ALSA</ulink
+> para encontrar si el dispositivo MIDI de su tarjeta de sonido está soportado.</para>
+<para
+>Antes de hacer una gran cantidad de esfuerzo para emular por software el sintetizador hardware debería buscar un archivo de fuente de sonido en el CD de su tarjeta de sonido. Una fuente de sonido tiene la extensión <filename
+>.sf2</filename
+> o <filename
+>.SF2</filename
+>. Por favor asegúrese de que es una fuente General MIDI. Si lo es hay una probabilidad alta de que sólo tenga que cargar la fuente de sonido en su tarjeta de sonido.</para>
+<para
+>Para hacerlo necesita un programa llamado <ulink url="http://www.alsa-project.org/~tiwai/awedrv.html#Utils"
+>asfxload</ulink
+>. Simplemente escriba:</para>
+<para
+><userinput
+>asfxload </userinput
+>&lt;fuente_de_sonido&gt;<userinput
+>.sf2</userinput
+></para>
+<para
+>Pero incluso si no puede encontrar un archivo de fuente de sonido en su CD, puede probar a descargar uno. Yo recomiendo la fuente mencionada en <ulink url="http://alsa.opensrc.org/8MBGMSFX.SF2"
+>http://alsa.opensrc.org/8MBGMSFX.SF2</ulink
+>.</para>
+<para
+>Si <ulink url="http://www.alsa-project.org/~tiwai/awedrv.html#Utils"
+>asfxload</ulink
+> falla su tarjeta no permite cargar una fuente de sonido.</para>
+<para
+>Aún hay una última oportunidad, que no estén cargados todos los módulos necesarios. Por tanto como último intento pruebe a escribir como root:</para>
+<para
+><userinput
+>modprobe snd_seq_midi</userinput
+></para>
+<para
+>y repita el comando <application
+>asfxload</application
+>.</para>
+<para
+>Si <ulink url="http://www.alsa-project.org/~tiwai/awedrv.html#Utils"
+>asfxload</ulink
+> falla de nuevo tendrá que emular por software el sintetizador MIDI hardware. Esto funciona si su ordenador rinde lo suficiente. Windows por ejemplo arranca un sintetizador suave automáticamente si la síntesis hardware no funciona. ¡Por tanto, no se confunda si puede reproducir archivos MIDI en Windows!</para>
+<para
+>Esa emulación software existe para Linux también. Pero es más complicada porque:</para>
+<itemizedlist>
+<listitem
+><para
+>Debe arrancar este software "a mano".</para
+></listitem>
+<listitem
+><para
+>Esos sintetizadores por software MIDI necesitan las llamadas fuentes de sonido, una colección de tonos ejemplo de cada instrumento de una orquesta virtual. Esas fuentes tienen copyright, o sea, realmente nada para un sistema libre como Linux.</para
+></listitem>
+</itemizedlist>
+<para
+>Pero hay un camino (relativamente recio). Vea las detalladas instrucciones en <link linkend="timidity_server"
+>El servidor TiMidity</link
+>. </para>
+<para
+>¡Observe! Hay más sintetizadores por software para Linux, que pueden probarse. Entre ellos <ulink url="http://fluidsynth.resonance.org/trac"
+>FluidSynth</ulink
+>. Vea una lista en <ulink url="http://www.linux-sound.org"
+>http://www.linux-sound.org</ulink
+>.</para>
+<note
+><para
+>¡Debe evitar la síntesis software si el rendimiento de su ordenador es demasiado bajo! El procedimiento de antialiasing (suavizado de signos) de &nted; consume una gran cantidad de recursos, y la síntesis software también. Como resultado la reproducción puede ser poco uniforme especialmente durante el paso de página.</para
+></note>
+</answer>
+</qandaentry>
+<qandaentry>
+<question>
+<para
+>Uso Timidity pero el sonido está distorsionado y a veces no hay sonido en absoluto. ¿Cuál es el problema? </para>
+</question>
+<answer>
+<para
+>Compruebe si tiene un comando <userinput
+>pulseaudio</userinput
+>:</para>
+<para
+><userinput
+>which pulseaudio</userinput
+></para>
+<para
+>Si obtiene el camino de pulseaudio entonces siga las instrucciones del capítulo <link linkend="pulseaudio"
+>pulseaudio</link
+>.</para>
+</answer>
+</qandaentry>
+<qandaentry>
+<question>
+<para
+>Al arrancar el programa sale: "Error in FT_Open_Face" ¿Cuál es el problema? </para>
+</question>
+<answer>
+<para
+>¡No ha instalado el programa! Por favor escriba (como root):</para>
+<para
+><userinput
+>make install</userinput
+></para>
+<para
+>Consulte también el archivo INSTALL contenido en el archivo <filename
+>nted-x.y.z.tgz</filename
+>.</para>
+</answer>
+</qandaentry>
+<qandaentry>
+<question id="no_memory">
+<para
+>I use <application
+>asfxload</application
+> but I get an error "sfxload: no memory left" and some instruments are missing during replay. What's wrong? </para>
+</question>
+<answer>
+<para
+>Don't believe the many rumours on different mailing lists! I have bad news for you: You have to build a new kernel. Terrible, I know! If you feel unable to do this then try to use the <link linkend="timidity_server"
+>TiMidity server</link
+>.</para>
+<para
+>Otherwise download the kernel and change in</para>
+<para
+><filename
+>arch/x86/include/asm/dma.h</filename
+>:</para>
+<para
+><filename
+>#define MAX_DMA32_PFN ((4UL * 1024 * 1024 * 1024) &gt;&gt; PAGE_SHIFT)</filename
+></para>
+<para
+>against:</para>
+<para
+><filename
+>#define MAX_DMA32_PFN ((2UL * 1024 * 1024 * 1024) &gt;&gt; PAGE_SHIFT)</filename
+></para>
+<para
+>Then build the kernel! Refer to <ulink url="https://lists.ubuntu.com/archives/universe-bugs/2009-March/068812.html"
+> https://lists.ubuntu.com/archives/universe-bugs/2009-March/068812.html</ulink
+> for more details!</para>
+</answer>
+</qandaentry>
+<qandaentry>
+<question>
+<para
+>No puedo instalar &nted; porque no tengo privilegios root. ¿Qué debo hacer? </para>
+</question>
+<answer>
+<para
+>Puede usar la opción <option
+>--prefix</option
+> para instalar &nted; en un directorio arbitrario bajo su directorio $HOME. Por favor consulte también el archivo INSTALL contenido en el archivo <filename
+>nted-x.y.z.tgz</filename
+>.</para>
+<para
+>Además, si quiere evitar el comando <userinput
+>make install</userinput
+> entonces establezca la variable de entorno <filename
+>NTED_FONT_DIR</filename
+> al directorio donde esté situado <filename
+>nted/ntedfont.pfa</filename
+>.</para>
+<para
+>Por ejemplo, suponiendo que <filename
+>ntedfont.pfa</filename
+> esté en <filename
+>/home/smith/datafiles/nted/ntedfont.pfa</filename
+> escriba en la línea de comando:</para>
+<para
+><userinput
+>export NTED_FONT_DIR=/home/smith/datafiles</userinput
+></para>
+<para
+>si tiene un intérprete de comando <application
+>bash</application
+> o <application
+>sh</application
+>.</para>
+<para
+>Si está usando <application
+>csh</application
+> o <application
+>tcsh</application
+> escriba:</para>
+<para
+><userinput
+>setenv NTED_FONT_DIR /home/smith/datafiles</userinput
+></para>
+<para
+>Para saber su intérprete de comandos escriba:</para>
+<para
+><userinput
+>echo $SHELL</userinput
+></para>
+<para
+>en la línea de comandos.</para>
+</answer>
+</qandaentry>
+<qandaentry>
+<question>
+<para
+>¿Podría poner las letras como bloques de texto bajo la partitura? ¿Cómo puedo usar la partitura en textos comunes? </para>
+</question>
+<answer>
+<para
+>Esto requeriría escribir un editor musical <emphasis
+>y</emphasis
+> ¡un editor de textos! ¡Es demasiado complejo! Pero eche un vistazo en:</para>
+
+<para
+><ulink url="http://vsr.informatik.tu-chemnitz.de/staff/jan/nted/use_nted_in_text.xhtml"
+>http://vsr.informatik.tu-chemnitz.de/staff/jan/nted/use_nted_in_text.xhtml</ulink
+></para>
+<para
+>There you can find some proposals about that topic.</para>
+</answer>
+</qandaentry>
+<qandaentry>
+<question>
+<para
+>Durante el arranque del programa sale: "No se puede abrir el secuenciador MIDI ALSA --> reproducir no funcionará :-(( ..." ¿Qué significa esto? </para>
+</question>
+<answer>
+<para
+>Eso significa que o no tiene el sistema de sonido ALSA o lo tiene pero por razones complejas su secuenciador midi ALSA no está inicializado. En muchos casos esto es por la falta de un módulo. Por tanto pruebe (como root):</para>
+<para
+><userinput
+>modprobe snd-seq-midi</userinput
+></para>
+<para
+>y reinicie &nted;</para>
+</answer>
+</qandaentry>
+<qandaentry>
+<question>
+<para
+>Durante el paso <application
+>make</application
+> ocurre un error: <computeroutput
+>/bin/sh: gdk-pixbuf-csource: command not found</computeroutput
+>. ¿Qué pasa? </para>
+</question>
+<answer>
+<para
+>Esto tiene que ver con la variable de entorno PATH. Muchos Linuxes sitúan el programa <application
+>gdk-pixbuf-csource</application
+> en <filename
+>/opt/gnome/bin</filename
+>. Realmente debería estar en su PATH. Pero bajo ciertas circunstancias este no es el caso. Entonces asegúrese de que <filename
+>/opt/gnome/bin</filename
+> esté en su PATH. Si tiene un intérprete de comandos (t)csh escriba:</para>
+<para
+><userinput
+>setenv PATH "$PATH:/opt/gnome/bin"</userinput
+></para>
+<para
+>Si tiene otro tipo de intérprete de comandos:</para>
+<para
+><userinput
+>export PATH=$PATH:/opt/gnome/bin</userinput
+></para>
+<para
+>Para determinar su tipo de intérprete de comandos:</para>
+<para
+><userinput
+>echo $SHELL</userinput
+></para>
+</answer>
+</qandaentry>
+<qandaentry>
+<question>
+<para
+>Durante el paso configure sale un error: "configure: error: C++ compiler cannot create executables, See `config.log' for more details.". ¿Qué pasa?</para>
+</question>
+<answer>
+<para
+>Bien, puede examinar el archivo <filename
+>config.log</filename
+>. Pero esto probablemente sea innecesario, porque en la mayoría de los casos significa que no tiene instalado un compilador de C++.</para>
+</answer>
+</qandaentry>
+</qandaset>
+</appendix>
+
+</book>

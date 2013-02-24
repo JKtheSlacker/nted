@@ -1,0 +1,221 @@
+*A.1.*
+
+I can't hear any sound! I see the running red notes but there is no
+sound! What's wrong?
+
+**
+
+This has nothing to do with NtEd! It is a problem of your MIDI device!
+All MIDI based applications (for instance kmid (not kmidi!!!) or
+pmidi) will fail!
+
+First of all: Try to play a MIDI file with kmid (not (!!!)). As
+long as kmid does not produce any sound, NtEd (and any other MIDI device
+based software) will not produce any sound, too! The reason is: Either
+your soundcard has no hardware MIDI synthesizer or it has a hardware
+MIDI synthesizer but it is not supported by Linux.
+
+Please refer to the ALSA project page (http://www.alsa-project.org) to
+find out whether the midi device on your sound card is supported.
+
+Before making a lot of effort to emulate the hardware synthesizer by
+software you should search for a soundfont file on the CD shipped with
+your soundcard. A soundfont file has the suffix ".sf2" or ".SF2". Please
+make sure it is a General MIDI soundfont! If there is such a soundfont
+file there is a high probability you simply have to load the soundfont
+onto your soundcard.
+
+To to this you need a programm called asfxload
+
+    http://www.alsa-project.org/~tiwai/awedrv.html#Utils
+
+Simply type:
+
+ asfxload <soundfont>.sf2
+
+But even if you cannot find a soundfont file on soundcard CD, you can
+try to download a soundfont file. I recommand the soundfont mentioned at
+http://alsa.opensrc.org/8MBGMSFX.SF2.
+
+If asfxload fails your soundcard does not permit loading a soundfont.
+
+There is still a last chance that not all needed moduls are loaded. So
+as a last attempt type as root:
+
+ modprobe snd_seq_midi
+
+and repeat the asfxload command.
+
+If asfxload fails again you have to emulate the hardware MIDI
+synthesizer by software.
+This works if your computer has enough performance. Windows for
+instances starts a soft synthesizer automatically if the hardware
+synthesis does not work. So, be not confused if you can play MIDI files
+on Windows!
+
+Such emulation software exists for Linux, too. But it is more
+complicated because:
+
+    * You have to start this software "by hand".
+
+    * These software MIDI synthesizers need a so-called soundfont, a
+      collection of sample tones of every instrument of a virtual
+      orchestra. These soundfonts are copyrighted, i.e. actually nothing
+      for a free system like Linux.
+
+But there is a (relatively bulky) way! See The TiMidity server section
+in NtEd documentation:
+
+http://vsr.informatik.tu-chemnitz.de/~jan/noteedit/NTED/doc/timidity_server.html
+
+for detailed instructions!
+
+Note! There are more software synthesizers on Linux, which can be
+tested. Among them the FluidSysth (http://fluidsynth.resonance.org/trac).
+
+See http://www.linux-sound.org for a list.
+
+      Note
+
+  You should avoid soft synthesis if the performance of your computer is
+  too small! The antialiasing procedure (smoothing the symbols) of NtEd
+  consumes a lot of performance, and soft synthesis, too! As a result the
+  replay can be uneven especially during page turn over!
+
+*A.2*
+I use TiMidity but the sound is distorted and somtimes I have no sound, at all. What's wrong?
+
+**
+
+Check whether you have a command pulseaudio:
+
+     which pulseaudio
+
+If you get the path of pulseaudio then follow the instructions in chapter
+"pulseaudio"
+
+*A.3.*
+
+At program start it says: "Error in FT_Open_Face"! What's wrong!
+
+**
+
+You have not installed the program! Please type (as root):
+
+  make install
+
+Refer also to INSTALL file shipped with the |nted-x.y.z.tgz| archive.
+
+*A.4.*
+
+I use asfxload but I get an error "sfxload: no memory left" and some instruments are missing during replay. What's wrong?
+
+**
+
+Don't believe the many rumours on different mailing lists!xi
+I have bad news for you: You have to build a new kernel. Terrible, I know!
+If you feel unable to do this then try to use the TiMidity server.
+
+Otherwise download the kernel and change in
+
+          arch/x86/include/asm/dma.h:
+
+#define MAX_DMA32_PFN ((4UL * 1024 * 1024 * 1024) >> PAGE_SHIFT)
+
+against:
+
+#define MAX_DMA32_PFN ((2UL * 1024 * 1024 * 1024) >> PAGE_SHIFT)
+
+Then build the kernel! Refer to
+https://lists.ubuntu.com/archives/universe-bugs/2009-March/068812.html
+for more details!
+
+*A.5.*
+
+I cannot install NtEd because I have no root rights. What shall I do?
+
+**
+
+You can use the --prefix option to install the NtEd in an arbitrary
+directory below your $HOME directory. Please refer also to INSTALL file!
+
+Furthermore, if you want to avoid the make install command then set
+an environment variable NTED_FONT_DIR to the directory where the
+nted/ntedfont.pfa is situated.
+
+For instance, assume the ntedfont.pfa is at
+/home/smith/datafiles/nted/ntedfont.pfa type at command prompt:
+
+export NTED_FONT_DIR=/home/smith/datafiles
+
+if you have a bash or sh shell.
+
+If you're using a csh or tcsh type:
+
+setenv NTED_FONT_DIR /home/smith/datafiles
+
+To find out your shell type:
+
+echo $SHELL
+
+at command promt.
+
+*A.6.*
+May I set lyrics as text blocks below the sheet music? How can I use the score in common texts? 
+
+**
+
+This would require to write a musical score editor and a text editor! This is too complex! But have a look at:
+
+   http://vsr.informatik.tu-chemnitz.de/staff/jan/nted/use_nted_in_text.xhtml
+
+There you can find some proposals about that topic.
+
+*A.7.*
+
+During program startup I get an error: "Cannot open ALSA MIDI sequencer -->
+replay won't work ..."! What's wrong ?
+
+**
+
+That means you either have no ALSA sound system. Or you have an ALSA sound
+system but for complicated reasons your ALSA midi sequencer is not initialized.
+In many cases this is due to a missing module. Therefore try (as root):
+
+  modprobe snd-seq-midi
+
+and restart NtEd.
+
+*A.8.*
+
+During make step an error occurs: /bin/sh: gdk-pixbuf-csource: command
+not found|. What's wrong ?
+
+**
+
+You are a SuSE-Linux user! SuSE places this tool at /opt/gnome/bin.
+Actually this should be in your PATH. But under certain circumstances
+this is not the case. If so then make sure /opt/gnome/bin is in your
+PATH. If you have a (t)csh shell type:
+
+setenv PATH "$PATH:/opt/gnome/bin"
+
+If you have another shell type:
+
+export PATH=$PATH:/opt/gnome/bin
+
+To determine your shell type:
+
+echo $SHELL
+
+*A.9.*
+
+During configure step I get an error:
+"configure: error: C++ compiler cannot create executables,
+See `config.log' for more details.".
+What's wrong!
+
+**
+
+Ok, you can inspect the config.log. But this is presumably superfluous,
+because in most cases that means: You have no C++ compiler installed.

@@ -1,0 +1,136 @@
+Here is some information about the 11 examples, to enable a
+copyright-free estimation:
+
+First of all: I (J.Anders <ja@informatik.tu-chemnitz.de> wrote down all
+these notes. I wrote all notes from my remembrances, not from
+a sheet of paper. So the notes are not copies of some printed notes.
+And I declare I'll never demand any copyright.
+
+Of course I'm not the composer! Thus, the question is: Does any
+composer hold a copyright? I think this isn't the case because
+according to (German) copyright law the copyright ends 70 years
+after the composer died. And this is the case here.
+
+I'll tell something about the examples to give
+others the opportunity to find out whether the examples
+are copyright free:
+
+example1.ntd, example2.ntd, example11.ntd:
+
+  This is a jazz variant of the famous Barcarole from the opera
+  "Les Contes d'Hoffmann" ("The Tales of Hoffmann") by Jacques Offenbach.
+
+  Offenbach died 5 October 1880.
+
+  See also : http://en.wikipedia.org/wiki/Jacques_Offenbach
+
+  As a child I heard a big band playing this song this way.
+  But note: I never saw any notes.
+
+example3.ntd
+
+  This is the famous Bouree e - minor (BWV Nr. 996) by
+  Johann Sebastian Bach who died 28 July 1750.
+
+  see: http://en.wikipedia.org/wiki/Bach
+
+  I can play this without any notes on guitar. I don't
+  know from which notes I learned it.  I simply wrote down
+  what I'm playing.
+
+  You can find the notes at many places in Internet:
+
+  http://bs.cyty.com/visitabilis/gitarre/img/bourree.gif
+  http://www.delcamp.net/pdf/2_baroque/bwv9965_bach_bourree.pdf
+  http://www.thomaskoenigs.de/bach_bwv996.zip
+
+example4.ntd
+
+  This is an Irish folk song called "Oh danny boy". Again as a child
+  I heard a big band playing the song this way. But I never saw
+  any notes.
+
+  To hear a MIDI example look here:
+
+    http://www.ireland-information.com/irishmusic/dannyboy.shtml
+
+  (you'll hear I made some mistakes, the exact melody differs from
+   my version, another indication: It is written down from my
+   remembrances)
+
+  Actually the song is by Frederic Edward Weatherly (1848-1929).
+  But he only wrote the lyrics to an unsuccessful song called
+  "Danny Boy". As he heard an old song called "Londonderry Air"
+  he found the words fit exactly to the music. So he used the
+  melody of "Londonderry Air" for his song "Danny Boy".
+
+  Therefore the  question is: Where does the melody of "Londonderry Air"
+  come form:
+
+  It was first published 1855 in "Ancient Music of Ireland" by the
+  collector George Petrie (1789-1866) as untitled melody, who
+  claimed he had written down it from an itinerant piper.
+
+  The whole story about this song is at:
+
+    http://www.standingstones.com/dannyboy.html
+
+example5.ntd, example6.ntd:
+
+   This is a Celtic/Irish folk song known as
+
+     "Kilgary Mountain"
+
+   or
+     
+     "Whiskey In The Jar"
+
+   (I changed some notes and added my own finish)
+
+   The MIDI and the words are mentiond here:
+
+     http://www.contemplator.com/tunebook/ireland/kilgary.htm
+     http://www.contemplator.com/tunebook/midimusic/kilgary.mid
+
+example7.ntd:
+
+   This is the famous "Huntmen's Chorus" ("Jaegerchor") from
+   the opera "The Freeshooter" ("Der Freischuetz") by
+   the German composer Carl Maria von Weber who died June 5, 1826, see
+
+     http://en.wikipedia.org/wiki/Carl_Maria_von_Weber
+
+example8.ntd:
+
+   This song is called "Old folks at home", also known
+   as "Suwanee River".
+
+   It is written by Stephen C. Foster who died January 13, 1864.
+
+   See also:
+      http://en.wikipedia.org/wiki/Stephen_C._Foster
+
+example9.ntd:
+
+    This is the famous Prelude No.1 in C Major from "Well-tempered Clavier" BWV846
+    by Johann Sebastian Bach who died 28 July 1750.
+
+	see: http://en.wikipedia.org/wiki/Bach
+
+    I could play this on piano and wrote down what I'm playing as
+    I developed "NoteEdit". What you see here is the MusicXML import
+    from MusicXML created by "NoteEdit".
+
+example10.ntd:
+
+    This is a German folk song:
+
+        "Es wollt ein Schneider wandern"
+
+    first published in Stuttgart, 1850. You can find
+    the text, the melody, and the history on many WEB sites,
+    for instance:
+
+      http://musicanet.org/robokopp/Lieder/eswollts.html
+      http://ingeb.org/Lieder/eswollts.html
+      http://www.lieder-archiv.de/lieder/show_song.php?ix=300641

@@ -1,0 +1,179 @@
+dnl To create the build system from this file, run
+dnl   $ autoreconf
+dnl   $ autoreconf -v
+dnl   $ autoreconf -vi
+dnl   $ autoreconf -vis
+dnl   $ autoreconf -vis -Wall
+dnl or something similar.
+dnl To remove the created files again, run
+dnl   $ make cleanup     # if you have a Makefile
+dnl   $ make -f Makefile.am cleanup-local srcdir=. # if there is no local Makefile
+AC_PREREQ(2.61)
+AC_INIT([nted], [1.10.18], [nted-user@tu-chemnitz.de], [nted])
+AC_CONFIG_SRCDIR([beaming.h])
+AC_CONFIG_HEADERS([config.h])
+AM_INIT_AUTOMAKE([-Wall -Werror 1.10 foreign])
+
+AC_PROG_CXX
+
+AC_PROG_RANLIB
+AS_IF([test "x$RANLIB" = "x:"],
+      [AC_MSG_ERROR([ranlib command not found])])
+
+# FIXME: Check that compiler works with these flags
+AC_ARG_ENABLE([debug],
+              [AS_HELP_STRING([--enable-debug],
+                              [compile with debugging information])],
+              [CXXFLAGS="$CXXFLAGS -g"])
+
+# FIXME: Check that compiler works with these flags
+CXXFLAGS="-Wall -Wwrite-strings $CXXFLAGS"
+
+# Gettext checks
+ALL_LINGUAS="en_GB de es fr hu it nl sv ru zh_CN uk"
+AM_GNU_GETTEXT_VERSION([0.17])
+AM_GNU_GETTEXT([external])
+
+AC_PATH_PROG([MSGFMT], [msgfmt], [:])
+AS_IF([test "x$MSGFMT" = "x:"],
+      [AC_MSG_ERROR([
+No msgfmt program found! Please install the gettext package!])])
+
+dnl Make sure configure is created only if this macro is available
+m4_pattern_forbid([PKG_CHECK_MODULES])
+
+# Check for libraries
+PKG_CHECK_MODULES([ALSA], [alsa >= 1.0], [], [AC_MSG_ERROR([Make sure the libasound (ALSA) devel package is installed])])
+PKG_CHECK_MODULES([PANGO],      [pango], [], [AC_MSG_ERROR([Make sure the pango devel package is installed])])
+PKG_CHECK_MODULES([CAIRO],      [cairo], [], [AC_MSG_ERROR([Make sure the cairo devel package is installed])])
+PKG_CHECK_MODULES([GTK],     [gtk+-2.0], [], [AC_MSG_ERROR([Make sure the gtk+-2.0 devel package is installed])])
+PKG_CHECK_MODULES([FT2],    [freetype2], [], [AC_MSG_ERROR([Make sure the freetype(2) devel package is installed])])
+PKG_CHECK_MODULES([X11],          [x11], [], [AC_MSG_ERROR([Make xure the x11/X11/Xlib devel package is installed])])
+
+# Check for gdk-pixbuf-csource program
+AC_ARG_VAR([IMAGE2HEADER], [gdk-pixbuf-csource program])
+AC_PATH_PROG([IMAGE2HEADER], [gdk-pixbuf-csource], [:])
+AS_IF([test "x$IMAGE2HEADER" = "x:"],
+      [AC_MSG_ERROR([
+No gdk-pixbuf-csource command found! It should be part
+of the gtk installation. Please check correct gtk
+installation or change PATH environment variable!
+])])
+
+# Package is written in C++, so do compile tests in C++ as well.
+AC_LANG([C++])
+
+# Define "clean" flags for compilation tests
+empty_LIBS="$LIBS"
+empty_CPPFLAGS="$CPPFLAGS"
+
+# gtk+ compile&link test
+AC_MSG_CHECKING([gtk+ compile and link])
+CPPFLAGS="$empty_CPPFLAGS $GTK_CFLAGS"
+LIBS="$empty_LIBS $GTK_LIBS"
+AC_LINK_IFELSE([AC_LANG_SOURCE([
+#include <gtk/gtk.h>
+int main(int argc, char **argv)
+{
+	gtk_init (&argc, &argv);
+	gtk_main ();
+	return 0;
+}
+])], [AC_MSG_RESULT([ok])], [
+AC_MSG_FAILURE([cannot compile and link gtk example])
+])
+
+# gtk+ and cairo compile&link test
+AC_MSG_CHECKING([gtk+ and cairo compile and link])
+CPPFLAGS="$empty_CPPFLAGS $CAIRO_CFLAGS $GTK_CFLAGS"
+LIBS="$empty_LIBS $CAIRO_LIBS $GTK_LIBS"
+AC_LINK_IFELSE([AC_LANG_PROGRAM([
+#include <gtk/gtk.h>
+#include <cairo.h>
+],[
+	GtkWidget *m_drawing_area = NULL;
+	cairo_t *cr;
+	cr = gdk_cairo_create (m_drawing_area->window);
+])], [AC_MSG_RESULT([ok])], [
+AC_MSG_FAILURE([Cannot compile and link a simple cairo example!])
+])
+
+# ALSA (libasound) compile&link test
+AC_MSG_CHECKING([asound compile and link])
+CPPFLAGS="$empty_CPPFLAGS $ALSA_CFLAGS"
+LIBS="$empty_LIBS $ALSA_LIBS"
+AC_LINK_IFELSE([AC_LANG_PROGRAM([
+#include <alsa/asoundlib.h>
+],[
+	snd_seq_t *sequ;
+	snd_seq_open(&sequ, "default", SND_SEQ_OPEN_OUTPUT, 0);
+	return 0;
+])], [AC_MSG_RESULT([ok])],
+[AC_MSG_FAILURE([Cannot compile and link a simple ALSA example!])
+])
+
+# Restore flags after compile&link tests
+CPPFLAGS="$empty_CPPFLAGS"
+LIBS="$empty_LIBS"
+
+
+# ===================================================================
+# Documentation generation checks
+# ===================================================================
+
+AC_ARG_WITH([doc],
+            [AS_HELP_STRING([--without-doc],
+                            [compile without immediate help])])
+
+AS_IF([test "x$with_doc" = "xno"], [make_docs="no"], [make_docs="yes"])
+
+AC_ARG_VAR([YELP], [yelp program])
+AC_PATH_PROG([YELP], [yelp], [:])
+AS_IF([test "x$YELP" = "x:"], [
+make_docs="no"
+AC_MSG_WARN([
+
+No yelp command found, creating documentation disabled.
+])])
+
+AC_ARG_VAR([XMLTO], [xmlto program])
+AC_PATH_PROG([XMLTO], [xmlto], [:])
+AS_IF([test "x$XMLTO" = "x:"], [
+make_docs="no"
+AC_MSG_WARN([
+
+No xmlto command found, creating documentation disabled.
+])])
+
+AC_MSG_CHECKING([whether to make the HTML manuals])
+AC_MSG_RESULT([$make_docs])
+
+AM_CONDITIONAL([MAKE_DOCS], [test "$make_docs" = "yes"])
+
+AS_IF([test "$make_docs" = "yes"],
+      [AC_DEFINE_UNQUOTED([YELP_PATH], ["$YELP"], [Path to yelp program])])
+
+AS_IF([test "x$make_docs" = "xno"], [make_docbooks="no"], [make_docbooks="yes"])
+
+AC_ARG_VAR([XML2POT], [xml2pot program])
+AC_PATH_PROG([XML2POT], [xml2pot], [:])
+AS_IF([test "x$XML2POT" = "x:"], [
+make_docbooks="no"
+AC_MSG_WARN([
+No xml2pot command found. 
+You will not be able to create new translations without.
+])])
+
+AC_ARG_VAR([PO2XML], [po2xml program])
+AC_PATH_PROG([PO2XML], [po2xml], [:])
+AS_IF([test "x$PO2XML" = "x:"], [
+make_docbooks="no"
+AC_MSG_WARN([
+No po2xml command found. 
+You will not be able to create new translations without.
+])])
+
+AM_CONDITIONAL([MAKE_DOCBOOKS], [test "$make_docbooks" = "yes"])
+
+AC_CONFIG_FILES([ Makefile commands/Makefile dialogs/Makefile chords/Makefile idiotseditor/Makefile icons/Makefile po/Makefile.in datafiles/Makefile man/Makefile doc/Makefile doc/templates/Makefile doc/de/Makefile doc/it/Makefile doc/docimages/Makefile doc/en/Makefile doc/es/Makefile doc/fr/Makefile])
+AC_OUTPUT
